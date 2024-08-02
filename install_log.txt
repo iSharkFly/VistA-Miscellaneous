@@ -1,0 +1,117 @@
+GTM>D ^XPDIL,^XPDI
+
+Enter a Host File: /home/sakura/workspace/repo/immunizations_hl7/VWIMM_0P1.KID
+
+KIDS Distribution saved on Sep 20, 2012@06:29:02
+Comment: Support for Immunizations HL7 message - Don't use in PRODUCTION ENVIRON
+MENTS
+
+This Distribution contains Transport Globals for the following Package(s):
+   VWIMM 0.1
+Distribution OK!
+
+Want to Continue with Load? YES// 
+Loading Distribution...
+
+   VWIMM 0.1
+Use INSTALL NAME: VWIMM 0.1 to install this Distribution.
+
+Select INSTALL NAME: VWIMM 0.1       Loaded from Distribution     Loaded from Di
+stribution  10/24/12@12:01:07
+     => Support for Immunizations HL7 message - Don't use in PRODUCTION ENVIRO
+
+This Distribution was loaded on Oct 24, 2012@12:01:07 with header of 
+   Support for Immunizations HL7 message - Don't use in PRODUCTION ENVIRONMENTS 
+ ;Created on Sep 20, 2012@06:29:02
+   It consisted of the following Install(s):
+      VWIMM 0.1
+
+   Checking VWIMM 0.1 for overlap with VOE 1.0 ..... OK
+            No overlap found
+
+
+   Checking VWIMM 0.1 for overlap with VOE 1.1 ..... OK
+            No overlap found
+
+
+   Checking VWIMM 0.1 for overlap with NO HOME 1.0 ..... OK
+            No overlap found
+
+Checking Install for Package VWIMM 0.1
+
+Install Questions for VWIMM 0.1
+
+Incoming Files:
+
+
+   100.98    DISPLAY GROUP  (including data)
+Note:  You already have the 'DISPLAY GROUP' File.
+I will OVERWRITE your data with mine.
+
+
+   101.41    ORDER DIALOG  (including data)
+Note:  You already have the 'ORDER DIALOG' File.
+I will OVERWRITE your data with mine.
+
+
+   811.8     REMINDER EXCHANGE  (including data)
+Note:  You already have the 'REMINDER EXCHANGE' File.
+I will OVERWRITE your data with mine.
+
+Want KIDS to Rebuild Menu Trees Upon Completion of Install? NO// 
+
+
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+
+DEVICE: HOME// PHOME  HOME PRINTER
+
+ 
+ Install Started for VWIMM 0.1 : 
+               Oct 24, 2012@12:01:17
+ 
+Build Distribution Date: Sep 20, 2012
+ 
+ Installing Routines:....
+               Oct 24, 2012@12:01:17
+ 
+ Running Pre-Install Routine: PRE^VWIMMKID.
+ 
+ Installing Data Dictionaries: ....
+               Oct 24, 2012@12:01:17
+ 
+ Installing Data: ..
+               Oct 24, 2012@12:01:18
+ 
+ Installing PACKAGE COMPONENTS: 
+ 
+ Installing HL7 APPLICATION PARAMETER..
+ 
+ Installing PROTOCOL.
+Not a known package or a local namespace..
+Not a known package or a local namespace..
+Not a known package or a local namespace..
+Not a known package or a local namespace..
+ 
+ Installing OPTION...
+               Oct 24, 2012@12:01:18
+ 
+ Running Post-Install Routine: POST^VWIMMKID.
+ 
+Installing reminder exchange entry MU IMM REGISTRY DI
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.....
+ 
+ VWIMM 0.1 Installed. 
+               Oct 24, 2012@12:01:22
+ 
+ No link to PACKAGE file
+ 
+ NO Install Message sent 
+
