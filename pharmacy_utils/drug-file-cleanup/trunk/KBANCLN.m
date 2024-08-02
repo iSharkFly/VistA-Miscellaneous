@@ -1,0 +1,20 @@
+KBANCLN ; WV/SMH - Jordan Drug File Clean-up; 5/16/12 1:18pm
+ N KBANFDA
+ N KBANIEN S KBANIEN=0
+ ; Loop through Drug File (no indexes)
+ F  S KBANIEN=$O(^PSDRUG(KBANIEN)) Q:'+KBANIEN  DO
+ . W KBANIEN
+ . W " "
+ . ; Remove Arabic Local Possible Dossages
+ . N KBANLD S KBANLD=0 
+ . F  S KBANLD=$O(^PSDRUG(KBANIEN,"DOS2",KBANLD)) Q:'+KBANLD  S KBANFDA(50.0904,KBANLD_","_KBANIEN_",",3)="@"
+ . ; Remove ATC Ward Groups
+ . N KBANATC S KBANATC=0
+ . F  S KBANATC=$O(^PSDRUG(KBANIEN,212,KBANATC)) Q:'+KBANATC  S KBANFDA(50.0212,KBANATC_","_KBANIEN_",",.01)="@"
+ . ; Remove IFCAP item pointers
+ . N IFCAP S IFCAP=0
+ . F  S IFCAP=$O(^PSDRUG(KBANIEN,441,IFCAP)) Q:'+IFCAP  S KBANFDA(50.0441,IFCAP_","_KBANIEN_",",.01)="@"
+ N ERR
+ ; Delete!
+ D FILE^DIE("","KBANFDA","ERR")
+ ZWRITE:$D(ERR) ERR

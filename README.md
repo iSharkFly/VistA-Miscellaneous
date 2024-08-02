@@ -17,3 +17,6 @@ https://trac.opensourcevista.net/svn/qrda
 
 ## pharmacy_utils
 https://trac.opensourcevista.net/svn/pharmacy-utils
+
+## mu_tests
+https://trac.opensourcevista.net/svn/mu-tests

@@ -1,0 +1,542 @@
+Remarks on the Jordan Drug File:
+- Contains some data encoded as Windows-1256. It will not work on GT.M running 
+  in UTF-8 mode.
+- List of Broken Pointers:
+--> Med Route in Pharmacy Orderable Item File:
+VERIFY FIELDS REPORT
+PHARMACY ORDERABLE ITEM FILE (#50.7)              MAY 16, 2012  12:06    PAGE 1
+-------------------------------------------------------------------------------
+
+   ENTRY#    NAME                          ERROR
+   192       METHYLPREDNISOLONE            "177" fails Input Transform
+   298       DIAZEPAM                      No '271' in pointed-to File
+   455       CALCITONIN                    No '273' in pointed-to File
+   888       INSULIN REGULAR               "95" fails Input Transform
+   1058      RANIBIZUMAB                   No '274' in pointed-to File
+
+--> WARD GROUP in ATC CANISTER multiple in the drug file.
+VERIFY FIELDS REPORT
+ATC CANISTER SUB-FILE (#50.0212)                                                                      MAY 16, 2012  12:13    PAGE 1
+-----------------------------------------------------------------------------------------------------------------------------------
+   POINTER
+   (CHECKING CROSS-REFERENCE)
+   
+ENTRY#'S  WARD GROUP FOR ATC CANISTER   ERROR
+1254      ASPIRIN 100MG TAB,ORAL
+1         1                             "1" fails Input Transform
+
+1254      ASPIRIN 100MG TAB,ORAL
+5         11                            No '11' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+6         13                            No '13' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+7         14                            No '14' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+8         15                            No '15' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+9         16                            No '16' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+10        17                            No '17' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+11        18                            No '18' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+12        21                            No '21' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+13        22                            No '22' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+14        23                            No '23' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+15        24                            No '24' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+16        25                            No '25' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+17        26                            No '26' in pointed-to File
+
+1254      ASPIRIN 100MG TAB,ORAL
+18        27                            No '27' in pointed-to File
+
+ITEM NUMBER in IFCAP ITEM NUMBER in the Drug File.
+------------
+VERIFY FIELDS REPORT
+IFCAP ITEM NUMBER SUB-FILE (#50.0441)             MAY 16, 2012  12:16    PAGE 1
+-------------------------------------------------------------------------------
+   POINTER
+   (CHECKING CROSS-REFERENCE)
+
+   ENTRY#'S  ITEM NUMBER                   ERROR
+   1002      HYDROXYUREA 500MG CAP,ORAL
+   1         4107                          No '4107' in pointed-to File
+
+   1003      METHOTREXATE 2.5MG TAB,ORAL
+   1         953                           No '953' in pointed-to File
+
+   1006      NOREPINEPHRINE BITARTRATE 1MG/ML INJ
+   1         2739                          No '2739' in pointed-to File
+
+   1010      DIGOXIN 0.125MG TAB,ORAL
+   1         1580                          No '1580' in pointed-to File
+
+   1011      DIGOXIN INJ 0.25MG/ML 2ML AMP
+   1         713                           No '713' in pointed-to File
+
+   1012      DIGOXIN 0.25MG TAB,ORAL
+   1         1557                          No '1557' in pointed-to File
+
+   1013      PROPRANOLOL HCL 10MG TAB,ORAL
+   1         367                           No '367' in pointed-to File
+
+   1014      PROPRANOLOL HCL 40MG TAB,ORAL
+   1         369                           No '369' in pointed-to File
+
+   1015      HYDRALAZINE HCL INJ 20MG/ML INJ
+   1         214                           No '214' in pointed-to File
+
+   1016      HYDRALAZINE HCL 25MG TAB,ORAL  
+   1         97                            No '97' in pointed-to File
+
+   1017      METHYLDOPA 250MG TAB,ORAL
+   1         113                           No '113' in pointed-to File
+
+   1018      ISOSORBIDE DINITRATE 5MG SL TAB
+   1         1076                          No '1076' in pointed-to File
+
+   1019      IBUPROFEN 400MG TAB,ORAL
+   1         1311                          No '1311' in pointed-to File
+
+   1020      INDOMETHACIN 25MG CAP,ORAL
+   1         101                           No '101' in pointed-to File
+
+   1021      NALOXONE HCL 0.4MG/ML INJ
+   1         77                            No '77' in pointed-to File
+
+   1022      CARBAMAZEPINE 200MG TAB,ORAL  
+   1         2697                          No '2697' in pointed-to File
+
+   1023      PHENYTOIN NA 100MG CAP,ORAL,SA
+   1         3005                          No '3005' in pointed-to File
+
+   1025      IMIPRAMINE HCL 25MG TAB,ORAL
+   1         342                           No '342' in pointed-to File
+
+   1028      HALOPERIDOL 5MG TAB,ORAL
+   1         5450                          No '5450' in pointed-to File
+
+   1029      HALOPERIDOL 2MG/ML DROPS,ORAL
+   1         3591                          No '3591' in pointed-to File
+
+   1031      TRIFLUOPERAZINE HCL 5MG TAB,ORAL
+   1         169                           No '169' in pointed-to File
+
+   1032      METHYLPHENIDATE 10MG TAB,ORAL   
+   1         787                           No '787' in pointed-to File
+
+   1033      PHENOBARBITAL 15MG TAB,ORAL  
+   1         902                           No '902' in pointed-to File
+
+   1034      SIMETHICONE 40MG TAB,CHEWABLE
+   1         2652                          No '2652' in pointed-to File
+
+   1036      SODIUM CHLORIDE 0.45% INJ 1000ML
+   1         3673                          No '3673' in pointed-to File
+
+   1040      DEXTROSE 5% INJ 1000ML
+   1         3974                          No '3974' in pointed-to File
+
+   1041      FUROSEMIDE 10MG/ML INJ 2ML VIAL
+   1         212                           No '212' in pointed-to File
+
+   1042      MANNITOL 20% INJ 500ML BAG
+   1         505                           No '505' in pointed-to File
+
+   1043      SPIRONOLACTONE 25MG TAB,ORAL 
+   1         1514                          No '1514' in pointed-to File
+
+   1044      ERYTHROMYCIN ES 200MG/5ML SUSP,ORAL
+   1         3624                          No '3624' in pointed-to File
+
+   1045      GENTAMICIN 0.3% SOLN,OPHT
+   1         202                           No '202' in pointed-to File
+
+   1050      FLUOROMETHOLONE 0.1% SUSP,OPHT
+   1         1181                          No '1181' in pointed-to File
+
+   1051      PREDNISOLONE 1% SUSP,OPHT
+   1         2614                          No '2614' in pointed-to File
+
+   1053      BISACODYL 5MG TAB,ORAL,EC
+   1         815                           No '815' in pointed-to File
+
+   1054      BISACODYL 10MG SUPP,RECTAL
+   1         1303                          No '1303' in pointed-to File
+
+   1057      HYDROCORTISONE BUTYRATE 0.1% (DON'T USE)
+   1         223                           No '223' in pointed-to File
+
+   1058      DEFEROXAMINE MESYLATE 500MG/VIAL INJ 
+   1         779                           No '779' in pointed-to File
+
+   1059      PENICILLAMINE 250MG CAP,ORAL  
+   1         358                           No '358' in pointed-to File
+
+   1060      DEXAMETHASONE NA PO4 4MG/ML INJ 1ML
+   1         58                            No '58' in pointed-to File
+
+   1061      METHYLPREDNISOLONE ACET. 40MG/ML INJ
+   1         3825                          No '3825' in pointed-to File
+
+   1063      GLUCAGON 1MG/VIAL INJ
+   1         882                           No '882' in pointed-to File
+
+   1064      CALCIUM GLUCONATE 10% INJ 10ML 
+   1         817                           No '817' in pointed-to File
+
+   1065      BUPIVACAINE HCL 0.5% INJ
+   1         1247                          No '1247' in pointed-to File
+
+   1066      LIDOCAINE HCL 1% INJ 
+   1         69                            No '69' in pointed-to File
+
+   1067      BETAMETHASONE VALERATE 0.1% CREAM,TOP 
+   1         2687                          No '2687' in pointed-to File
+
+   1070      CYANOCOBALAMIN 1000MCG/ML INJ 
+   1         4912                          No '4912' in pointed-to File
+
+   1071      ALLOPURINOL 100MG TAB,ORAL
+   1         3970                          No '3970' in pointed-to File
+
+   1072      ALLOPURINOL 300MG TAB,ORAL
+   1         1528                          No '1528' in pointed-to File
+
+   1074      CHLORPHENIRAMINE MALEATE 4MG TAB,ORAL
+   1         934                           No '934' in pointed-to File
+
+   1076      CEFAZOLIN SOD 1GM/VIAL INJ
+   1         206                           No '206' in pointed-to File
+
+   1078      AMOXICILLIN 500MG CAP,ORAL
+   1         1201                          No '1201' in pointed-to File
+
+   1079      PYRAZINAMIDE 500MG TAB,ORAL
+   1         964                           No '964' in pointed-to File
+
+   1080      STREPTOMYCIN SULFATE 1GM INJ
+   1         922                           No '922' in pointed-to File
+
+   1081      DOXYCYCLINE HYCLATE 100MG TAB
+   1         81                            No '81' in pointed-to File
+
+   1082      CLINDAMYCIN HCL 150MG CAP,ORAL
+   1         326                           No '326' in pointed-to File
+
+   1083      GENTAMICIN SULF 40MG/ML INJ 2ML/VL
+   1         211                           No '211' in pointed-to File
+
+   1084      ETHAMBUTOL 400MG TAB,ORAL
+   1         337                           No '337' in pointed-to File
+
+   1085      ISONIAZID 100MG TAB,ORAL
+   1         6232                          No '6232' in pointed-to File
+
+   1086      ROXITHROMYCIN 150MG TAB,ORAL
+   1         373                           No '373' in pointed-to File
+
+   1087      SULFASALAZINE 500MG TAB,ORAL 
+   1         159                           No '159' in pointed-to File
+
+   1089      METRONIDAZOLE 250MG TAB,ORAL  
+   1         440                           No '440' in pointed-to File
+
+   1090      NITROFURANTOIN 100MG TAB,ORAL 
+   1         123                           No '123' in pointed-to File
+
+   1091      AMANTADINE HCL 100MG CAP,100
+   1         31                            No '31' in pointed-to File
+
+   1092      CHLORHEXIDINE GLUCONATE 0.2% RINSE,ORAL
+   1         5025                          No '5025' in pointed-to File
+
+   1094      AMITRIPTYLINE HCL 25MG TAB,ORAL  
+   1         929                           No '929' in pointed-to File
+
+   1095      ASCORBIC ACID 500MG TAB,ORAL
+   1         39                            No '39' in pointed-to File
+
+   1100      TIMOLOL MALEATE 0.5% SOLN,OPHT
+   1         1608                          No '1608' in pointed-to File
+
+   1102      METOPROLOL SUCCINATE 100MG TAB,ORAL
+   1         349                           No '349' in pointed-to File
+
+   1103      MICONAZOLE NITRATE CREAM,TOP 30GM
+   1         16                            No '16' in pointed-to File
+
+   1105      VANCOMYCIN HCL 500MG/VIAL INJ.
+   1         907                           No '907' in pointed-to File
+
+   1106      WARFARIN 5MG TAB,ORAL
+   1         4324                          No '4324' in pointed-to File
+
+   1107      DIPYRIDAMOLE 75MG TAB,ORAL
+   1         4592                          No '4592' in pointed-to File
+
+   1108      IMIPRAMINE HCL 10MG TAB,ORAL
+   1         3482                          No '3482' in pointed-to File
+
+   1110      THEOPHYLLINE 300MG CAP,ORAL,SA
+   1         7210                          No '7210' in pointed-to File
+
+   1112      AMPICILLIN 500MG/VIAL INJ
+   1         40                            No '40' in pointed-to File
+
+   1113      BETAXOLOL 20MG TAB,ORAL
+   1         6009                          No '6009' in pointed-to File
+
+   1117      ISOSORBIDE DINITRATE 20MG TAB,ORAL,SA
+   1         529                           No '529' in pointed-to File
+
+   1120      AMILORIDE 5MG/HCTZ 50MG TAB,ORAL
+   1         645                           No '645' in pointed-to File
+
+   1121      NITROGLYCERIN 0.4MG(10MG/24H) PATCH,TOP
+   1         792                           No '792' in pointed-to File
+
+   1122      FINASTERIDE 5MG TAB,ORAL
+   1         7306                          No '7306' in pointed-to File
+
+   1125      PROMETHAZINE 25MG/ML INJ
+   1         445                           No '445' in pointed-to File
+
+   1126      CEFACLOR 250MG CAP,ORAL
+   1         873                           No '873' in pointed-to File
+
+   1129      DIGOXIN 0.05MG/ML SOLN,ORAL
+   1         715                           No '715' in pointed-to File
+
+   1130      PROPRANOLOL HCL 1MG/ML INJ
+   1         5598                          No '5598' in pointed-to File
+
+   1132      HYDROCHLOROTHIAZIDE 25MG TAB,ORAL  
+   1         1394                          No '1394' in pointed-to File
+
+   1136      TOBRAMYCIN 0.3% SOLN,OPHT
+   1         3440                          No '3440' in pointed-to File
+
+   1137      TOBRAMYCIN 0.3% OINT,OPHT
+   1         1417                          No '1417' in pointed-to File
+
+   1138      CAPTOPRIL 25MG TAB,ORAL
+   1         1629                          No '1629' in pointed-to File
+
+   1144      CLONAZEPAM 0.5MG TAB,ORAL  
+   1         1024                          No '1024' in pointed-to File
+
+   1145      CLONAZEPAM 2MG TAB,ORAL
+   1         1025                          No '1025' in pointed-to File
+
+   1146      PHENOBARBITAL 60MG TAB,ORAL   
+   1         5991                          No '5991' in pointed-to File
+
+   1147      CEFOTAXIME SODIUM 1GM/VIAL INJ
+   1         3008                          No '3008' in pointed-to File
+
+   1150      BECLOMETHASONE DIPROP 50MCG INH,NASAL
+   1         6311                          No '6311' in pointed-to File
+
+   1151      BROMOCRIPTINE MESYLATE 2.5MG TAB,ORAL
+   1         5880                          No '5880' in pointed-to File
+
+   1152      ALPRAZOLAM 0.5MG TAB,ORAL
+   1         267                           No '267' in pointed-to File
+
+   1154      HYDROGEN PEROXIDE 6% SOLN,TOP 1000ML
+   1         1322                          No '1322' in pointed-to File
+
+   1156      TRETINOIN 0.05% CREAM,TOP
+   1         3397                          No '3397' in pointed-to File
+
+   1161      CROTAMITON 10% CREAM,TOP
+   1         5038                          No '5038' in pointed-to File
+
+   1162      CROTAMITON 10% LOTION,TOP
+   1         4882                          No '4882' in pointed-to File
+
+   1163      SODIUM BICARBONATE 8.4% INJ
+   1         89                            No '89' in pointed-to File
+
+   1167      HYDROCORTISONE ACETATE 1% CREAM,TOP
+   1         1511                          No '1511' in pointed-to File
+
+   1168      HYDROCORTISONE ACETATE 1% OINT,TOP
+   1         2751                          No '2751' in pointed-to File
+
+   1169      HYDROCORTISONE NA SUCC. 100MG/2ML INJ
+   1         215                           No '215' in pointed-to File
+
+   1170      FAMOTIDINE 40MG TAB,ORAL
+   1         3210                          No '3210' in pointed-to File
+
+   1171      VERAPAMIL HCL 240MG TAB,ORAL,SA
+   1         1080                          No '1080' in pointed-to File
+
+   1171      VERAPAMIL HCL 240MG TAB,ORAL,SA
+   2         7195                          No '7195' in pointed-to File
+
+   1172      ISOSORBIDE DINITRATE 40MG TAB,ORAL,SA
+   1         3241                          No '3241' in pointed-to File
+
+   1173      IPRATROPIUM 20MCG/PUFF INHALER,ORAL
+   1         672                           No '672' in pointed-to File
+
+   1174      AZATHIOPRINE 50MG TAB,ORAL 
+   1         312                           No '312' in pointed-to File
+
+   1175      AZTREONAM 1GM/VIAL INJ
+   1         1202                          No '1202' in pointed-to File
+
+   1176      MICONAZOLE NITRATE 2% CREAM,VAG 20GM
+   1         4183                          No '4183' in pointed-to File
+
+   1179      CIPROFLOXACIN HCL 500MG TAB,ORAL
+   1         1084                          No '1084' in pointed-to File
+
+   1180      PHENYTOIN NA 50MG/ML INJ
+   1         84                            No '84' in pointed-to File
+
+   1181      FLUOXETINE HCL 20MG CAP,ORAL
+   1         903                           No '903' in pointed-to File
+
+   1182      ENALAPRIL MALEATE 20MG TAB,ORAL
+   1         661                           No '661' in pointed-to File
+
+   1185      RANITIDINE HCL 25MG/ML INJ
+   1         3736                          No '3736' in pointed-to File
+
+   1186      CARBAMAZEPINE 100MG/5ML SUSP (2% 250ML)
+   1         741                           No '741' in pointed-to File
+
+   1188      FUROSEMIDE 10MG/ML SOLN,ORAL 60ML
+   1         1161                          No '1161' in pointed-to File
+
+   1190      UREA 10% LOTION,TOP 
+   1         1012                          No '1012' in pointed-to File
+
+   1192      CILASTIN 500MG/IMIPENEM 500MG/VIAL INJ
+   1         651                           No '651' in pointed-to File
+
+   1194      HEPARIN NA 1000UNIT/ML INJ 1ML
+   1         1155                          No '1155' in pointed-to File
+
+   1195      RANITIDINE HCL 150MG TAB,ORAL
+   1         1647                          No '1647' in pointed-to File
+
+   1196      DICLOFENAC SODIUM 50MG TAB,ORAL,EC
+   1         3539                          No '3539' in pointed-to File
+
+   1198      CYCLOSPORINE 100MG/ML SOLN,ORAL
+   1         1143                          No '1143' in pointed-to File
+
+   1199      HALOPERIDOL DECANOATE 100MG/ML INJ
+   1         4722                          No '4722' in pointed-to File
+
+   1201      AMOXICILLIN 500/CLAVULANATE 125 TAB,ORAL
+   1         36                            No '36' in pointed-to File
+
+   1202      CYCLOPENTOLATE HCL 1% SOLN,OPHT
+   1         1406                          No '1406' in pointed-to File
+
+   1203      CALCIUM CARBONATE 500MG TAB,ORAL
+   1         5577                          No '5577' in pointed-to File
+
+   1208      PENTOXIFYLLINE 400MG TAB,ORAL,SA
+   1         1651                          No '1651' in pointed-to File
+
+   1211      PENICILLIN G BENZATHINE 1.2 MIL UNIT INJ
+   1         520                           No '520' in pointed-to File
+
+   1212      AMOXICILLIN 250/CLAVULANATE 125 TAB,ORAL
+   1         34                            No '34' in pointed-to File
+
+   1214      AMOXICILLIN/CLAVULANATE 250MG/5ML SUSP
+   1         1370                          No '1370' in pointed-to File
+
+   1215      DIAZEPAM 10MG/2ML INJ
+   1         939                           No '939' in pointed-to File
+
+   1216      GRISEOFULVIN 125MG/5ML SUSP,ORAL
+   1         1184                          No '1184' in pointed-to File
+
+   1218      CEFTRIAXONE SODIUM 1GM/VIAL INJ
+   1         1034                          No '1034' in pointed-to File
+
+   1219      ACYCLOVIR 250MG/VIAL INJ
+   1         733                           No '733' in pointed-to File
+
+   1220      EPHEDRINE 30MG/ML INJ
+   1         881                           No '881' in pointed-to File
+
+   1221      MEPERIDINE HCL 50MG/ML INJ
+   1         3154                          No '3154' in pointed-to File
+
+   1222      MEPERIDINE HCL 100MG/ML INJ 
+   1         1162                          No '1162' in pointed-to File
+
+   1227      BETAXOLOL HCL 0.5% SOLN,OPHT
+   1         1405                          No '1405' in pointed-to File
+
+   1228      GEMFIBROZIL 600MG TAB,ORAL
+   1         4564                          No '4564' in pointed-to File
+
+   1229      ENALAPRIL MALEATE 5MG TAB,ORAL
+   1         1673                          No '1673' in pointed-to File
+
+   1232      HALOPERIDOL DECANOATE 50MG/ML INJ
+   1         213                           No '213' in pointed-to File
+
+   1233      ACETAZOLAMIDE 250MG TAB,ORAL
+   1         938                           No '938' in pointed-to File
+
+   1234      AMIODARONE HCL 200MG TAB,ORAL
+   1         4764                          No '4764' in pointed-to File
+
+   1235      OMEPRAZOLE 20MG CAP,ORAL,EC
+   1         4924                          No '4924' in pointed-to File
+
+   1238      CALCIUM CHLORIDE 100MG/10ML (10%) INJ
+   1         5056                          No '5056' in pointed-to File
+
+   1242      EPOETIN ALFA RECOMBINANT 2000U/ML INJ
+   1         6231                          No '6231' in pointed-to File
+
+   1244      TERAZOSIN 5MG TAB,ORAL
+   1         6492                          No '6492' in pointed-to File
+
+   1245      FOSINOPRIL SODIUM 10MG TAB,ORAL
+   1         7124                          No '7124' in pointed-to File
+
+   1246      FENTANYL TRANSDERM 25MCG/HR PATCH,TOP
+   1         7109                          No '7109' in pointed-to File
+
+   1247      CLOZAPINE 25MG TAB,ORAL
+   1         7111                          No '7111' in pointed-to File
+
+   1248      CLOZAPINE 100MG TAB,ORAL
+   1         7110                          No '7110' in pointed-to File
+
+   1250      FENTANYL TRANSDERM 50MCG/HR PATCH,TOP
+   1         7171                          No '7171' in pointed-to File
+
+   STORE THESE ENTRY ID'S IN TEMPLATE: 
+
