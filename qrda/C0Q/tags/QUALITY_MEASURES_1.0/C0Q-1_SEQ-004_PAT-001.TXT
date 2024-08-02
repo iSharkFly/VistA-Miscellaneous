@@ -1,0 +1,472 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: SEP 17, 2012                      Designation: C0Q*1*1  TEST v
+Package : QUALITY MEASURES                  Priority   : MANDATORY
+Version : 1                                 Status     : UNDER DEVELOPMENT
+=============================================================================
+
+Subject:  E-Rx MU Measures
+
+Category:  ROUTINE
+           ENHANCEMENT
+
+Description:
+===========
+ 
+ Source, Copyright, & Licensing:
+ ===============================
+ This patch to WorldVistA 2.0 was produced by George Lilly on 14 June 2012
+and released through VISTA Forum.
+ 
+ Copyright: Build documentation and C0QMUERX routine (c) George Lilly
+2012.
+ 
+ License: Package C0Q has license of GPL 2.0.
+ 
+ Functionality:
+ ==============
+DESCRIPTION:
+Addition of ePrescribing MU measure and code to support it. 
+ 
+Dependencies:
+This build needs C0P*1*4 for the new WebService entry that gets MU 
+data from New Crop. It's not a technical dependency; the code will 
+function without it, but it won't perform ERx calculations.
+This build requires the base C0Q 1.0 to be installed.
+ 
+This build performs the following:
+Routines:
+1. Adds routine C0QMUERX for calculation of ePrescribing stats.
+2. Mods routine C0QMU12 to call C0QMUERX for the ERX measure for 
+Outpatients.
+3. Mods routine C0QUPDT to handle the special case of ePrescribing stats.
+Also, some checks and quits so that we won't crash if no patient lists
+are associated with a measure (general bug fix).
+ 
+ Support Tickets:
+ <None>
+ 
+ Package Elements:
+ =================
+Data Dictionary:
+1. File C0Q PARAMETER has two new indexes (used by ERXCOUNT^C0QUPDT)
+  AMMS    REGULAR
+            Field:  EP MU MEASUREMENT SET  (1130580001.401,2)
+      Description:  Indexes the IEN of the Measurement Set. Used so that we can
+                    walk back to a parameter when processing a specific IEN.  
+                     
+                    You can get the IEN of the measurement set using 
+                    $O(^C0Q(401,"AMMS",MSIEN,"")).  
+                    1)= S ^C0Q(401,"AMMS",$E(X,1,30),DA)=""
+                    2)= K ^C0Q(401,"AMMS",$E(X,1,30),DA)
+                    3)= USED BY THE CODE. SEE DESCRIPTION.
+ 
+  AQMS    REGULAR
+            Field:  EP QUALITY MEASUREMENT SET  (1130580001.401,2.1)
+      Description:  Indexes the IEN of the Measurement Set. Used so that we can
+                    walk back to a parameter when processing a specific IEN.  
+                     
+                    You can get the IEN of the measurement set using 
+                    $O(^C0Q(401,"AQMS",MSIEN,"")).  
+                    1)= S ^C0Q(401,"AQMS",$E(X,1,30),DA)=""
+                    2)= K ^C0Q(401,"AQMS",$E(X,1,30),DA)
+                    3)= USED BY THE CODE. SEE DESCRIPTION.
+ 
+2. File C0Q QUALITY MEASURE has a new field, MEASURE TYPE (#4) used by 
+UPDATE^C0QUPDT
+ 
+1130580001.101,4MEASURE TYPE         0;5 SET
+ 
+                                'P' FOR Performance; 
+                                'Q' FOR Quality; 
+                                'E' FOR Electronic Prescribing Performance; 
+              LAST EDITED:      MAY 30, 2012 
+              HELP-PROMPT:      Enter a code P, Q or E 
+              DESCRIPTION:      This field designates the measure type. It can
+                                be P, Q or M.  
+                                 
+                                P is for Performance. Performance measures are
+                                MU measures to measure how meaningfully used an
+                                EMR is. An example of a performance measure is
+                                whether allergies are documented in the EMR.
+                                Performance measures reference a Patient List
+                                created by this package.  
+                                 
+                                Q is for Quality Measures. Quality measures are
+                                MU measures to assess how well the patients are
+                                cared for. An example of a quality measure is 
+                                whether Hemoglobin A1c Poor Control. Quality
+                                measures reference Patient Lists in the
+                                Reminders package.  
+                                 
+                                E is for Electronic Prescribing. This is a
+                                Performance measure, except that it is handled
+                                differently than the rest. Instead of the
+                                numerators and denominators being lists of
+                                patients as with all the other measurements,
+                                they are a number of prescriptions. That's why
+                                we have a special flag for it. It references a
+                                Patient List created by this package. The
+                                numerator and denominators are stored in
+                                subfiles for each patient.  
+ 
+              TECHNICAL DESCR:  As of version C0P*1.0*1, the software doesn't
+                                use this field except to check for an
+                                electronic prescribing type (code E).  
+                                 
+                                I anticipate using this field for other
+                                purposes in the future.
+ 
+DATA:
+The entry MU EP ERX for processing ePrescribing stats in C0Q QUALITY 
+MEASURE is sent to destination sites. This entry has MEASURE TYPE set to 
+E so that it is processed by the routine UPDATE^C0QUPDT.
+ 
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+ 
+1130580001.101C0Q QUALITY MEASURE          YES   YES   YES     OVER  NO    NO
+  DATA SCREEN: I $P(^(0),U)="MU EP ERX"
+ 
+1130580001.401C0Q PARAMETER                YES   NO    NO                  NO
+Partial DD: subDD: 1130580001.401fld: 2
+                              fld: 2.1
+ 
+INPUT TEMPLATE:
+C0Q EDIT MU MEASURE adds the new field MEASURE TYPE mentioned above to 
+allow editing of measures
+ 
+INPUT TEMPLATE:                                ACTION:
+   C0Q EDIT MU MEASURE    FILE #1130580001.101    SEND TO SITE
+ 
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+POST-INIT ROUTINE: POST^C0Q1P1              DELETE POST-INIT ROUTINE: No
+PRE-TRANSPORT RTN: 
+ 
+ 
+ROUTINE:                                       ACTION:
+   C0QMU12                                        SEND TO SITE
+   C0QMUERX                                       SEND TO SITE
+   C0QUPDT                                        SEND TO SITE
+ 
+INSTALL QUESTIONS: 
+ 
+ Default Rebuild Menu Trees Upon Completion of Install: NO
+ Default INHIBIT LOGONs during the install: NO
+ Default DISABLE Scheduled Options, Menu Options, and Protocols: NO
+ 
+REQUIRED BUILDS:                               ACTION:
+   QUALITY MEASURES 1.0                        Don't install, leave global
+ 
+ Documentation:
+ ==============
+ <None at this moment>
+ 
+ Test Sites:
+ ===========
+ <None at this moment>
+ Tested by George Lilly on smart2 (dEWDrop) environment
+ 
+ Compliance:
+ ===========
+ Complies with the SACC. One routine has a code size or 15076,
+and fails the code size check.
+ 
+ Installation Instructions:
+ ==========================
+ Install Time - less than 1 minute
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0Q*1.0*1):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0Q*1.0*1" at the INSTALL NAME prompt.
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+ The post installation routine POST^C0Q1P1 will perform the following
+tasks:
+1. Re-index C0P PARAMETERS file fields EP MU MEASUREMENT SET  
+(1130580001.401,2) and EP QUALITY MEASUREMENT SET  (1130580001.401,2.1) 
+to make the AMMS and AQMS indeces respectively.
+ 
+ Post-installation instructions
+ ==============================
+1. If you don't have New Crop eRx installed, there won't be any effects.
+The C0Q code will behave like before.
+2. If you don't have C0P*1.0*4 installed, again, the C0Q code will behave 
+as before the patch.
+3. Once you install C0P*1.0*4 with this patch (C0Q*1.0*1), the code will 
+loop through all Outpatients who have an ERx. The actual patients are 
+determined via your outpatient parameters. If your parameters reference a
+clinic location that already has patients with ERxs, you don't need to do
+anything to make the code run. It will run automatically; and it's time 
+consuming; before you run it though, make sure to do #4.
+4. In order for you to see a print out of the eRx measures, you
+need to add the Measure MU EP ERX to the Measure Set used in the EP MU
+MEASUREMENT SET field in your Outpatient Parameters. You must do this 
+before you run this for the first time.
+ 
+Example of Set-up:
+ 
+Select QUALITY MEASUREMENT MENU Option: ?
+ 
+          COPY OVER PATIENT LISTS
+          ED-1 COMPUTATION
+          ED-2 COMPUTATION
+          EP UPDATE MU MEASURES
+          INP UPDATE MU MEASURES
+          PQRI MENU ...
+          PQRI PRINT XML
+          PRINT C0Q MEASURES
+          QRDA MENU ...
+          SETUP QUALITY REPORTING ...
+ 
+Enter ?? for more options, ??? for brief descriptions, ?OPTION for help 
+text.
+ 
+Select QUALITY MEASUREMENT MENU Option: setUP QUALITY REPORTING
+ 
+Select SETUP QUALITY REPORTING Option: ?
+ 
+          DISPLAY QUALITY MEASURES
+          EDIT SUPERUSERS
+          EP EDIT PARMS
+          INP EDIT PARMS
+          MEASURE SET EDIT
+          MU MEASURE EDIT
+          QUALITY MEASURE EDIT
+ 
+Enter ?? for more options, ??? for brief descriptions, ?OPTION for help 
+text.
+ 
+Select SETUP QUALITY REPORTING Option: ep edit PARMS
+ 
+Select C0Q PARAMETER NAME:    OUTPATIENT
+NAME: OUTPATIENT// 
+MEASUREMENT PERIOD KEY: MU12// 
+PARAMETER TYPE: OUTPATIENT// 
+EP MU MEASUREMENT SET: OUTPATIENT MEASURE SET// 
+EP QUALITY MEASUREMENT SET: 
+Select CLINIC: DR OFFICE// 
+PATIENT LIST LABEL: 
+Select SUBSCRIBER: 
+ 
+Select C0Q PARAMETER NAME: 
+ 
+Select SETUP QUALITY REPORTING Option: measure set EDIT
+ 
+Select C0Q MEASUREMENT SET NAME: outpaTIENT MEASURE SET  
+NAME: OUTPATIENT MEASURE SET  Replace 
+BEGIN DATE: JUN 12,2001// 
+END DATE: MAY 25,2012// 
+LOCKED: 
+MU YEAR KEY: MU12// 
+QRDA TEMPLATE ROOT: 
+Select MEASURE: MU EP ERX//  
+  MEASURE: MU EP ERX// 
+  NUMERATOR FILTER LIST: 
+  DENOMINATOR FILTER LIST: 
+Select MEASURE: 
+ 
+Select C0Q MEASUREMENT SET NAME: 
+ 
+Select SETUP QUALITY REPORTING Option: 
+ 
+Select QUALITY MEASUREMENT MENU Option: ?
+ 
+          COPY OVER PATIENT LISTS
+          ED-1 COMPUTATION
+          ED-2 COMPUTATION
+          EP UPDATE MU MEASURES
+          INP UPDATE MU MEASURES
+          PQRI MENU ...
+          PQRI PRINT XML
+          PRINT C0Q MEASURES
+          QRDA MENU ...
+          SETUP QUALITY REPORTING ...
+ 
+Enter ?? for more options, ??? for brief descriptions, ?OPTION for help 
+text.
+ 
+Select QUALITY MEASUREMENT MENU Option: ep updATE MU MEASURES
+Sep 16, 2012@86:54:61
+Jan 03, 2008@80:85:41
+Jan 01, 2008@81:59:42
+Nov 25, 2005@86:89:76
+Nov 25, 2005@85:87:58
+Nov 24, 2005@79:68:87
+Aug 01, 2005@91:59:64
+Aug 2005@84:91:51
+Aug 2005@84:78:82
+Jul 28, 2005@88:55:64
+Jul 28, 2005@88:46:85
+Jul 28, 2005@87:95:55
+Jul 27, 2005@87:79:80
+Jul 27, 2005@83:83:97
+Jul 26, 2005@88:78:96
+Jul 26, 2005@88:75:45
+Jul 26, 2005@88:58:60
+Jul 26, 2005@88:52:62
+Jul 26, 2005@88:50:59
+Jul 26, 2005@88:49:74
+Jul 26, 2005@84:54:55
+Jul 24, 2005@91:62:76
+Jul 23, 2005@88:98:45
+Jul 23, 2005@85:77:89
+Jul 23, 2005@83:77:71
+Jul 23, 2005@82:82:99
+Jul 23, 2005@82:66:61
+Jul 22, 2005@83:85:46
+Jul 22, 2005@82:82:92
+Jul 22, 2005@82:75:99
+Jul 21, 2005@89:50:71
+Jul 21, 2005@83:53:48
+Jul 20, 2005@91:43:44
+Jul 20, 2005@87:89:46
+Jul 20, 2005@84:60:78
+Jul 20, 2005@84:60:71
+Jul 19, 2005@89:92:54
+Jul 19, 2005@89:55:97
+Jul 18, 2005@92:58:51
+Jul 18, 2005@91:47:87
+Jul 18, 2005@88:67:86
+Jul 18, 2005@88:63:92
+Jul 18, 2005@86:64:88
+Jul 18, 2005@84:56:82
+Jul 18, 2005@84:45:52
+Jul 17, 2005@82:42:51
+Jul 14, 2005@84:00
+Jul 07, 2005@86:97
+Jul 2005@85:62:77B index passed
+4 
+Calling GETMEDS6 SOAP Web Service Call for 4
+Patient 4 Rx 1
+DeaClassCode: 0
+PharmacyType: 1
+PharmacyDetailType: 1
+FinalDestinationType: 2
+FinalStatusType: 2
+Patient 4 Rx 2
+DeaClassCode: 0
+PharmacyType: 0
+Patient 4 Rx 3
+DeaClassCode: 0
+PharmacyType: 1
+PharmacyDetailType: 1
+FinalDestinationType: 2
+FinalStatusType: 2
+Patient 4 Rx 4
+DeaClassCode: 0
+PharmacyType: 0
+IENs ?+14,1,17, ready to file
+Saving ERXDEN of 0 for Patient MOUSE,MICKEY (4)
+Fileman Data Array
+C0QFDA(1130580001.3111,"?+14,1,17,",.01): ERXDEN
+C0QFDA(1130580001.3111,"?+14,1,17,",.02): 0
+Patient 4 Rx 1
+DeaClassCode: 0
+PharmacyType: 1
+PharmacyDetailType: 1
+FinalDestinationType: 2
+Patient 4 Rx 2
+DeaClassCode: 0
+PharmacyType: 0
+Patient 4 Rx 3
+DeaClassCode: 0
+PharmacyType: 1
+PharmacyDetailType: 1
+FinalDestinationType: 2
+Patient 4 Rx 4
+DeaClassCode: 0
+PharmacyType: 0
+IENs ?+14,1,17, ready to file
+Saving ERXNUM of 0 for Patient MOUSE,MICKEY (4)
+Fileman Data Array
+C0QFDA(1130580001.3111,"?+14,1,17,",.01): ERXNUM
+C0QFDA(1130580001.3111,"?+14,1,17,",.02): 0
+C0QFDA(1130580001.2011,"1,7,",3)=100
+Processing E-Prescribing Counts
+DFN                 Denominator         Numerator
+4                   0                   0
+                    ===                 ===
+                    0                   0
+
+
+Routine Information:
+====================
+
+
+The second line of each of these routines now looks like:
+ ;;1.0;QUALITY MEASURES;**[Patch List]**;May 21, 2012;Build 33
+
+The checksums below are new checksums, and
+ can be checked with CHECK1^XTSUMBLD.
+
+Routine Name: C0Q1P1
+    Before:       n/a   After:   B541473  **1**
+Routine Name: C0QMU12
+    Before:       n/a   After:B266254568  **1**
+Routine Name: C0QMUERX
+    Before:       n/a   After: B83723794  **1**
+Routine Name: C0QUPDT
+    Before:       n/a   After: B78393601  **1**
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   JUN 11,2012
+  Completed By:   LILLY,GEORGE         Date Completed:   JUN 14,2012
+  Released By :                        Date Released :   
+=============================================================================

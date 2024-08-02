@@ -1,0 +1,201 @@
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: YES
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+
+ Summary
+ ======= 
+ This build contains the Quality Measures file (#1130580001.101) fully
+ populated with the Reminder Rule Sets and if applicable Reminder Extract 
+ definitions for use with the Quality Measures package for reporting for
+ Meaningful use Stage I. 
+ 
+ Source, Copyright, & Licensing:
+ ===============================
+ This patch to WorldVistA 2.0 was produced by Sam Habiel on a copy of Dew 
+Drop and tested on a virgin instance of WV EHR 3-09 patched with PXRM 2.0
+patches 12 and 17. The build was produced in July 2012.
+ Copyright WorldVistA 2012.
+ Licensed under GPL version 2 or later. Find it here: 
+http://www.gnu.org/licenses/gpl-2.0.html
+ Released through VISTA Forum.
+ 
+ Functionality:
+ ==============
+ This patch is a pure data patch. It only installs reference data in the C0Q
+ QUALITY MEASURE file (#1130580001.101). It relies on Reminder Package data
+ (specifically rule sets and extracts) sent in C0Q*1.0*2.
+        
+ Package Elements:
+ =================
+ This build transports entries in the C0Q QUALITY MEASURE file.
+ 
+ Routines:
+ =========
+ <None>
+
+ Documentation:
+ <None besides this KIDS description>
+ 
+ Test Sites:
+ ===========
+ <None>
+ 
+ Compliance:
+ ===========
+ This software complies with the VA MUMPS Programming Standards and
+ Conventions (version 3 April 2007).
+ 
+ Installation Instructions:
+ ==========================
+ Pre-installation:
+ 
+ Prerequisite patches: (both found on the trac server here:
+ https://trac.opensourcevista.net/svn/qrda/C0Q/trunk/kids/)
+  C0Q*1.0*2
+  QUALITY MEASURES 1.0
+ 
+ Users can remain on the system while this patch is installed.
+ 
+ Install Time - less than 1 minute.
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build, or 
+     Use the Load a Distribution option in KIDS to load it from a 
+     host file.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0Q*1.0*3):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0Q*1.0*3" at the INSTALL NAME prompt.
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+ 
+Here is an example installation log.
+Select INSTALL NAME: C0Q*1.0*3       Loaded from Distribution     Loaded from Di
+stribution  8/3/12@16:32:30
+     => SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+
+This Distribution was loaded on Aug 03, 2012@16:32:30 with header of 
+   SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+   It consisted of the following Install(s):
+      C0Q*1.0*3
+
+   Checking C0Q*1.0*3 for overlap with VOE 1.0 . OK
+            No overlap found
+
+
+   Checking C0Q*1.0*3 for overlap with VOE 1.1 . OK
+            No overlap found
+
+
+   Checking C0Q*1.0*3 for overlap with NO HOME 1.0 . OK
+            No overlap found
+
+Checking Install for Package C0Q*1.0*3
+
+Install Questions for C0Q*1.0*3
+
+Incoming Files:
+
+
+   1130580001.101C0Q QUALITY MEASURE  (including data)
+Note:  You already have the 'C0Q QUALITY MEASURE' File.
+I will OVERWRITE your data with mine.
+
+
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+
+DEVICE: HOME// PHOME  HOME PRINTER
+
+ 
+ Install Started for C0Q*1.0*3 : 
+               Aug 03, 2012@16:35:24
+ 
+Build Distribution Date: Aug 03, 2012
+ 
+ Installing Routines:.
+               Aug 03, 2012@16:35:24
+ 
+ Installing Data Dictionaries: ..
+               Aug 03, 2012@16:35:24
+ 
+ Installing Data: 
+               Aug 03, 2012@16:35:24
+ 
+ Updating Routine file.....
+ 
+ Updating KIDS files.......
+ 
+ C0Q*1.0*3 Installed. 
+               Aug 03, 2012@16:35:24
+ 
+ Not a VA primary domain
+ 
+ NO Install Message sent 
+
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+POST-INIT ROUTINE:                         DELETE POST-INIT ROUTINE: 
+PRE-TRANSPORT RTN: 
+
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+
+1130580001.101C0Q QUALITY MEASURE          YES   YES   YES     OVER  YES   NO
+
+REQUIRED BUILDS:                               ACTION:
+   C0Q*1.0*2                                      Don't install, leave global
+   QUALITY MEASURES 1.0                           Don't install, leave global

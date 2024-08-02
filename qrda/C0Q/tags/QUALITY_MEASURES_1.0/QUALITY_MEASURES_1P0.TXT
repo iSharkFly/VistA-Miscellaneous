@@ -1,0 +1,244 @@
+Build Manifest
+
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: NO
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+
+DESCRIPTION:
+The C0Q Quality Reporting Package is a mumps-based addition to VistA for 
+reporting Meaningful Use and Quality Measurements. The package supports 
+both inpatient and outpatient reporting, and computes the Meaningful Use 
+measures from patient records. For Quality Measurements, the reporting 
+package relies on the VistA Reminders Patient Lists as the source for its 
+reporting. 
+ 
+Installation and Use instructions can be found here:
+http://vistapedia.net/index.php?title=C0Q_Quality_Reporting_1.0
+
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+ PRE-INIT ROUTINE: PRE^C0QKIDS              DELETE PRE-INIT ROUTINE: No
+POST-INIT ROUTINE: POST^C0QKIDS            DELETE POST-INIT ROUTINE: No
+PRE-TRANSPORT RTN: TRAN^C0QKIDS
+
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+
+178.301     C0C XML MISC                   YES   YES   YES     OVER  NO    NO
+
+1130580001.101C0Q QUALITY MEASURE          YES   YES   YES     REPL  NO    NO
+
+1130580001.201C0Q MEASUREMENTS             YES   YES   NO                  
+
+1130580001.301C0Q PATIENT LIST             YES   YES   NO                  
+
+1130580001.401C0Q PARAMETER                YES   YES   NO                  
+
+PRINT TEMPLATE:                                ACTION:
+   C0Q EP SETUP    FILE #1130580001.201           SEND TO SITE
+   C0Q HOS MEASURES    FILE #1130580001.201       SEND TO SITE
+   C0Q MEASUREMENT REPORT    FILE #1130580001.201 SEND TO SITE
+   C0Q PRINT BY PATIENT    FILE #1130580001.201   SEND TO SITE
+   C0Q PRINT MEASUREMENT SET    FILE #1130580001.201SEND TO SITE
+   C0Q PRINT QUALITY MEASURES    FILE #1130580001.101SEND TO SITE
+
+INPUT TEMPLATE:                                ACTION:
+   C0Q EDIT INPATIENT PARMS    FILE #1130580001.401SEND TO SITE
+   C0Q EDIT MEASURE SET    FILE #1130580001.201   SEND TO SITE
+   C0Q EDIT MU MEASURE    FILE #1130580001.101    SEND TO SITE
+   C0Q EDIT OUPATIENT PARMS    FILE #1130580001.401SEND TO SITE
+   C0Q EDIT QUALITY MEASURE    FILE #1130580001.101SEND TO SITE
+   C0Q EDIT SUPERUSERS    FILE #1130580001.401    SEND TO SITE
+   C0Q MEASUREMENT SET DEFINE    FILE #1130580001.201SEND TO SITE
+
+ROUTINE:                                       ACTION:
+   C0QERTIM                                       SEND TO SITE
+   C0QGMRAD                                       SEND TO SITE
+   C0QGMTSA                                       SEND TO SITE
+   C0QGMTSG                                       SEND TO SITE
+   C0QHF                                          SEND TO SITE
+   C0QIMMUN                                       SEND TO SITE
+   C0QINIT                                        SEND TO SITE
+   C0QMAIN                                        SEND TO SITE
+   C0QMU12                                        SEND TO SITE
+   C0QMU121                                       SEND TO SITE
+   C0QMU122                                       SEND TO SITE
+   C0QNOTES                                       SEND TO SITE
+   C0QPQRI                                        SEND TO SITE
+   C0QSET                                         SEND TO SITE
+   C0QUPDT                                        SEND TO SITE
+   C0QUTIL                                        SEND TO SITE
+
+OPTION:                                        ACTION:
+   C0Q BY PATIENT NUMERATOR                       SEND TO SITE
+   C0Q COPY PATIENT LISTS                         SEND TO SITE
+   C0Q DENOMINATOR PATIENT LIST                   SEND TO SITE
+   C0Q DISPLAY QUALITY MEASURES                   SEND TO SITE
+   C0Q ED1 COMPUTATION                            SEND TO SITE
+   C0Q ED2 COMPUTATION                            SEND TO SITE
+   C0Q EDIT INP PARMS                             SEND TO SITE
+   C0Q EDIT MEASURE SET                           SEND TO SITE
+   C0Q EDIT MU MEASURE                            SEND TO SITE
+   C0Q EDIT OUTPATIENT PARMS                      SEND TO SITE
+   C0Q EDIT QUALITY MEASURE                       SEND TO SITE
+   C0Q EDIT SUPERUSERS                            SEND TO SITE
+   C0Q EP UPDATE MU MEASURES                      SEND TO SITE
+   C0Q EXPORT CCR BY MEASURE                      SEND TO SITE
+   C0Q EXPORT MEASURE SET                         SEND TO SITE
+   C0Q INP UPDATE MU MEASURES                     SEND TO SITE
+   C0Q LIST MEASURE SET                           SEND TO SITE
+   C0Q PQRI MENU                                  SEND TO SITE
+   C0Q PRINT MEASURES                             SEND TO SITE
+   C0Q PRINT PQRI XML                             SEND TO SITE
+   C0Q QUALITY MEASUREMENT MENU                   SEND TO SITE
+   C0Q SETUP QUALITY REPORTING                    SEND TO SITE
+   C0Q UPDATE QUALITY MEASUREMENT                 SEND TO SITE
+
+INSTALL QUESTIONS: 
+
+ Default Rebuild Menu Trees Upon Completion of Install: YES
+
+REQUIRED BUILDS:                               ACTION:
+   CCD/CCR GENERATION UTILITIES 1.2               Don't install, leave global
+
+
+Install transcript:
+
+Select Installation Option: 1  Load a Distribution
+Enter a Host File: QUALITY_MEASURES_1P0.KID
+
+KIDS Distribution saved on Jul 31, 2012@17:18:02
+Comment: QUALITY MEASURES 1.0 T12
+
+This Distribution contains Transport Globals for the following Package(s):
+   QUALITY MEASURES 1.0
+Distribution OK!
+
+Want to Continue with Load? YES// 
+Loading Distribution...
+
+   QUALITY MEASURES 1.0
+Use INSTALL NAME: QUALITY MEASURES 1.0 to install this Distribution.
+
+
+Select Installation Option: 6  Install Package(s)
+Select INSTALL NAME: qui ??
+
+Select INSTALL NAME: quaLITY MEASURES 1.0       Loaded from Distribution     Loa
+ded from Distribution  10/2/12@15:44:27
+     => QUALITY MEASURES 1.0 T12  ;Created on Jul 31, 2012@17:18:02
+
+This Distribution was loaded on Oct 02, 2012@15:44:27 with header of 
+   QUALITY MEASURES 1.0 T12  ;Created on Jul 31, 2012@17:18:02
+   It consisted of the following Install(s):
+QUALITY MEASURES 1.0
+
+   Checking QUALITY MEASURES 1.0 for overlap with VOE 1.0 ..... OK
+            No overlap found
+
+
+   Checking QUALITY MEASURES 1.0 for overlap with VOE 1.1 ..... OK
+            No overlap found
+
+
+   Checking QUALITY MEASURES 1.0 for overlap with NO HOME 1.0 ..... OK
+            No overlap found
+
+Checking Install for Package QUALITY MEASURES 1.0
+
+Install Questions for QUALITY MEASURES 1.0
+
+Incoming Files:
+
+
+   178.301   C0C XML MISC  (including data)
+Note:  You already have the 'C0C XML MISC' File.
+I will OVERWRITE your data with mine.
+
+
+   1130580001.101C0Q QUALITY MEASURE  (including data)
+
+
+   1130580001.201C0Q MEASUREMENTS
+
+
+   1130580001.301C0Q PATIENT LIST
+
+
+   1130580001.401C0Q PARAMETER
+
+Want KIDS to Rebuild Menu Trees Upon Completion of Install? YES// 
+
+
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+
+DEVICE: HOME// phome  HOME PRINTER
+
+ 
+ Install Started for QUALITY MEASURES 1.0 : 
+               Oct 02, 2012@15:44:40
+ 
+Build Distribution Date: Jul 31, 2012
+ 
+ Installing Routines:..................
+               Oct 02, 2012@15:44:41
+ 
+ Running Pre-Install Routine: PRE^C0QKIDS.
+ 
+ Installing Data Dictionaries: ......
+               Oct 02, 2012@15:44:41
+ 
+ Installing Data: 
+               Oct 02, 2012@15:44:41
+ 
+ Installing PACKAGE COMPONENTS: 
+ 
+ Installing PRINT TEMPLATE.......
+ 
+ Installing INPUT TEMPLATE........
+ 
+ Installing OPTION........................
+               Oct 02, 2012@15:44:42
+ 
+ Running Post-Install Routine: POST^C0QKIDS.
+Adding data to C0Q MEASUREMENTS
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.......
+ 
+ QUALITY MEASURES 1.0 Installed. 
+               Oct 02, 2012@15:44:42
+ 
+ NO Install Message sent 
+ 
+ Call MENU rebuild
+
+Starting Menu Rebuild:  Oct 02, 2012@15:44:44
+
+Collecting primary menus in the New Person file...
+
+                    Primary menus found in the New Person file
+                    ------------------------------------------
+
+OPTION NAME         MENU TEXT                    # OF         LAST     LAST
+                                                 USERS        USED     BUILT
+
+EVE                 Systems Manager Menu         14         10/02/12   08/31/11
+XUCORE              Core Applications            2          09/02/05   08/31/11
+XMUSER              MailMan Menu                 1          12/19/05   08/31/11
+DGZ REGISTRATION MENU
+                    EHR Registration Menu        40         04/09/12   08/31/11
+XUZEVE              STARTUP FUNCTIONS            1          11/16/05   08/31/11
+
+Building secondary menu trees....
+
+Merging.... done.
+
+Menu Rebuild Complete:  Oct 02, 2012@15:44:46
+

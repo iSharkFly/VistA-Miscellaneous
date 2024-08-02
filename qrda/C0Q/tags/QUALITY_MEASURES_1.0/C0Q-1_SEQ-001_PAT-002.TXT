@@ -1,0 +1,336 @@
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: YES
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+
+DESCRIPTION:
+ Summary
+ ======= 
+ This build contains the reminder rules and extracts for use with the
+Quality Measures package for reporting for Meaningful use Stage I. It 
+also installs reminder dialogs for use in populating data for some of the 
+Outpatient Measures.
+ 
+ Source, Copyright, & Licensing:
+ ===============================
+ This patch to WorldVistA 2.0 was produced by Sam Habiel on a copy of Dew 
+Drop and tested on a virgin instance of WV EHR 3-09 patched with PXRM 2.0
+patches 12 and 17. The build was produced in July 2012.
+ Copyright WorldVistA 2012.
+ Licensed under GPL version 2 or later. Find it here: 
+http://www.gnu.org/licenses/gpl-2.0.html
+ Released through VISTA Forum.
+ 
+ Functionality:
+ ==============
+ This patch installs the following reminder rules and selectively extracts
+for these Meaningful Use Stage I measure. 
+        
+ NQF 0024-alt-core_wt-kids
+ NQF 0013-core-HTN
+ NQF 0028a-core-tobacco-access
+ NQF 0028b-core-tobaocc-intervention
+ NQF 0041-alt-core-flu
+ NQF 0059-option1-DM-Hbalc
+ NQF 0061-option3-DM-BP
+ NQF 0064-option2-DM-LDL
+ NQF 0495 (Education 1 for Inpatient)
+ NQF 0497 (Education 2 for Inpatient)
+ MU Inpatient Stroke Measures (contains labs)
+ - NQF 0435
+ - NQF 0436
+ - NQF 0437
+ - NQF 0438
+ - NQF 0439
+ - NQF 0440
+ - NQF 0441
+ MU Inpatient Venous Thombotic Embolism Measures (contains labs)
+ - NQF 0371
+ - NQF 0372
+ - NQF 0373
+ - NQF 0374
+ - NQF 0375
+ - NQF 0376
+ - NQF 0421-core-adult-weight (contains reminder extracts)
+ - NQF 0038-alt-core-childImms (contains reminder extracts)
+ 
+In addition, the following CPRS dialogs are sent in this patch.
+ - MU NQF0421 BMI DI
+ - MU NQF0041 INFLUENZA MANAGEMENT DI
+ - MU NQF0038 IMMUNE MANAGEMENT DI
+ - MU NQF0028AB MANAGEMENT DI
+ - MU SMOKING STATUS DI
+ 
+All of this is installed automatically, except if the labs transported in 
+the dialog cannot be found, the installer will be prompted to rematch 
+them.
+ 
+ Package Elements:
+ =================
+ This build transports and installs the following REMINDER EXCHANGE 
+entries:
+MU NQF0013 HTN_MK               07/06/2011@15:08:53
+MU NQF0024-ALL                  07/31/2012@17:49:03
+MU NQF0028 TOBACCO_MK           07/06/2011@15:14:49
+MU NQF0028AB MANAGEMENT DI      06/08/2011@16:50:31
+MU NQF0038 CHILD IMM SMH        07/27/2012@17:48:33
+MU NQF0041 FLU_MK               07/06/2011@15:26:59
+MU NQF0059_61_64_SMH            07/16/2012@10:46:17
+MU NQF0421 ADULT BMI SMH        07/26/2012@11:00:17
+MU STROKE 2.3.4.5.6.8.10 SMH    07/18/2012@10:33:53
+MU NQF 0495 ED-1                07/17/2012@11:47:55
+MU NQF 0497 ED-2                07/17/2012@11:50:23
+MU VTE 1.2.3.4.5.6 SMH          07/20/2012@09:48:30
+MU CPRS HELP DIS                08/01/2012@18:32:29
+ 
+ Routines:
+ =========
+ C0Q1P2 (Transport and KIDS install routine)
+ 
+ The second line of each of these routines now looks like:
+    ;;1.0;QUALITY MEASURES;**2**;July 13, 2112;Build 21
+ 
+ Documentation:
+ <None besides this KIDS description>
+ 
+ Test Sites:
+ ===========
+ <None>
+ 
+ Compliance:
+ ===========
+ This software complies with the VA MUMPS Programming Standards and
+ Conventions (version 3 April 2007).
+ 
+ Installation Instructions:
+ ==========================
+ Pre-installation:
+ 
+ Prerequisite patches:
+ - PXRM*2.0*12 (Download from VA FOIA Site; part of a Multibuild)
+ - PXRM*2.0*17 (Download from VA FOIA Site; part of a Multibuild)
+ - TMG*1.0*17  (Download from Trac Server: 
+                https://trac.opensourcevista.net/svn/PGC/tags/TMG-PGC/)
+ 
+ For a successful installation, you need to be sure that the labs that 
+the Inpatient Measures rely on exist. If not, the Lab ADPAC needs to 
+create them. These labs are:
+ - LDL CHOLESTEROL
+ - PLT
+ - INR
+ 
+ If these don't exist by the same name as above, the installer will be 
+asked to rematch them.
+ 
+ Users can remain on the system while this patch is installed.
+ 
+ Install Time - less than 5 minutes
+ 
+ The Pre-installation routine PRE^C0Q1P2 will delete existing Reminder 
+Exchange entries with the same name.
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build, or 
+     Use the Load a Distribution option in KIDS to load it from a 
+     host file.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0Q*1.0*2):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0Q*1.0*2" at the INSTALL NAME prompt.
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+ The Post-installation routine POST^C0Q1P2 will install the Reminder 
+Exchange entries.
+ 
+Here is an example installation log. It includes lab replacements.
+Select INSTALL NAME:    C0Q*1.0*2     Loaded from Distribution     Loaded 
+from D
+istribution  8/3/12@14:23:27
+     => SDFGHJKL;  ;Created on Aug 03, 2012@11:14:09
+ 
+This Distribution was loaded on Aug 03, 2012@14:23:27 with header of 
+   SDFGHJKL;  ;Created on Aug 03, 2012@11:14:09
+   It consisted of the following Install(s):
+      C0Q*1.0*2
+ 
+   Checking C0Q*1.0*2 for overlap with VOE 1.0 . OK
+            No overlap found
+ 
+ 
+   Checking C0Q*1.0*2 for overlap with VOE 1.1 . OK
+            No overlap found
+ 
+ 
+   Checking C0Q*1.0*2 for overlap with NO HOME 1.0 . OK
+            No overlap found
+ 
+Checking Install for Package C0Q*1.0*2
+ 
+Install Questions for C0Q*1.0*2
+ 
+Incoming Files:
+ 
+ 
+   811.8     REMINDER EXCHANGE  (including data)
+Note:  You already have the 'REMINDER EXCHANGE' File.
+I will OVERWRITE your data with mine.
+ 
+ 
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+ 
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+ 
+DEVICE: HOME// PHOME  HOME PRINTER
+ 
+ 
+ Install Started for C0Q*1.0*2 : 
+               Aug 03, 2012@14:23:33
+ 
+Build Distribution Date: Aug 03, 2012
+ 
+ Installing Routines:..
+               Aug 03, 2012@14:23:33
+ 
+ Running Pre-Install Routine: PRE^C0Q1P2.
+ 
+ Installing Data Dictionaries: ..
+               Aug 03, 2012@14:23:34
+ 
+ Installing Data: 
+               Aug 03, 2012@14:23:35
+ 
+ Running Post-Install Routine: POST^C0Q1P2.
+ 
+Installing reminder exchange entry MU NQF0024-ALL
+ 
+Installing reminder exchange entry MU NQF0013 HTN_MK
+ 
+Installing reminder exchange entry MU NQF0028 TOBACCO_MK
+ 
+Installing reminder exchange entry MU NQF0041 FLU_MK
+ 
+Installing reminder exchange entry MU NQF0059_61_64_SMH
+ 
+Installing reminder exchange entry MU NQF 0495 ED-1
+ 
+Installing reminder exchange entry MU NQF 0497 ED-2
+ 
+Installing reminder exchange entry MU STROKE 2.3.4.5.6.8.10 SMH
+ 
+Installing reminder exchange entry MU VTE 1.2.3.4.5.6 SMH
+Finding LT.INR does not exist, what do you want to do?
+ 
+     Select one of the following:
+ 
+                    
+          D         Delete
+          P         Replace with an existing entry
+          Q         Quit the install
+ 
+Enter response: P  Replace with an existing entry
+Select LABORATORY TEST NAME: SAM INR  
+Finding LT.INR does not exist, what do you want to do?
+ 
+     Select one of the following:
+ 
+                    
+          D         Delete
+          P         Replace with an existing entry
+          Q         Quit the install
+ 
+Enter response: P  Replace with an existing entry
+Select LABORATORY TEST NAME: SAM INR  
+ 
+Installing reminder exchange entry MU NQF0421 ADULT BMI SMH
+ 
+Installing reminder exchange entry MU NQF0038 CHILD IMM SMH
+ 
+Installing reminder exchange entry MU CPRS HELP DIS
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.......
+ 
+ C0Q*1.0*2 Installed. 
+               Aug 03, 2012@14:24:27
+ 
+ Not a VA primary domain
+ 
+ NO Install Message sent 
+ 
+ After installation, make sure you install C0Q*1.0*3, which relies on 
+this patch.
+
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+ PRE-INIT ROUTINE: PRE^C0Q1P2               DELETE PRE-INIT ROUTINE: No
+POST-INIT ROUTINE: POST^C0Q1P2             DELETE POST-INIT ROUTINE: No
+PRE-TRANSPORT RTN: 
+
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+
+811.8       REMINDER EXCHANGE              YES   YES   YES     OVER  NO    NO
+  DATA SCREEN: I $$EXFINC^C0Q1P2(Y)
+
+INSTALL QUESTIONS: 
+
+ Default Rebuild Menu Trees Upon Completion of Install: NO
+ Default INHIBIT LOGONs during the install: NO
+ Default DISABLE Scheduled Options, Menu Options, and Protocols: NO
+
+REQUIRED BUILDS:                               ACTION:
+   PXRM*2.0*12                                    Don't install, leave global
+   PXRM*2.0*17                                    Don't install, leave global
+   TMG*1.0*17                                     Don't install, leave global
+

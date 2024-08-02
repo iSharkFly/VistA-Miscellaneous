@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<realmCode code="US"/>
+<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+<templateId root="2.16.840.1.113883.10.20.12"/>
+<templateId root="2.16.840.1.113883.3.249.11.100.1"/>
+<id root="33f5b05b-e101-4530-9b91-97203c8b71e6"/>
+<code code="55182-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Quality Measure Report"/>
+<title>QRDA Incidence Report</title>
+<effectiveTime value="20100703"/>
+<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+<languageCode code="en-US"/>
+<setId root="2.16.840.1.113883.3.543" extension="01.01.01.100000001"/>
+<versionNumber value="1"/>
+<recordTarget>
+<patientRole>
+<id extension="345097898" root="SSN"/>
+<addr use="H">
+<streetAddressLine/>
+<city/>
+<state/>
+<postalCode/>
+</addr>
+<telecom/>
+<patient>
+<name>
+<given>FEMALE-B</given>
+<family>MEASURE-ONE</family>
+</name>
+<administrativeGenderCode displayName="FEMALE" code="F" codeSystemName="HL7 AdministrativeGender" codeSystem=""/>
+<birthTime value="1960111200"/>
+</patient>
+</patientRole>
+</recordTarget>
+<author>
+<time value="20100703"/>
+<assignedAuthor>
+<id root="2.16.840.1.113883.3.249.6" extension="100001"/>
+<assignedPerson>
+<name>
+<given>Nancy</given>
+<family>Anthracite</family>
+<suffix>MD</suffix>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedOrganization>
+</assignedAuthor>
+</author>
+<informant>
+<assignedEntity>
+<id nullFlavor="NA"/>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>World VistA Test Clinic</name>
+</representedOrganization>
+</assignedEntity>
+</informant>
+<custodian>
+<assignedCustodian>
+<representedCustodianOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedCustodianOrganization>
+</assignedCustodian>
+</custodian>
+<legalAuthenticator>
+<time value="20100703"/>
+<signatureCode code="S"/>
+<assignedEntity>
+<id root="2.16.840.1.113883.3.543" extension="111111"/>
+<assignedPerson>
+<name>
+<given>Nancy</given>
+<family>Anthracite</family>
+<suffix>MD</suffix>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<participant typeCode="PRF">
+<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+<associatedEntity classCode="PROV">
+<id root="2.16.840.1.113883.3.249.6" extension="111111"/>
+<associatedPerson>
+<name>
+<prefix>Dr.</prefix>
+<given>Nancy</given>
+<family>Anthracite</family>
+</name>
+</associatedPerson>
+</associatedEntity>
+</participant>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.3.249.11.50"/>
+<code code="55185-3" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Measure set: CMS EHR Measure Set</title>
+<text>2010 Measures Set Measures</text>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.3.249.11.2"/>
+<templateId root="2.16.840.1.113883.3.249.11.3"/>
+<templateId root="2.16.840.1.113883.3.249.11.4"/>
+<templateId root="2.16.840.1.113883.3.249.11.5"/>
+<templateId root="2.16.840.1.113883.3.249.11.6"/>
+<templateId root="2.16.840.1.113883.3.249.11.7"/>
+<templateId root="2.16.840.1.113883.3.249.11.8"/>
+<templateId root="2.16.840.1.113883.3.249.11.9"/>
+<templateId root="2.16.840.1.113883.3.249.11.10"/>
+<templateId root="2.16.840.1.113883.3.249.11.11"/>
+<templateId root="2.16.840.1.113883.3.249.11.15"/>
+<templateId root="2.16.840.1.113883.3.249.11.51"/>
+<templateId root="2.16.840.1.113883.3.249.11.52"/>
+<templateId root="2.16.840.1.113883.3.249.11.53"/>
+<templateId root="2.16.840.1.113883.3.249.11.54"/>
+<templateId root="2.16.840.1.113883.3.249.11.55"/>
+<templateId root="2.16.840.1.113883.3.249.11.56"/>
+<templateId root="2.16.840.1.113883.3.249.11.57"/>
+<templateId root="2.16.840.1.113883.3.249.11.58"/>
+<templateId root="2.16.840.1.113883.3.249.11.59"/>
+<templateId root="2.16.840.1.113883.3.249.11.60"/>
+<code code="55186-1" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Measure Section</title>
+<text>
+<list>
+<item>CMS Measure #1: Diabetes Mellitus: Hemoglobin A1c Poor Control in Diabetes Mellitus</item>
+<item>CMS Measure #2: Diabetes Mellitus: Low Density Lipoprotein (LDL-C) Control in Diabetes Mellitus</item>
+<item>CMS Measure #3: Diabetes Mellitus: High Blood Pressure Control in Diabetes Mellitus</item>
+<item>CMS Measure #5: Heart Failure: Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD)</item>
+<item>CMS Measure #7: Coronary Artery Disease (CAD): Beta-Blocker Therapy for CAD Patients with Prior Myocardial Infarction (MI)</item>
+<item>CMS Measure #110: Preventive Care and Screening: Influenza Immunization for Patients &gt;= 50 Years</item>
+<item>CMS Measure #111: Preventive Care and Screening: Pneumonia Vaccination for Patients 65 Years and Older</item>
+<item>CMS Measure #112: Preventive Care and Screening: Screening Mammography</item>
+<item>CMS Measure #113: Preventive Care and Screening: Colorectal Cancer Screening</item>
+<item>CMS Measure #124: Health Information Technology (HIT): Adoption/Use of Electronic Health Records (EHR)</item>
+<item>CMS Measure eRx:Adoption/Use of Medication Electronic Prescribing Measure</item>
+<item>CMS Measure #39: Screening or Therapy for Osteoporosis for Women Aged 65 Years and Older</item>
+<item>CMS Measure #47: Advance Care Plan </item>
+<item>CMS Measure #48: Urinary Incontinence: Assessment of Presence or Absence of Urinary Incontinence in Women Aged 65 Years and Older</item>
+<item>CMS Measure #128: Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up </item>
+<item>CMS Measure #173: Preventive Care and Screening: Unhealthy Alcohol Use - Screening</item>
+<item>CMS Measure #0013: Hypertension (HTN): Blood Pressure Measurement - QRDA Cat I template </item>
+<item>CMS Measure #0022: Drugs to be avoided in the Elderly </item>
+<item>CMS Measure #0024: Body Mass Index (BMI) 2 through 18 years of age </item>
+<item>CMS Measure #0028: Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention</item>
+<item>CMS Measure #0038: Childhood Immunization Status - QRDA Cat I template</item>
+</list>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-1" codeSystem="2.16.840.1.113883.3.249.12" displayName="Hemoglobin A1c Poor Control in Diabetes Mellitus"/>
+<text>Percentage of patients 18 through 75 years with diabetes mellitus who had most recent hemoglobin A1C greater than 9.0%</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-2" codeSystem="2.16.840.1.113883.3.249.12" displayName="Low Density Lipoprotein (LDL-C) Control in Diabetes Mellitus"/>
+<text>Percentage of patients 18 through 75 years with diabetes mellitus who had most recent LDL-C level in control (less than 100 mg./dL)</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-3" codeSystem="2.16.840.1.113883.3.249.12" displayName="Hemoglobin A1c Poor Control in Diabetes Mellitus"/>
+<text>Percentage of patients 18 through 75 years with diabetes mellitus who had most recent blood pressure in control (less than 140/80 mmHg)</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-5" codeSystem="2.16.840.1.113883.3.249.12" displayName="Heart Failure: Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD)"/>
+<text>Percentage of patients 18 years and older with a diagnosis of heart frilure and LVSD who were prescribed ACE inhibitor or ARB therapy</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-7" codeSystem="2.16.840.1.113883.3.249.12" displayName="Beta-Blocker Therapy for CAD Patients with Prior Myocardial Infarction"/>
+<text>Percentage of patients 18 aged 18 years and older wit a diagnosis of CAD and prior MI who were prescribed beta-blocker therapy</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-110" codeSystem="2.16.840.1.113883.3.249.12" displayName="Influenza Immunization for Patients &gt;= 50 Years"/>
+<text>Percentage of patients aged 50 years and older who received an influenza immunization during the flu season (September through February)</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-111" codeSystem="2.16.840.1.113883.3.249.12" displayName="Pneumonia Vaccination for Patients 65 Years and Older"/>
+<text>Percentage of patients afed 65 years and older who have ever received a pneumoccal vaccine</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-112" codeSystem="2.16.840.1.113883.3.249.12" displayName="Screening Mammography"/>
+<text>Percentage of womaen aged 40 through 69 years who had a mammogram to screen for breast cancer within 24 months</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-113" codeSystem="2.16.840.1.113883.3.249.12" displayName="Colorectal Cancer Screening"/>
+<text>Percentage of patients aged 50 through 80 who received the appropriate colorectal cancer screening</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-124" codeSystem="2.16.840.1.113883.3.249.12" displayName="Adoption/Use of Electronic Health Records (EHR)"/>
+<text>Documents whether provider has adopted and is using health information technology. To qualify, the provider must havea adopted and be using a certified/qualified electronic health record (EHR)</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="eRx" codeSystem="2.16.840.1.113883.3.249.12" displayName="Adoption/Use of Medication Electronic Prescribing Measure"/>
+<text>Documents whether provider has adopted and is using ePrescribing</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-39" codeSystem="2.16.840.1.113883.3.249.12" displayName="Screening or Therapy for Osteoporosis for Women Aged 65 Years and Older"/>
+<text>Percentage of patients who had a DXA measurement ordered or performed at least once since age 60 or pharmacologic therapy prescribed within 12 months before the end of the measurement period</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-47" codeSystem="2.16.840.1.113883.3.249.12" displayName="Advance Care Plan"/>
+<text>Percentage of patients age 65 and older who have an advanced care plan or surrogate decision maker documented in the medical record or documented in the medical record that an advance care plan was discussed but the patient did not wish or was not able to name a surrogate decision maker or provide an advance care plan.</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-48" codeSystem="2.16.840.1.113883.3.249.12" displayName="Urinary Incontinence: Assessment of Presence or Absence of Urinary Incontinence in Women Aged 65 Years and Older"/>
+<text>Percentage of patients equal to or older than 65 years of age at the beginning of the measurement perion who were assesed for the presence or absence of urinary incontinence within 12 months.</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-128" codeSystem="2.16.840.1.113883.3.249.12" displayName="Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up"/>
+<text>Percentage of patients aged 18 yesrs and older with a calculate BMI in the past 6 months or during the current visit documented in the medical record and if the most recent BMI is ourtide parameters, a follow-up plan is documented. Ages 65 and older BMI equal to or greater than 30 or less than 22 and ages 18-64, BMI greater than or equal to 25 or less than 18.5</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-173" codeSystem="2.16.840.1.113883.3.249.12" displayName="Preventive Care and Screening: Unhealthy Alcohol Use - Screening"/>
+<text>Percentage of patients aged 18 years and older who were screened for unhealthy alcohol use using a systematic method within 24 months</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-13" codeSystem="2.16.840.1.113883.3.249.12" displayName="Hypertension (HTN): Blood Pressure Measurement"/>
+<text>Percentage of patients aged 18 years and older with a diagnosis of hypertension in the beginning of the measurement period with a blood pressure recoreded.</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-22" codeSystem="2.16.840.1.113883.3.249.12" displayName="Drugs to be avoided in the elderly"/>
+<text>Percentage of patients aged 65 years and older who received at least one drug to be acoided in the elderly and/or two different drugs to be avoided in the elderly in the measurement period</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-24" codeSystem="2.16.840.1.113883.3.249.12" displayName="BMI age 2-18 years of age"/>
+<text>Percentage of children 2-18 years of age at the beginning of the measurement period whose weight is classified based on BMI percentile for age and gender.</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-28" codeSystem="2.16.840.1.113883.3.249.12" displayName="Preventive care and Screening: Tobacco Use: Screening and Cessation Intervention"/>
+<text>Percentage of patients aged 18 years of older who were screened about tobacco use at least once during the two year measurement preoid AND who received cessation counseling if identified as a tobacco user.</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="PQRI-38" codeSystem="2.16.840.1.113883.3.249.12" displayName="Childhood immumnization status"/>
+<text>Percentage of children who turn two years of age during the measurement period who have had four DTaP/DT, three IPV, one MMR and three H influenza type B, three hepatitis B, one chicken pox vaccine (VZV) and four pneumococcal conjugate vaccines by their second birthday</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<code code="" codeSystem="2.16.840.1.113883.3.249.12" displayName=""/>
+<text>Documents whether provider has adopted and is using ePrescribing</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<component>
+<section>
+<code code="55187-9" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Reporting Parameters</title>
+<text>
+<list>
+<item>Reporting Period Jan 1, 2010 to Dec 31, 2010</item>
+</list>
+</text>
+<entry>
+<act classCode="ACT" moodCode="EVN">
+<code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters"/>
+<effectiveTime>
+<low value="20100101"/>
+<high value="20101231"/>
+</effectiveTime>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<code code="55188-7" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Patient Data</title>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP/C83"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" assigningAuthorityName="IHE PCC"/>
+<templateId root="2.16.840.1.113883.10.20.1.11" assigningAuthorityName="HL7 CCD"/>
+<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+<title>Problems</title>
+<text>
+<table>
+<tbody>
+<tr>
+<th>Type</th>
+<th>Date</th>
+<th>Code</th>
+<th>Description</th>
+<th>Status</th>
+<th>Source</th>
+</tr>
+<tr>
+<td>Problem</td>
+<td>
+<table>
+<tbody>
+<tr xmlns="">
+<td>Oct 13, 2010</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>250.00 (ICD9CM)
+		</td>
+<td ID="PROBLEM1">Diabetes Mellitus without mention of Complication, type II or unspecified type,</td>
+<td>Active</td>
+<td>EIGHT  PROVIDER  Scholar Extraordinaire </td>
+</tr>
+<tr>
+<td>Problem</td>
+<td>
+<table>
+<tbody>
+<tr xmlns="">
+<td>Oct 5, 2010</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>848.9 (ICD9CM)
+		</td>
+<td ID="PROBLEM2">Sprains (ICD-9-CM 848.9)</td>
+<td>Active</td>
+<td>MATTHEW M KING   </td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.27"/>
+<id root="PROBLEM1" extension="CCRObjectID"/>
+<code nullFlavor="NA"/>
+<performer typeCode="PRF">
+<assignedEntity>
+<id extension="ACTORPROVIDER_991" root="CCRActorID"/>
+<addr use="WP">
+<streetAddressLine>VA MEDICAL CENTER</streetAddressLine>
+<city>ALBANY</city>
+<state>NY</state>
+<postalCode>12180</postalCode>
+</addr>
+<telecom/>
+<assignedPerson>
+<name>
+<prefix>Scholar Extraordinaire</prefix>
+<given>EIGHT</given>
+<family>PROVIDER</family>
+</name>
+</assignedPerson>
+</assignedEntity>
+</performer>
+<entryRelationship typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD"/>
+<id root="PROBLEM1" extension="CCRObjectID"/>
+<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+<text>
+<reference value="#PROBLEM1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="20101013"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<value displayName="Diabetes Mellitus without mention of Complication, type II or unspecified type," code="250.00" codeSystemName="ICD9CM" codeSystem=""/>
+<entryRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.50"/>
+<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+<statusCode code="completed"/>
+<value>
+<originalText>Active</originalText>
+</value>
+</observation>
+</entryRelationship>
+</observation>
+</entryRelationship>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.27"/>
+<id root="PROBLEM2" extension="CCRObjectID"/>
+<code nullFlavor="NA"/>
+<performer typeCode="PRF">
+<assignedEntity>
+<id extension="ACTORPROVIDER_10000000183" root="CCRActorID"/>
+<addr use="WP">
+<streetAddressLine>VA MEDICAL CENTER</streetAddressLine>
+<city>ALBANY</city>
+<state>NY</state>
+<postalCode>12180</postalCode>
+</addr>
+<telecom/>
+<assignedPerson>
+<name>
+<given>MATTHEW</given>
+<given>M</given>
+<family>KING</family>
+</name>
+</assignedPerson>
+</assignedEntity>
+</performer>
+<entryRelationship typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD"/>
+<id root="PROBLEM2" extension="CCRObjectID"/>
+<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+<text>
+<reference value="#PROBLEM2"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="2010105"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<value displayName="Sprains (ICD-9-CM 848.9)" code="848.9" codeSystemName="ICD9CM" codeSystem=""/>
+<entryRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.50"/>
+<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+<statusCode code="completed"/>
+<value>
+<originalText>Active</originalText>
+</value>
+</observation>
+</entryRelationship>
+</observation>
+</entryRelationship>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.12"/>
+<code code="47519-4" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Procedures</title>
+<text>
+<table>
+<tbody>
+<tr>
+<th>Type</th>
+<th>Date</th>
+<th>Code</th>
+<th>Description</th>
+<th>Location</th>
+<th>Substance</th>
+<th>Method</th>
+<th>Position</th>
+<th>Site</th>
+<th>Status</th>
+<th>Source</th>
+</tr>
+<tr id="PROCEDURE_4108_8">
+<td/>
+<table>
+<tbody>
+<tr xmlns="">
+<td>Procedure Date:
+          </td>
+<td>Oct 13, 2010</td>
+</tr>
+</tbody>
+</table>
+<td>84295 (CPT-4)
+		</td>
+<td>Sodium; serum, plasma or whole blood (CPT-4 84295)</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>Completed</td>
+<td>NANCY  ANTHRACITE   </td>
+</tr>
+<tr id="PROCEDURE_4093_5">
+<td/>
+<table>
+<tbody>
+<tr xmlns="">
+<td>Procedure Date:
+          </td>
+<td>Oct 5, 2010</td>
+</tr>
+</tbody>
+</table>
+<td>99213 (CPT-4)
+		</td>
+<td>INTERMEDIATE (15min)</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>Completed</td>
+<td>MATTHEW M KING   </td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<procedure classCode="PROC" moodCode="EVN">
+<templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
+<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
+<id root="PROCEDURE_4108_8" extension="CCRObjectID"/>
+<code displayName="Sodium; serum, plasma or whole blood (CPT-4 84295)" code="84295" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+<text>
+<reference value="#PROCEDURE_4108_8"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="20101013"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+</procedure>
+</entry>
+<entry typeCode="DRIV">
+<procedure classCode="PROC" moodCode="EVN">
+<templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
+<templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
+<id root="PROCEDURE_4093_5" extension="CCRObjectID"/>
+<code displayName="INTERMEDIATE (15min)" code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+<text>
+<reference value="#PROCEDURE_4093_5"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="2010105"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+</procedure>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.9"/>
+<code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
+<title>Payers</title>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<templateId root="2.16.840.1.113883.10.20.1.20"/>
+<id root="1751b180-8a54-11df-a4ee-0800200c9c66"/>
+<statusCode code="completed"/>
+<code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
+<entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.26"/>
+<id root="dbbb6311-8a4d-11df-a4ee-0800200c9c66"/>
+<statusCode code="completed"/>
+<performer typeCode="PRF">
+<assignedEntity>
+<id root="2.16.840.1.113883.12.86" extension="MC"/>
+</assignedEntity>
+</performer>
+<participant typeCode="COV">
+<participantRole>
+<id root="2.16.840.1.113883.4.1" extension="@@SSN@@"/>
+<code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self"/>
+</participantRole>
+</participant>
+</act>
+</entryRelationship>
+</act>
+</entry>
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

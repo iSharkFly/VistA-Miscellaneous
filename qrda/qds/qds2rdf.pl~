@@ -1,0 +1,16 @@
+#!/usr/bin/perl -w
+
+print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+print "<qds>\n";
+while(<STDIN>)
+{
+    my($line) = $_;
+    chomp($line);
+    push @gpl1, split(/\|/);
+    #print "$_\n" for @gpl1;
+    my ($NQFid, $name, $QDSid, $concept, $cat, $QDSdt, $conceptid, $tax, $taxver, $codes, $QDSattr) = @gpl1;
+    print "$name $concept $tax $codes\n";
+    @gpl1 = ()
+    #print "@gpl1[1]_@gpl1[2]_@gpl1[3]\n";
+}
+print "</qds>\n";

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<realmCode code="US"/>
+<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+<templateId root="2.16.840.1.113883.10.20.12"/>
+<templateId root="2.16.840.1.113883.3.249.11.100.1"/>
+<id root="e790ee1e-1dc0-491a-9e2c-870eea611db8" extension="01"/>
+<code code="55182-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Quality Measure Report"/>
+<title>QRDA Incidence Report</title>
+<effectiveTime value="20100703"/>
+<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+<languageCode code="en-US"/>
+<setId root="2.16.840.1.113883.3.543" extension="01"/>
+<versionNumber value="1"/>
+<recordTarget>
+<patientRole>
+<id extension="666000200" root="2.16.840.1.113883.4.1"/>
+<addr use="H">
+<streetAddressLine>Any Street</streetAddressLine>
+<city>Any Town</city>
+<state>WV</state>
+<postalCode/>
+</addr>
+<telecom use="" value="tel:+1-222-555-8235"/>
+<patient>
+<name>
+<given>MALE-D</given>
+<family>MEASURE-TWO</family>
+</name>
+<administrativeGenderCode displayName="MALE" code="M" codeSystemName="HL7 AdministrativeGender" codeSystem="2.16.840.1.113883.5.1"/>
+<birthTime value="1960111200"/>
+<raceCode code="2076-8" codeSystem="2.16.840.1.113883.5.104"/>
+<ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.5.50"/>
+</patient>
+  <providerOrganization>
+<!-- NPI for the provider-->
+   <id root="2.16.840.1.113883.4.6" extension="1558574525" /> 
+       <name>WorldVistA Test Clinic</name>
+        <!--WVV Address of organization is optional except for the STATE-->
+       <addr>
+          <state>MD</state>
+          <postalCode>20877</postalCode>
+          
+       </addr>
+      <!--WVP required asOrganizationPartOf added to sample-->
+       <asOrganizationPartOf>
+          <wholeOrganization>
+	<!-- Tax ID is the extension-->
+            <id root="2.16.840.1.113883.4.2" extension="226864459"/>
+          </wholeOrganization> 
+        </asOrganizationPartOf>
+      </providerOrganization>
+
+</patientRole>
+</recordTarget>
+<author>
+<time value="20100703"/>
+<assignedAuthor>
+<id root="2.16.840.1.113883.3.249.6" extension="100001"/>
+<assignedPerson>
+<name>
+<given>Nancy</given>
+<family>Anthracite</family>
+<suffix>MD</suffix>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedOrganization>
+</assignedAuthor>
+</author>
+<informant>
+<assignedEntity>
+<id nullFlavor="NA"/>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>World VistA Test Clinic</name>
+</representedOrganization>
+</assignedEntity>
+</informant>
+<custodian>
+<assignedCustodian>
+<representedCustodianOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedCustodianOrganization>
+</assignedCustodian>
+</custodian>
+<legalAuthenticator>
+<time value="20100703"/>
+<signatureCode code="S"/>
+<assignedEntity>
+<id root="2.16.840.1.113883.3.543" extension="111111"/>
+<assignedPerson>
+<name>
+<given>Nancy</given>
+<family>Anthracite</family>
+<suffix>MD</suffix>
+</name>
+</assignedPerson>
+<representedOrganization>
+<id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+<name>WorldVistA Test Clinic</name>
+</representedOrganization>
+</assignedEntity>
+</legalAuthenticator>
+<participant typeCode="PRF">
+<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+<associatedEntity classCode="PROV">
+<id root="2.16.840.1.113883.3.249.6" extension="111111"/>
+<associatedPerson>
+<name>
+<prefix>Dr.</prefix>
+<given>Nancy</given>
+<family>Anthracite</family>
+</name>
+</associatedPerson>
+</associatedEntity>
+</participant>
+<documentationOf>
+<serviceEvent>
+<code displayName="Office/Outpatient Visit of an Established Patient requiring (2 of 3) an Expanded History, an Exam and Medical Decision Making of Low Complexity (CPT-4 99213)" code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+<effectiveTime>
+<low value="20100104"/>
+<high value="20100104"/>
+</effectiveTime>
+<performer typeCode="PRF">
+        <assignedEntity>
+        <id root="2.16.840.1.113883.4.6" extension="1558574525"/>
+          <code code="62247001" codeSystem="2.16.840.1.113883.6.69" codeSystemName="SNM CT" displayName="Internal Medician Specialist"/>
+          <addr>
+            <streetAddressLine>123 Maple Ave</streetAddressLine>
+            <city>Gaithersburg</city>
+            <state>MD</state>
+            <postalCode>20877</postalCode>
+          </addr>
+          <assignedPerson>
+            <name>
+              <given>Nancy</given>
+              <family>Anthracite</family>
+              <suffix>MD</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+<documentationOf>
+<serviceEvent>
+<code displayName="INTERMEDIATE (30min)" code="99242" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+<effectiveTime>
+<low value="20101014"/>
+<high value="20101014"/>
+</effectiveTime>
+<performer typeCode="PRF">
+        <assignedEntity>
+        <id root="2.16.840.1.113883.4.6" extension="1558574525"/>
+          <code code="62247001" codeSystem="2.16.840.1.113883.6.69" codeSystemName="SNM CT" displayName="Internal Medician Specialist"/>
+          <addr>
+            <streetAddressLine>123 Maple Ave</streetAddressLine>
+            <city>Gaithersburg</city>
+            <state>MD</state>
+            <postalCode>20877</postalCode>
+          </addr>
+          <assignedPerson>
+            <name>
+              <given>Nancy</given>
+              <family>Anthracite</family>
+              <suffix>MD</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.3.249.11.50"/>
+<code code="55185-3" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Measure set: CMS EHR Measure Set</title>
+<text>2010 Measures Set Measures</text>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.3.249.11.2"/>
+<code code="55186-1" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Measure Section</title>
+<text>
+<list>
+<item>CMS Measure #1: Diabetes Mellitus: Hemoglobin A1c Poor Control in Diabetes Mellitus</item>
+</list>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<id root="2.16.840.1.113883.3.249.11.2"/>
+<code code="PQRI-1" codeSystem="2.16.840.1.113883.3.249.12" displayName="Hemoglobin A1c Poor Control in Diabetes Mellitus"/>
+<text>Percentage of patients 18 through 75 years with diabetes mellitus who had most recent hemoglobin A1C greater than 9.0%</text>
+<statusCode code="completed"/>
+</act>
+</entry>
+<component>
+<section>
+<code code="55187-9" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Reporting Parameters</title>
+<text>
+<list>
+<item>Reporting Period Jan 1, 2010 to Dec 31, 2010</item>
+</list>
+</text>
+<entry>
+<act classCode="ACT" moodCode="EVN">
+<code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters"/>
+<effectiveTime>
+<low value="20100101"/>
+<high value="20101231"/>
+</effectiveTime>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<code code="55188-7" codeSystem="2.16.840.1.113883.6.1"/>
+<title>Patient Data</title>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.1.9"/>
+<code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
+<title>Payers</title>
+<text />
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="DEF">
+<templateId root="2.16.840.1.113883.10.20.1.20"/>
+<id root="1751b180-8a54-11df-a4ee-0800200c9c66"/>
+<code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
+<statusCode code="completed"/>
+<entryRelationship typeCode="COMP">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.1.26"/>
+<templateId root="2.16.840.1.113883.3.249.11.100.7"/>
+<id root="dbbb6311-8a4d-11df-a4ee-0800200c9c66"/>
+<code code="PUBLICPOL" codeSystem="2.16.840.1.113883.5.4" displayName="Public Healthcare"/>
+<statusCode code="completed"/>
+<performer typeCode="PRF">
+<assignedEntity>
+<id root="2.16.840.1.113883.12.86" extension="MC"/>
+</assignedEntity>
+</performer>
+<participant typeCode="COV">
+<participantRole>
+<id root="2.16.840.1.113883.4.1" extension="666000200"/>
+<code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self"/>
+</participantRole>
+</participant>
+</act>
+</entryRelationship>
+</act>
+</entry>
+</section>
+</component>
+</section>
+</component>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>

@@ -1,0 +1,716 @@
+<?xml version="1.0" standalone="yes"?>
+<REMINDER_EXCHANGE_FILE_ENTRY>
+<PACKAGE_VERSION>2.0</PACKAGE_VERSION>
+<INDEX_AT>638</INDEX_AT>
+<SOURCE>
+<NAME>PQRI HTN MANAGMENT </NAME>
+<USER>KING,MATTHEW M MD</USER>
+<SITE>CAMP MASTER</SITE>
+<DATE_PACKED>10/12/2010@21:50:34</DATE_PACKED>
+</SOURCE>
+<EXCHANGE_TYPE>REMINDER</EXCHANGE_TYPE>
+<DESCRIPTION><![CDATA[
+Patient reminder due on anyone with 2 entries of a diagnosis of HTN in 
+the past 3 years.  This reminder does not resolve.  Additional text is 
+displayed to the patient if the last 3 BPs were <= 130/80, if the last BP 
+was >140/90 or if any of the last 3 BPs was >=160/100.
+ 
+If you use a different taxonomy for HTN or for renal diseases, you can 
+substitute you local taxonomies into the national reminder term.
+]]></DESCRIPTION>
+<KEYWORDS>
+</KEYWORDS>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER SPONSOR</FILE_NAME>
+<FILE_NUMBER>811.6</FILE_NUMBER>
+<POINT_01>National Clinical Practice Guideline Council</POINT_01>
+<INTERNAL_ENTRY_NUMBER>14</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>3848705059</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.6;+14,;.01~National Clinical Practice Guideline Council
+811.6;+14,;100~NATIONAL
+811.63;+15,+14,;.01~10/12/2010@21:51:07
+811.63;+15,+14,;1~
+811.63;+15,+14,;2~WP-start~1
+Exchange Stub
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+15^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER SPONSOR</FILE_NAME>
+<FILE_NUMBER>811.6</FILE_NUMBER>
+<POINT_01>Office of Quality &amp; Performance</POINT_01>
+<INTERNAL_ENTRY_NUMBER>15</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>1008763345</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.6;+15,;.01~Office of Quality & Performance
+811.6;+15,;100~NATIONAL
+811.63;+16,+15,;.01~10/12/2010@21:51:07
+811.63;+16,+15,;1~
+811.63;+16,+15,;2~WP-start~1
+Exchange Stub
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+16^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>GMRV VITAL TYPE</FILE_NAME>
+<FILE_NUMBER>120.51</FILE_NUMBER>
+<POINT_01>BLOOD PRESSURE</POINT_01>
+<INTERNAL_ENTRY_NUMBER>1</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>4024959586</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+120.51;+1,;.01~BLOOD PRESSURE
+]]>
+</FILEMAN_FDA>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TAXONOMY</FILE_NAME>
+<FILE_NUMBER>811.2</FILE_NUMBER>
+<POINT_01>VA-HYPERTENSION</POINT_01>
+<INTERNAL_ENTRY_NUMBER>1</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>564275230</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.2;+1,;.01~VA-HYPERTENSION
+811.2;+1,;.02~Hypertension codes
+811.2;+1,;100~NATIONAL
+811.21;+2,+1,;.01~10/12/2010@21:51:08
+811.21;+2,+1,;1~
+811.21;+2,+1,;2~WP-start~1
+Exchange Stub
+811.22102;+3,+1,;.01~401.0
+811.22102;+3,+1,;1~405.99
+811.22102;+3,+1,;2~398.99
+811.22102;+3,+1,;3~410.0
+811.23102;+10,+1,;.01~403.11 
+811.23102;+11,+1,;.01~403.9 
+811.23102;+12,+1,;.01~403.90 
+811.23102;+13,+1,;.01~403.91 
+811.23102;+14,+1,;.01~404.0 
+811.23102;+15,+1,;.01~401.1 
+811.23102;+16,+1,;.01~404.00 
+811.23102;+17,+1,;.01~404.01 
+811.23102;+18,+1,;.01~404.02 
+811.23102;+19,+1,;.01~404.03 
+811.23102;+20,+1,;.01~404.1 
+811.23102;+21,+1,;.01~404.10 
+811.23102;+22,+1,;.01~404.11 
+811.23102;+23,+1,;.01~404.12 
+811.23102;+24,+1,;.01~404.13 
+811.23102;+25,+1,;.01~404.9 
+811.23102;+26,+1,;.01~401.9 
+811.23102;+27,+1,;.01~404.90 
+811.23102;+28,+1,;.01~404.91 
+811.23102;+29,+1,;.01~404.92 
+811.23102;+30,+1,;.01~404.93 
+811.23102;+31,+1,;.01~405.01 
+811.23102;+32,+1,;.01~405.09 
+811.23102;+33,+1,;.01~405.11 
+811.23102;+34,+1,;.01~405.19 
+811.23102;+35,+1,;.01~405.91 
+811.23102;+36,+1,;.01~405.99 
+811.23102;+37,+1,;.01~402.00 
+811.23102;+38,+1,;.01~402.01 
+811.23102;+39,+1,;.01~402.10 
+811.23102;+4,+1,;.01~401.0 
+811.23102;+40,+1,;.01~402.11 
+811.23102;+41,+1,;.01~402.90 
+811.23102;+42,+1,;.01~402.91 
+811.23102;+5,+1,;.01~403.0 
+811.23102;+6,+1,;.01~403.00 
+811.23102;+7,+1,;.01~403.01 
+811.23102;+8,+1,;.01~403.1 
+811.23102;+9,+1,;.01~403.10 
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+2^1
+3^1
+4^1
+5^10
+6^11
+7^12
+8^13
+9^14
+10^15
+11^16
+12^17
+13^18
+14^19
+15^2
+16^20
+17^21
+18^22
+19^23
+20^24
+21^25
+22^26
+23^27
+24^28
+25^29
+26^3
+27^30
+28^31
+29^32
+30^33
+31^34
+32^35
+33^36
+34^37
+35^38
+36^39
+37^4
+38^5
+39^6
+40^7
+41^8
+42^9
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TAXONOMY</FILE_NAME>
+<FILE_NUMBER>811.2</FILE_NUMBER>
+<POINT_01>VA-DIABETES</POINT_01>
+<INTERNAL_ENTRY_NUMBER>28</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>1037194614</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.2;+28,;.01~VA-DIABETES
+811.2;+28,;.02~Diabetic diagnosis codes
+811.2;+28,;100~NATIONAL
+811.21;+29,+28,;.01~10/12/2010@21:51:08
+811.21;+29,+28,;1~
+811.21;+29,+28,;2~WP-start~1
+Exchange Stub
+811.22102;+30,+28,;.01~250.00
+811.22102;+30,+28,;1~250.90
+811.22102;+30,+28,;2~246.9
+811.22102;+30,+28,;3~250.91
+811.23102;+31,+28,;.01~250.00 
+811.23102;+32,+28,;.01~250.21 
+811.23102;+33,+28,;.01~250.22 
+811.23102;+34,+28,;.01~250.23 
+811.23102;+35,+28,;.01~250.30 
+811.23102;+36,+28,;.01~250.31 
+811.23102;+37,+28,;.01~250.32 
+811.23102;+38,+28,;.01~250.33 
+811.23102;+39,+28,;.01~250.40 
+811.23102;+40,+28,;.01~250.41 
+811.23102;+41,+28,;.01~250.42 
+811.23102;+42,+28,;.01~250.01 
+811.23102;+43,+28,;.01~250.43 
+811.23102;+44,+28,;.01~250.50 
+811.23102;+45,+28,;.01~250.51 
+811.23102;+46,+28,;.01~250.52 
+811.23102;+47,+28,;.01~250.53 
+811.23102;+48,+28,;.01~250.60 
+811.23102;+49,+28,;.01~250.61 
+811.23102;+50,+28,;.01~250.62 
+811.23102;+51,+28,;.01~250.63 
+811.23102;+52,+28,;.01~250.70 
+811.23102;+53,+28,;.01~250.02 
+811.23102;+54,+28,;.01~250.71 
+811.23102;+55,+28,;.01~250.72 
+811.23102;+56,+28,;.01~250.73 
+811.23102;+57,+28,;.01~250.80 
+811.23102;+58,+28,;.01~250.81 
+811.23102;+59,+28,;.01~250.82 
+811.23102;+60,+28,;.01~250.83 
+811.23102;+61,+28,;.01~250.90 
+811.23102;+62,+28,;.01~250.03 
+811.23102;+63,+28,;.01~250.10 
+811.23102;+64,+28,;.01~250.11 
+811.23102;+65,+28,;.01~250.12 
+811.23102;+66,+28,;.01~250.13 
+811.23102;+67,+28,;.01~250.20 
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+29^1
+30^1
+31^1
+32^10
+33^11
+34^12
+35^13
+36^14
+37^15
+38^16
+39^17
+40^18
+41^19
+42^2
+43^20
+44^21
+45^22
+46^23
+47^24
+48^25
+49^26
+50^27
+51^28
+52^29
+53^3
+54^30
+55^31
+56^32
+57^33
+58^34
+59^35
+60^36
+61^37
+62^4
+63^5
+64^6
+65^7
+66^8
+67^9
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TERM</FILE_NAME>
+<FILE_NUMBER>811.5</FILE_NUMBER>
+<POINT_01>VA-MHV HYPERTENSION DX</POINT_01>
+<INTERNAL_ENTRY_NUMBER>581</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>377188760</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.5;+581,;.01~VA-MHV HYPERTENSION DX
+811.5;+581,;100~NATIONAL
+811.5;+581,;101~National Clinical Practice Guideline Council
+811.52;+582,+581,;.01~TX.VA-HYPERTENSION
+811.53;+583,+581,;.01~10/12/2010@21:51:08
+811.53;+583,+581,;1~
+811.53;+583,+581,;2~WP-start~1
+Exchange Stub
+811.54;+584,+582,+581,;.01~ACTIVE
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+582^1
+583^1
+584^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TERM</FILE_NAME>
+<FILE_NUMBER>811.5</FILE_NUMBER>
+<POINT_01>VA-MHV DIABETES OR KIDNEY DISEASE</POINT_01>
+<INTERNAL_ENTRY_NUMBER>582</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>2893758758</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.5;+582,;.01~VA-MHV DIABETES OR KIDNEY DISEASE
+811.5;+582,;100~NATIONAL
+811.5;+582,;101~National Clinical Practice Guideline Council
+811.52;+583,+582,;.01~TX.VA-DIABETES
+811.53;+584,+582,;.01~10/12/2010@21:51:08
+811.53;+584,+582,;1~
+811.53;+584,+582,;2~WP-start~1
+Exchange Stub
+811.54;+585,+583,+582,;.01~ACTIVE
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+583^1
+584^1
+585^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TERM</FILE_NAME>
+<FILE_NUMBER>811.5</FILE_NUMBER>
+<POINT_01>VA-BP &gt;=140/90</POINT_01>
+<INTERNAL_ENTRY_NUMBER>923</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>310415324</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.5;+923,;.01~VA-BP >=140/90
+811.5;+923,;100~NATIONAL
+811.5;+923,;101~Office of Quality & Performance
+811.52;+924,+923,;.01~VM.BLOOD PRESSURE
+811.52;+924,+923,;14~I $P(V,"/",1)>139!($P(V,"/",2)>89)
+811.52;+924,+923,;22~I $P(V,"/",1)>139!($P(V,"/",2)>89)
+811.53;+925,+923,;.01~10/12/2010@21:51:08
+811.53;+925,+923,;1~
+811.53;+925,+923,;2~WP-start~1
+Exchange Stub
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+924^1
+925^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TERM</FILE_NAME>
+<FILE_NUMBER>811.5</FILE_NUMBER>
+<POINT_01>VA-BP &gt;=160/100</POINT_01>
+<INTERNAL_ENTRY_NUMBER>924</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>1508575983</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.5;+924,;.01~VA-BP >=160/100
+811.5;+924,;100~NATIONAL
+811.5;+924,;101~Office of Quality & Performance
+811.52;+925,+924,;.01~VM.BLOOD PRESSURE
+811.52;+925,+924,;14~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.52;+925,+924,;22~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.53;+926,+924,;.01~10/12/2010@21:51:08
+811.53;+926,+924,;1~
+811.53;+926,+924,;2~WP-start~1
+Exchange Stub
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+925^1
+926^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER TERM</FILE_NAME>
+<FILE_NUMBER>811.5</FILE_NUMBER>
+<POINT_01>VA-BP &gt;130/80</POINT_01>
+<INTERNAL_ENTRY_NUMBER>925</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>3506528114</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.5;+925,;.01~VA-BP >130/80
+811.5;+925,;100~NATIONAL
+811.5;+925,;101~Office of Quality & Performance
+811.52;+926,+925,;.01~VM.BLOOD PRESSURE
+811.52;+926,+925,;14~I $P(V,"/",1)>130!($P(V,"/",2)>80)
+811.52;+926,+925,;22~I $P(V,"/",1)>130!($P(V,"/",2)>80)
+811.53;+927,+925,;.01~10/12/2010@21:51:08
+811.53;+927,+925,;1~
+811.53;+927,+925,;2~WP-start~1
+Exchange Stub
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+926^1
+927^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<FILEMAN_FILE>
+<FILE_NAME>REMINDER DEFINITION</FILE_NAME>
+<FILE_NUMBER>811.9</FILE_NUMBER>
+<POINT_01>PQRI HTN MANAGMENT </POINT_01>
+<INTERNAL_ENTRY_NUMBER>56</INTERNAL_ENTRY_NUMBER>
+<CHECKSUM>3228859825</CHECKSUM>
+<FILEMAN_FDA>
+<![CDATA[
+811.9;+56,;.01~PQRI HTN MANAGMENT 
+811.9;+56,;1.2~Hypertension (High Blood Pressure)
+811.9;+56,;2~WP-start~7
+Patient reminder due on anyone with 2 entries of a diagnosis of HTN in 
+the past 3 years.  This reminder does not resolve.  Additional text is 
+displayed to the patient if the last 3 BPs were <= 130/80, if the last BP 
+was >140/90 or if any of the last 3 BPs was >=160/100.
+ 
+If you use a different taxonomy for HTN or for renal diseases, you can 
+substitute you local taxonomies into the national reminder term.
+811.9;+56,;30~FI(1)&FF(1)
+811.9;+56,;31~FI(1)&FF(1)
+811.9;+56,;32~2
+811.9;+56,;33~1;FF1
+811.9;+56,;36~0
+811.9;+56,;40~0
+811.9;+56,;42~8
+811.9;+56,;43~2;3;4;5;6;7;FF2;FF3
+811.9;+56,;60~WP-start~28
+Blood pressure or BP is the pressure of blood inside the blood vessels as 
+it flows within the body. A BP reading is expressed as a high number over 
+a low number such as 139/89. The high number is the pressure as the heart 
+beats and the low number is the pressure as the heart rest between beats. 
+When either or both pressures stay high over time, it is called high 
+blood pressure or hypertension.  
+ 
+High blood pressure is a serious illness that usually does not have any 
+symptoms. Therefore, a BP reading should be taken regularly with BP 
+measuring equipment. High blood pressure increases the risk for heart 
+disease and stroke. It can also cause other problems such as heart 
+failure, kidney disease, and blindness.  In most cases, high blood 
+pressure can be controlled but not cured.  Good control prevents 
+complications. 
+ 
+High blood pressure can be lowered with changes in lifestyle and 
+medications. Here are some things you can do.  \\
+    Work with your provider and dietitian to develop a\\ 
+         healthy eating plan.  \\
+    Eat less salt. \\
+    Keep a normal weight. Lose weight if you need to. \\
+    Engage in physical activity for at least 30 minutes on\\
+         most days.  Check with your provider for an activity\\
+         good for you. \\
+    Do not smoke cigarettes or tobacco. \\
+    Consult your provider about drinking alcohol. \\
+    Take your medications as prescribed.   \\
+    Talk to your provider about measuring your BP at home. \\
+811.9;+56,;62~28
+811.9;+56,;63~0
+811.9;+56,;67~0
+811.9;+56,;68~0
+811.9;+56,;70~WP-start~10
+Anyone with high blood pressure or hypertension should aim to keep his or 
+her blood pressure reading less than 140/90.  For most patients with high 
+blood pressure, a lower blood pressure is better so maintaining a blood 
+pressure reading of 130/80 or lower is likely to be beneficial to you.  
+Please check with your primary care team about your specific blood 
+pressure goals.\\
+This blood pressure goal may be lower if you have other conditions such 
+as diabetes and kidney disease.  Please review your blood pressure 
+readings below and any other blood pressure readings you may have from 
+outside the VA, and discuss these with your primary care team.
+811.9;+56,;72~10
+811.9;+56,;73~0
+811.9;+56,;77~0
+811.9;+56,;78~0
+811.9;+56,;100~LOCAL
+811.9;+56,;103~CRP
+811.9001;+57,+56,;.01~10/12/2010@21:51:09
+811.9001;+57,+56,;1~
+811.9001;+57,+56,;2~WP-start~1
+Exchange Stub
+811.9002;+58,+56,;.01~http://www.nhlbi.nih.gov/hbp/index.html
+811.9002;+58,+56,;.02~NHLBI: Your Guide to Lowering High Blood Pressure
+811.9002;+59,+56,;.01~http://www.healthwise.net/myhealthevet/Content/StdDocument.aspx?DOCHWID=hw62787&SECHWID=hw62789
+811.9002;+59,+56,;.02~Hypertension
+811.902;+60,+56,;.01~RT.VA-MHV HYPERTENSION DX
+811.902;+60,+56,;8~AND
+811.902;+60,+56,;9~T-3Y
+811.902;+60,+56,;17~2
+811.902;+60,+56,;24~0
+811.902;+60,+56,;25~0
+811.902;+61,+56,;.01~VM.BLOOD PRESSURE
+811.902;+61,+56,;4~WP-start~3
+Your last 3 recorded blood pressure readings are recorded below.\\
+\\
+________________________________________________________________
+811.902;+61,+56,;17~3
+811.902;+61,+56,;24~3
+811.902;+61,+56,;25~0
+811.902;+62,+56,;.01~RT.VA-BP >130/80
+811.902;+62,+56,;5~WP-start~2
+All 3 of your most recently recorded blood pressure readings show
+excellent control of your blood pressure.
+811.902;+62,+56,;14~I $P(V,"/",1)>130!($P(V,"/",2)>80)
+811.902;+62,+56,;17~3
+811.902;+62,+56,;18~YES
+811.902;+62,+56,;22~I $P(V,"/",1)>130!($P(V,"/",2)>80)
+811.902;+62,+56,;24~0
+811.902;+62,+56,;25~2
+811.902;+63,+56,;.01~RT.VA-BP >=140/90
+811.902;+63,+56,;24~0
+811.902;+63,+56,;25~0
+811.902;+64,+56,;.01~RT.VA-BP >=160/100
+811.902;+64,+56,;9~T-1M
+811.902;+64,+56,;14~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.902;+64,+56,;17~3
+811.902;+64,+56,;18~YES
+811.902;+64,+56,;22~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.902;+64,+56,;24~0
+811.902;+64,+56,;25~0
+811.902;+65,+56,;.01~RT.VA-MHV DIABETES OR KIDNEY DISEASE
+811.902;+65,+56,;4~WP-start~2
+Your blood pressure goal may be lower than 130/80 if you have other 
+conditions such as diabetes or kidney disease.
+811.902;+65,+56,;9~T-2Y
+811.902;+65,+56,;24~2
+811.902;+65,+56,;25~0
+811.902;+66,+56,;.01~RT.VA-BP >=160/100
+811.902;+66,+56,;4~WP-start~4
+Your most recently recorded blood pressure reading was 160/100 or 
+higher.This is much higher than it should be and shows that your blood 
+pressure is not under control.  Please make sure that efforts are in 
+progress to get better control of your blood pressure.
+811.902;+66,+56,;14~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.902;+66,+56,;22~I $P(V,"/",1)>159!($P(V,"/",2)>99)
+811.902;+66,+56,;24~4
+811.902;+66,+56,;25~0
+811.90221;+67,+60,+56,;.01~ACTIVE
+811.90221;+68,+65,+56,;.01~ACTIVE
+811.925;+69,+56,;.01~1
+811.925;+69,+56,;3~COUNT(1)>1
+811.925;+69,+56,;10~FN(1)>1
+811.925;+69,+56,;12~AND
+811.925;+69,+56,;41~0
+811.925;+69,+56,;42~0
+811.925;+70,+56,;.01~2
+811.925;+70,+56,;1~WP-start~4
+One of your recent 3 blood pressure readings was 160/100 or higher. This
+is much higher than it should be and shows that your blood pressure may
+not be under good control.  Please make sure that efforts are being made
+to get better control of your blood pressure.
+811.925;+70,+56,;3~FI(5)&'FI(7)
+811.925;+70,+56,;10~FN(1)&'FN(2)
+811.925;+70,+56,;41~4
+811.925;+70,+56,;42~0
+811.925;+71,+56,;.01~3
+811.925;+71,+56,;1~WP-start~5
+Your most recent blood pressure reading is 140/90 or higher. This is
+higher than it should be. You should recheck your blood pressure within 2
+months (or sooner if your provider recommends it). You should also
+continue taking your medications as prescribed; follow a healthy eating
+plan; and engage in physical activity as recommended by your provider.
+811.925;+71,+56,;3~FI(4)&'FI(7)
+811.925;+71,+56,;10~FN(1)&'FN(2)
+811.925;+71,+56,;41~5
+811.925;+71,+56,;42~0
+811.9255;+72,+69,+56,;.01~1
+811.9255;+72,+69,+56,;.02~COUNT
+811.9255;+73,+70,+56,;.01~1
+811.9255;+73,+70,+56,;.02~FI
+811.9255;+74,+71,+56,;.01~1
+811.9255;+74,+71,+56,;.02~FI
+811.9255;+75,+70,+56,;.01~2
+811.9255;+75,+70,+56,;.02~FI
+811.9255;+76,+71,+56,;.01~2
+811.9255;+76,+71,+56,;.02~FI
+811.9256;+77,+72,+69,+56,;.01~1
+811.9256;+78,+73,+70,+56,;.01~5
+811.9256;+79,+74,+71,+56,;.01~4
+811.9256;+80,+75,+70,+56,;.01~7
+811.9256;+81,+76,+71,+56,;.01~7
+811.97;+82,+56,;.01~99Y
+811.97;+82,+56,;5~0
+811.97;+82,+56,;6~0
+]]>
+</FILEMAN_FDA>
+<IEN_ROOT>
+<![CDATA[
+57^1
+58^1
+59^2
+60^1
+61^2
+62^3
+63^4
+64^5
+65^6
+66^7
+67^1
+68^1
+69^1
+70^2
+71^3
+72^1
+73^1
+74^1
+75^2
+76^2
+77^1
+78^1
+79^1
+80^1
+81^1
+82^1
+]]>
+</IEN_ROOT>
+</FILEMAN_FILE>
+<INDEX>
+<NUMBER_OF_COMPONENTS>11</NUMBER_OF_COMPONENTS>
+<COMPONENT>
+<FDA_END>36</FDA_END>
+<FDA_START>31</FDA_START>
+<FILE_START>23</FILE_START>
+<IEN_ROOT_END>41</IEN_ROOT_END>
+<IEN_ROOT_START>41</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>58</FDA_END>
+<FDA_START>53</FDA_START>
+<FILE_START>45</FILE_START>
+<IEN_ROOT_END>63</IEN_ROOT_END>
+<IEN_ROOT_START>63</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>75</FDA_END>
+<FDA_START>75</FDA_START>
+<FILE_START>67</FILE_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>136</FDA_END>
+<FDA_START>87</FDA_START>
+<FILE_START>79</FILE_START>
+<IEN_ROOT_END>181</IEN_ROOT_END>
+<IEN_ROOT_START>141</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>240</FDA_END>
+<FDA_START>193</FDA_START>
+<FILE_START>185</FILE_START>
+<IEN_ROOT_END>283</IEN_ROOT_END>
+<IEN_ROOT_START>245</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>303</FDA_END>
+<FDA_START>295</FDA_START>
+<FILE_START>287</FILE_START>
+<IEN_ROOT_END>310</IEN_ROOT_END>
+<IEN_ROOT_START>308</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>330</FDA_END>
+<FDA_START>322</FDA_START>
+<FILE_START>314</FILE_START>
+<IEN_ROOT_END>337</IEN_ROOT_END>
+<IEN_ROOT_START>335</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>358</FDA_END>
+<FDA_START>349</FDA_START>
+<FILE_START>341</FILE_START>
+<IEN_ROOT_END>364</IEN_ROOT_END>
+<IEN_ROOT_START>363</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>385</FDA_END>
+<FDA_START>376</FDA_START>
+<FILE_START>368</FILE_START>
+<IEN_ROOT_END>391</IEN_ROOT_END>
+<IEN_ROOT_START>390</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>412</FDA_END>
+<FDA_START>403</FDA_START>
+<FILE_START>395</FILE_START>
+<IEN_ROOT_END>418</IEN_ROOT_END>
+<IEN_ROOT_START>417</IEN_ROOT_START>
+</COMPONENT>
+<COMPONENT>
+<FDA_END>604</FDA_END>
+<FDA_START>430</FDA_START>
+<FILE_START>422</FILE_START>
+<IEN_ROOT_END>634</IEN_ROOT_END>
+<IEN_ROOT_START>609</IEN_ROOT_START>
+</COMPONENT>
+</INDEX>
+</REMINDER_EXCHANGE_FILE_ENTRY>

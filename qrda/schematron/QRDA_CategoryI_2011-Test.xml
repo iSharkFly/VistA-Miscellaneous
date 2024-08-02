@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+	<!-- 
+********************************************************
+CDA Header
+********************************************************
+-->
+	<realmCode code="US" />
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+	QRDA Category I generic template ID. -->
+	<templateId root="2.16.840.1.113883.10.20.12" />
+	<id root="88414c01-715a-45bb-83bb-db7ac860fe9d" />
+	<!-- PQRI QRDA Template ID -->
+	<templateId root="2.16.840.1.113883.3.249.11.100.1" />
+	<id root="88414c01-715b-45bb-83bb-db7ac860fe9d" />
+	<!-- QRDA document type code (yet to be created). -->
+	<code code="55182-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Quality Measure Report" />
+	<title>QRDA Incidence Report</title>
+	<effectiveTime value="20080513" />
+	<confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N" />
+	<!-- setId is not fixed by PQRI - probably from an OID with the extension unique-->
+	<setId root="2.16.840.1.113883.19.5.5.5" extension="925ee52d6d9a"/>
+	<!-- versionNumber is not fixed by PQRI except must be an integer - probably sequential integer as this document is changed -->
+	<versionNumber value="1"/>
+	<languageCode code="en-US" />
+	<!-- This is the patient for which the report is describing. -->
+	<recordTarget>
+		<patientRole>
+			<!-- this root is the type of ID that comes from the downloadable resource with the extension being unique to the patient -->
+			<!-- must remain the same during the reporting period - being CMS, the SSN is probably the best if available as that is the medicare number for the Payers section also -->
+			<id extension="123456789" root="2.16.840.1.113883.4.1" />
+			<patient>
+				<name>
+				<!-- This restriction for length of 30 characters is not in the specification, only in the error table.  You are not restricted to only one given or family name -->
+				<!-- It is not clear how to handle longer names -->
+					<given>Henry</given>
+					<family>Levin</family>
+					<suffix>the 7th</suffix>
+				</name>
+				<ethnicGroupCode codeSystem="2.16.840.1.113883.5.50" code= "2135-2"/>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+				<raceCode codeSystem="2.16.840.1.113883.5.104" code="2106-3" />
+				<birthTime value="19320924" />
+			</patient>
+			<providerOrganization>
+			<!-- this root is fixed and NOT the HL7 assigned ID of the organization but fixed for the QRDA document and the extension is the NPI of the PROVIDER (does not say the NPI of the provider organizaton -->
+				<id root="2.16.840.1.113883.4.6" extension="1558574525"/>
+				<name>Good Health Clinic</name>
+				<addr>
+					<streetAddressLine>234 Maple Lane</streetAddressLine>
+					<city>Gaithersburg</city>
+					<state>MD</state>
+					<postalCode>20877</postalCode>
+				</addr>
+				<asOrganizationPartOf>
+					 <wholeOrganization>
+					    <id root="2.16.840.1.113883.4.2" extension="001020003"/>
+					  </wholeOrganization>
+				</asOrganizationPartOf>
+			</providerOrganization>
+			
+		</patientRole>
+	</recordTarget>
+	<!-- This example assumes a workflow whereby a quality manager nurse is creating the report.  -->
+	<author>
+		<time value="2000040714" />
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.249.6" extension="100001"/>
+			<assignedPerson>
+				<name>
+					<given>Nancy</given>
+					<family>Nightingale</family>
+					<suffix>MD</suffix>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+			  <!--OID for the organization from HL7 most likely -->
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+<!-- The reporting healthcare facility is represented using the CCD "Source of Information" construct, via the Informant participant. -->
+	<informant>
+	   <assignedEntity>
+			<id nullFlavor="NA"/>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedEntity>
+	</informant>
+	<!-- This example assumes that the institution responsible for the data is serving as custodian. -->
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.19.5" />
+				<name>Good Health Clinic</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<!-- In this example, the author is also serving as legal authenticator. -->
+	<legalAuthenticator>
+		<time value="20000408" />
+		<signatureCode code="S" />
+		<assignedEntity>
+			<id root="bc01a5d1-3a34-4286-82cc-43eb04c972a7" />
+			<assignedPerson>
+				<name>
+					<given>Nancy</given>
+					<family>Nightingale</family>
+					<suffix>MD</suffix>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5" />
+				<name>Good Health Clinic</name>
+			</representedOrganization>
+		</assignedEntity>
+	</legalAuthenticator>
+	<!--The whole paricipatant and docuemantationOf goes here before the Header is complete -->
+	<participant typeCode="PRF">
+		<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+	  <!--WVP Associated Entity is required to be there with this PROV-->
+		<associatedEntity classCode="PROV">
+			  <id root="bc01a5d1-3a34-4286-82cc-43eb04c972a7"/>
+			  <associatedPerson>
+				  <name>
+					  <given>Nancy</given>
+					  <family>Nightengale</family>
+					   <suffix>MD</suffix>
+				   </name>
+			  </associatedPerson>
+		  </associatedEntity>
+	</participant>
+	<documentationOf>
+		<serviceEvent>
+			<code codeSystem="2.16.840.1.113883.6.12" code="99202"/>
+			<effectiveTime>
+				 <low value="20100210"/>
+				 <high value="20100210"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<assignedEntity>
+					<id root="2.16.840.1.113883.4.6" extension="1558574525"/>
+					<code code="62247001" codeSystem="2.16.840.1.113883.6.69" codeSystemName="SNOMED CT" displayName="Internal Medician Specialist"/>
+					<addr>
+						<streetAddressLine>123 Maple Ave</streetAddressLine>
+						<city>Gaithersburg</city>
+						<state>MD</state>
+						<postalCode>20877</postalCode>
+					</addr>
+					<assignedPerson>
+						<name>
+							<given>Nancy</given>
+							<family>Nightengald</family>
+							<suffix>MD</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+		 </serviceEvent>
+	</documentationOf>
+	<!-- 
+********************************************************
+CDA Body
+********************************************************
+-->
+	<component>
+		<structuredBody>
+			<!-- 
+********************************************************
+MeasureSet: NQF Pneumonia, V2.5
+********************************************************
+-->
+
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.19.1"/> <!-- templateId uniquely identifies the measure set (Fake ID for illustration) -->
+					<code code="55185-3" codeSystem="2.16.840.1.113883.6.1" />
+					<title>Measure Set: NQF Pneumonia Measure Set, V2.5</title>
+					<text>... (optional) description of measure set ...</text>
+					<!-- 
+					********************************************************
+					Measure Section
+					********************************************************
+					-->
+					<component>
+						<section>
+							<!-- QRDA Category I measure-specific template ID for each measure in this section (Fake IDs for illustration). -->
+							<templateId root="2.16.840.1.113883.19.2" /> 
+							<templateId root="2.16.840.1.113883.19.3" />
+							<templateId root="2.16.840.1.113883.19.4" />
+							<code code="55186-1" codeSystem="2.16.840.1.113883.6.1" />
+							<title>Measure Section</title>
+							<text>
+								<list>
+									<item>NQF PN-1: Oxygenation Assessment, V2.5</item>
+									<item>NQF PN-4: Adult Smoking Cessation Advice/Counseling, V2.5</item>
+									<item>NQF PN-6a: Initial Antibiotic Selection for CAP in Immunocompetent - ICU Patient, V2.5</item>
+								</list>
+							</text>
+							<entry typeCode="DRIV">
+								<!--
+								The measure is represented as an <act> in definition mood.
+								A narrative description of the measure is in act/text.
+								A formal computable representation of the measure is not included here, but potentially could be.		
+								-->
+								<act classCode="ACT" moodCode="DEF">
+									<id root="4dd3b0b4-a5fc-4bd6-9a87-755da494f6eb" /> 
+									<!-- Fake code for illustration -->
+									<code code="11111-X" codeSystem="2.16.840.1.113883.6.1" displayName="Oxygenation Assessment,V2.5" /> 
+									<text>... (optional) description of measure ...</text>
+									<statusCode code="completed" />
+								</act>
+							</entry>
+							<entry typeCode="DRIV">
+								<act classCode="ACT" moodCode="DEF">
+									<id root="4dd3b0b4-a5fc-4bd6-9a87-755da494f6ee" />
+									<code code="11111-X" codeSystem="2.16.840.1.113883.6.1" displayName="Adult Smoking Cessation Advice/Counseling" />
+									<text>... (optional) description of measure ...</text>
+									<statusCode code="completed" />
+								</act>
+							</entry>
+							<entry typeCode="DRIV">
+								<act classCode="ACT" moodCode="DEF">
+									<id root="4dd3b0b4-a5fc-4bd6-9a87-755da494f6ea" />
+									<code code="11111-X" codeSystem="2.16.840.1.113883.6.1" displayName="Initial Antibiotic Selection for CAP in Immunocompetent - ICU Patient" />
+									<text>... (optional) description of measure ...</text>
+									<statusCode code="completed" />
+								</act>
+							</entry>
+							<!-- 
+							********************************************************
+							Reporting Parameters
+							********************************************************
+							-->
+							<component>
+								<section>
+									<code code="55187-9" codeSystem="2.16.840.1.113883.6.1" />
+									<title>Reporting Parameters</title>
+									<text>
+										<list>
+											<item>Reporting period: 01 Jan 2008 - 31 Mar 2008</item>
+										</list>
+									</text>
+									<entry>
+										<act classCode="ACT" moodCode="EVN">
+											<code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters" />
+											<effectiveTime>
+												<low value="20080101" /> <!-- The first day of the period reported. -->
+												<high value="20080331" /> <!-- The last day of the period reported. -->
+											</effectiveTime>
+										</act>
+									</entry>
+								</section>
+							</component>
+							<!-- 
+							********************************************************
+							Patient Data 
+							********************************************************
+							-->
+							<component>
+								<section>
+								   <code code="55188-7" codeSystem="2.16.840.1.113883.6.1" />
+									<title>Patient Data</title>
+									<text>
+										<list>
+											<item>Admission Date: 13 Feb 2008</item>
+											<item>Discharge Date: 20 Feb 2008</item>
+											<item>ICD Diagnosis Codes: 481 (Pneumococcal pneumonia)</item>
+											<item>Initial Oxygen Saturation: 85%</item>
+											<item>Initial Antibiotics: Levofloxacin 500mg IV q24 hours</item>
+											<item>Smoker: Yes</item>
+											<item>Smoking Cessation Counseling Provided: Yes</item>
+										</list>
+									</text>
+									<entry typeCode="DRIV">
+										<encounter classCode="ENC" moodCode="EVN">
+											<id root="3e547597-ac81-4232-b20f-317dfd1a3595" />
+											<code code="IMP" displayName="Inpatient" codeSystem="2.16.840.1.113883.5.83" codeSystemName="actEncounterCode" />
+											<effectiveTime>
+												<low value="20080213" />
+												<high value="20080220" />
+											</effectiveTime>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN" negationInd="false">
+													<templateId root="2.16.840.1.113883.10.20.1.28" />
+													<!-- Problem observation template -->
+													<id root="f7a66e8a-f6e5-48fe-93e5-f0f1ed462c80" />
+													<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+													<statusCode code="completed" />
+													<value xsi:type="CD" code="481" codeSystem="2.16.840.1.113883.6.2" codeSystemName="ICD9CM" displayName="Pneumococcal pneumonia" />
+												</observation>
+											</entryRelationship>
+											<entryRelationship typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<templateId root="2.16.840.1.113883.10.20.1.31" />
+													<!-- Result observation template -->
+													<id root="5ac04863-aa06-4254-84a6-ac01fad60723" />
+													<code code="103228002" codeSystem="2.16.840.1.113883.6.96" displayName="Oxygen saturation" />
+													<statusCode code="completed" />
+													<effectiveTime>
+														<center value="200802131412" />
+													</effectiveTime>
+													<value xsi:type="PQ" value="85" unit="%" />
+												</observation>
+											</entryRelationship>
+											<!-- A real Category I would also include entries for:
+											<item>Initial Antibiotics: Levofloxacin 500mg IV q24 hours</item>
+											<item>Smoker: Yes</item>
+											<item>Smoking Cessation Counseling Provided: Yes</item>
+											-->
+										</encounter>
+									</entry>
+								</section>
+							</component>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

@@ -1,0 +1,181 @@
+SELECT ?x
+WHERE { ?x <http://cms.gov/pqri/qds/NQF_id> "0001" }
+
+file:///var/A_1244
+file:///var/A_162
+file:///var/A_161
+file:///var/A_163
+file:///var/A_1441
+file:///var/A_366
+file:///var/A_1442
+file:///var/A_367
+file:///var/A_368
+file:///var/A_138
+file:///var/A_139
+file:///var/A_251
+file:///var/A_310
+file:///var/A_311
+
+SELECT ?x
+WHERE { ?x <http://cms.gov/pqri/qds/standard_code_list> "493.00" }
+
+ile:///var/A_161
+file:///var/A_166
+file:///var/A_1013
+file:///var/A_1014
+file:///var/A_1015
+file:///var/A_1065
+file:///var/A_1066
+
+SELECT *
+WHERE { <file:///var/A_161> <http://cms.gov/pqri/qds/NQF_id> ?o . }
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?y ?p ?o
+WHERE { {?x qds:standard_concept_id "N_c241" }
+{?x qds:standard_code_list ?y } 
+GRAPH ?g { ?x ?p ?o . }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?y ?p ?o
+WHERE { {?x qds:standard_concept_id "N_c242" }
+{?x qds:standard_code_list ?y }
+GRAPH ?g { ?x ?p ?o . }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?y ?p ?o
+WHERE { {?x qds:standard_concept_id "N_c243" }
+{?x qds:standard_code_list ?y }
+GRAPH ?g { ?x ?p ?o . }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?y 
+WHERE { {?x qds:standard_concept_id "N_c242" }
+{?x qds:standard_code_list ?y }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?y ?z
+WHERE { {?x qds:standard_code_list "493.00" }
+{ ?x qds:NQF_id ?y }
+{ ?x qds:measure_name ?z }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?mname
+WHERE { {?qdsid qds:standard_code_list "493.00" }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+}
+
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?mname
+WHERE { {?qdsid qds:standard_code_list "427.81" }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?o ?p
+WHERE { {?qdsid qds:NQF_id "0047" }
+GRAPH ?g { ?qdsid ?o ?p .}
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?x ?o ?p
+WHERE { {?x qds:NQF_id "0070" }
+GRAPH ?g { ?x ?o ?p .}
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?nqfid ?qdsid ?dtype ?p ?o
+WHERE { {?nqfid qds:NQF_id "0070" }
+{ ?nqfid qds:QDS_id ?qdsid }
+{ ?nqfid qds:QDS_data_type ?dtype }
+GRAPH ?g { ?nqfid ?p ?o . }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?mname ?datatype
+WHERE { {?qdsid qds:standard_code_list "83704" }
+{ ?qdsid qds:QDS_data_type ?datatype }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?mname ?datatype
+WHERE { {?qdsid qds:standard_code_list "310490" }
+{ ?qdsid qds:QDS_data_type ?datatype }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?code ?measure ?mname ?datatype
+WHERE { {?qdsid qds:standard_taxonomy "SNOMED-CT" }
+{ ?qdsid qds:QDS_data_type "medication not done" }
+{ ?qdsid qds:QDS_data_type ?datatype }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+{ ?qdsid qds:standard_code_list ?code }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?mname ?datatype
+WHERE { {?qdsid qds:standard_taxonomy "SNOMED-CT" }
+{ ?qdsid qds:QDS_data_type ?datatype }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?qdsid ?measure ?code ?datatype ?mname
+WHERE { {?qdsid qds:standard_category "Encounter" }
+{ ?qdsid qds:NQF_id "0004" }
+{ ?qdsid qds:standard_concept ?datatype }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:measure_name ?mname }
+{ ?qdsid qds:standard_code_list ?code }
+}
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?code ?measure ?taxonomy ?concept
+WHERE { {?qdsid qds:standard_category "Encounter" }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:standard_code_list ?code }
+{ ?qdsid qds:standard_taxonomy ?taxonomy }
+{ ?qdsid qds:standard_concept ?concept }
+}
+order by ?code
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?code ?measure ?taxonomy ?concept
+WHERE { {?qdsid qds:standard_category "Encounter" }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:standard_code_list ?code }
+{ ?qdsid qds:standard_taxonomy ?taxonomy }
+{ ?qdsid qds:standard_concept ?concept }
+}
+order by ?code 
+offset 250
+
+PREFIX qds: <http://cms.gov/pqri/qds/>
+SELECT ?measure ?code ?taxonomy ?concept
+WHERE { {?qdsid qds:standard_category "Encounter" }
+{ ?qdsid qds:NQF_id ?measure }
+{ ?qdsid qds:standard_code_list ?code }
+{ ?qdsid qds:standard_taxonomy ?taxonomy }
+{ ?qdsid qds:standard_concept ?concept }
+}
+order by ?measure ?code
+offset 2500
+
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX qds:<http://cms.gov/pqri/qds/>
+SELECT * WHERE { ?s qds:measure_name ?o }
+

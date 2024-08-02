@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:vmu="http://vista.org/mu/"
+         xmlns:vq="http://vista.org/quality/">
+<rdf:Description rdf:about="http://vista.org/mu/measure#hasMedOrders">
+  <rdf:type rdf:resource="vmu:measure" />
+  <vmu:label>CPOE for Meds (30%)</vmu:label>
+  <vmu:attribute>hasMed</vmu:attribute>
+  <vmu:converse>noMed</vmu:converse>
+</rdf:Description>
+<rdf:Description rdf:about="http://vista.org/mu/measure#hasAdvanceDirective">
+  <rdf:type rdf:resource="vmu:measure" />
+  <vmu:label>Advance Directives (50%)</vmu:label>
+  <vmu:attribute>hasAdvanceDirective</vmu:attribute>
+  <vmu:converse>noAdvanceDirective</vmu:converse>
+</rdf:Description>
+<rdf:Description rdf:about="http://vista.org/mu/measureset#inpatient2012">
+ <rdf:type>vmu:measureSet</rdf:type>
+ <vmu:label>Inpatient 2012 Meaningful Use Measures</vmu:label>
+ <vmu:includes>vmu:measure#hasAdvanceDirective</vmu:includes>
+ <vmu:includes>vmu:measure#hasMedOrders</vmu:includes>
+</rdf:Description>
+</rdf:RDF>

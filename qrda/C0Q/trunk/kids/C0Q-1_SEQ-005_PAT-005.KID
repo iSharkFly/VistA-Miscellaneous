@@ -1,0 +1,3840 @@
+KIDS Distribution saved on Oct 18, 2012@11:20:27
+Bug Fixes for QM package
+**KIDS**:C0Q*1.0*5^
+
+**INSTALL NAME**
+C0Q*1.0*5
+"BLD",7919,0)
+C0Q*1.0*5^QUALITY MEASURES^0^3121018^y
+"BLD",7919,1,0)
+^^171^171^3121018^
+"BLD",7919,1,1,0)
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: YES
+"BLD",7919,1,2,0)
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+"BLD",7919,1,3,0)
+ 
+"BLD",7919,1,4,0)
+DESCRIPTION:
+"BLD",7919,1,5,0)
+============
+"BLD",7919,1,6,0)
+Written by Sam Habiel on 17 October 2012 and released through VISTA Forum.
+"BLD",7919,1,7,0)
+ 
+"BLD",7919,1,8,0)
+Licensed under package license (currently GPL 2.0)
+"BLD",7919,1,9,0)
+ 
+"BLD",7919,1,10,0)
+FUNCTIONALITY:
+"BLD",7919,1,11,0)
+==============
+"BLD",7919,1,12,0)
+This build fixes various bugs in the Quality Measurements package 
+"BLD",7919,1,13,0)
+discovered during testing.
+"BLD",7919,1,14,0)
+ 
+"BLD",7919,1,15,0)
+ 1. Empty lists are created in advance for Outpatients. Previously, they
+"BLD",7919,1,16,0)
+were not created, even though an entry point existed (INITCLST). 
+"BLD",7919,1,17,0)
+ 
+"BLD",7919,1,18,0)
+ 2. The Vitals lookup code that calls CPRS code didn't include today. 
+"BLD",7919,1,19,0)
+This was fixed by adding .999999 to today's date.
+"BLD",7919,1,20,0)
+ 
+"BLD",7919,1,21,0)
+ 3. File security (@ sign everywhere) didn't permit normal users to edit 
+"BLD",7919,1,22,0)
+the file. Previous, I defeated the @ sign protection by setting DLAYGO. 
+"BLD",7919,1,23,0)
+However, DLAYGO got killed by Fileman after each edit, which meant that 
+"BLD",7919,1,24,0)
+you can only edit one entry at a time before heading back out and back in 
+"BLD",7919,1,25,0)
+to edit another entry. After discussion with Fileman developers, the 
+"BLD",7919,1,26,0)
+proper way to do this was to not to use DLAYGO but rather remove the @ 
+"BLD",7919,1,27,0)
+signs for Read, Write, and Laygo in the Files Definitions.
+"BLD",7919,1,28,0)
+ 
+"BLD",7919,1,29,0)
+ - File list where protections were changed.
+"BLD",7919,1,30,0)
+ --> C0Q MEASUREMENT SET (1130580001.201)
+"BLD",7919,1,31,0)
+ --> C0Q QUALITY MEASURE (1130580001.101)
+"BLD",7919,1,32,0)
+ --> C0Q PARAMETER (1130580001.401)
+"BLD",7919,1,33,0)
+ 
+"BLD",7919,1,34,0)
+ - Options which don't use DLAYGO anymore.
+"BLD",7919,1,35,0)
+ --> EDIT SUPERUSERS [C0Q EDIT SUPERUSERS]
+"BLD",7919,1,36,0)
+ --> EP EDIT PARMS [C0Q EDIT OUTPATIENT PARMS]
+"BLD",7919,1,37,0)
+ --> INP EDIT PARMS [C0Q EDIT INP PARMS]
+"BLD",7919,1,38,0)
+ --> MEASURE SET EDIT [C0Q EDIT MEASURE SET]
+"BLD",7919,1,39,0)
+ --> MU MEASURE EDIT [C0Q EDIT MU MEASURE]
+"BLD",7919,1,40,0)
+ --> QUALITY MEASURE EDIT [C0Q EDIT QUALITY MEASURE]
+"BLD",7919,1,41,0)
+ 
+"BLD",7919,1,42,0)
+4. The Outpatient Quality Measurement Set which is specified in the 
+"BLD",7919,1,43,0)
+Parameters was being completely ignored. This is fixed.
+"BLD",7919,1,44,0)
+ 
+"BLD",7919,1,45,0)
+5. The variable C0QNALT was not being newed in C0QUPDT. It acts as a flag 
+"BLD",7919,1,46,0)
+indicating the type of measure (Performance vs Quality Measure). Since it 
+"BLD",7919,1,47,0)
+was left lying around, a Quality Measure was mistakenly interpreted as a 
+"BLD",7919,1,48,0)
+performance measure, giving you a result of zero, since there is no 
+"BLD",7919,1,49,0)
+data for this Quality Measure.
+"BLD",7919,1,50,0)
+ 
+"BLD",7919,1,51,0)
+6. The option that executes the logic for Outpatients C0Q EP UPDATE MU 
+"BLD",7919,1,52,0)
+MEASURES didn't display the time on the dates of the Visits being
+"BLD",7919,1,53,0)
+processed correctly. This patch fixes this.
+"BLD",7919,1,54,0)
+ 
+"BLD",7919,1,55,0)
+SUPPORT TICKETS:
+"BLD",7919,1,56,0)
+================
+"BLD",7919,1,57,0)
+None
+"BLD",7919,1,58,0)
+ 
+"BLD",7919,1,59,0)
+PACKAGE ELEMENTS:
+"BLD",7919,1,60,0)
+=================
+"BLD",7919,1,61,0)
+ 
+"BLD",7919,1,62,0)
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+"BLD",7919,1,63,0)
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+"BLD",7919,1,64,0)
+POST-INIT ROUTINE: POST^C0Q1P5             DELETE POST-INIT ROUTINE: No
+"BLD",7919,1,65,0)
+PRE-TRANSPORT RTN: TRAN^C0Q1P5
+"BLD",7919,1,66,0)
+ 
+"BLD",7919,1,67,0)
+                                           UP    SEND  DATA                USER
+"BLD",7919,1,68,0)
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+"BLD",7919,1,69,0)
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+"BLD",7919,1,70,0)
+-------------------------------------------------------------------------------
+"BLD",7919,1,71,0)
+ 
+"BLD",7919,1,72,0)
+1130580001.101C0Q QUALITY MEASURE          YES   YES   NO                  
+"BLD",7919,1,73,0)
+ 
+"BLD",7919,1,74,0)
+1130580001.201C0Q MEASUREMENT SET          YES   YES   NO                  
+"BLD",7919,1,75,0)
+ 
+"BLD",7919,1,76,0)
+                                           UP    SEND  DATA                USER
+"BLD",7919,1,77,0)
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+"BLD",7919,1,78,0)
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+"BLD",7919,1,79,0)
+-------------------------------------------------------------------------------
+"BLD",7919,1,80,0)
+ 
+"BLD",7919,1,81,0)
+1130580001.401C0Q PARAMETER                YES   YES   NO                  
+"BLD",7919,1,82,0)
+ 
+"BLD",7919,1,83,0)
+ROUTINE:                                       ACTION:
+"BLD",7919,1,84,0)
+   C0Q1P5                                         SEND TO SITE
+"BLD",7919,1,85,0)
+   C0QMU12                                        SEND TO SITE
+"BLD",7919,1,86,0)
+   C0QUPDT                                        SEND TO SITE
+"BLD",7919,1,87,0)
+ 
+"BLD",7919,1,88,0)
+OPTION:                                        ACTION:
+"BLD",7919,1,89,0)
+   C0Q EDIT INP PARMS                             SEND TO SITE
+"BLD",7919,1,90,0)
+   C0Q EDIT MEASURE SET                           SEND TO SITE
+"BLD",7919,1,91,0)
+   C0Q EDIT MU MEASURE                            SEND TO SITE
+"BLD",7919,1,92,0)
+   C0Q EDIT OUTPATIENT PARMS                      SEND TO SITE
+"BLD",7919,1,93,0)
+   C0Q EDIT QUALITY MEASURE                       SEND TO SITE
+"BLD",7919,1,94,0)
+   C0Q EDIT SUPERUSERS                            SEND TO SITE
+"BLD",7919,1,95,0)
+ 
+"BLD",7919,1,96,0)
+DOCUMENTATION:
+"BLD",7919,1,97,0)
+==============
+"BLD",7919,1,98,0)
+http://www.vistapedia.com/index.php/C0Q_Quality_Reporting_1.0
+"BLD",7919,1,99,0)
+ 
+"BLD",7919,1,100,0)
+COMPLIANCE:
+"BLD",7919,1,101,0)
+===========
+"BLD",7919,1,102,0)
+This software complies with the VA MUMPS Programming Standards and
+"BLD",7919,1,103,0)
+ Conventions (version 3 April 2007), except for the following:
+"BLD",7919,1,104,0)
+ 
+"BLD",7919,1,105,0)
+ C0QMU12  * *  541 Lines,  18707 Bytes, Checksum: B280797584
+"BLD",7919,1,106,0)
+        S - Routine code exceeds SACC maximum size of 15000 (15513).
+"BLD",7919,1,107,0)
+ 
+"BLD",7919,1,108,0)
+Blood Bank Clearance: This software doesn't interact with the Blood Bank module.
+"BLD",7919,1,109,0)
+ 
+"BLD",7919,1,110,0)
+Installation Instructions:
+"BLD",7919,1,111,0)
+==========================
+"BLD",7919,1,112,0)
+Install Time - less than 1 minute.
+"BLD",7919,1,113,0)
+ 
+"BLD",7919,1,114,0)
+ 1.  LOAD TRANSPORT GLOBAL
+"BLD",7919,1,115,0)
+ 
+"BLD",7919,1,116,0)
+     Choose the PackMan message containing this patch and invoke the
+"BLD",7919,1,117,0)
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+"BLD",7919,1,118,0)
+ 
+"BLD",7919,1,119,0)
+ 2.  START UP KIDS
+"BLD",7919,1,120,0)
+ 
+"BLD",7919,1,121,0)
+      Start up the Kernel Installation and Distribution System Menu
+"BLD",7919,1,122,0)
+      [XPD MAIN]:
+"BLD",7919,1,123,0)
+ 
+"BLD",7919,1,124,0)
+           Edits and Distribution ...
+"BLD",7919,1,125,0)
+           Utilities ...
+"BLD",7919,1,126,0)
+           Installation ...
+"BLD",7919,1,127,0)
+ 
+"BLD",7919,1,128,0)
+ Select Kernel Installation & Distribution System Option: INStallation
+"BLD",7919,1,129,0)
+                                                          ---
+"BLD",7919,1,130,0)
+           Load a Distribution
+"BLD",7919,1,131,0)
+           Print Transport Global
+"BLD",7919,1,132,0)
+           Compare Transport Global to Current System
+"BLD",7919,1,133,0)
+           Verify Checksums in Transport Global
+"BLD",7919,1,134,0)
+           Install Package(s)
+"BLD",7919,1,135,0)
+           Restart Install of Package(s)
+"BLD",7919,1,136,0)
+           Unload a Distribution
+"BLD",7919,1,137,0)
+           Backup a Transport Global
+"BLD",7919,1,138,0)
+ 
+"BLD",7919,1,139,0)
+ Select Installation Option:
+"BLD",7919,1,140,0)
+ 
+"BLD",7919,1,141,0)
+ 3.  Select Installation Option:
+"BLD",7919,1,142,0)
+ 
+"BLD",7919,1,143,0)
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+"BLD",7919,1,144,0)
+             NAME, enter C0Q*1.0*5):
+"BLD",7919,1,145,0)
+ 
+"BLD",7919,1,146,0)
+     a.  Backup a Transport Global - This option will create a backup
+"BLD",7919,1,147,0)
+         message of any routines exported with this patch. It will not
+"BLD",7919,1,148,0)
+         backup any other changes such as DD's or templates.
+"BLD",7919,1,149,0)
+     b.  Compare Transport Global to Current System - This option will
+"BLD",7919,1,150,0)
+         allow you to view all changes that will be made when this patch
+"BLD",7919,1,151,0)
+         is installed.  It compares all components of this patch
+"BLD",7919,1,152,0)
+         (routines, DD's, templates, etc.).
+"BLD",7919,1,153,0)
+     c.  Verify Checksums in Transport Global - This option will allow
+"BLD",7919,1,154,0)
+         you to ensure the integrity of the routines that are in the
+"BLD",7919,1,155,0)
+         transport global.
+"BLD",7919,1,156,0)
+ 
+"BLD",7919,1,157,0)
+ 4.  Select Installation Option: Install Package(s)
+"BLD",7919,1,158,0)
+ 
+"BLD",7919,1,159,0)
+     **This is the step to start the installation of this KIDS patch:
+"BLD",7919,1,160,0)
+ 
+"BLD",7919,1,161,0)
+     a.  Choose the Install Package(s) option to start the patch install
+"BLD",7919,1,162,0)
+         and enter "C0Q*1.0*5" at the INSTALL NAME prompt. As part of the
+"BLD",7919,1,163,0)
+         Environment Check routine, the message below will display
+"BLD",7919,1,164,0)
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+"BLD",7919,1,165,0)
+         Install? NO//'  answer NO
+"BLD",7919,1,166,0)
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+"BLD",7919,1,167,0)
+         NO//'  answer NO
+"BLD",7919,1,168,0)
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+"BLD",7919,1,169,0)
+         and Protocols? NO//'  answer NO
+"BLD",7919,1,170,0)
+ 
+"BLD",7919,1,171,0)
+  5.  Post installation: No post installation tasks are necessary.
+"BLD",7919,4,0)
+^9.64PA^1130580001.401^3
+"BLD",7919,4,1130580001.101,0)
+1130580001.101
+"BLD",7919,4,1130580001.101,222)
+y^y^f^^^^n
+"BLD",7919,4,1130580001.201,0)
+1130580001.201
+"BLD",7919,4,1130580001.201,222)
+y^y^f^^^^n
+"BLD",7919,4,1130580001.401,0)
+1130580001.401
+"BLD",7919,4,1130580001.401,222)
+y^y^f^^^^n
+"BLD",7919,4,"B",1130580001.101,1130580001.101)
+
+"BLD",7919,4,"B",1130580001.201,1130580001.201)
+
+"BLD",7919,4,"B",1130580001.401,1130580001.401)
+
+"BLD",7919,6.3)
+10
+"BLD",7919,"INI")
+
+"BLD",7919,"INIT")
+POST^C0Q1P5
+"BLD",7919,"KRN",0)
+^9.67PA^779.2^20
+"BLD",7919,"KRN",.4,0)
+.4
+"BLD",7919,"KRN",.401,0)
+.401
+"BLD",7919,"KRN",.402,0)
+.402
+"BLD",7919,"KRN",.403,0)
+.403
+"BLD",7919,"KRN",.5,0)
+.5
+"BLD",7919,"KRN",.84,0)
+.84
+"BLD",7919,"KRN",3.6,0)
+3.6
+"BLD",7919,"KRN",3.8,0)
+3.8
+"BLD",7919,"KRN",9.2,0)
+9.2
+"BLD",7919,"KRN",9.8,0)
+9.8
+"BLD",7919,"KRN",9.8,"NM",0)
+^9.68A^3^3
+"BLD",7919,"KRN",9.8,"NM",1,0)
+C0QMU12^^0^B280797584
+"BLD",7919,"KRN",9.8,"NM",2,0)
+C0QUPDT^^0^B78768309
+"BLD",7919,"KRN",9.8,"NM",3,0)
+C0Q1P5^^0^B619258
+"BLD",7919,"KRN",9.8,"NM","B","C0Q1P5",3)
+
+"BLD",7919,"KRN",9.8,"NM","B","C0QMU12",1)
+
+"BLD",7919,"KRN",9.8,"NM","B","C0QUPDT",2)
+
+"BLD",7919,"KRN",19,0)
+19
+"BLD",7919,"KRN",19,"NM",0)
+^9.68A^6^6
+"BLD",7919,"KRN",19,"NM",1,0)
+C0Q EDIT SUPERUSERS^^0
+"BLD",7919,"KRN",19,"NM",2,0)
+C0Q EDIT OUTPATIENT PARMS^^0
+"BLD",7919,"KRN",19,"NM",3,0)
+C0Q EDIT INP PARMS^^0
+"BLD",7919,"KRN",19,"NM",4,0)
+C0Q EDIT MEASURE SET^^0
+"BLD",7919,"KRN",19,"NM",5,0)
+C0Q EDIT MU MEASURE^^0
+"BLD",7919,"KRN",19,"NM",6,0)
+C0Q EDIT QUALITY MEASURE^^0
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT INP PARMS",3)
+
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT MEASURE SET",4)
+
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT MU MEASURE",5)
+
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT OUTPATIENT PARMS",2)
+
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT QUALITY MEASURE",6)
+
+"BLD",7919,"KRN",19,"NM","B","C0Q EDIT SUPERUSERS",1)
+
+"BLD",7919,"KRN",19.1,0)
+19.1
+"BLD",7919,"KRN",101,0)
+101
+"BLD",7919,"KRN",409.61,0)
+409.61
+"BLD",7919,"KRN",771,0)
+771
+"BLD",7919,"KRN",779.2,0)
+779.2
+"BLD",7919,"KRN",870,0)
+870
+"BLD",7919,"KRN",8989.51,0)
+8989.51
+"BLD",7919,"KRN",8989.52,0)
+8989.52
+"BLD",7919,"KRN",8994,0)
+8994
+"BLD",7919,"KRN","B",.4,.4)
+
+"BLD",7919,"KRN","B",.401,.401)
+
+"BLD",7919,"KRN","B",.402,.402)
+
+"BLD",7919,"KRN","B",.403,.403)
+
+"BLD",7919,"KRN","B",.5,.5)
+
+"BLD",7919,"KRN","B",.84,.84)
+
+"BLD",7919,"KRN","B",3.6,3.6)
+
+"BLD",7919,"KRN","B",3.8,3.8)
+
+"BLD",7919,"KRN","B",9.2,9.2)
+
+"BLD",7919,"KRN","B",9.8,9.8)
+
+"BLD",7919,"KRN","B",19,19)
+
+"BLD",7919,"KRN","B",19.1,19.1)
+
+"BLD",7919,"KRN","B",101,101)
+
+"BLD",7919,"KRN","B",409.61,409.61)
+
+"BLD",7919,"KRN","B",771,771)
+
+"BLD",7919,"KRN","B",779.2,779.2)
+
+"BLD",7919,"KRN","B",870,870)
+
+"BLD",7919,"KRN","B",8989.51,8989.51)
+
+"BLD",7919,"KRN","B",8989.52,8989.52)
+
+"BLD",7919,"KRN","B",8994,8994)
+
+"BLD",7919,"PRET")
+TRAN^C0Q1P5
+"BLD",7919,"QUES",0)
+^9.62^^
+"FIA",1130580001.101)
+C0Q QUALITY MEASURE
+"FIA",1130580001.101,0)
+^C0Q(101,
+"FIA",1130580001.101,0,0)
+1130580001.101I
+"FIA",1130580001.101,0,1)
+y^y^f^^^^n
+"FIA",1130580001.101,0,10)
+
+"FIA",1130580001.101,0,11)
+
+"FIA",1130580001.101,0,"RLRO")
+
+"FIA",1130580001.101,0,"VR")
+1.0^C0Q
+"FIA",1130580001.101,1130580001.101)
+0
+"FIA",1130580001.101,1130580001.111)
+0
+"FIA",1130580001.201)
+C0Q MEASUREMENT SET
+"FIA",1130580001.201,0)
+^C0Q(201,
+"FIA",1130580001.201,0,0)
+1130580001.201
+"FIA",1130580001.201,0,1)
+y^y^f^^^^n
+"FIA",1130580001.201,0,10)
+
+"FIA",1130580001.201,0,11)
+
+"FIA",1130580001.201,0,"RLRO")
+
+"FIA",1130580001.201,0,"VR")
+1.0^C0Q
+"FIA",1130580001.201,1130580001.201)
+0
+"FIA",1130580001.201,1130580001.2011)
+0
+"FIA",1130580001.201,1130580001.20111)
+0
+"FIA",1130580001.201,1130580001.20112)
+0
+"FIA",1130580001.401)
+C0Q PARAMETER
+"FIA",1130580001.401,0)
+^C0Q(401,
+"FIA",1130580001.401,0,0)
+1130580001.401
+"FIA",1130580001.401,0,1)
+y^y^f^^^^n
+"FIA",1130580001.401,0,10)
+
+"FIA",1130580001.401,0,11)
+
+"FIA",1130580001.401,0,"RLRO")
+
+"FIA",1130580001.401,0,"VR")
+1.0^C0Q
+"FIA",1130580001.401,1130580001.401)
+0
+"FIA",1130580001.401,1130580001.4013)
+0
+"FIA",1130580001.401,1130580001.411)
+0
+"INIT")
+POST^C0Q1P5
+"IX",1130580001.101,1130580001.101,"B",0)
+1130580001.101^B^New-Style B Index. Will be used as part of the key.^R^^F^IR^I^1130580001.101^^^^^LS
+"IX",1130580001.101,1130580001.101,"B",1)
+S ^C0Q(101,"B",$E(X,1,30),DA)=""
+"IX",1130580001.101,1130580001.101,"B",2)
+K ^C0Q(101,"B",$E(X,1,30),DA)
+"IX",1130580001.101,1130580001.101,"B",2.5)
+K ^C0Q(101,"B")
+"IX",1130580001.101,1130580001.101,"B",11.1,0)
+^.114IA^1^1
+"IX",1130580001.101,1130580001.101,"B",11.1,1,0)
+1^F^1130580001.101^.01^30^1^F
+"IX",1130580001.101,1130580001.101,"MU",0)
+1130580001.101^MU^MEANINGFUL USE YEAR KEY^R^^F^IR^I^1130580001.101^^^^^LS
+"IX",1130580001.101,1130580001.101,"MU",1)
+S ^C0Q(101,"MU",$E(X,1,30),DA)=""
+"IX",1130580001.101,1130580001.101,"MU",2)
+K ^C0Q(101,"MU",$E(X,1,30),DA)
+"IX",1130580001.101,1130580001.101,"MU",2.5)
+K ^C0Q(101,"MU")
+"IX",1130580001.101,1130580001.101,"MU",11.1,0)
+^.114IA^1^1
+"IX",1130580001.101,1130580001.101,"MU",11.1,1,0)
+1^F^1130580001.101^.3^30^1^F
+"IX",1130580001.201,1130580001.201,"MU",0)
+1130580001.201^MU^MEANINGFUL USE YEAR KEY INDEX^R^^F^IR^I^1130580001.201^^^^^LS
+"IX",1130580001.201,1130580001.201,"MU",1)
+S ^C0Q(201,"MU",$E(X,1,30),DA)=""
+"IX",1130580001.201,1130580001.201,"MU",2)
+K ^C0Q(201,"MU",$E(X,1,30),DA)
+"IX",1130580001.201,1130580001.201,"MU",2.5)
+K ^C0Q(201,"MU")
+"IX",1130580001.201,1130580001.201,"MU",11.1,0)
+^.114IA^1^1
+"IX",1130580001.201,1130580001.201,"MU",11.1,1,0)
+1^F^1130580001.201^.3^30^1^F
+"IX",1130580001.401,1130580001.401,"MU",0)
+1130580001.401^MU^REGULAR INDEX ON THE REPORTING PERIOD FIELD^R^^F^IR^I^1130580001.401^^^^^LS
+"IX",1130580001.401,1130580001.401,"MU",1)
+S ^C0Q(401,"MU",$E(X,1,30),DA)=""
+"IX",1130580001.401,1130580001.401,"MU",2)
+K ^C0Q(401,"MU",$E(X,1,30),DA)
+"IX",1130580001.401,1130580001.401,"MU",2.5)
+K ^C0Q(401,"MU")
+"IX",1130580001.401,1130580001.401,"MU",11.1,0)
+^.114IA^1^1
+"IX",1130580001.401,1130580001.401,"MU",11.1,1,0)
+1^F^1130580001.401^.02^30^1^F
+"IX",1130580001.401,1130580001.401,"MUTYP",0)
+1130580001.401^MUTYP^INDEX ON PARAMETER TYPE BY REPORTING PERIOD^R^^R^IR^I^1130580001.401^^^^^LS
+"IX",1130580001.401,1130580001.401,"MUTYP",1)
+S ^C0Q(401,"MUTYP",$E(X(1),1,30),X(2),DA)=""
+"IX",1130580001.401,1130580001.401,"MUTYP",2)
+K ^C0Q(401,"MUTYP",$E(X(1),1,30),X(2),DA)
+"IX",1130580001.401,1130580001.401,"MUTYP",2.5)
+K ^C0Q(401,"MUTYP")
+"IX",1130580001.401,1130580001.401,"MUTYP",11.1,0)
+^.114IA^2^2
+"IX",1130580001.401,1130580001.401,"MUTYP",11.1,1,0)
+1^F^1130580001.401^.02^30^1^F
+"IX",1130580001.401,1130580001.401,"MUTYP",11.1,1,3)
+
+"IX",1130580001.401,1130580001.401,"MUTYP",11.1,2,0)
+2^F^1130580001.401^.03^^2^F
+"IX",1130580001.401,1130580001.401,"MUTYP",11.1,2,3)
+
+"KEY",1130580001.101,1130580001.101,"A",0)
+1130580001.101^A^P^784
+"KEY",1130580001.101,1130580001.101,"A",2,0)
+^.312IA^1^1
+"KEY",1130580001.101,1130580001.101,"A",2,1,0)
+.01^1130580001.101^1
+"KEYPTR",1130580001.101,1130580001.101,"A")
+1130580001.101^B
+"KRN",19,11027,-1)
+0^3
+"KRN",19,11027,0)
+C0Q EDIT INP PARMS^INP EDIT PARMS^^E^^^^^^^^^y^^
+"KRN",19,11027,15)
+
+"KRN",19,11027,20)
+
+"KRN",19,11027,30)
+C0Q(401,
+"KRN",19,11027,31)
+AEMQL
+"KRN",19,11027,50)
+C0Q(401,
+"KRN",19,11027,51)
+[C0Q EDIT INPATIENT PARMS]
+"KRN",19,11027,"U")
+INP EDIT PARMS
+"KRN",19,11028,-1)
+0^2
+"KRN",19,11028,0)
+C0Q EDIT OUTPATIENT PARMS^EP EDIT PARMS^^E^^^^^^^^QUALITY MEASURES^y^^
+"KRN",19,11028,15)
+
+"KRN",19,11028,20)
+
+"KRN",19,11028,30)
+C0Q(401,
+"KRN",19,11028,31)
+AEMQL
+"KRN",19,11028,50)
+C0Q(401,
+"KRN",19,11028,51)
+[C0Q EDIT OUPATIENT PARMS]
+"KRN",19,11028,"U")
+EP EDIT PARMS
+"KRN",19,11029,-1)
+0^1
+"KRN",19,11029,0)
+C0Q EDIT SUPERUSERS^EDIT SUPERUSERS^^E^^^^^^^^^y
+"KRN",19,11029,30)
+C0Q(401,
+"KRN",19,11029,31)
+AEMQ
+"KRN",19,11029,50)
+C0Q(401,
+"KRN",19,11029,51)
+[C0Q EDIT SUPERUSERS]
+"KRN",19,11029,"U")
+EDIT SUPERUSERS
+"KRN",19,11030,-1)
+0^4
+"KRN",19,11030,0)
+C0Q EDIT MEASURE SET^MEASURE SET EDIT^^E^^^^^^^^QUALITY MEASURES^y^^
+"KRN",19,11030,15)
+
+"KRN",19,11030,20)
+
+"KRN",19,11030,30)
+C0Q(201,
+"KRN",19,11030,31)
+AEMQL
+"KRN",19,11030,50)
+C0Q(201,
+"KRN",19,11030,51)
+[C0Q EDIT MEASURE SET]
+"KRN",19,11030,"U")
+MEASURE SET EDIT
+"KRN",19,11031,-1)
+0^6
+"KRN",19,11031,0)
+C0Q EDIT QUALITY MEASURE^QUALITY MEASURE EDIT^^E^^^^^^^^^y^^
+"KRN",19,11031,15)
+
+"KRN",19,11031,20)
+
+"KRN",19,11031,30)
+C0Q(101,
+"KRN",19,11031,31)
+AEMQL
+"KRN",19,11031,50)
+C0Q(101,
+"KRN",19,11031,51)
+[C0Q EDIT QUALITY MEASURE]
+"KRN",19,11031,"U")
+QUALITY MEASURE EDIT
+"KRN",19,11032,-1)
+0^5
+"KRN",19,11032,0)
+C0Q EDIT MU MEASURE^MU MEASURE EDIT^^E^^^^^^^^QUALITY MEASURES^y^^
+"KRN",19,11032,15)
+
+"KRN",19,11032,20)
+
+"KRN",19,11032,30)
+C0Q(101,
+"KRN",19,11032,31)
+AEMQL
+"KRN",19,11032,50)
+C0Q(101,
+"KRN",19,11032,51)
+[C0Q EDIT MU MEASURE]
+"KRN",19,11032,"U")
+MU MEASURE EDIT
+"MBREQ")
+0
+"ORD",18,19)
+19;18;;;OPT^XPDTA;OPTF1^XPDIA;OPTE1^XPDIA;OPTF2^XPDIA;;OPTDEL^XPDIA
+"ORD",18,19,0)
+OPTION
+"PKG",214,-1)
+1^1
+"PKG",214,0)
+QUALITY MEASURES^C0Q^Tracks and Prints Quality Measures
+"PKG",214,20,0)
+^9.402P^^
+"PKG",214,22,0)
+^9.49I^1^1
+"PKG",214,22,1,0)
+1.0^3120731^3121002^8
+"PKG",214,22,1,"PAH",1,0)
+5^3121018
+"PKG",214,22,1,"PAH",1,1,0)
+^^171^171^3121018
+"PKG",214,22,1,"PAH",1,1,1,0)
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: YES
+"PKG",214,22,1,"PAH",1,1,2,0)
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+"PKG",214,22,1,"PAH",1,1,3,0)
+ 
+"PKG",214,22,1,"PAH",1,1,4,0)
+DESCRIPTION:
+"PKG",214,22,1,"PAH",1,1,5,0)
+============
+"PKG",214,22,1,"PAH",1,1,6,0)
+Written by Sam Habiel on 17 October 2012 and released through VISTA Forum.
+"PKG",214,22,1,"PAH",1,1,7,0)
+ 
+"PKG",214,22,1,"PAH",1,1,8,0)
+Licensed under package license (currently GPL 2.0)
+"PKG",214,22,1,"PAH",1,1,9,0)
+ 
+"PKG",214,22,1,"PAH",1,1,10,0)
+FUNCTIONALITY:
+"PKG",214,22,1,"PAH",1,1,11,0)
+==============
+"PKG",214,22,1,"PAH",1,1,12,0)
+This build fixes various bugs in the Quality Measurements package 
+"PKG",214,22,1,"PAH",1,1,13,0)
+discovered during testing.
+"PKG",214,22,1,"PAH",1,1,14,0)
+ 
+"PKG",214,22,1,"PAH",1,1,15,0)
+ 1. Empty lists are created in advance for Outpatients. Previously, they
+"PKG",214,22,1,"PAH",1,1,16,0)
+were not created, even though an entry point existed (INITCLST). 
+"PKG",214,22,1,"PAH",1,1,17,0)
+ 
+"PKG",214,22,1,"PAH",1,1,18,0)
+ 2. The Vitals lookup code that calls CPRS code didn't include today. 
+"PKG",214,22,1,"PAH",1,1,19,0)
+This was fixed by adding .999999 to today's date.
+"PKG",214,22,1,"PAH",1,1,20,0)
+ 
+"PKG",214,22,1,"PAH",1,1,21,0)
+ 3. File security (@ sign everywhere) didn't permit normal users to edit 
+"PKG",214,22,1,"PAH",1,1,22,0)
+the file. Previous, I defeated the @ sign protection by setting DLAYGO. 
+"PKG",214,22,1,"PAH",1,1,23,0)
+However, DLAYGO got killed by Fileman after each edit, which meant that 
+"PKG",214,22,1,"PAH",1,1,24,0)
+you can only edit one entry at a time before heading back out and back in 
+"PKG",214,22,1,"PAH",1,1,25,0)
+to edit another entry. After discussion with Fileman developers, the 
+"PKG",214,22,1,"PAH",1,1,26,0)
+proper way to do this was to not to use DLAYGO but rather remove the @ 
+"PKG",214,22,1,"PAH",1,1,27,0)
+signs for Read, Write, and Laygo in the Files Definitions.
+"PKG",214,22,1,"PAH",1,1,28,0)
+ 
+"PKG",214,22,1,"PAH",1,1,29,0)
+ - File list where protections were changed.
+"PKG",214,22,1,"PAH",1,1,30,0)
+ --> C0Q MEASUREMENT SET (1130580001.201)
+"PKG",214,22,1,"PAH",1,1,31,0)
+ --> C0Q QUALITY MEASURE (1130580001.101)
+"PKG",214,22,1,"PAH",1,1,32,0)
+ --> C0Q PARAMETER (1130580001.401)
+"PKG",214,22,1,"PAH",1,1,33,0)
+ 
+"PKG",214,22,1,"PAH",1,1,34,0)
+ - Options which don't use DLAYGO anymore.
+"PKG",214,22,1,"PAH",1,1,35,0)
+ --> EDIT SUPERUSERS [C0Q EDIT SUPERUSERS]
+"PKG",214,22,1,"PAH",1,1,36,0)
+ --> EP EDIT PARMS [C0Q EDIT OUTPATIENT PARMS]
+"PKG",214,22,1,"PAH",1,1,37,0)
+ --> INP EDIT PARMS [C0Q EDIT INP PARMS]
+"PKG",214,22,1,"PAH",1,1,38,0)
+ --> MEASURE SET EDIT [C0Q EDIT MEASURE SET]
+"PKG",214,22,1,"PAH",1,1,39,0)
+ --> MU MEASURE EDIT [C0Q EDIT MU MEASURE]
+"PKG",214,22,1,"PAH",1,1,40,0)
+ --> QUALITY MEASURE EDIT [C0Q EDIT QUALITY MEASURE]
+"PKG",214,22,1,"PAH",1,1,41,0)
+ 
+"PKG",214,22,1,"PAH",1,1,42,0)
+4. The Outpatient Quality Measurement Set which is specified in the 
+"PKG",214,22,1,"PAH",1,1,43,0)
+Parameters was being completely ignored. This is fixed.
+"PKG",214,22,1,"PAH",1,1,44,0)
+ 
+"PKG",214,22,1,"PAH",1,1,45,0)
+5. The variable C0QNALT was not being newed in C0QUPDT. It acts as a flag 
+"PKG",214,22,1,"PAH",1,1,46,0)
+indicating the type of measure (Performance vs Quality Measure). Since it 
+"PKG",214,22,1,"PAH",1,1,47,0)
+was left lying around, a Quality Measure was mistakenly interpreted as a 
+"PKG",214,22,1,"PAH",1,1,48,0)
+performance measure, giving you a result of zero, since there is no 
+"PKG",214,22,1,"PAH",1,1,49,0)
+data for this Quality Measure.
+"PKG",214,22,1,"PAH",1,1,50,0)
+ 
+"PKG",214,22,1,"PAH",1,1,51,0)
+6. The option that executes the logic for Outpatients C0Q EP UPDATE MU 
+"PKG",214,22,1,"PAH",1,1,52,0)
+MEASURES didn't display the time on the dates of the Visits being
+"PKG",214,22,1,"PAH",1,1,53,0)
+processed correctly. This patch fixes this.
+"PKG",214,22,1,"PAH",1,1,54,0)
+ 
+"PKG",214,22,1,"PAH",1,1,55,0)
+SUPPORT TICKETS:
+"PKG",214,22,1,"PAH",1,1,56,0)
+================
+"PKG",214,22,1,"PAH",1,1,57,0)
+None
+"PKG",214,22,1,"PAH",1,1,58,0)
+ 
+"PKG",214,22,1,"PAH",1,1,59,0)
+PACKAGE ELEMENTS:
+"PKG",214,22,1,"PAH",1,1,60,0)
+=================
+"PKG",214,22,1,"PAH",1,1,61,0)
+ 
+"PKG",214,22,1,"PAH",1,1,62,0)
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+"PKG",214,22,1,"PAH",1,1,63,0)
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+"PKG",214,22,1,"PAH",1,1,64,0)
+POST-INIT ROUTINE: POST^C0Q1P5             DELETE POST-INIT ROUTINE: No
+"PKG",214,22,1,"PAH",1,1,65,0)
+PRE-TRANSPORT RTN: TRAN^C0Q1P5
+"PKG",214,22,1,"PAH",1,1,66,0)
+ 
+"PKG",214,22,1,"PAH",1,1,67,0)
+                                           UP    SEND  DATA                USER
+"PKG",214,22,1,"PAH",1,1,68,0)
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+"PKG",214,22,1,"PAH",1,1,69,0)
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+"PKG",214,22,1,"PAH",1,1,70,0)
+-------------------------------------------------------------------------------
+"PKG",214,22,1,"PAH",1,1,71,0)
+ 
+"PKG",214,22,1,"PAH",1,1,72,0)
+1130580001.101C0Q QUALITY MEASURE          YES   YES   NO                  
+"PKG",214,22,1,"PAH",1,1,73,0)
+ 
+"PKG",214,22,1,"PAH",1,1,74,0)
+1130580001.201C0Q MEASUREMENT SET          YES   YES   NO                  
+"PKG",214,22,1,"PAH",1,1,75,0)
+ 
+"PKG",214,22,1,"PAH",1,1,76,0)
+                                           UP    SEND  DATA                USER
+"PKG",214,22,1,"PAH",1,1,77,0)
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+"PKG",214,22,1,"PAH",1,1,78,0)
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+"PKG",214,22,1,"PAH",1,1,79,0)
+-------------------------------------------------------------------------------
+"PKG",214,22,1,"PAH",1,1,80,0)
+ 
+"PKG",214,22,1,"PAH",1,1,81,0)
+1130580001.401C0Q PARAMETER                YES   YES   NO                  
+"PKG",214,22,1,"PAH",1,1,82,0)
+ 
+"PKG",214,22,1,"PAH",1,1,83,0)
+ROUTINE:                                       ACTION:
+"PKG",214,22,1,"PAH",1,1,84,0)
+   C0Q1P5                                         SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,85,0)
+   C0QMU12                                        SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,86,0)
+   C0QUPDT                                        SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,87,0)
+ 
+"PKG",214,22,1,"PAH",1,1,88,0)
+OPTION:                                        ACTION:
+"PKG",214,22,1,"PAH",1,1,89,0)
+   C0Q EDIT INP PARMS                             SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,90,0)
+   C0Q EDIT MEASURE SET                           SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,91,0)
+   C0Q EDIT MU MEASURE                            SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,92,0)
+   C0Q EDIT OUTPATIENT PARMS                      SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,93,0)
+   C0Q EDIT QUALITY MEASURE                       SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,94,0)
+   C0Q EDIT SUPERUSERS                            SEND TO SITE
+"PKG",214,22,1,"PAH",1,1,95,0)
+ 
+"PKG",214,22,1,"PAH",1,1,96,0)
+DOCUMENTATION:
+"PKG",214,22,1,"PAH",1,1,97,0)
+==============
+"PKG",214,22,1,"PAH",1,1,98,0)
+http://www.vistapedia.com/index.php/C0Q_Quality_Reporting_1.0
+"PKG",214,22,1,"PAH",1,1,99,0)
+ 
+"PKG",214,22,1,"PAH",1,1,100,0)
+COMPLIANCE:
+"PKG",214,22,1,"PAH",1,1,101,0)
+===========
+"PKG",214,22,1,"PAH",1,1,102,0)
+This software complies with the VA MUMPS Programming Standards and
+"PKG",214,22,1,"PAH",1,1,103,0)
+ Conventions (version 3 April 2007), except for the following:
+"PKG",214,22,1,"PAH",1,1,104,0)
+ 
+"PKG",214,22,1,"PAH",1,1,105,0)
+ C0QMU12  * *  541 Lines,  18707 Bytes, Checksum: B280797584
+"PKG",214,22,1,"PAH",1,1,106,0)
+        S - Routine code exceeds SACC maximum size of 15000 (15513).
+"PKG",214,22,1,"PAH",1,1,107,0)
+ 
+"PKG",214,22,1,"PAH",1,1,108,0)
+Blood Bank Clearance: This software doesn't interact with the Blood Bank module.
+"PKG",214,22,1,"PAH",1,1,109,0)
+ 
+"PKG",214,22,1,"PAH",1,1,110,0)
+Installation Instructions:
+"PKG",214,22,1,"PAH",1,1,111,0)
+==========================
+"PKG",214,22,1,"PAH",1,1,112,0)
+Install Time - less than 1 minute.
+"PKG",214,22,1,"PAH",1,1,113,0)
+ 
+"PKG",214,22,1,"PAH",1,1,114,0)
+ 1.  LOAD TRANSPORT GLOBAL
+"PKG",214,22,1,"PAH",1,1,115,0)
+ 
+"PKG",214,22,1,"PAH",1,1,116,0)
+     Choose the PackMan message containing this patch and invoke the
+"PKG",214,22,1,"PAH",1,1,117,0)
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+"PKG",214,22,1,"PAH",1,1,118,0)
+ 
+"PKG",214,22,1,"PAH",1,1,119,0)
+ 2.  START UP KIDS
+"PKG",214,22,1,"PAH",1,1,120,0)
+ 
+"PKG",214,22,1,"PAH",1,1,121,0)
+      Start up the Kernel Installation and Distribution System Menu
+"PKG",214,22,1,"PAH",1,1,122,0)
+      [XPD MAIN]:
+"PKG",214,22,1,"PAH",1,1,123,0)
+ 
+"PKG",214,22,1,"PAH",1,1,124,0)
+           Edits and Distribution ...
+"PKG",214,22,1,"PAH",1,1,125,0)
+           Utilities ...
+"PKG",214,22,1,"PAH",1,1,126,0)
+           Installation ...
+"PKG",214,22,1,"PAH",1,1,127,0)
+ 
+"PKG",214,22,1,"PAH",1,1,128,0)
+ Select Kernel Installation & Distribution System Option: INStallation
+"PKG",214,22,1,"PAH",1,1,129,0)
+                                                          ---
+"PKG",214,22,1,"PAH",1,1,130,0)
+           Load a Distribution
+"PKG",214,22,1,"PAH",1,1,131,0)
+           Print Transport Global
+"PKG",214,22,1,"PAH",1,1,132,0)
+           Compare Transport Global to Current System
+"PKG",214,22,1,"PAH",1,1,133,0)
+           Verify Checksums in Transport Global
+"PKG",214,22,1,"PAH",1,1,134,0)
+           Install Package(s)
+"PKG",214,22,1,"PAH",1,1,135,0)
+           Restart Install of Package(s)
+"PKG",214,22,1,"PAH",1,1,136,0)
+           Unload a Distribution
+"PKG",214,22,1,"PAH",1,1,137,0)
+           Backup a Transport Global
+"PKG",214,22,1,"PAH",1,1,138,0)
+ 
+"PKG",214,22,1,"PAH",1,1,139,0)
+ Select Installation Option:
+"PKG",214,22,1,"PAH",1,1,140,0)
+ 
+"PKG",214,22,1,"PAH",1,1,141,0)
+ 3.  Select Installation Option:
+"PKG",214,22,1,"PAH",1,1,142,0)
+ 
+"PKG",214,22,1,"PAH",1,1,143,0)
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+"PKG",214,22,1,"PAH",1,1,144,0)
+             NAME, enter C0Q*1.0*5):
+"PKG",214,22,1,"PAH",1,1,145,0)
+ 
+"PKG",214,22,1,"PAH",1,1,146,0)
+     a.  Backup a Transport Global - This option will create a backup
+"PKG",214,22,1,"PAH",1,1,147,0)
+         message of any routines exported with this patch. It will not
+"PKG",214,22,1,"PAH",1,1,148,0)
+         backup any other changes such as DD's or templates.
+"PKG",214,22,1,"PAH",1,1,149,0)
+     b.  Compare Transport Global to Current System - This option will
+"PKG",214,22,1,"PAH",1,1,150,0)
+         allow you to view all changes that will be made when this patch
+"PKG",214,22,1,"PAH",1,1,151,0)
+         is installed.  It compares all components of this patch
+"PKG",214,22,1,"PAH",1,1,152,0)
+         (routines, DD's, templates, etc.).
+"PKG",214,22,1,"PAH",1,1,153,0)
+     c.  Verify Checksums in Transport Global - This option will allow
+"PKG",214,22,1,"PAH",1,1,154,0)
+         you to ensure the integrity of the routines that are in the
+"PKG",214,22,1,"PAH",1,1,155,0)
+         transport global.
+"PKG",214,22,1,"PAH",1,1,156,0)
+ 
+"PKG",214,22,1,"PAH",1,1,157,0)
+ 4.  Select Installation Option: Install Package(s)
+"PKG",214,22,1,"PAH",1,1,158,0)
+ 
+"PKG",214,22,1,"PAH",1,1,159,0)
+     **This is the step to start the installation of this KIDS patch:
+"PKG",214,22,1,"PAH",1,1,160,0)
+ 
+"PKG",214,22,1,"PAH",1,1,161,0)
+     a.  Choose the Install Package(s) option to start the patch install
+"PKG",214,22,1,"PAH",1,1,162,0)
+         and enter "C0Q*1.0*5" at the INSTALL NAME prompt. As part of the
+"PKG",214,22,1,"PAH",1,1,163,0)
+         Environment Check routine, the message below will display
+"PKG",214,22,1,"PAH",1,1,164,0)
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+"PKG",214,22,1,"PAH",1,1,165,0)
+         Install? NO//'  answer NO
+"PKG",214,22,1,"PAH",1,1,166,0)
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+"PKG",214,22,1,"PAH",1,1,167,0)
+         NO//'  answer NO
+"PKG",214,22,1,"PAH",1,1,168,0)
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+"PKG",214,22,1,"PAH",1,1,169,0)
+         and Protocols? NO//'  answer NO
+"PKG",214,22,1,"PAH",1,1,170,0)
+ 
+"PKG",214,22,1,"PAH",1,1,171,0)
+  5.  Post installation: No post installation tasks are necessary.
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+3
+"RTN","C0Q1P5")
+0^3^B619258
+"RTN","C0Q1P5",1,0)
+C0Q1P5 ; VEN/SMH - KIDS not transporting Security Codes; workaround. ; 10/17/12 12:12pm
+"RTN","C0Q1P5",2,0)
+ ;;1.0;QUALITY MEASURES;**5**;Oct 17, 2012;Build 10
+"RTN","C0Q1P5",3,0)
+ ;;
+"RTN","C0Q1P5",4,0)
+ ; PEPs: TRAN, POST
+"RTN","C0Q1P5",5,0)
+ ;
+"RTN","C0Q1P5",6,0)
+ ; ZEXCEPT: XPDGREF
+"RTN","C0Q1P5",7,0)
+TRAN ; Pre-transport hook
+"RTN","C0Q1P5",8,0)
+ M @XPDGREF@(1130580001.101)=^DIC(1130580001.101)
+"RTN","C0Q1P5",9,0)
+ M @XPDGREF@(1130580001.201)=^DIC(1130580001.201)
+"RTN","C0Q1P5",10,0)
+ M @XPDGREF@(1130580001.401)=^DIC(1130580001.401)
+"RTN","C0Q1P5",11,0)
+ QUIT
+"RTN","C0Q1P5",12,0)
+ ;
+"RTN","C0Q1P5",13,0)
+ ; ZEXCEPT: XPDGREF
+"RTN","C0Q1P5",14,0)
+POST ; Post-install hook
+"RTN","C0Q1P5",15,0)
+ M ^DIC(1130580001.101)=@XPDGREF@(1130580001.101)
+"RTN","C0Q1P5",16,0)
+ M ^DIC(1130580001.201)=@XPDGREF@(1130580001.201)
+"RTN","C0Q1P5",17,0)
+ M ^DIC(1130580001.401)=@XPDGREF@(1130580001.401)
+"RTN","C0Q1P5",18,0)
+ QUIT
+"RTN","C0QMU12")
+0^1^B280797584
+"RTN","C0QMU12",1,0)
+C0QMU12 ;JJOH/ZAG/GPL - Patient Reminder List ; 10/17/12 12:52pm
+"RTN","C0QMU12",2,0)
+ ;;1.0;QUALITY MEASURES;**1,5**;May 21, 2012;Build 10
+"RTN","C0QMU12",3,0)
+ ;
+"RTN","C0QMU12",4,0)
+ ;2011 Zach Gonzales<zach@linux.com> - Licensed under the terms of the GNU
+"RTN","C0QMU12",5,0)
+ ;General Public License See attached copy of the License.
+"RTN","C0QMU12",6,0)
+ ;
+"RTN","C0QMU12",7,0)
+ ; GPL - THIS ROUTINE IS A COPY OF JJOHMU11 THAT HAS BEEN MODIFIED
+"RTN","C0QMU12",8,0)
+ ; FOR MEANINGFUL USE CALCULATION FOR FISCAL YEAR 2012 AT OROVILLE HOSPITAL
+"RTN","C0QMU12",9,0)
+ ;
+"RTN","C0QMU12",10,0)
+C0QPFN() Q 1130580001.401 ; PARAMETER FILE
+"RTN","C0QMU12",11,0)
+C0QPCFN() Q 1130580001.411 ; CLINIC SUBFILE
+"RTN","C0QMU12",12,0)
+C0QMFN() Q 1130580001.201 ; FILE NUMBER FOR C0Q MEASUREMENT FILE
+"RTN","C0QMU12",13,0)
+C0QMMFN() Q 1130580001.2011 ; FN FOR MEASURE SUBFILE
+"RTN","C0QMU12",14,0)
+INIT(ZARY,ZTYP) ; INITIALIZE THE PARAMETERS FOR BUILDING PATIENT LISTS
+"RTN","C0QMU12",15,0)
+ ; ZARY IS PASSED BY NAME
+"RTN","C0QMU12",16,0)
+ ; ZTYP IS "INP" OR "EP"
+"RTN","C0QMU12",17,0)
+ N ZMU S ZMU="MU12" ; THIS IS THE ONLY HARD CODED VALUE LEFT
+"RTN","C0QMU12",18,0)
+ ; TBD - CHANGE IT TO A READ FROM SYSTEM PARAMETERS
+"RTN","C0QMU12",19,0)
+ K @ZARY ; CLEAR RETURN ARRAY
+"RTN","C0QMU12",20,0)
+ N ZIEN,ZCNT,ZX
+"RTN","C0QMU12",21,0)
+ I $O(^C0Q(401,"MUTYP",ZMU,ZTYP,""))="" D  Q  ; OOPS NO RECORD THERE
+"RTN","C0QMU12",22,0)
+ . W !,"ERROR, NO PARAMETERS AVAILABLE"
+"RTN","C0QMU12",23,0)
+ S ZIEN=""
+"RTN","C0QMU12",24,0)
+ S ZCNT=0
+"RTN","C0QMU12",25,0)
+ F  S ZIEN=$O(^C0Q(401,"MUTYP",ZMU,ZTYP,ZIEN)) Q:ZIEN=""  D  ;
+"RTN","C0QMU12",26,0)
+ . S ZCNT=ZCNT+1
+"RTN","C0QMU12",27,0)
+ . S @ZARY@(ZCNT,"MU")=$$GET1^DIQ($$C0QPFN,ZIEN_",",.02)
+"RTN","C0QMU12",28,0)
+ . S @ZARY@(ZCNT,"TYPE")=$$GET1^DIQ($$C0QPFN,ZIEN_",",.03)
+"RTN","C0QMU12",29,0)
+ . S ZX=$$GET1^DIQ($$C0QPFN,ZIEN_",",1,"I")
+"RTN","C0QMU12",30,0)
+ . S @ZARY@(ZCNT,"InpatientMeasurementSet")=ZX
+"RTN","C0QMU12",31,0)
+ . S @ZARY@(ZCNT,"InpatientBeginDate")=$$GET1^DIQ($$C0QMFN,ZX_",",.02,"I")
+"RTN","C0QMU12",32,0)
+ . S @ZARY@(ZCNT,"InpatientEndDate")=$$GET1^DIQ($$C0QMFN,ZX_",",.03,"I")
+"RTN","C0QMU12",33,0)
+ . S @ZARY@(ZCNT,"InpatientQualitySet")=$$GET1^DIQ($$C0QPFN,ZIEN_",",1.1,"I")
+"RTN","C0QMU12",34,0)
+ . S ZX=$$GET1^DIQ($$C0QPFN,ZIEN_",",2,"I")
+"RTN","C0QMU12",35,0)
+ . S @ZARY@(ZCNT,"EPMeasurementSet")=ZX
+"RTN","C0QMU12",36,0)
+ . S @ZARY@(ZCNT,"EPBeginDate")=$$GET1^DIQ($$C0QMFN,ZX_",",.02,"I")
+"RTN","C0QMU12",37,0)
+ . S @ZARY@(ZCNT,"EPEndDate")=$$GET1^DIQ($$C0QMFN,ZX_",",.03,"I")
+"RTN","C0QMU12",38,0)
+ . S @ZARY@(ZCNT,"EPQualitySet")=$$GET1^DIQ($$C0QPFN,ZIEN_",",2.1,"I")
+"RTN","C0QMU12",39,0)
+ . S @ZARY@(ZCNT,"InpatientQualitySet")=$$GET1^DIQ($$C0QPFN,ZIEN_",",1.1,"I")
+"RTN","C0QMU12",40,0)
+ . D CLEAN^DILF
+"RTN","C0QMU12",41,0)
+ . D LIST^DIC($$C0QPCFN,","_ZIEN_",",".01I")
+"RTN","C0QMU12",42,0)
+ . I $D(^TMP("DIERR",$J)) D  Q  ; ERROR READING CLINIC LIST
+"RTN","C0QMU12",43,0)
+ . . W !,"ERROR READING CLINIC PARAMETER LIST"
+"RTN","C0QMU12",44,0)
+ . M @ZARY@(ZCNT,"CLINICS")=^TMP("DILIST",$J)
+"RTN","C0QMU12",45,0)
+ ;
+"RTN","C0QMU12",46,0)
+ Q
+"RTN","C0QMU12",47,0)
+ ;
+"RTN","C0QMU12",48,0)
+BUILD ; CALL ALL AND DIS AND BUILD THE GRSLT ARRAY or print or create
+"RTN","C0QMU12",49,0)
+ ; patient lists
+"RTN","C0QMU12",50,0)
+ ;N GRSLT ; ARRAY FOR RESULTS
+"RTN","C0QMU12",51,0)
+ I '$D(C0QSS) S C0QSS=0 ;default don't build spreadsheet array
+"RTN","C0QMU12",52,0)
+ I '$D(C0QPR) S C0QPR=0 ;default don't print out results
+"RTN","C0QMU12",53,0)
+ I '$D(C0QPL) S C0QPL=1 ;default do create patient lists
+"RTN","C0QMU12",54,0)
+ S ZYR="MU12-"
+"RTN","C0QMU12",55,0)
+ D INITCLST ; initialize C0QLIST
+"RTN","C0QMU12",56,0)
+ N G1 ; ONE SET OF VALUES - RNF1 FORMAT
+"RTN","C0QMU12",57,0)
+ N C0QPARM
+"RTN","C0QMU12",58,0)
+ D INIT("C0QPARM","INP") ; initialize inpatient parms
+"RTN","C0QMU12",59,0)
+ I $O(C0QPARM(""))="" D  Q  ; no parms for inpatient
+"RTN","C0QMU12",60,0)
+ . W !,"No inpatient parameters"
+"RTN","C0QMU12",61,0)
+ N ZDIV S ZDIV=""
+"RTN","C0QMU12",62,0)
+ F  S ZDIV=$O(C0QPARM(ZDIV)) Q:ZDIV=""  D  ; for each inpatient division
+"RTN","C0QMU12",63,0)
+ . D ALL ; all currently admitted patients in the hospital
+"RTN","C0QMU12",64,0)
+ . D DIS ; all patients discharged since the reporting period began
+"RTN","C0QMU12",65,0)
+ . I C0QSS D ZWRITE^C0QUTIL("GRSLT")
+"RTN","C0QMU12",66,0)
+ . ;D ICUPAT ; GENERATE ICU PATIENT LIST
+"RTN","C0QMU12",67,0)
+ . I C0QPL D  ;
+"RTN","C0QMU12",68,0)
+ . . D FILE ; FILE THE PATIENT LISTS
+"RTN","C0QMU12",69,0)
+ . . D UPDATE^C0QUPDT(.G,C0QPARM(ZDIV,"InpatientMeasurementSet")) ;
+"RTN","C0QMU12",70,0)
+ . . D UPDATE^C0QUPDT(.G,C0QPARM(ZDIV,"InpatientQualitySet")) ;
+"RTN","C0QMU12",71,0)
+ . K C0QLIST
+"RTN","C0QMU12",72,0)
+ Q
+"RTN","C0QMU12",73,0)
+ ;
+"RTN","C0QMU12",74,0)
+INITCLST ; initialize C0QLIST
+"RTN","C0QMU12",75,0)
+ ; INITIALIZE LISTS
+"RTN","C0QMU12",76,0)
+ ; this is done so that if there are no matching patients, the patient list
+"RTN","C0QMU12",77,0)
+ ; will be zeroed out
+"RTN","C0QMU12",78,0)
+ ; K C0QLIST - VEN/SMH - Oops, we kill the previous lists!!!
+"RTN","C0QMU12",79,0)
+ S C0QLIST(ZYR_"HasDemographics")=""
+"RTN","C0QMU12",80,0)
+ S C0QLIST(ZYR_"Patient")="" ; VEN/SMH - Is this needed? Not used in EP.
+"RTN","C0QMU12",81,0)
+ S C0QLIST(ZYR_"HasProblem")=""
+"RTN","C0QMU12",82,0)
+ S C0QLIST(ZYR_"HasAllergy")=""
+"RTN","C0QMU12",83,0)
+ S C0QLIST(ZYR_"HasMed")=""
+"RTN","C0QMU12",84,0)
+ S C0QLIST(ZYR_"HasERX")="" ; VEN/SMH C0Q*1*5
+"RTN","C0QMU12",85,0)
+ S C0QLIST(ZYR_"HasMedRecon")="" ; VEN/SMH C0Q*1*5
+"RTN","C0QMU12",86,0)
+ S C0QLIST(ZYR_"HasVitalSigns")=""
+"RTN","C0QMU12",87,0)
+ S C0QLIST(ZYR_"HasMedOrders")=""
+"RTN","C0QMU12",88,0)
+ S C0QLIST(ZYR_"HasSmokingStatus")=""
+"RTN","C0QMU12",89,0)
+ S C0QLIST(ZYR_"ALL-PATIENTS")="" ; VEN/SMH C0Q*1*5
+"RTN","C0QMU12",90,0)
+ Q
+"RTN","C0QMU12",91,0)
+ ;
+"RTN","C0QMU12",92,0)
+ALL ;retrieve active inpatients
+"RTN","C0QMU12",93,0)
+ N WARD S WARD=""
+"RTN","C0QMU12",94,0)
+ F  D  Q:WARD=""
+"RTN","C0QMU12",95,0)
+ . S WARD=$O(^DIC(42,"B",WARD)) ;ward name
+"RTN","C0QMU12",96,0)
+ . Q:WARD=""
+"RTN","C0QMU12",97,0)
+ . N WIEN S WIEN=""
+"RTN","C0QMU12",98,0)
+ . F  S WIEN=$O(^DIC(42,"B",WARD,WIEN)) Q:'WIEN  D  ;wards IEN
+"RTN","C0QMU12",99,0)
+ . . S WARDNAME=$P(^DIC(42,WIEN,0),U,2) ;ward name
+"RTN","C0QMU12",100,0)
+ . . N DFN,RB S DFN=""
+"RTN","C0QMU12",101,0)
+ . . F  S DFN=$O(^DPT("CN",WARD,+DFN)) Q:'DFN  D  ;DFN of patient on ward
+"RTN","C0QMU12",102,0)
+ . . . D DEMO^C0QMU122
+"RTN","C0QMU12",103,0)
+ . . . D PROBLEM
+"RTN","C0QMU12",104,0)
+ . . . D ALLERGY
+"RTN","C0QMU12",105,0)
+ . . . D MEDS4
+"RTN","C0QMU12",106,0)
+ . . . D RECON2
+"RTN","C0QMU12",107,0)
+ . . . D ADVDIR
+"RTN","C0QMU12",108,0)
+ . . . D SMOKING
+"RTN","C0QMU12",109,0)
+ . . . D VITALS
+"RTN","C0QMU12",110,0)
+ . . . D VTE1
+"RTN","C0QMU12",111,0)
+ . . . D COD
+"RTN","C0QMU12",112,0)
+ . . . D EDTIME
+"RTN","C0QMU12",113,0)
+ . . . I C0QPR D PRINT^C0QMU121
+"RTN","C0QMU12",114,0)
+ . . . I C0QSS D SS^C0QMU121
+"RTN","C0QMU12",115,0)
+ . . . I C0QPL D PATLIST^C0QMU121
+"RTN","C0QMU12",116,0)
+ Q
+"RTN","C0QMU12",117,0)
+ ;
+"RTN","C0QMU12",118,0)
+PROBLEM ; PATIENT PROBLEMS
+"RTN","C0QMU12",119,0)
+ D LIST^ORQQPL(.PROBL,DFN,"A")
+"RTN","C0QMU12",120,0)
+ S PBCNT=""
+"RTN","C0QMU12",121,0)
+ F  S PBCNT=$O(PROBL(PBCNT)) Q:PBCNT=""  D
+"RTN","C0QMU12",122,0)
+ . S PBDESC=$P(PROBL(PBCNT),U,2) ;problem description
+"RTN","C0QMU12",123,0)
+ I PBDESC["No problems found" S C0QLIST(ZYR_"NoProblem",DFN)=""
+"RTN","C0QMU12",124,0)
+ E  S C0QLIST(ZYR_"HasProblem",DFN)=""
+"RTN","C0QMU12",125,0)
+ K PROBL
+"RTN","C0QMU12",126,0)
+ Q
+"RTN","C0QMU12",127,0)
+ ;
+"RTN","C0QMU12",128,0)
+ALLERGY ; ALLERGY LIST
+"RTN","C0QMU12",129,0)
+ ; WANT TO CHANGE ALLERGIES FOR 2012 TO POPULATE THE C0QLIST DIRECTLY. GPL
+"RTN","C0QMU12",130,0)
+ D LIST^ORQQAL(.ALRGYL,DFN)
+"RTN","C0QMU12",131,0)
+ S ALCNT=""
+"RTN","C0QMU12",132,0)
+ F  S ALCNT=$O(ALRGYL(ALCNT)) Q:ALCNT=""  D
+"RTN","C0QMU12",133,0)
+ . S ALDESC=$P(ALRGYL(ALCNT),U,2) ;allergy description
+"RTN","C0QMU12",134,0)
+ I ALDESC["No Allergy" S C0QLIST(ZYR_"NoAllergy",DFN)=""
+"RTN","C0QMU12",135,0)
+ E  S C0QLIST(ZYR_"HasAllergy",DFN)=""
+"RTN","C0QMU12",136,0)
+ K ALRGYL
+"RTN","C0QMU12",137,0)
+ Q
+"RTN","C0QMU12",138,0)
+ ;
+"RTN","C0QMU12",139,0)
+MEDS4 ; USE OCL^PSOORRL TO GET ALL MEDS
+"RTN","C0QMU12",140,0)
+ ; DELETED MEDS, MEDS2, AND MEDS3 FOR 2012 TO USE ONLY MEDS4
+"RTN","C0QMU12",141,0)
+ N BEG,END
+"RTN","C0QMU12",142,0)
+ S BEG=$$DT^C0QUTIL("JULY 3,2011")
+"RTN","C0QMU12",143,0)
+ S END=$$DT^C0QUTIL("NOW")
+"RTN","C0QMU12",144,0)
+ D OCL^PSOORRL(DFN,BEG,END)  ;DBIA #2400
+"RTN","C0QMU12",145,0)
+ N C0QMEDS
+"RTN","C0QMU12",146,0)
+ M C0QMEDS=^TMP("PS",$J) ; MEDS RETURNED FROM CALL
+"RTN","C0QMU12",147,0)
+ N FOUND
+"RTN","C0QMU12",148,0)
+ N ZI
+"RTN","C0QMU12",149,0)
+ I '$D(C0QMEDS(1)) D  Q  ; QUIT IF NO MEDS
+"RTN","C0QMU12",150,0)
+ . S C0QLIST(ZYR_"NoMed",DFN)=""
+"RTN","C0QMU12",151,0)
+ E  D  ; HAS MEDS
+"RTN","C0QMU12",152,0)
+ . S C0QLIST(ZYR_"HasMed",DFN)=""
+"RTN","C0QMU12",153,0)
+ S ZI="" S FOUND=0
+"RTN","C0QMU12",154,0)
+ F  S ZI=$O(C0QMEDS(ZI)) Q:ZI=""  D  ; FOR EACH MED
+"RTN","C0QMU12",155,0)
+ . N ZM
+"RTN","C0QMU12",156,0)
+ . S ZM=$G(C0QMEDS(ZI,0)) ;THE MEDICATION
+"RTN","C0QMU12",157,0)
+ . I $P($P(ZM,"^",1),";",2)="I" D  ; IE 1U;I FOR AN INPATIENT UNIT DOSE
+"RTN","C0QMU12",158,0)
+ . . S FOUND=1
+"RTN","C0QMU12",159,0)
+ I FOUND S C0QLIST(ZYR_"HasMedOrders",DFN)="" ; MET CPOE MEASURE
+"RTN","C0QMU12",160,0)
+ E  S C0QLIST(ZYR_"NoMedOrders",DFN)=""
+"RTN","C0QMU12",161,0)
+ Q
+"RTN","C0QMU12",162,0)
+ ;
+"RTN","C0QMU12",163,0)
+RECON ; MEDICATIONS RECONCILIATION
+"RTN","C0QMU12",164,0)
+ ; WANT TO SIMPLIFY MEDS RECON FOR 2012. GPL
+"RTN","C0QMU12",165,0)
+ ;
+"RTN","C0QMU12",166,0)
+ I $$HASNTYN^C0QNOTES("MED/SURG NURSING ADMISSION ASSESSMENT",DFN) D  ;
+"RTN","C0QMU12",167,0)
+ . S C0QLIST(ZYR_"XferOfCare",DFN)="" ; transfer of care patient
+"RTN","C0QMU12",168,0)
+ N HASRECON S HASRECON=0
+"RTN","C0QMU12",169,0)
+ N GT,G
+"RTN","C0QMU12",170,0)
+ S GT(4,"HasMedRecon","MEDICATION RECONCILIATION COMPLET")=""
+"RTN","C0QMU12",171,0)
+ S GT(5,"HasMedRecon","Medication Reconcilation Complete")=""
+"RTN","C0QMU12",172,0)
+ I $$TXTALL^C0QNOTES(.G,.GT,DFN) D  ; SEARCH ALL NOTES FOR MED RECON
+"RTN","C0QMU12",173,0)
+ . S HASRECON=1
+"RTN","C0QMU12",174,0)
+ ;N ZT
+"RTN","C0QMU12",175,0)
+ ;S ZT="MEDICATION RECONCILIATION COMPLET"
+"RTN","C0QMU12",176,0)
+ ;I $$NTTXT^C0QNOTES("ER NURSE NOTE",ZT,DFN) D  ;
+"RTN","C0QMU12",177,0)
+ ;. S HASRECON=1
+"RTN","C0QMU12",178,0)
+ ;E  D  ;
+"RTN","C0QMU12",179,0)
+ ;. S ZT="Medication Reconcilation Complete"
+"RTN","C0QMU12",180,0)
+ ;. I $$NTTXT^C0QNOTES("MED/SURG NURSING ADMISSION ASSESSMENT",ZT,DFN) D  ;
+"RTN","C0QMU12",181,0)
+ ;. . S HASRECON=1
+"RTN","C0QMU12",182,0)
+ ;I $$HFYN^C0QHF("MEDS HAVE BEEN REVIEWED",DFN) S HASRECON=1
+"RTN","C0QMU12",183,0)
+ I HASRECON D  ;
+"RTN","C0QMU12",184,0)
+ . S C0QLIST(ZYR_"HasMedRecon",DFN)=""
+"RTN","C0QMU12",185,0)
+ E  S C0QLIST(ZYR_"NoMedRecon",DFN)=""
+"RTN","C0QMU12",186,0)
+ Q
+"RTN","C0QMU12",187,0)
+ ;
+"RTN","C0QMU12",188,0)
+RECON2 ; USE HEALTH FACTORS FOR MEDICATION RECONCILIATION
+"RTN","C0QMU12",189,0)
+ I $$HASNTYN^C0QNOTES("MED/SURG NURSING ADMISSION ASSESSMENT",DFN) D  ;
+"RTN","C0QMU12",190,0)
+ . S C0QLIST(ZYR_"XferOfCare",DFN)="" ; transfer of care patient
+"RTN","C0QMU12",191,0)
+ I $$HFYN^C0QHF(DFN,"Medication Reconciliation Completed: Yes") D  ;
+"RTN","C0QMU12",192,0)
+ . S C0QLIST(ZYR_"HasMedRecon",DFN)=""
+"RTN","C0QMU12",193,0)
+ E  S C0QLIST(ZYR_"NoMedRecon",DFN)=""
+"RTN","C0QMU12",194,0)
+ Q
+"RTN","C0QMU12",195,0)
+ ;
+"RTN","C0QMU12",196,0)
+ERX ; FOR EP, WE LOOK AT ERX MEDS
+"RTN","C0QMU12",197,0)
+ N ZI S ZI=""
+"RTN","C0QMU12",198,0)
+ N ZERX S ZERX=$NA(^PS(55,DFN,"NVA"))
+"RTN","C0QMU12",199,0)
+ F  S ZI=$O(@ZERX@(ZI)) Q:ZI=""  D  ;
+"RTN","C0QMU12",200,0)
+ . ;B
+"RTN","C0QMU12",201,0)
+ . I $G(@ZERX@(ZI,1,1,0))["E-Rx Web" D  ;
+"RTN","C0QMU12",202,0)
+ . . S C0QLIST(ZYR_"HasMed",DFN)=""
+"RTN","C0QMU12",203,0)
+ . . S C0QLIST(ZYR_"HasMedOrders",DFN)=""
+"RTN","C0QMU12",204,0)
+ . . S C0QLIST(ZYR_"HasERX",DFN)=""
+"RTN","C0QMU12",205,0)
+ . . S C0QLIST(ZYR_"HasMedRecon",DFN)=""
+"RTN","C0QMU12",206,0)
+ . E  D  ;
+"RTN","C0QMU12",207,0)
+ . . S C0QLIST(ZYR_"NoMed",DFN)=""
+"RTN","C0QMU12",208,0)
+ . . S C0QLIST(ZYR_"NoMedOrders",DFN)=""
+"RTN","C0QMU12",209,0)
+ . . S C0QLIST(ZYR_"NoERX",DFN)=""
+"RTN","C0QMU12",210,0)
+ . . S C0QLIST(ZYR_"NoMedRecon",DFN)=""
+"RTN","C0QMU12",211,0)
+ Q
+"RTN","C0QMU12",212,0)
+ ;
+"RTN","C0QMU12",213,0)
+ADVDIR ; ADVANCE DIRECTIVE
+"RTN","C0QMU12",214,0)
+ ;
+"RTN","C0QMU12",215,0)
+ I $$AGE^C0QUTIL(DFN)>64 D  ; ONLY FOR PATIENTS 65 AND OLDER
+"RTN","C0QMU12",216,0)
+ . S C0QLIST(ZYR_"Over65",DFN)=""
+"RTN","C0QMU12",217,0)
+ . I $$HASNTYN^C0QNOTES("ADVANCE DIRECTIVE",DFN) D  ;
+"RTN","C0QMU12",218,0)
+ . . S C0QLIST(ZYR_"HasAdvanceDirective",DFN)=""
+"RTN","C0QMU12",219,0)
+ . E  D  ;
+"RTN","C0QMU12",220,0)
+ . . S C0QLIST(ZYR_"NoAdvanceDirective",DFN)=""
+"RTN","C0QMU12",221,0)
+ Q
+"RTN","C0QMU12",222,0)
+ ;
+"RTN","C0QMU12",223,0)
+SMOKING G SMOKING^C0QMU121
+"RTN","C0QMU12",224,0)
+VITALS ;
+"RTN","C0QMU12",225,0)
+ ;
+"RTN","C0QMU12",226,0)
+ N C0QSDT,C0QEDT
+"RTN","C0QMU12",227,0)
+ D DT^DILF(,"JULY 3,2011",.C0QSDT) ; START DATE
+"RTN","C0QMU12",228,0)
+ D DT^DILF(,"T",.C0QEDT) ; END DATE TODAY
+"RTN","C0QMU12",229,0)
+ S C0QEDT=C0QEDT+.999999 ; Move to the end of the day! VEN/SMH C0Q*1*5
+"RTN","C0QMU12",230,0)
+ D VITALS^ORQQVI(.VITRSLT,DFN,C0QSDT,C0QEDT) ; CALL FAST VITALS
+"RTN","C0QMU12",231,0)
+ I $D(VITRSLT) D  ;ZWR VITRSLT B  ;
+"RTN","C0QMU12",232,0)
+ . I VITRSLT(1)["No vitals found." S C0QLIST(ZYR_"NoVitalSigns",DFN)=""
+"RTN","C0QMU12",233,0)
+ . E  S C0QLIST(ZYR_"HasVitalSigns",DFN)=""
+"RTN","C0QMU12",234,0)
+ Q
+"RTN","C0QMU12",235,0)
+ ;
+"RTN","C0QMU12",236,0)
+VTE1 ; VTE PROPHYLAXIS WITHIN 24HRS OF ARRIVAL
+"RTN","C0QMU12",237,0)
+ ;
+"RTN","C0QMU12",238,0)
+ I $$HFYN^C0QHF(DFN,"VTE PROPHYLAXIS WITHIN 24HRS OF ARRIVAL") D  ;
+"RTN","C0QMU12",239,0)
+ . S C0QLIST(ZYR_"HasVTE24",DFN)=""
+"RTN","C0QMU12",240,0)
+ E  S C0QLIST(ZYR_"NoVTE24",DFN)=""
+"RTN","C0QMU12",241,0)
+ Q
+"RTN","C0QMU12",242,0)
+ ;
+"RTN","C0QMU12",243,0)
+ ;
+"RTN","C0QMU12",244,0)
+ ;
+"RTN","C0QMU12",245,0)
+COD ; TEST FOR PRELIMINARY CAUSE OF DEATH NOTE
+"RTN","C0QMU12",246,0)
+ I $$HASNTYN^C0QNOTES("PRELIMINARY CAUSE OF DEATH",DFN) D  ;
+"RTN","C0QMU12",247,0)
+ . S C0QLIST(ZYR_"CauseOfDeath",DFN)=""
+"RTN","C0QMU12",248,0)
+ Q
+"RTN","C0QMU12",249,0)
+ ;
+"RTN","C0QMU12",250,0)
+EDTIME ; CHECK FOR EMERGENCY DEPT TIME FACTORS
+"RTN","C0QMU12",251,0)
+ N FOUND
+"RTN","C0QMU12",252,0)
+ S FOUND=0
+"RTN","C0QMU12",253,0)
+ I $$HFYN^C0QHF(DFN,"ED ARRIVAL TIME") S FOUND=1
+"RTN","C0QMU12",254,0)
+ I '$$HFYN^C0QHF(DFN,"ED DEPARTURE TIME") S FOUND=0
+"RTN","C0QMU12",255,0)
+ I '$$HFYN^C0QHF(DFN,"TIME DECISION TO ADMIT MADE") S FOUND=0
+"RTN","C0QMU12",256,0)
+ I FOUND D  ;
+"RTN","C0QMU12",257,0)
+ . S C0QLIST(ZYR_"HasEDtime",DFN)=""
+"RTN","C0QMU12",258,0)
+ E  S C0QLIST(ZYR_"NoEDtime",DFN)=""
+"RTN","C0QMU12",259,0)
+ Q
+"RTN","C0QMU12",260,0)
+ ;
+"RTN","C0QMU12",261,0)
+ICUPAT ; CREATE LIST OF ICU PATIENTS
+"RTN","C0QMU12",262,0)
+ N ZICU
+"RTN","C0QMU12",263,0)
+ S ZICU=$O(^SC("B","IC","")) ; IEN OF ICU HOSPITAL LOCATION
+"RTN","C0QMU12",264,0)
+ N ZI,ZJ,ZP
+"RTN","C0QMU12",265,0)
+ S ZI=""
+"RTN","C0QMU12",266,0)
+ F  S ZI=$O(^AUPNVSIT("AHL",ZICU,ZI)) Q:ZI=""  D  ; EACH DATE
+"RTN","C0QMU12",267,0)
+ . S ZJ=""
+"RTN","C0QMU12",268,0)
+ . F  S ZJ=$O(^AUPNVSIT("AHL",ZICU,ZI,ZJ)) Q:ZJ=""  D  ; EACH VISIT
+"RTN","C0QMU12",269,0)
+ . . S ZP=$P(^AUPNVSIT(ZJ,0),"^",5) ; DFN
+"RTN","C0QMU12",270,0)
+ . . S C0QLIST(ZYR_"ICUPatient",ZP)=""
+"RTN","C0QMU12",271,0)
+ Q
+"RTN","C0QMU12",272,0)
+ ;
+"RTN","C0QMU12",273,0)
+FILTER ; CALLED AFTER ALL THE PATIENT LISTS HAVE BEEN FILED
+"RTN","C0QMU12",274,0)
+ ; WILL KILL C0QLIST AND CREATE DERIVATIVE PATIENT LISTS BY FILTERING
+"RTN","C0QMU12",275,0)
+ K C0QLIST
+"RTN","C0QMU12",276,0)
+ N ZPAT
+"RTN","C0QMU12",277,0)
+ S ZPAT=$$PATLN(ZYR_"Patient") ; name of patient list of all patients admitted
+"RTN","C0QMU12",278,0)
+ ; during the reporting period. used to filter other lists
+"RTN","C0QMU12",279,0)
+ ;
+"RTN","C0QMU12",280,0)
+ ; filter ICU patients against ZPAT
+"RTN","C0QMU12",281,0)
+ N GN,GO,GF
+"RTN","C0QMU12",282,0)
+ S GN=ZPAT
+"RTN","C0QMU12",283,0)
+ S GO=$$PATLN(ZYR_"ICUPatient") ; all ICU patient
+"RTN","C0QMU12",284,0)
+ S GF=$NA(C0QLIST(ZYR_"ICUReporting")) ; the filtered list destination
+"RTN","C0QMU12",285,0)
+ D AND^C0QSET(GF,GN,GO) ; filter the list with the AND set operation
+"RTN","C0QMU12",286,0)
+ ;
+"RTN","C0QMU12",287,0)
+ ; FILTER VTE-2 DENOMINATOR FOR QUALITY MEASURE
+"RTN","C0QMU12",288,0)
+ ;
+"RTN","C0QMU12",289,0)
+ S GN=$NA(C0QLIST(ZYR_"ICUReporting")) ; ICU patients admitted inside rpt period
+"RTN","C0QMU12",290,0)
+ S GO=$$RPATLN("MU VTE-2 DENOM PL") ; TAXONOMY BASED DENOMENATOR
+"RTN","C0QMU12",291,0)
+ S GF=$NA(C0QLIST(ZYR_"VTE2DEN")) ; NEW DENOMINATOR PL
+"RTN","C0QMU12",292,0)
+ D AND^C0QSET(GF,GN,GO) ; filter the list with the AND set operation
+"RTN","C0QMU12",293,0)
+ ;
+"RTN","C0QMU12",294,0)
+ S GN=ZPAT
+"RTN","C0QMU12",295,0)
+ S GO=$$RPATLN("MU VTE-3 DENOM PL") ; TAXONOMY BASED DENOMENATOR
+"RTN","C0QMU12",296,0)
+ S GF=$NA(C0QLIST(ZYR_"VTE3DEN")) ; NEW DENOMINATOR PL
+"RTN","C0QMU12",297,0)
+ D AND^C0QSET(GF,GN,GO) ; filter the list with the AND set operation
+"RTN","C0QMU12",298,0)
+ ;
+"RTN","C0QMU12",299,0)
+ S GN=ZPAT
+"RTN","C0QMU12",300,0)
+ S GO=$$RPATLN("MU VTE-4 DENOM PL") ; TAXONOMY BASED DENOMENATOR
+"RTN","C0QMU12",301,0)
+ S GF=$NA(C0QLIST(ZYR_"VTE4DEN")) ; NEW DENOMINATOR PL
+"RTN","C0QMU12",302,0)
+ D AND^C0QSET(GF,GN,GO) ; filter the list with the AND set operation
+"RTN","C0QMU12",303,0)
+ ;
+"RTN","C0QMU12",304,0)
+ S GN=ZPAT
+"RTN","C0QMU12",305,0)
+ S GO=$$RPATLN("MU VTE-5 DENOM PL") ; TAXONOMY BASED DENOMENATOR
+"RTN","C0QMU12",306,0)
+ S GF=$NA(C0QLIST(ZYR_"VTE5DEN")) ; NEW DENOMINATOR PL
+"RTN","C0QMU12",307,0)
+ D AND^C0QSET(GF,GN,GO) ; filter the list with the AND set operation
+"RTN","C0QMU12",308,0)
+ ;
+"RTN","C0QMU12",309,0)
+ D FILE ; FILE ALL THE PATIENT LISTS
+"RTN","C0QMU12",310,0)
+ D UPDATE^C0QUPDT(.G,5) ; UPDATE THE HOS 2011 MEANINGFUL USE measure set
+"RTN","C0QMU12",311,0)
+ Q
+"RTN","C0QMU12",312,0)
+ ;
+"RTN","C0QMU12",313,0)
+ED1 ;
+"RTN","C0QMU12",314,0)
+ S ZYR="MU12-"
+"RTN","C0QMU12",315,0)
+ D DOTIME^C0QMU121("ED DEPARTURE TIME")
+"RTN","C0QMU12",316,0)
+ Q
+"RTN","C0QMU12",317,0)
+ ;
+"RTN","C0QMU12",318,0)
+ED2 ;
+"RTN","C0QMU12",319,0)
+ S ZYR="MU12-"
+"RTN","C0QMU12",320,0)
+ D DOTIME2^C0QMU121("TIME DECISION TO ADMIT MADE")
+"RTN","C0QMU12",321,0)
+ Q
+"RTN","C0QMU12",322,0)
+ ;
+"RTN","C0QMU12",323,0)
+RPATLN(ZLST) ; EXTRINSIC RETURNS THE GLOBAL NAME OF THE REMINDER PATIENT LIST
+"RTN","C0QMU12",324,0)
+ ; WHOSE NAME IS ZLST
+"RTN","C0QMU12",325,0)
+ N ZIEN,ZN
+"RTN","C0QMU12",326,0)
+ S ZIEN=$O(^PXRMXP(810.5,"B",ZLST,"")) ; ien of patient list
+"RTN","C0QMU12",327,0)
+ S ZN=$NA(^PXRMXP(810.5,ZIEN,30,"B")) ; GLOBAL NAME IN REMINDER PATIENT LIST
+"RTN","C0QMU12",328,0)
+ Q ZN
+"RTN","C0QMU12",329,0)
+ ;
+"RTN","C0QMU12",330,0)
+PATLN(ZATTR) ; EXTRINSIC RETURNS THE NAME OF THE PATIENT LIST WITH
+"RTN","C0QMU12",331,0)
+ ; THE ATTRIBUTE ZATTR
+"RTN","C0QMU12",332,0)
+ N ZIEN,ZN
+"RTN","C0QMU12",333,0)
+ S ZIEN=$O(^C0Q(301,"CATTR",ZATTR,"")) ; ien of patient list
+"RTN","C0QMU12",334,0)
+ S ZN=$NA(^C0Q(301,ZIEN,1,"B")) ; NAME OF PATIENT LIST IN C0Q PATIENT LIST
+"RTN","C0QMU12",335,0)
+ Q ZN
+"RTN","C0QMU12",336,0)
+ ;
+"RTN","C0QMU12",337,0)
+INLIST(ZLIST,DFN) ; EXTRINSIC FOR IS PATIENT ALREADY IN LIST ZLIST
+"RTN","C0QMU12",338,0)
+ N ZL,ZR
+"RTN","C0QMU12",339,0)
+ S ZL=$O(^C0Q(301,"CATTR",ZLIST,"")) ; IEN OF LIST IN C0Q PATIENT LIST FILE
+"RTN","C0QMU12",340,0)
+ I ZL="" Q 0 ; LIST DOES NOT EXIST
+"RTN","C0QMU12",341,0)
+ S ZR=0 ; ASSUME NOT IN LIST
+"RTN","C0QMU12",342,0)
+ I $D(^C0Q(301,ZL,1,"B",DFN)) S ZR=1 ; PATIENT IS IN LIST
+"RTN","C0QMU12",343,0)
+ Q ZR
+"RTN","C0QMU12",344,0)
+ ;
+"RTN","C0QMU12",345,0)
+LOCPAT(PREFIX,LOC)   ;retrieve active outpatients
+"RTN","C0QMU12",346,0)
+ ; PREFIX WILL GO IN C0XLIST(PREFIX_"-PATIENT",DFN)=""
+"RTN","C0QMU12",347,0)
+ ; LOC IS HOSPITAL LOCATION
+"RTN","C0QMU12",348,0)
+ S ULOC=$O(^SC("B",LOC,"")) ; IEN OF HOSPITAL LOCATION
+"RTN","C0QMU12",349,0)
+ I ULOC="" D  Q  ; OOPS
+"RTN","C0QMU12",350,0)
+ . W !,"HOSPITAL LOCATION NOT FOUND: ",LOC
+"RTN","C0QMU12",351,0)
+ S IDTE=9999999-DTE ; INVERSE DATE
+"RTN","C0QMU12",352,0)
+ N ZI
+"RTN","C0QMU12",353,0)
+ S ZI="" ; BEGIN AT LATEST DATE FOR THIS LOC IN VISIT FILE
+"RTN","C0QMU12",354,0)
+ F  S ZI=$O(^AUPNVSIT("AHL",ULOC,ZI)) Q:(ZI="")!(ZI>IDTE)  D  ; FOR EACH DATE
+"RTN","C0QMU12",355,0)
+ . N C0QDATE S C0QDATE=9999999-$P(ZI,".")_"."_$P(ZI,".",2) ; VEN/SMH *5
+"RTN","C0QMU12",356,0)
+ . W !,$$FMTE^XLFDT(C0QDATE) ; VEN/SMH *5
+"RTN","C0QMU12",357,0)
+ . I ZI="" Q  ;
+"RTN","C0QMU12",358,0)
+ . N ZJ S ZJ=""
+"RTN","C0QMU12",359,0)
+ . F  S ZJ=$O(^AUPNVSIT("AHL",ULOC,ZI,ZJ)) Q:ZJ=""  D  ; FOR EACH VISIT
+"RTN","C0QMU12",360,0)
+ . . S DFN=$$GET1^DIQ(9000010,ZJ,.05,"I") ; PATIENT
+"RTN","C0QMU12",361,0)
+ . . S C0QLIST(PREFIX_"Patient",DFN)=""
+"RTN","C0QMU12",362,0)
+ Q
+"RTN","C0QMU12",363,0)
+ ;
+"RTN","C0QMU12",364,0)
+EPPAT(ZYR) ; BUILD ALL PATIENT LISTS FOR CLINICS
+"RTN","C0QMU12",365,0)
+ ;
+"RTN","C0QMU12",366,0)
+ S DTE=3111000
+"RTN","C0QMU12",367,0)
+ S MUYR=ZYR
+"RTN","C0QMU12",368,0)
+ N ZC,ZN
+"RTN","C0QMU12",369,0)
+ S ZN=0
+"RTN","C0QMU12",370,0)
+ N ZI S ZI=0
+"RTN","C0QMU12",371,0)
+ F  S ZI=$O(^SC(ZI)) Q:+ZI=0  D  ; FOR EVERY HOSPITAL LOCATION
+"RTN","C0QMU12",372,0)
+ . I $$GET1^DIQ(44,ZI_",",2,"I")'="C" Q   ; NOT A CLINIC
+"RTN","C0QMU12",373,0)
+ . S ZC=$$GET1^DIQ(44,ZI_",",.01) ; NAME OF CLINIC
+"RTN","C0QMU12",374,0)
+ . S ZCIEN=ZI ; IEN OF CLINIC
+"RTN","C0QMU12",375,0)
+ . S ZN=ZN+1 ; COUNT OF CLINICS
+"RTN","C0QMU12",376,0)
+ . S PRE=MUYR_"-EP-"_ZC_"-"
+"RTN","C0QMU12",377,0)
+ . D LOCPAT(PRE,ZC)
+"RTN","C0QMU12",378,0)
+ W !,"NUMBER OF CLINICS: ",ZN
+"RTN","C0QMU12",379,0)
+ D FILE ; CREATE ALL THE EP PATIENT LISTS
+"RTN","C0QMU12",380,0)
+ Q
+"RTN","C0QMU12",381,0)
+ ;
+"RTN","C0QMU12",382,0)
+DOEP ; DO EP COMPUTATIONS
+"RTN","C0QMU12",383,0)
+ S ZYR="MU12-"
+"RTN","C0QMU12",384,0)
+ N C0QPARM,C0QCLNC
+"RTN","C0QMU12",385,0)
+ D INIT("C0QPARM","EP") ; INITIALIZE PARAMETERS
+"RTN","C0QMU12",386,0)
+ K C0QLIST ; CLEAR THE LIST
+"RTN","C0QMU12",387,0)
+ N ZI S ZI=""
+"RTN","C0QMU12",388,0)
+ F  S ZI=$O(C0QPARM(ZI)) Q:ZI=""  D  ; FOR EACH EP
+"RTN","C0QMU12",389,0)
+ . S DTE=C0QPARM(ZI,"EPBeginDate") ; beginning of measurement period
+"RTN","C0QMU12",390,0)
+ . S EDTE=C0QPARM(ZI,"EPEndDate") ; end of measurement period -- tbd use this
+"RTN","C0QMU12",391,0)
+ . S C0QCLNC=C0QPARM(ZI,"CLINICS",1,1) ; only one clinic for now
+"RTN","C0QMU12",392,0)
+ . S PRE=ZYR_"EP-"_C0QCLNC_"-"
+"RTN","C0QMU12",393,0)
+ . D LOCPAT(PRE,C0QCLNC) ; GET THE PATIENTS
+"RTN","C0QMU12",394,0)
+ . I $D(DEBUG) D ZWRITE^C0QUTIL("C0QLIST")
+"RTN","C0QMU12",395,0)
+ . M C0QLIST(ZYR_"EP-ALL-PATIENTS")=C0QLIST(PRE_"Patient")
+"RTN","C0QMU12",396,0)
+ S DFN=""
+"RTN","C0QMU12",397,0)
+ S ZYR=ZYR_"EP-"
+"RTN","C0QMU12",398,0)
+ D INITCLST ; VEN/SMH - Initialize Empty Lists just in case we don't have
+"RTN","C0QMU12",399,0)
+            ; any. C0Q*1*5
+"RTN","C0QMU12",400,0)
+ F  S DFN=$O(C0QLIST(ZYR_"ALL-PATIENTS",DFN)) Q:DFN=""  D  ; EACH PATIENT
+"RTN","C0QMU12",401,0)
+ . D DEMO^C0QMU122
+"RTN","C0QMU12",402,0)
+ . D PROBLEM
+"RTN","C0QMU12",403,0)
+ . D ALLERGY
+"RTN","C0QMU12",404,0)
+ . ;D MEDS
+"RTN","C0QMU12",405,0)
+ . D ERX
+"RTN","C0QMU12",406,0)
+ . D SMOKING
+"RTN","C0QMU12",407,0)
+ . D VITALS
+"RTN","C0QMU12",408,0)
+ D FILE ; FILE THE PATIENT LISTS
+"RTN","C0QMU12",409,0)
+ ;
+"RTN","C0QMU12",410,0)
+ ; Now process eRx MU measures for these patients
+"RTN","C0QMU12",411,0)
+ ; Check for eRx template and code first; if they exist, run the code
+"RTN","C0QMU12",412,0)
+ I $D(^C0PX("B","GETMEDS6")),$L($T(SOAP^C0PWS2)) DO
+"RTN","C0QMU12",413,0)
+ . N C0QDEBUG S C0QDEBUG=1 ; This causes the code to print out data;
+"RTN","C0QMU12",414,0)
+ . D EN^C0QMUERX($$PATLN^C0QMU12(ZYR_"HasERX")) ; Pass the eRx patient list
+"RTN","C0QMU12",415,0)
+ ;
+"RTN","C0QMU12",416,0)
+ N ZI S ZI=""
+"RTN","C0QMU12",417,0)
+ F  S ZI=$O(C0QPARM(ZI)) Q:ZI=""  D  ;
+"RTN","C0QMU12",418,0)
+ . N C0QDEBUG S C0QDEBUG=1 ; This causes the code to print out data;
+"RTN","C0QMU12",419,0)
+ . D UPDATE^C0QUPDT(.G,C0QPARM(ZI,"EPMeasurementSet")) ; UPDATE THE MU MEASUREMENT SET
+"RTN","C0QMU12",420,0)
+ . ; VEN/SMH -- Quality Set missing for Outpatient -- adding
+"RTN","C0QMU12",421,0)
+ . D UPDATE^C0QUPDT(.G,C0QPARM(ZI,"EPQualitySet")) ; C0Q*1*5
+"RTN","C0QMU12",422,0)
+ Q
+"RTN","C0QMU12",423,0)
+ ;
+"RTN","C0QMU12",424,0)
+DIS ;
+"RTN","C0QMU12",425,0)
+ N DFN,DTE,EXDTE S DTE=""
+"RTN","C0QMU12",426,0)
+ F  D  Q:DTE=""
+"RTN","C0QMU12",427,0)
+ . S DTE=$O(^DGPM("B",DTE))
+"RTN","C0QMU12",428,0)
+ . Q:'DTE
+"RTN","C0QMU12",429,0)
+ . ;Q:$P(DTE,".")<3110703
+"RTN","C0QMU12",430,0)
+ . Q:$P(DTE,".")<3111000  ; NEW BEGIN DATE FOR FISCAL YEAR 2012
+"RTN","C0QMU12",431,0)
+ . S EXDTE=$$FMTE^XLFDT(DTE)
+"RTN","C0QMU12",432,0)
+ . N PTFM S PTFM=""
+"RTN","C0QMU12",433,0)
+ . D
+"RTN","C0QMU12",434,0)
+ . . S PTFM=$O(^DGPM("B",DTE,PTFM))
+"RTN","C0QMU12",435,0)
+ . . Q:'PTFM
+"RTN","C0QMU12",436,0)
+ . . S DFN=$P(^DGPM(PTFM,0),U,3)
+"RTN","C0QMU12",437,0)
+ . . S C0QLIST(ZYR_"Patient",DFN)=""
+"RTN","C0QMU12",438,0)
+ . . D DEMO^C0QMU122
+"RTN","C0QMU12",439,0)
+ . . D PROBLEM
+"RTN","C0QMU12",440,0)
+ . . D ALLERGY
+"RTN","C0QMU12",441,0)
+ . . D MEDS4
+"RTN","C0QMU12",442,0)
+ . . D RECON2
+"RTN","C0QMU12",443,0)
+ . . D ADVDIR
+"RTN","C0QMU12",444,0)
+ . . D SMOKING
+"RTN","C0QMU12",445,0)
+ . . D VITALS
+"RTN","C0QMU12",446,0)
+ . . ;D:$P(DTE,".")>3110912 VTE1
+"RTN","C0QMU12",447,0)
+ . . D VTE1
+"RTN","C0QMU12",448,0)
+ . . D COD
+"RTN","C0QMU12",449,0)
+ . . D EDTIME
+"RTN","C0QMU12",450,0)
+ . . I C0QPR D PRINT^C0QMU121
+"RTN","C0QMU12",451,0)
+ . . I C0QSS D SS^C0QMU121
+"RTN","C0QMU12",452,0)
+ . . I C0QPL D PATLIST^C0QMU121
+"RTN","C0QMU12",453,0)
+ Q
+"RTN","C0QMU12",454,0)
+ ;
+"RTN","C0QMU12",455,0)
+C0QPLF() Q 1130580001.301 ; FILE NUMBER FOR C0Q PATIENT LIST FILE
+"RTN","C0QMU12",456,0)
+C0QALFN() Q 1130580001.311 ; FILE NUMBER FOR C0Q PATIENT LIST PATIENT SUBFILE
+"RTN","C0QMU12",457,0)
+FILE ; FILE THE PATIENT LISTS TO C0Q PATIENT LIST
+"RTN","C0QMU12",458,0)
+ ;
+"RTN","C0QMU12",459,0)
+ I '$D(C0QLIST) Q  ;
+"RTN","C0QMU12",460,0)
+ N LFN S LFN=$$C0QALFN()
+"RTN","C0QMU12",461,0)
+ N ZI,ZN
+"RTN","C0QMU12",462,0)
+ S ZI=""
+"RTN","C0QMU12",463,0)
+ F  S ZI=$O(C0QLIST(ZI)) Q:ZI=""  D  ;
+"RTN","C0QMU12",464,0)
+ . S ZN=$O(^C0Q(301,"CATTR",ZI,""))
+"RTN","C0QMU12",465,0)
+ . I ZN="" D  ; LIST NOT FOUND, CREATE IT
+"RTN","C0QMU12",466,0)
+ . . K C0QFDA
+"RTN","C0QMU12",467,0)
+ . . S FN=$$C0QPLF ; C0Q PATIENT LIST FILE
+"RTN","C0QMU12",468,0)
+ . . S C0QFDA(FN,"+1,",.01)=ZI
+"RTN","C0QMU12",469,0)
+ . . S C0QFDA(FN,"+1,",999)=ZI ; ATTRIBUTE
+"RTN","C0QMU12",470,0)
+ . . W !,"CREATING ",ZI
+"RTN","C0QMU12",471,0)
+ . . D UPDIE ; ADD THE RECORD
+"RTN","C0QMU12",472,0)
+ . . S ZN=$O(^C0Q(301,"CATTR",ZI,"")) ; THE NEW IEN
+"RTN","C0QMU12",473,0)
+ . ;I ZN="" D  Q  ; OOPS
+"RTN","C0QMU12",474,0)
+ . ;. W !,"ERROR, ATTRIBUTE NOT FOUND IN PATIENT LIST FILE:"_ZI
+"RTN","C0QMU12",475,0)
+ . ;S ZN=$$KLNCR(ZN) ; KILL AND RECREATE RECORD ZN
+"RTN","C0QMU12",476,0)
+ . N C0QNEW,C0QOLD,C0QRSLT
+"RTN","C0QMU12",477,0)
+ . S C0QNEW=$NA(C0QLIST(ZI)) ; THE NEW PATIENT LIST
+"RTN","C0QMU12",478,0)
+ . S C0QOLD=$NA(^C0Q(301,ZN,1,"B")) ; THE OLD PATIENT LIST
+"RTN","C0QMU12",479,0)
+ . D UNITY^C0QSET("C0QRSLT",C0QNEW,C0QOLD) ; FIND WHAT'S NEW
+"RTN","C0QMU12",480,0)
+ . N ZJ,ZK
+"RTN","C0QMU12",481,0)
+ . ; FIRST, DELETE THE OLD ONES - NO LONGER IN THE LIST
+"RTN","C0QMU12",482,0)
+ . K C0QFDA
+"RTN","C0QMU12",483,0)
+ . S ZJ=""
+"RTN","C0QMU12",484,0)
+ . F  S ZJ=$O(C0QRSLT(2,ZJ)) Q:ZJ=""  D  ; MARKED WITH A 2 FROM UNITY
+"RTN","C0QMU12",485,0)
+ . . S ZK=$O(@C0QOLD@(ZJ,"")) ; GET THE IEN OF THE RECORD TO DELETE
+"RTN","C0QMU12",486,0)
+ . . I ZK="" D  Q  ; OOPS SHOULDN'T HAPPEN
+"RTN","C0QMU12",487,0)
+ . . . W !,"INTERNAL ERROR FINDING A PATIENT TO DELETE"
+"RTN","C0QMU12",488,0)
+ . . . S $EC=",U1130580001,"  ; smh - instead of a BREAK
+"RTN","C0QMU12",489,0)
+ . . S C0QFDA(LFN,ZK_","_ZN_",",.01)="@"
+"RTN","C0QMU12",490,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS THE DELETIONS
+"RTN","C0QMU12",491,0)
+ . ; SECOND, PROCESS THE ADDITIONS
+"RTN","C0QMU12",492,0)
+ . K C0QFDA
+"RTN","C0QMU12",493,0)
+ . S ZJ="" S ZK=1
+"RTN","C0QMU12",494,0)
+ . F  S ZJ=$O(C0QRSLT(0,ZJ)) Q:ZJ=""  D  ; PATIENTS TO ADD ARE MARKED WITH 0
+"RTN","C0QMU12",495,0)
+ . . S C0QFDA(LFN,"+"_ZK_","_ZN_",",.01)=ZJ
+"RTN","C0QMU12",496,0)
+ . . S ZK=ZK+1
+"RTN","C0QMU12",497,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS THE ADDITIONS
+"RTN","C0QMU12",498,0)
+ ;. Q
+"RTN","C0QMU12",499,0)
+ ;. K C0QFDA
+"RTN","C0QMU12",500,0)
+ ;. N ZJ,ZC
+"RTN","C0QMU12",501,0)
+ ;. S ZJ="" S ZC=1
+"RTN","C0QMU12",502,0)
+ ;. F  S ZJ=$O(C0QLIST(ZI,ZJ)) Q:ZJ=""  D  ; FOR EACH PAT IN LIST
+"RTN","C0QMU12",503,0)
+ ;. . S C0QFDA(LFN,"?+"_ZC_","_ZN_",",.01)=ZJ
+"RTN","C0QMU12",504,0)
+ ;. . S ZC=ZC+1
+"RTN","C0QMU12",505,0)
+ ;. D UPDIE
+"RTN","C0QMU12",506,0)
+ ;. W !,"FOUND:"_ZI
+"RTN","C0QMU12",507,0)
+ Q
+"RTN","C0QMU12",508,0)
+ ;
+"RTN","C0QMU12",509,0)
+KLNCR(ZREC) ; KILL AND RECREATE RECORD ZREC IN PATIENT LIST FILE
+"RTN","C0QMU12",510,0)
+ ;
+"RTN","C0QMU12",511,0)
+ N C0QFDA,ZFN,LIST,ATTR
+"RTN","C0QMU12",512,0)
+ S ZFN=$$C0QPLF() ; FILE NUMBER FOR C0Q PATIENT LIST FILE
+"RTN","C0QMU12",513,0)
+ D CLEAN^DILF
+"RTN","C0QMU12",514,0)
+ S LIST=$$GET1^DIQ(ZFN,ZREC_",",.01) ;  MEASURE NAME
+"RTN","C0QMU12",515,0)
+ S ATTR=$$GET1^DIQ(ZFN,ZREC_",",999) ; ATTRIBUTE
+"RTN","C0QMU12",516,0)
+ D CLEAN^DILF
+"RTN","C0QMU12",517,0)
+ K ZERR
+"RTN","C0QMU12",518,0)
+ S C0QFDA(ZFN,ZREC_",",.01)="@" ; GET READY TO DELETE THE MEASURE
+"RTN","C0QMU12",519,0)
+ D FILE^DIE(,"C0QFDA","ZERR") ; KILL THE SUBFILE
+"RTN","C0QMU12",520,0)
+ I $D(ZERR) S ZZERR=ZZERR ; ZZERR DOESN'T EXIST, INVOKE THE ERROR TRAP IF TASKED
+"RTN","C0QMU12",521,0)
+ ;. W "ERROR",!
+"RTN","C0QMU12",522,0)
+ ;. ZWR ZERR
+"RTN","C0QMU12",523,0)
+ ;. B
+"RTN","C0QMU12",524,0)
+ K C0QFDA
+"RTN","C0QMU12",525,0)
+ S C0QFDA(ZFN,"+1,",.01)=LIST ; GET READY TO RECREATE THE RECORD
+"RTN","C0QMU12",526,0)
+ S C0QFDA(ZFN,"+1,",999)=ATTR ; ATTRIBUTE
+"RTN","C0QMU12",527,0)
+ D UPDIE ; CREATE THE SUBFILE
+"RTN","C0QMU12",528,0)
+ N ZR ; NEW IEN FOR THE RECORD
+"RTN","C0QMU12",529,0)
+ S ZR=$O(^C0Q(301,"CATTR",ATTR,""))
+"RTN","C0QMU12",530,0)
+ ;
+"RTN","C0QMU12",531,0)
+ Q ZR
+"RTN","C0QMU12",532,0)
+ ;
+"RTN","C0QMU12",533,0)
+UPDIE ; INTERNAL ROUTINE TO CALL UPDATE^DIE AND CHECK FOR ERRORS
+"RTN","C0QMU12",534,0)
+ K ZERR
+"RTN","C0QMU12",535,0)
+ D CLEAN^DILF
+"RTN","C0QMU12",536,0)
+ D UPDATE^DIE("","C0QFDA","","ZERR")
+"RTN","C0QMU12",537,0)
+ I $D(ZERR) S ZZERR=ZZERR ; ZZERR DOESN'T EXIST, INVOKE THE ERROR TRAP IF TASKED
+"RTN","C0QMU12",538,0)
+ K C0QFDA
+"RTN","C0QMU12",539,0)
+ Q
+"RTN","C0QMU12",540,0)
+ ;
+"RTN","C0QMU12",541,0)
+END ;end of C0QPRML;
+"RTN","C0QUPDT")
+0^2^B78768309
+"RTN","C0QUPDT",1,0)
+C0QUPDT ; GPL - Quality Reporting List Update Routines ; 10/17/12 12:09pm
+"RTN","C0QUPDT",2,0)
+ ;;1.0;QUALITY MEASURES;**1,5**;May 21, 2012;Build 10
+"RTN","C0QUPDT",3,0)
+ ;Copyright 2009 George Lilly.  Licensed under the terms of the GNU
+"RTN","C0QUPDT",4,0)
+ ;General Public License See attached copy of the License.
+"RTN","C0QUPDT",5,0)
+ ;
+"RTN","C0QUPDT",6,0)
+ ;This program is free software; you can redistribute it and/or modify
+"RTN","C0QUPDT",7,0)
+ ;it under the terms of the GNU General Public License as published by
+"RTN","C0QUPDT",8,0)
+ ;the Free Software Foundation; either version 2 of the License, or
+"RTN","C0QUPDT",9,0)
+ ;(at your option) any later version.
+"RTN","C0QUPDT",10,0)
+ ;
+"RTN","C0QUPDT",11,0)
+ ;This program is distributed in the hope that it will be useful,
+"RTN","C0QUPDT",12,0)
+ ;but WITHOUT ANY WARRANTY; without even the implied warranty of
+"RTN","C0QUPDT",13,0)
+ ;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"RTN","C0QUPDT",14,0)
+ ;GNU General Public License for more details.
+"RTN","C0QUPDT",15,0)
+ ;
+"RTN","C0QUPDT",16,0)
+ ;You should have received a copy of the GNU General Public License along
+"RTN","C0QUPDT",17,0)
+ ;with this program; if not, write to the Free Software Foundation, Inc.,
+"RTN","C0QUPDT",18,0)
+ ;51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+"RTN","C0QUPDT",19,0)
+ ;
+"RTN","C0QUPDT",20,0)
+ Q
+"RTN","C0QUPDT",21,0)
+ ;
+"RTN","C0QUPDT",22,0)
+C0QQFN() Q 1130580001.101 ; FILE NUMBER FOR C0Q QUALITY MEASURE FILE
+"RTN","C0QUPDT",23,0)
+C0QMFN() Q 1130580001.201 ; FILE NUMBER FOR C0Q MEASUREMENT FILE
+"RTN","C0QUPDT",24,0)
+C0QMMFN() Q 1130580001.2011 ; FN FOR MEASURE SUBFILE
+"RTN","C0QUPDT",25,0)
+C0QMMNFN() Q 1130580001.20111 ; FN FOR NUMERATOR SUBFILE
+"RTN","C0QUPDT",26,0)
+C0QMMDFN() Q 1130580001.20112 ; FN FOR DENOMINATOR SUBFILE
+"RTN","C0QUPDT",27,0)
+RLSTFN() Q 810.5 ; FN FOR REMINDER PATIENT LIST FILE
+"RTN","C0QUPDT",28,0)
+RLSTPFN() Q 810.53 ; FN FOR REMINDER PATIENT LIST PATIENT SUBFILE
+"RTN","C0QUPDT",29,0)
+C0QPLF() Q 1130580001.301 ; C0Q PATIENT LIST FILE
+"RTN","C0QUPDT",30,0)
+C0QALFN() Q 1130580001.311 ; FILE NUMBER FOR C0Q PATIENT LIST PATIENT SUBFILE ;
+"RTN","C0QUPDT",31,0)
+ ;
+"RTN","C0QUPDT",32,0)
+UPDATE(RNT,MSET) ; UPDATE A MEASURE SET BY ADDING NEW ENTRIES TO PATIENT
+"RTN","C0QUPDT",33,0)
+ ; LISTS AND DELETING ENTRIES THAT ARE NO LONGER VALID. ALSO UPDATE
+"RTN","C0QUPDT",34,0)
+ ; NUMERATOR AND DENOMINATOR COUNTS
+"RTN","C0QUPDT",35,0)
+ ; MAKES HEAVY USE OF UNITY^C0QSET TO DETERMINE WHAT TO ADD AND DELETE
+"RTN","C0QUPDT",36,0)
+ ;
+"RTN","C0QUPDT",37,0)
+ ; THIS IS A REPLACEMENT FOR C0QRPC^C0QMAIN WHICH DELETES THE PATIENT
+"RTN","C0QUPDT",38,0)
+ ; LISTS AND RECREATES THEM, WHICH IS A LOT OF UNNECESSARY PROCESSING
+"RTN","C0QUPDT",39,0)
+ ;
+"RTN","C0QUPDT",40,0)
+ N ZI S ZI=""
+"RTN","C0QUPDT",41,0)
+ N C0QM ; FOR HOLDING THE MEASURES IN THE SET
+"RTN","C0QUPDT",42,0)
+ I $$GET1^DIQ($$C0QMFN,MSET_",",.05,"I")="Y" D  Q  ; IS IT LOCKED?
+"RTN","C0QUPDT",43,0)
+ . W !,"ERROR MEASURE SET IS LOCKED, EXITING"
+"RTN","C0QUPDT",44,0)
+ D LIST^DIC($$C0QMMFN,","_MSET_",",".01I;1.2I;2.2I") ; GET ALL THE MEASURES
+"RTN","C0QUPDT",45,0)
+ D DELIST("C0QM")
+"RTN","C0QUPDT",46,0)
+ N ZII S ZII=""
+"RTN","C0QUPDT",47,0)
+ F  S ZII=$O(C0QM(ZII)) Q:ZII=""  D  ; FOR EACH MEASURE
+"RTN","C0QUPDT",48,0)
+ . ; 
+"RTN","C0QUPDT",49,0)
+ . ; Special processing for eRx measure.
+"RTN","C0QUPDT",50,0)
+ . I $$GET1^DIQ(1130580001.101,+C0QM(ZII)_",",4,"I")="E" D ERXCOUNT(MSET,ZII) Q
+"RTN","C0QUPDT",51,0)
+ . ;
+"RTN","C0QUPDT",52,0)
+ . ; Otherwise, we go on
+"RTN","C0QUPDT",53,0)
+ . N C0QNL,C0QDL,C0QFLTN,C0QFLTD,C0QNALT ; VEN/SMH - line changed in *5 
+"RTN","C0QUPDT",54,0)
+ . S C0QFLTN=$P(C0QM(ZII),U,3) ;IEN OF NUMERATOR FILTER LIST
+"RTN","C0QUPDT",55,0)
+ . S C0QFLTD=$P(C0QM(ZII),U,4) ; IEN OF DENOMINATOR FILTER LIST
+"RTN","C0QUPDT",56,0)
+ . S ZI=$P(C0QM(ZII),U,1) ; IEN OF THE MEASURE IN THE C0Q QUALITY MEAS FILE
+"RTN","C0QUPDT",57,0)
+ . ;
+"RTN","C0QUPDT",58,0)
+ . ; Numerator
+"RTN","C0QUPDT",59,0)
+ . S C0QNL=$$GET1^DIQ($$C0QQFN,ZI_",",1,"I") ; NUMERATOR POINTER
+"RTN","C0QUPDT",60,0)
+ . I C0QNL="" D  ; CHECK ALTERNATE LIST
+"RTN","C0QUPDT",61,0)
+ . . S C0QNL=$$GET1^DIQ($$C0QQFN,ZI_",",1.1,"I") ; NUMERATOR POINTER
+"RTN","C0QUPDT",62,0)
+ . . I C0QNL'="" S C0QNALT=1
+"RTN","C0QUPDT",63,0)
+ . I C0QNL="" QUIT  ; No Numerator. Can't perform calculation.--smh
+"RTN","C0QUPDT",64,0)
+ . ;
+"RTN","C0QUPDT",65,0)
+ . ; Denominator
+"RTN","C0QUPDT",66,0)
+ . S C0QDL=$$GET1^DIQ($$C0QQFN,ZI_",",2,"I") ; DENOMINATOR POINTER
+"RTN","C0QUPDT",67,0)
+ . I C0QDL="" D  ; CHECK ALTERNATE LIST
+"RTN","C0QUPDT",68,0)
+ . . S C0QDL=$$GET1^DIQ($$C0QQFN,ZI_",",2.1,"I") ; DENOMINATOR POINTER
+"RTN","C0QUPDT",69,0)
+ . . I C0QDL'="" S C0QDALT=1
+"RTN","C0QUPDT",70,0)
+ . I C0QDL="" QUIT  ; No Denominator. Can't perform calcuation.--smh
+"RTN","C0QUPDT",71,0)
+ . ;
+"RTN","C0QUPDT",72,0)
+ . ; FIRST PROCESS THE NUMERATOR
+"RTN","C0QUPDT",73,0)
+ . ;
+"RTN","C0QUPDT",74,0)
+ . N C0QNEW ; REFERENCE TO NEW NUMBERATOR LIST B INDEX
+"RTN","C0QUPDT",75,0)
+ . I $G(C0QNALT)=1 D  ; USING ALTERNATE LIST FOR NUMERATOR
+"RTN","C0QUPDT",76,0)
+ . . S C0QNEW=$NA(^C0Q(301,C0QNL,1,"B")) ; B INDEX FOR THIS LIST
+"RTN","C0QUPDT",77,0)
+ . E  D  ; USE THE REMINDER PACKAGE PATIENT LISTS
+"RTN","C0QUPDT",78,0)
+ . . S C0QNEW=$NA(^PXRMXP(810.5,C0QNL,30,"B")) ; REMINDER LIST PATIENTS
+"RTN","C0QUPDT",79,0)
+ . I C0QFLTN'="" D  ; USE A NUMERATOR FILTER LIST
+"RTN","C0QUPDT",80,0)
+ . . N ZNEW
+"RTN","C0QUPDT",81,0)
+ . . S ZNEW=$NA(^C0Q(301,C0QFLTN,1,"B")) ; B INDEX OF FILTER LIST
+"RTN","C0QUPDT",82,0)
+ . . K C0QFLTRD
+"RTN","C0QUPDT",83,0)
+ . . D AND^C0QSET("C0QFLTRD",ZNEW,C0QNEW)
+"RTN","C0QUPDT",84,0)
+ . . S C0QNEW="C0QFLTRD"
+"RTN","C0QUPDT",85,0)
+ . N C0QOLD ; REFERENCE FOR OLD PATIENT LIST
+"RTN","C0QUPDT",86,0)
+ . S C0QOLD=$NA(^C0Q(201,MSET,5,ZII,1,"B")) ; NUMERATOR LIST IN MEASURE SET
+"RTN","C0QUPDT",87,0)
+ . N C0QRSLT ; ARRAY FOR THE UNITY DIFFERENCES
+"RTN","C0QUPDT",88,0)
+ . D UNITY^C0QSET("C0QRSLT",C0QNEW,C0QOLD) ; FIND THE DIFFERENCES
+"RTN","C0QUPDT",89,0)
+ . N C0QCNT
+"RTN","C0QUPDT",90,0)
+ . S C0QNCNT=$G(C0QRSLT("COUNT"))
+"RTN","C0QUPDT",91,0)
+ . I C0QNCNT="" D  ;
+"RTN","C0QUPDT",92,0)
+ . . S C0QNCNT=0 ; DEFAULT COUNT IS ZERO
+"RTN","C0QUPDT",93,0)
+ . . N GZZ S GZZ=""
+"RTN","C0QUPDT",94,0)
+ . . F  S GZZ=$O(C0QRSLT(0,GZZ)) Q:GZZ=""  D  ; EVERY ADD ENTRY
+"RTN","C0QUPDT",95,0)
+ . . . S C0QNCNT=C0QNCNT+1
+"RTN","C0QUPDT",96,0)
+ . . F  S GZZ=$O(C0QRSLT(1,GZZ)) Q:GZZ=""  D  ; EVERY EQUAL ENTRY
+"RTN","C0QUPDT",97,0)
+ . . . S C0QNCNT=C0QNCNT+1
+"RTN","C0QUPDT",98,0)
+ . K C0QFDA ; CLEAR THE FDA
+"RTN","C0QUPDT",99,0)
+ . N C0QONCNT ; OLD COUNT
+"RTN","C0QUPDT",100,0)
+ . S C0QONCNT=$$GET1^DIQ($$C0QMMFN(),ZII_","_MSET_",",1.1)
+"RTN","C0QUPDT",101,0)
+ . I C0QNCNT'=C0QONCNT D  ; COUNT HAS CHANGED
+"RTN","C0QUPDT",102,0)
+ . . S C0QFDA($$C0QMMFN(),ZII_","_MSET_",",1.1)=C0QNCNT ; NUMERATOR COUNT
+"RTN","C0QUPDT",103,0)
+ . . D UPDIE ; UPDATE THE NUMERATOR COUNT
+"RTN","C0QUPDT",104,0)
+ . I $D(C0QRSLT) D  ;B  ;
+"RTN","C0QUPDT",105,0)
+ . . ;ZWR C0QRSLT
+"RTN","C0QUPDT",106,0)
+ . ; FIRST PROCESS DELETIONS
+"RTN","C0QUPDT",107,0)
+ . K C0QFDA ; CLEAR OUT THE FDA
+"RTN","C0QUPDT",108,0)
+ . N ZG,ZIEN S ZG=""
+"RTN","C0QUPDT",109,0)
+ . F  S ZG=$O(C0QRSLT(2,ZG)) Q:ZG=""  D  ; FOR EACH DELETION
+"RTN","C0QUPDT",110,0)
+ . . S ZIEN=$O(@C0QOLD@(ZG,"")) ; IEN OF THE ENTRY
+"RTN","C0QUPDT",111,0)
+ . . I ZIEN="" D  Q  ; OOPS
+"RTN","C0QUPDT",112,0)
+ . . . W !,"ERROR DELETING ENTRY!! ",ZG
+"RTN","C0QUPDT",113,0)
+ . . S C0QFDA($$C0QMMNFN(),ZIEN_","_ZII_","_MSET_",",.01)="@" ; DELETE
+"RTN","C0QUPDT",114,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS
+"RTN","C0QUPDT",115,0)
+ . ; SECOND, PROCESS ADDITIONS
+"RTN","C0QUPDT",116,0)
+ . K C0QFDA ; CLEAR OUT THE FDA
+"RTN","C0QUPDT",117,0)
+ . N ZG,ZC S ZG="" S ZC=1
+"RTN","C0QUPDT",118,0)
+ . F  S ZG=$O(C0QRSLT(0,ZG)) Q:ZG=""  D  ; FOR EACH ADDITION
+"RTN","C0QUPDT",119,0)
+ . . S C0QFDA($$C0QMMNFN(),"+"_ZC_","_ZII_","_MSET_",",.01)=ZG ; ADD THE ENTRY
+"RTN","C0QUPDT",120,0)
+ . . S ZC=ZC+1
+"RTN","C0QUPDT",121,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS
+"RTN","C0QUPDT",122,0)
+ . ;
+"RTN","C0QUPDT",123,0)
+ . ; PROCESS THE DENOMINATOR
+"RTN","C0QUPDT",124,0)
+ . ;
+"RTN","C0QUPDT",125,0)
+ . N C0QNEW ; REFERENCE TO NEW NUMBERATOR LIST B INDEX
+"RTN","C0QUPDT",126,0)
+ . I $G(C0QNALT)=1 D  ; USING ALTERNATE LIST FOR NUMERATOR
+"RTN","C0QUPDT",127,0)
+ . . S C0QNEW=$NA(^C0Q(301,C0QDL,1,"B")) ; B INDEX FOR THIS LIST
+"RTN","C0QUPDT",128,0)
+ . E  D  ; USE THE REMINDER PACKAGE PATIENT LISTS
+"RTN","C0QUPDT",129,0)
+ . . S C0QNEW=$NA(^PXRMXP(810.5,C0QDL,30,"B")) ; REMINDER LIST PATIENTS
+"RTN","C0QUPDT",130,0)
+ . I C0QFLTD'="" D  ; USE A DENOMINATOR FILTER LIST
+"RTN","C0QUPDT",131,0)
+ . . N ZNEW
+"RTN","C0QUPDT",132,0)
+ . . S ZNEW=$NA(^C0Q(301,C0QFLTD,1,"B")) ; B INDEX OF FILTER LIST
+"RTN","C0QUPDT",133,0)
+ . . K C0QFLTRD
+"RTN","C0QUPDT",134,0)
+ . . D AND^C0QSET("C0QFLTRD",ZNEW,C0QNEW)
+"RTN","C0QUPDT",135,0)
+ . . S C0QNEW="C0QFLTRD"
+"RTN","C0QUPDT",136,0)
+ . N C0QOLD ; REFERENCE FOR OLD PATIENT LIST
+"RTN","C0QUPDT",137,0)
+ . S C0QOLD=$NA(^C0Q(201,MSET,5,ZII,3,"B")) ; DENOMINATOR LIST IN MEASURE SET
+"RTN","C0QUPDT",138,0)
+ . N C0QRSLT ; ARRAY FOR THE UNITY DIFFERENCES
+"RTN","C0QUPDT",139,0)
+ . D UNITY^C0QSET("C0QRSLT",C0QNEW,C0QOLD) ; FIND THE DIFFERENCES
+"RTN","C0QUPDT",140,0)
+ . N C0QDCNT
+"RTN","C0QUPDT",141,0)
+ . S C0QDCNT=$G(C0QRSLT("COUNT"))
+"RTN","C0QUPDT",142,0)
+ . I C0QDCNT="" D  ;
+"RTN","C0QUPDT",143,0)
+ . . S C0QDCNT=0 ; DEFAULT COUNT IS ZERO
+"RTN","C0QUPDT",144,0)
+ . . N GZZ S GZZ=""
+"RTN","C0QUPDT",145,0)
+ . . F  S GZZ=$O(C0QRSLT(0,GZZ)) Q:GZZ=""  D  ; EVERY ADD ENTRY
+"RTN","C0QUPDT",146,0)
+ . . . S C0QDCNT=C0QDCNT+1
+"RTN","C0QUPDT",147,0)
+ . . F  S GZZ=$O(C0QRSLT(1,GZZ)) Q:GZZ=""  D  ; EVERY EQUAL ENTRY
+"RTN","C0QUPDT",148,0)
+ . . . S C0QDCNT=C0QDCNT+1
+"RTN","C0QUPDT",149,0)
+ . K C0QFDA ; CLEAR THE FDA
+"RTN","C0QUPDT",150,0)
+ . N C0QODCNT ; OLD COUNT
+"RTN","C0QUPDT",151,0)
+ . S C0QODCNT=$$GET1^DIQ($$C0QMMFN(),ZII_","_MSET_",",2.1)
+"RTN","C0QUPDT",152,0)
+ . I C0QDCNT'=C0QODCNT D  ; COUNT HAS CHANGED
+"RTN","C0QUPDT",153,0)
+ . . S C0QFDA($$C0QMMFN(),ZII_","_MSET_",",2.1)=C0QDCNT ; DENOMINATOR COUNT
+"RTN","C0QUPDT",154,0)
+ . . D UPDIE ; UPDATE THE DENOMINATOR COUNT
+"RTN","C0QUPDT",155,0)
+ . I $D(C0QRSLT) D  ;B  ;
+"RTN","C0QUPDT",156,0)
+ . . ;ZWR C0QRSLT
+"RTN","C0QUPDT",157,0)
+ . I '$D(C0QRSLT) Q  ; NO RESULTS TO USE
+"RTN","C0QUPDT",158,0)
+ . ; FIRST PROCESS DELETIONS
+"RTN","C0QUPDT",159,0)
+ . K C0QFDA ; CLEAR OUT THE FDA
+"RTN","C0QUPDT",160,0)
+ . N ZG,ZIEN S ZG=""
+"RTN","C0QUPDT",161,0)
+ . F  S ZG=$O(C0QRSLT(2,ZG)) Q:ZG=""  D  ; FOR EACH DELETION
+"RTN","C0QUPDT",162,0)
+ . . S ZIEN=$O(@C0QOLD@(ZG,"")) ; IEN OF THE ENTRY
+"RTN","C0QUPDT",163,0)
+ . . I ZIEN="" D  Q  ; OOPS
+"RTN","C0QUPDT",164,0)
+ . . . W !,"ERROR DELETING ENTRY!! ",ZG
+"RTN","C0QUPDT",165,0)
+ . . S C0QFDA($$C0QMMDFN(),ZIEN_","_ZII_","_MSET_",",.01)="@" ; DELETE
+"RTN","C0QUPDT",166,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS
+"RTN","C0QUPDT",167,0)
+ . ; SECOND, PROCESS ADDITIONS
+"RTN","C0QUPDT",168,0)
+ . K C0QFDA ; CLEAR OUT THE FDA
+"RTN","C0QUPDT",169,0)
+ . N ZG,ZC S ZG="" S ZC=1
+"RTN","C0QUPDT",170,0)
+ . F  S ZG=$O(C0QRSLT(0,ZG)) Q:ZG=""  D  ; FOR EACH ADDITION
+"RTN","C0QUPDT",171,0)
+ . . S C0QFDA($$C0QMMDFN(),"+"_ZC_","_ZII_","_MSET_",",.01)=ZG ; ADD THE ENTRY
+"RTN","C0QUPDT",172,0)
+ . . S ZC=ZC+1
+"RTN","C0QUPDT",173,0)
+ . I $D(C0QFDA) D UPDIE ; PROCESS
+"RTN","C0QUPDT",174,0)
+ . ;
+"RTN","C0QUPDT",175,0)
+ . ; File Percentage
+"RTN","C0QUPDT",176,0)
+ . N C0QPCT ; PERCENT
+"RTN","C0QUPDT",177,0)
+ . D  ;
+"RTN","C0QUPDT",178,0)
+ . . I C0QDCNT>0 D  ;
+"RTN","C0QUPDT",179,0)
+ . . . S C0QPCT=$J(100*C0QNCNT/C0QDCNT,0,0)
+"RTN","C0QUPDT",180,0)
+ . . E  S C0QPCT=0
+"RTN","C0QUPDT",181,0)
+ . . K C0QFDA
+"RTN","C0QUPDT",182,0)
+ . . S C0QFDA($$C0QMMFN(),ZII_","_MSET_",",3)=C0QPCT ; PERCENT
+"RTN","C0QUPDT",183,0)
+ . . D UPDIE
+"RTN","C0QUPDT",184,0)
+ Q
+"RTN","C0QUPDT",185,0)
+ ; 
+"RTN","C0QUPDT",186,0)
+DELIST(RTN) ; DECODES ^TMP("DILIST",$J) INTO
+"RTN","C0QUPDT",187,0)
+ ; @RTN@(IEN)=INTERNAL VALUE^EXTERNAL VALUE
+"RTN","C0QUPDT",188,0)
+ ; ADDED A B INDEX @RTN@("B",INTERNAL VALUE,IEN)=EXTERNAL VALUE
+"RTN","C0QUPDT",189,0)
+ N ZI,IV,EV,ZDI,ZIEN,FLTN,FLTD
+"RTN","C0QUPDT",190,0)
+ S ZI=""
+"RTN","C0QUPDT",191,0)
+ S ZDI=$NA(^TMP("DILIST",$J))
+"RTN","C0QUPDT",192,0)
+ K @RTN
+"RTN","C0QUPDT",193,0)
+ F  S ZI=$O(@ZDI@(1,ZI)) Q:ZI=""  D  ;
+"RTN","C0QUPDT",194,0)
+ . S EV=@ZDI@(1,ZI) ;EXTERNAL VALUE
+"RTN","C0QUPDT",195,0)
+ . S IV=$G(@ZDI@("ID",ZI,.01)) ; INTERNAL VALUE
+"RTN","C0QUPDT",196,0)
+ . S FLTN=$G(@ZDI@("ID",ZI,1.2)) ; NUMERATOR FILTER LIST
+"RTN","C0QUPDT",197,0)
+ . S FLTD=$G(@ZDI@("ID",ZI,2.2)) ; DENOMINATOR FILTER LIST
+"RTN","C0QUPDT",198,0)
+ . S ZIEN=@ZDI@(2,ZI) ; IEN
+"RTN","C0QUPDT",199,0)
+ . S @RTN@(ZIEN)=IV_"^"_EV_"^"_FLTN_"^"_FLTD
+"RTN","C0QUPDT",200,0)
+ . ;S @RTN@("B",IV,ZIEN)=EV
+"RTN","C0QUPDT",201,0)
+ Q
+"RTN","C0QUPDT",202,0)
+ ;
+"RTN","C0QUPDT",203,0)
+UPDIE ; INTERNAL ROUTINE TO CALL UPDATE^DIE AND CHECK FOR ERRORS
+"RTN","C0QUPDT",204,0)
+ K ZERR
+"RTN","C0QUPDT",205,0)
+ D CLEAN^DILF
+"RTN","C0QUPDT",206,0)
+ D ZWRITE^C0QUTIL("C0QFDA")
+"RTN","C0QUPDT",207,0)
+ D UPDATE^DIE("","C0QFDA","","ZERR")
+"RTN","C0QUPDT",208,0)
+ I $D(ZERR) S ZZERR=ZZERR ; ZZERR DOESN'T EXIST, INVOKE THE ERROR TRAP IF TASKED
+"RTN","C0QUPDT",209,0)
+ ;. W "ERROR",!
+"RTN","C0QUPDT",210,0)
+ ;. ZWR ZERR
+"RTN","C0QUPDT",211,0)
+ ;. B
+"RTN","C0QUPDT",212,0)
+ K C0QFDA
+"RTN","C0QUPDT",213,0)
+ Q
+"RTN","C0QUPDT",214,0)
+ ;
+"RTN","C0QUPDT",215,0)
+ERXCOUNT(MSETIEN,MIEN) ; Private Proc; Get eRx and file as Numerator, Denominator, and %
+"RTN","C0QUPDT",216,0)
+ ; Inputs:
+"RTN","C0QUPDT",217,0)
+ ; MSETIEN - Measurement Set IEN - By Value
+"RTN","C0QUPDT",218,0)
+ ; MIEN - Measurement IEN inside the Measurement Set - By Value
+"RTN","C0QUPDT",219,0)
+ ; 
+"RTN","C0QUPDT",220,0)
+ ; Optional Symtab input: C0QDEBUG to print out debug messages to STDOUT.
+"RTN","C0QUPDT",221,0)
+ ; ZEXCEPT: C0QDEBUG ; For Dr. Ivey's parser.
+"RTN","C0QUPDT",222,0)
+ ;
+"RTN","C0QUPDT",223,0)
+ ; No check is done to see if the caller is sending bad data. Measurement must be
+"RTN","C0QUPDT",224,0)
+ ; in a subfile under Measurement Set.
+"RTN","C0QUPDT",225,0)
+ ;
+"RTN","C0QUPDT",226,0)
+ W:$G(C0QDEBUG) "Processing E-Prescribing Counts",!
+"RTN","C0QUPDT",227,0)
+ ; Example of Data we go through in the C0Q Parameter File, so the code below
+"RTN","C0QUPDT",228,0)
+ ; will make sense.
+"RTN","C0QUPDT",229,0)
+ ; ^C0Q(401,"AMMS",2,1)=""
+"RTN","C0QUPDT",230,0)
+ ; ^C0Q(401,"AMMS",2,2)=""
+"RTN","C0QUPDT",231,0)
+ ; ^C0Q(401,"AQMS",6,2)=""
+"RTN","C0QUPDT",232,0)
+ ; ^C0Q(401,"B","INPATIENT",2)=""
+"RTN","C0QUPDT",233,0)
+ ; ^C0Q(401,"B","OUTPATIENT",1)=""
+"RTN","C0QUPDT",234,0)
+ ; ^C0Q(401,"MU","MU12",1)=""
+"RTN","C0QUPDT",235,0)
+ ; ^C0Q(401,"MU","MU12",2)=""
+"RTN","C0QUPDT",236,0)
+ ; ^C0Q(401,"MUTYP","MU12","EP",1)=""
+"RTN","C0QUPDT",237,0)
+ ; ^C0Q(401,"MUTYP","MU12","INP",2)=""
+"RTN","C0QUPDT",238,0)
+ ;
+"RTN","C0QUPDT",239,0)
+ ; Get Parameter year from the Parameters file.
+"RTN","C0QUPDT",240,0)
+ ; 1. Get parameter associated with this measurement set from AMMS x-ref (new in C0Q*1*1).
+"RTN","C0QUPDT",241,0)
+ N C0QPARAM
+"RTN","C0QUPDT",242,0)
+ N % S %="" F  S %=$O(^C0Q(401,"AMMS",MSETIEN,%)) Q:%=""  S C0QPARAM(%)=""
+"RTN","C0QUPDT",243,0)
+ ;
+"RTN","C0QUPDT",244,0)
+ ; 2. Find the year for each of those--store as value of node; IEN still subscript.
+"RTN","C0QUPDT",245,0)
+ N % S %="" F  S %=$O(C0QPARAM(%)) Q:%=""  S C0QPARAM(%)=$$GET1^DIQ(1130580001.401,%_",",.02)
+"RTN","C0QUPDT",246,0)
+ ;
+"RTN","C0QUPDT",247,0)
+ ; 3. Now make sure that this parameter that point to an Outpatient Parameters
+"RTN","C0QUPDT",248,0)
+ ; WARNING: CONFUSING CODE WRITTEN BY ME AHEAD
+"RTN","C0QUPDT",249,0)
+ ; The % loop will stop with a valid value if found; % is used in the lines immediately below
+"RTN","C0QUPDT",250,0)
+ N % S %="" F  S %=$O(C0QPARAM(%)) Q:%=""  Q:$D(^C0Q(401,"MUTYP",C0QPARAM(%),"EP",%))
+"RTN","C0QUPDT",251,0)
+ ;
+"RTN","C0QUPDT",252,0)
+ ; 4. If % has a valid IEN (there can be multiple, we take the first), then off we go.
+"RTN","C0QUPDT",253,0)
+ ; Otherwise, if it is back to "", we quit.
+"RTN","C0QUPDT",254,0)
+ N MUYEAR
+"RTN","C0QUPDT",255,0)
+ IF '% W "No suitable parameter found. Cannot determine Measurement Year.",! QUIT
+"RTN","C0QUPDT",256,0)
+ ELSE  S MUYEAR=C0QPARAM(%)
+"RTN","C0QUPDT",257,0)
+ ; 
+"RTN","C0QUPDT",258,0)
+ ; Now, based on the MU year, construct the patient list name that has the eRx data.
+"RTN","C0QUPDT",259,0)
+ N LISTNAME S LISTNAME=MUYEAR_"-"_"EP"_"-"_"HasERX"
+"RTN","C0QUPDT",260,0)
+ ;
+"RTN","C0QUPDT",261,0)
+ ; Call the API in C0QMUERX to get the counts already calculated
+"RTN","C0QUPDT",262,0)
+ ; Data is returned NUM/DEN
+"RTN","C0QUPDT",263,0)
+ N COUNTS S COUNTS=$$COUNT^C0QMUERX($$PATLN^C0QMU12(LISTNAME))
+"RTN","C0QUPDT",264,0)
+ ;
+"RTN","C0QUPDT",265,0)
+ ; File the count
+"RTN","C0QUPDT",266,0)
+ N NUM S NUM=$P(COUNTS,"/") ; Numerator
+"RTN","C0QUPDT",267,0)
+ N DEN S DEN=$P(COUNTS,"/",2) ; Denominator
+"RTN","C0QUPDT",268,0)
+ ;
+"RTN","C0QUPDT",269,0)
+ ; Prepare FDA
+"RTN","C0QUPDT",270,0)
+ N C0QFDA,C0QERR
+"RTN","C0QUPDT",271,0)
+ S C0QFDA($$C0QMMFN(),MIEN_","_MSETIEN_",",1.1)=NUM ; Numerator
+"RTN","C0QUPDT",272,0)
+ S C0QFDA($$C0QMMFN(),MIEN_","_MSETIEN_",",2.1)=DEN ; Denominator
+"RTN","C0QUPDT",273,0)
+ S C0QFDA($$C0QMMFN(),MIEN_","_MSETIEN_",",3)=$S(DEN=0:0,1:$J(100*NUM/DEN,0,0)) ; Percentage; avoid dividing by zero!
+"RTN","C0QUPDT",274,0)
+ ;
+"RTN","C0QUPDT",275,0)
+ ; File FDA using Filer not updater (editing existing entry only)
+"RTN","C0QUPDT",276,0)
+ D FILE^DIE("ET",$NAME(C0QFDA),$NAME(C0QERR)) ; Flags: External, Transaction
+"RTN","C0QUPDT",277,0)
+ ;
+"RTN","C0QUPDT",278,0)
+ ; If error, print it out
+"RTN","C0QUPDT",279,0)
+ I $D(C0QERR) DO
+"RTN","C0QUPDT",280,0)
+ . W "Error filing data",!
+"RTN","C0QUPDT",281,0)
+ . N % S %=$NAME(C0QERR) F  S %=$Q(@%) Q:%=""  W %_": "_@%,!
+"RTN","C0QUPDT",282,0)
+ ;
+"RTN","C0QUPDT",283,0)
+ QUIT
+"SEC","^DD",1130580001.101,1130580001.101,3.1,9)
+
+"SEC","^DIC",1130580001.101,1130580001.101,0,"AUDIT")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"DD")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"DEL")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"LAYGO")
+
+"SEC","^DIC",1130580001.101,1130580001.101,0,"RD")
+
+"SEC","^DIC",1130580001.101,1130580001.101,0,"WR")
+
+"SEC","^DIC",1130580001.201,1130580001.201,0,"AUDIT")
+@
+"SEC","^DIC",1130580001.201,1130580001.201,0,"DD")
+@
+"SEC","^DIC",1130580001.201,1130580001.201,0,"DEL")
+
+"SEC","^DIC",1130580001.201,1130580001.201,0,"LAYGO")
+
+"SEC","^DIC",1130580001.201,1130580001.201,0,"RD")
+
+"SEC","^DIC",1130580001.201,1130580001.201,0,"WR")
+
+"SEC","^DIC",1130580001.401,1130580001.401,0,"AUDIT")
+@
+"SEC","^DIC",1130580001.401,1130580001.401,0,"DD")
+@
+"SEC","^DIC",1130580001.401,1130580001.401,0,"DEL")
+
+"SEC","^DIC",1130580001.401,1130580001.401,0,"LAYGO")
+
+"SEC","^DIC",1130580001.401,1130580001.401,0,"RD")
+
+"SEC","^DIC",1130580001.401,1130580001.401,0,"WR")
+
+"TEMP",1130580001.101,0)
+C0Q QUALITY MEASURE^1130580001.101
+"TEMP",1130580001.101,0,"AUDIT")
+@
+"TEMP",1130580001.101,0,"DD")
+@
+"TEMP",1130580001.101,0,"DEL")
+@
+"TEMP",1130580001.101,0,"GL")
+^C0Q(101,
+"TEMP",1130580001.101,0,"LAYGO")
+
+"TEMP",1130580001.101,0,"RD")
+
+"TEMP",1130580001.101,0,"WR")
+
+"TEMP",1130580001.101,"%",0)
+^1.005^^
+"TEMP",1130580001.201,0)
+C0Q MEASUREMENT SET^1130580001.201
+"TEMP",1130580001.201,0,"AUDIT")
+@
+"TEMP",1130580001.201,0,"DD")
+@
+"TEMP",1130580001.201,0,"DEL")
+
+"TEMP",1130580001.201,0,"GL")
+^C0Q(201,
+"TEMP",1130580001.201,0,"LAYGO")
+
+"TEMP",1130580001.201,0,"RD")
+
+"TEMP",1130580001.201,0,"WR")
+
+"TEMP",1130580001.201,"%",0)
+^1.005^^0
+"TEMP",1130580001.201,"%D",0)
+^^3^3^3120731^
+"TEMP",1130580001.201,"%D",1,0)
+This file contains the groupings of Measurements found in the Quality 
+"TEMP",1130580001.201,"%D",2,0)
+Measures file. It is tied to the parameters file as the set of 
+"TEMP",1130580001.201,"%D",3,0)
+measurements to report for a site.
+"TEMP",1130580001.401,0)
+C0Q PARAMETER^1130580001.401
+"TEMP",1130580001.401,0,"AUDIT")
+@
+"TEMP",1130580001.401,0,"DD")
+@
+"TEMP",1130580001.401,0,"DEL")
+
+"TEMP",1130580001.401,0,"GL")
+^C0Q(401,
+"TEMP",1130580001.401,0,"LAYGO")
+
+"TEMP",1130580001.401,0,"RD")
+
+"TEMP",1130580001.401,0,"WR")
+
+"TEMP",1130580001.401,"%",0)
+^1.005^^0
+"TEMP",1130580001.401,"%D",0)
+^^7^7^3120103^
+"TEMP",1130580001.401,"%D",1,0)
+This parameter file was created by George Lilly 12/2011 for the C0Q 
+"TEMP",1130580001.401,"%D",2,0)
+Meaningful Use and Quality Measurement Project funded in part by Oroville 
+"TEMP",1130580001.401,"%D",3,0)
+Hospital. It controls the updating of Meaningful Use patient lists and 
+"TEMP",1130580001.401,"%D",4,0)
+C0Q MEASUREMENT SETs for a specific Measurement Period. In general, this 
+"TEMP",1130580001.401,"%D",5,0)
+file should be updated using the C0Q SETUP options because the 
+"TEMP",1130580001.401,"%D",6,0)
+combiniation of fields in each record varies depending on the updating 
+"TEMP",1130580001.401,"%D",7,0)
+behavior that is desired. 
+"VER")
+8.0^22.0
+"^DD",1130580001.101,1130580001.101,0)
+FIELD^^.3^19
+"^DD",1130580001.101,1130580001.101,0,"DDA")
+N
+"^DD",1130580001.101,1130580001.101,0,"DT")
+3120731
+"^DD",1130580001.101,1130580001.101,0,"ID",.7)
+W:$D(^(5)) "   ",$P(^(5),U,1)
+"^DD",1130580001.101,1130580001.101,0,"IX","B",1130580001.101,.01)
+
+"^DD",1130580001.101,1130580001.101,0,"NM","C0Q QUALITY MEASURE")
+
+"^DD",1130580001.101,1130580001.101,0,"PT",1130580001.2011,.01)
+
+"^DD",1130580001.101,1130580001.101,0,"VRPK")
+C0Q
+"^DD",1130580001.101,1130580001.101,.01,0)
+NAME^RF^^0;1^K:$L(X)>30!($L(X)<1)!'(X'?1P.E) X
+"^DD",1130580001.101,1130580001.101,.01,.1)
+MEASURE NAME
+"^DD",1130580001.101,1130580001.101,.01,1,0)
+^.1
+"^DD",1130580001.101,1130580001.101,.01,1,1,0)
+1130580001.101^B
+"^DD",1130580001.101,1130580001.101,.01,1,1,1)
+S ^C0Q(101,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.101,1130580001.101,.01,1,1,2)
+K ^C0Q(101,"B",$E(X,1,30),DA)
+"^DD",1130580001.101,1130580001.101,.01,3)
+Answer must be 1-30 characters in length
+"^DD",1130580001.101,1130580001.101,.01,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,.3,0)
+MU YEAR KEY^F^^7;6^K:$L(X)>30!($L(X)<1) X
+"^DD",1130580001.101,1130580001.101,.3,.1)
+MEANINGFUL USE YEAR KEY
+"^DD",1130580001.101,1130580001.101,.3,3)
+Answer must be 1-30 characters in length.
+"^DD",1130580001.101,1130580001.101,.3,"DT")
+3111201
+"^DD",1130580001.101,1130580001.101,.5,0)
+TITLE^F^^1;1^K:$L(X)>240!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.5,.1)
+MEASURE TITLE
+"^DD",1130580001.101,1130580001.101,.5,3)
+Answer must be 3-240 characters in length
+"^DD",1130580001.101,1130580001.101,.5,"DT")
+3110430
+"^DD",1130580001.101,1130580001.101,.61,0)
+VERY LONG DESCRIPTION^1130580001.111^^6;0
+"^DD",1130580001.101,1130580001.101,.7,0)
+DISPLAY NAME^F^^5;1^K:$L(X)>240!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.7,.1)
+QRDA DISPLAY NAME
+"^DD",1130580001.101,1130580001.101,.7,3)
+Answer must be 3-240 characters in length
+"^DD",1130580001.101,1130580001.101,.7,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,.8,0)
+REPORTING NAME^F^^7;1^K:$L(X)>30!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.8,.1)
+REPORTING MEASURE NAME
+"^DD",1130580001.101,1130580001.101,.8,3)
+Answer must be 3-30 characters in length
+"^DD",1130580001.101,1130580001.101,.8,"DT")
+3110615
+"^DD",1130580001.101,1130580001.101,1,0)
+NUMERATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;2^Q
+"^DD",1130580001.101,1130580001.101,1,.1)
+MEASURE NUMERATOR PATIENT LIST
+"^DD",1130580001.101,1130580001.101,1,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,1.1,0)
+ALTERNATIVE NUMERATOR LIST^P1130580001.301'^C0Q(301,^7;2^Q
+"^DD",1130580001.101,1130580001.101,1.1,"DT")
+3110805
+"^DD",1130580001.101,1130580001.101,1.2,0)
+NUMERATOR RULE SET^*P810.4'^PXRM(810.4,^7;7^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"^DD",1130580001.101,1130580001.101,1.2,3)
+Enter the reminder rule set to use for this measure.
+"^DD",1130580001.101,1130580001.101,1.2,12)
+If the type of the reminder list rule is a Rule Set.
+"^DD",1130580001.101,1130580001.101,1.2,12.1)
+S DIC("S")="I $P(^(0),U,3)=3"
+"^DD",1130580001.101,1130580001.101,1.2,21,0)
+^^5^5^3120716^
+"^DD",1130580001.101,1130580001.101,1.2,21,1,0)
+This is the numerator reminder rule set to use for the quality measure.
+"^DD",1130580001.101,1130580001.101,1.2,21,2,0)
+ 
+"^DD",1130580001.101,1130580001.101,1.2,21,3,0)
+The rule set is used to generate a patient list, which this package 
+"^DD",1130580001.101,1130580001.101,1.2,21,4,0)
+referneces. The contents of the patient list will produce the count for 
+"^DD",1130580001.101,1130580001.101,1.2,21,5,0)
+the measure. This count is for the numerator.
+"^DD",1130580001.101,1130580001.101,1.2,"DT")
+3120716
+"^DD",1130580001.101,1130580001.101,1.5,0)
+NEGATIVE NUMERATOR LIST^P810.5'^PXRMXP(810.5,^7;4^Q
+"^DD",1130580001.101,1130580001.101,1.5,.1)
+LIST OF PATIENTS THAT DO NOT MEET THE REQUIREMENTS
+"^DD",1130580001.101,1130580001.101,1.5,"DT")
+3110809
+"^DD",1130580001.101,1130580001.101,1.51,0)
+ALTERNATE NEGATIVE NUM LIST^P1130580001.301'^C0Q(301,^7;5^Q
+"^DD",1130580001.101,1130580001.101,1.51,.1)
+NEGATIVE NUMERATOR LIST IN C0Q PATIENT LIST FILE
+"^DD",1130580001.101,1130580001.101,1.51,"DT")
+3110809
+"^DD",1130580001.101,1130580001.101,2,0)
+DENOMINATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;3^Q
+"^DD",1130580001.101,1130580001.101,2,.1)
+MEASURE DENOMINATOR PATIENT LIST
+"^DD",1130580001.101,1130580001.101,2,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,2.1,0)
+ALTERNATIVE DENOMINATOR LIST^P1130580001.301'^C0Q(301,^7;3^Q
+"^DD",1130580001.101,1130580001.101,2.1,"DT")
+3110805
+"^DD",1130580001.101,1130580001.101,2.2,0)
+DENOMINATOR RULE SET^*P810.4'^PXRM(810.4,^7;8^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"^DD",1130580001.101,1130580001.101,2.2,3)
+Enter the reminder rule set to use for this measure.
+"^DD",1130580001.101,1130580001.101,2.2,12)
+If the type of the reminder list rule is a Rule Set.
+"^DD",1130580001.101,1130580001.101,2.2,12.1)
+S DIC("S")="I $P(^(0),U,3)=3"
+"^DD",1130580001.101,1130580001.101,2.2,21,0)
+^^5^5^3120716^
+"^DD",1130580001.101,1130580001.101,2.2,21,1,0)
+This is the denominator reminder rule set to use for the quality measure.
+"^DD",1130580001.101,1130580001.101,2.2,21,2,0)
+ 
+"^DD",1130580001.101,1130580001.101,2.2,21,3,0)
+The rule set is used to generate a patient list, which this package
+"^DD",1130580001.101,1130580001.101,2.2,21,4,0)
+referneces. The contents of the patient list will produce the count for
+"^DD",1130580001.101,1130580001.101,2.2,21,5,0)
+the measure. This count is for the denominator.
+"^DD",1130580001.101,1130580001.101,2.2,"DT")
+3120716
+"^DD",1130580001.101,1130580001.101,2.5,0)
+EXTRACT DEFINITION^P810.2'^PXRM(810.2,^7;9^Q
+"^DD",1130580001.101,1130580001.101,2.5,3)
+Select a Reminder Extract Definition for this measure
+"^DD",1130580001.101,1130580001.101,2.5,21,0)
+^^4^4^3120726^
+"^DD",1130580001.101,1130580001.101,2.5,21,1,0)
+If this measure depends upon a reminder extract definition, you can add 
+"^DD",1130580001.101,1130580001.101,2.5,21,2,0)
+this extract definition here. This will alter how the Quality Measures 
+"^DD",1130580001.101,1130580001.101,2.5,21,3,0)
+package computes the measure to use the extract in addition and prior to
+"^DD",1130580001.101,1130580001.101,2.5,21,4,0)
+the rule sets.
+"^DD",1130580001.101,1130580001.101,2.5,"DT")
+3120726
+"^DD",1130580001.101,1130580001.101,3,0)
+QRDA TEMPLATE ROOT^F^^0;4^K:$L(X)>120!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,3,.1)
+
+"^DD",1130580001.101,1130580001.101,3,3)
+Answer must be 3-120 characters in length
+"^DD",1130580001.101,1130580001.101,3,21,0)
+^^2^2^3120731^^
+"^DD",1130580001.101,1130580001.101,3,21,1,0)
+Measure template root for the QRDA Document. A series of . delimited 
+"^DD",1130580001.101,1130580001.101,3,21,2,0)
+numbers. E.g. 2.16.840.1.113883.3.249.11.14.1.1.1
+"^DD",1130580001.101,1130580001.101,3,"DT")
+3120731
+"^DD",1130580001.101,1130580001.101,3.1,0)
+QRDA MEASURE SYSTEM OID^CJ^^ ; ^S X="2.16.840.1.113883.3.249.12"
+"^DD",1130580001.101,1130580001.101,3.1,.1)
+QRDA SYSTEM OID (FIXED)
+"^DD",1130580001.101,1130580001.101,3.1,9.01)
+
+"^DD",1130580001.101,1130580001.101,3.1,9.1)
+S X="2.16.840.1.113883.3.249.12"
+"^DD",1130580001.101,1130580001.101,3.1,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,3.2,0)
+QRDA CODE^F^^4;1^K:$L(X)>80!($L(X)<1) X
+"^DD",1130580001.101,1130580001.101,3.2,.1)
+QRDA MEASURE CODE
+"^DD",1130580001.101,1130580001.101,3.2,3)
+Answer must be 1-80 characters in length
+"^DD",1130580001.101,1130580001.101,3.2,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,4,0)
+MEASURE TYPE^S^P:Performance;Q:Quality;E:Electronic Prescribing Performance;^0;5^Q
+"^DD",1130580001.101,1130580001.101,4,3)
+Enter a code P, Q or E
+"^DD",1130580001.101,1130580001.101,4,21,0)
+^^19^19^3120530^
+"^DD",1130580001.101,1130580001.101,4,21,1,0)
+This field designates the measure type. It can be P, Q or M.
+"^DD",1130580001.101,1130580001.101,4,21,2,0)
+ 
+"^DD",1130580001.101,1130580001.101,4,21,3,0)
+P is for Performance. Performance measures are MU measures to measure 
+"^DD",1130580001.101,1130580001.101,4,21,4,0)
+how meaningfully used an EMR is. An example of a performance measure 
+"^DD",1130580001.101,1130580001.101,4,21,5,0)
+is whether allergies are documented in the EMR. Performance measures 
+"^DD",1130580001.101,1130580001.101,4,21,6,0)
+reference a Patient List created by this package.
+"^DD",1130580001.101,1130580001.101,4,21,7,0)
+ 
+"^DD",1130580001.101,1130580001.101,4,21,8,0)
+Q is for Quality Measures. Quality measures are MU measures to assess how 
+"^DD",1130580001.101,1130580001.101,4,21,9,0)
+well the patients are cared for. An example of a quality measure is 
+"^DD",1130580001.101,1130580001.101,4,21,10,0)
+whether Hemoglobin A1c Poor Control. Quality measures reference Patient 
+"^DD",1130580001.101,1130580001.101,4,21,11,0)
+Lists in the Reminders package.
+"^DD",1130580001.101,1130580001.101,4,21,12,0)
+ 
+"^DD",1130580001.101,1130580001.101,4,21,13,0)
+E is for Electronic Prescribing. This is a Performance measure, except 
+"^DD",1130580001.101,1130580001.101,4,21,14,0)
+that it is handled differently than the rest. Instead of the numerators
+"^DD",1130580001.101,1130580001.101,4,21,15,0)
+and denominators being lists of patients as with all the other 
+"^DD",1130580001.101,1130580001.101,4,21,16,0)
+measurements, they are a number of prescriptions. That's why we have a 
+"^DD",1130580001.101,1130580001.101,4,21,17,0)
+special flag for it. It references a Patient List created by this 
+"^DD",1130580001.101,1130580001.101,4,21,18,0)
+package. The numerator and denominators are stored in subfiles for each 
+"^DD",1130580001.101,1130580001.101,4,21,19,0)
+patient.
+"^DD",1130580001.101,1130580001.101,4,23,0)
+^^4^4^3120530^
+"^DD",1130580001.101,1130580001.101,4,23,1,0)
+As of version C0P*1.0*1, the software doesn't use this field except to 
+"^DD",1130580001.101,1130580001.101,4,23,2,0)
+check for an electronic prescribing type (code E).
+"^DD",1130580001.101,1130580001.101,4,23,3,0)
+ 
+"^DD",1130580001.101,1130580001.101,4,23,4,0)
+I anticipate using this field for other purposes in the future.
+"^DD",1130580001.101,1130580001.101,4,"DT")
+3120530
+"^DD",1130580001.101,1130580001.111,0)
+VERY LONG DESCRIPTION SUB-FIELD^^.01^1
+"^DD",1130580001.101,1130580001.111,0,"DT")
+3101013
+"^DD",1130580001.101,1130580001.111,0,"NM","VERY LONG DESCRIPTION")
+
+"^DD",1130580001.101,1130580001.111,0,"UP")
+1130580001.101
+"^DD",1130580001.101,1130580001.111,.01,0)
+VERY LONG DESCRIPTION^Wx^^0;1
+"^DD",1130580001.101,1130580001.111,.01,.1)
+LONGER DESCRIPTION - IF IT DOESN'T FIT IN .6
+"^DD",1130580001.101,1130580001.111,.01,3)
+LONGER DESCRIPTION - INSTEAD OF LONG DESCRIPTION
+"^DD",1130580001.101,1130580001.111,.01,"DT")
+3101013
+"^DD",1130580001.201,1130580001.201,0)
+FIELD^^.4^9
+"^DD",1130580001.201,1130580001.201,0,"DDA")
+N
+"^DD",1130580001.201,1130580001.201,0,"DT")
+3120801
+"^DD",1130580001.201,1130580001.201,0,"IX","ADBYP",1130580001.20112,.01)
+
+"^DD",1130580001.201,1130580001.201,0,"IX","ANBYP",1130580001.20111,.01)
+
+"^DD",1130580001.201,1130580001.201,0,"IX","B",1130580001.201,.01)
+
+"^DD",1130580001.201,1130580001.201,0,"NM","C0Q MEASUREMENT SET")
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,1)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,1.1)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,2)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,2.1)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,5.1)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,5.2)
+
+"^DD",1130580001.201,1130580001.201,0,"PT",1130580001.401,5.3)
+
+"^DD",1130580001.201,1130580001.201,0,"VRPK")
+C0Q
+"^DD",1130580001.201,1130580001.201,.01,0)
+NAME^RFJ30^^0;1^K:$L(X)>30!($L(X)<3)!'(X'?1P.E) X
+"^DD",1130580001.201,1130580001.201,.01,.1)
+
+"^DD",1130580001.201,1130580001.201,.01,1,0)
+^.1
+"^DD",1130580001.201,1130580001.201,.01,1,1,0)
+1130580001.201^B
+"^DD",1130580001.201,1130580001.201,.01,1,1,1)
+S ^C0Q(201,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.201,1130580001.201,.01,1,1,2)
+K ^C0Q(201,"B",$E(X,1,30),DA)
+"^DD",1130580001.201,1130580001.201,.01,3)
+Answer must be 3-30 characters in length.
+"^DD",1130580001.201,1130580001.201,.01,21,0)
+^^1^1^3120731^
+"^DD",1130580001.201,1130580001.201,.01,21,1,0)
+Measurement Set Name.
+"^DD",1130580001.201,1130580001.201,.01,"DT")
+3120731
+"^DD",1130580001.201,1130580001.201,.02,0)
+BEGIN DATE^D^^4;3^S %DT="E" D ^%DT S X=Y K:X<1 X
+"^DD",1130580001.201,1130580001.201,.02,.1)
+MEASUREMENT BEGIN DATE
+"^DD",1130580001.201,1130580001.201,.02,3)
+MEASUREMENT BEGIN DATE
+"^DD",1130580001.201,1130580001.201,.02,"DT")
+3101012
+"^DD",1130580001.201,1130580001.201,.03,0)
+END DATE^D^^4;4^S %DT="E" D ^%DT S X=Y K:X<1 X
+"^DD",1130580001.201,1130580001.201,.03,.1)
+MEASUREMENT END DATE
+"^DD",1130580001.201,1130580001.201,.03,3)
+MEASUREMENT END DATE
+"^DD",1130580001.201,1130580001.201,.03,"DT")
+3101012
+"^DD",1130580001.201,1130580001.201,.04,0)
+DATE LAST CALCULATED^D^^6;1^S %DT="E" D ^%DT S X=Y K:X<1 X
+"^DD",1130580001.201,1130580001.201,.04,.1)
+DATE LAST PROCESSED
+"^DD",1130580001.201,1130580001.201,.04,3)
+DATE LAST PROCESSED
+"^DD",1130580001.201,1130580001.201,.04,"DT")
+3101012
+"^DD",1130580001.201,1130580001.201,.05,0)
+LOCKED^S^Y:YES;N:NO;^6;2^Q
+"^DD",1130580001.201,1130580001.201,.05,.1)
+Y/N IS THIS RECORD SET LOCKED
+"^DD",1130580001.201,1130580001.201,.05,3)
+Y/N IS THIS RECORD SET LOCKED
+"^DD",1130580001.201,1130580001.201,.05,"DT")
+3101012
+"^DD",1130580001.201,1130580001.201,.2,0)
+USE ALL MEASURES^S^Y:YES;N:NO;^6;3^Q
+"^DD",1130580001.201,1130580001.201,.2,.1)
+INCLUDE ALL MEASURES IN THIS SET?
+"^DD",1130580001.201,1130580001.201,.2,3)
+INCLUDE ALL MEASURES IN THIS SET?
+"^DD",1130580001.201,1130580001.201,.2,"DT")
+3101012
+"^DD",1130580001.201,1130580001.201,.3,0)
+MU YEAR KEY^F^^7;1^K:$L(X)>240!($L(X)<1) X
+"^DD",1130580001.201,1130580001.201,.3,.1)
+MEANINGFUL USE YEAR KEY
+"^DD",1130580001.201,1130580001.201,.3,3)
+Answer must be 1-240 characters in length.
+"^DD",1130580001.201,1130580001.201,.3,"DT")
+3111129
+"^DD",1130580001.201,1130580001.201,.4,0)
+QRDA TEMPLATE ROOT^FJ120^^0;2^K:$L(X)>120!($L(X)<3) X
+"^DD",1130580001.201,1130580001.201,.4,3)
+Answer must be 3-120 characters in length.
+"^DD",1130580001.201,1130580001.201,.4,21,0)
+^^6^6^3120731^
+"^DD",1130580001.201,1130580001.201,.4,21,1,0)
+Measure template root for the Measurement Set. A series of . delimited
+"^DD",1130580001.201,1130580001.201,.4,21,2,0)
+numbers. E.g. 2.16.840.1.113883.3.249.11.14.1.1.1
+"^DD",1130580001.201,1130580001.201,.4,21,3,0)
+ 
+"^DD",1130580001.201,1130580001.201,.4,21,4,0)
+Most measurement sets don't have that. Only measurement sets reporable as 
+"^DD",1130580001.201,1130580001.201,.4,21,5,0)
+a group (e.g. Inpatient ED, VTE, Stroke measures) will have this filled 
+"^DD",1130580001.201,1130580001.201,.4,21,6,0)
+out as it is reported in the QRDA document.
+"^DD",1130580001.201,1130580001.201,.4,"DT")
+3120731
+"^DD",1130580001.201,1130580001.201,1,0)
+MEASURE^1130580001.2011P^^5;0
+"^DD",1130580001.201,1130580001.2011,0)
+MEASURE SUB-FIELD^^2.2^8
+"^DD",1130580001.201,1130580001.2011,0,"DT")
+3120801
+"^DD",1130580001.201,1130580001.2011,0,"IX","B",1130580001.2011,.01)
+
+"^DD",1130580001.201,1130580001.2011,0,"NM","MEASURE")
+
+"^DD",1130580001.201,1130580001.2011,0,"UP")
+1130580001.201
+"^DD",1130580001.201,1130580001.2011,.01,0)
+MEASURE^MP1130580001.101'^C0Q(101,^0;1^Q
+"^DD",1130580001.201,1130580001.2011,.01,.1)
+
+"^DD",1130580001.201,1130580001.2011,.01,1,0)
+^.1
+"^DD",1130580001.201,1130580001.2011,.01,1,1,0)
+1130580001.2011^B
+"^DD",1130580001.201,1130580001.2011,.01,1,1,1)
+S ^C0Q(201,DA(1),5,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.201,1130580001.2011,.01,1,1,2)
+K ^C0Q(201,DA(1),5,"B",$E(X,1,30),DA)
+"^DD",1130580001.201,1130580001.2011,.01,3)
+Included Quality Measures
+"^DD",1130580001.201,1130580001.2011,.01,"DT")
+3120801
+"^DD",1130580001.201,1130580001.2011,1,0)
+NUMERATOR^1130580001.20111P^^1;0
+"^DD",1130580001.201,1130580001.2011,1.1,0)
+NUMERATOR COUNT^NJ10,0^^2;1^K:+X'=X!(X>9999999999)!(X<0)!(X?.E1"."1.N) X
+"^DD",1130580001.201,1130580001.2011,1.1,.1)
+NUMBER OF PATIENTS IN NUMERATOR
+"^DD",1130580001.201,1130580001.2011,1.1,3)
+NUMBER OF PATIENTS IN NUMERATOR
+"^DD",1130580001.201,1130580001.2011,1.1,"DT")
+3101012
+"^DD",1130580001.201,1130580001.2011,1.2,0)
+NUMERATOR FILTER LIST^P1130580001.301'^C0Q(301,^4;3^Q
+"^DD",1130580001.201,1130580001.2011,1.2,.1)
+FILTER LIST FOR NUMERATOR
+"^DD",1130580001.201,1130580001.2011,1.2,"DT")
+3111129
+"^DD",1130580001.201,1130580001.2011,2,0)
+DENOMINATOR^1130580001.20112P^^3;0
+"^DD",1130580001.201,1130580001.2011,2.1,0)
+DENOMINATOR COUNT^NJ9,0^^4;1^K:+X'=X!(X>999999999)!(X<0)!(X?.E1"."1.N) X
+"^DD",1130580001.201,1130580001.2011,2.1,.1)
+NUMBER OF PATIENTS IN DENOMINATOR
+"^DD",1130580001.201,1130580001.2011,2.1,3)
+NUMBER OF PATIENTS IN DENOMINATOR
+"^DD",1130580001.201,1130580001.2011,2.1,"DT")
+3101012
+"^DD",1130580001.201,1130580001.2011,2.2,0)
+DENOMINATOR FILTER LIST^P1130580001.301'^C0Q(301,^4;4^Q
+"^DD",1130580001.201,1130580001.2011,2.2,.1)
+FILTER LIST FOR DENOMINATOR
+"^DD",1130580001.201,1130580001.2011,2.2,"DT")
+3111129
+"^DD",1130580001.201,1130580001.2011,3,0)
+PERCENTAGE^NJ6,2^^4;2^K:+X'=X!(X>100)!(X<0)!(X?.E1"."3.N) X
+"^DD",1130580001.201,1130580001.2011,3,.1)
+MEASURE PERCENTAGE
+"^DD",1130580001.201,1130580001.2011,3,3)
+Type a number between 0 and 100, 2 Decimal Digits
+"^DD",1130580001.201,1130580001.2011,3,"DT")
+3110621
+"^DD",1130580001.201,1130580001.20111,0)
+NUMERATOR SUB-FIELD^^.01^1
+"^DD",1130580001.201,1130580001.20111,0,"DT")
+3101012
+"^DD",1130580001.201,1130580001.20111,0,"IX","B",1130580001.20111,.01)
+
+"^DD",1130580001.201,1130580001.20111,0,"NM","NUMERATOR")
+
+"^DD",1130580001.201,1130580001.20111,0,"UP")
+1130580001.2011
+"^DD",1130580001.201,1130580001.20111,.01,0)
+NUMERATOR^MP2'^DPT(^0;1^Q
+"^DD",1130580001.201,1130580001.20111,.01,.1)
+NUMERATOR PATIENTS
+"^DD",1130580001.201,1130580001.20111,.01,1,0)
+^.1
+"^DD",1130580001.201,1130580001.20111,.01,1,1,0)
+1130580001.20111^B
+"^DD",1130580001.201,1130580001.20111,.01,1,1,1)
+S ^C0Q(201,DA(2),5,DA(1),1,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.201,1130580001.20111,.01,1,1,2)
+K ^C0Q(201,DA(2),5,DA(1),1,"B",$E(X,1,30),DA)
+"^DD",1130580001.201,1130580001.20111,.01,1,2,0)
+1130580001.201^ANBYP
+"^DD",1130580001.201,1130580001.20111,.01,1,2,1)
+S ^C0Q(201,"ANBYP",$E(X,1,30),DA(2),DA(1),DA)=""
+"^DD",1130580001.201,1130580001.20111,.01,1,2,2)
+K ^C0Q(201,"ANBYP",$E(X,1,30),DA(2),DA(1),DA)
+"^DD",1130580001.201,1130580001.20111,.01,1,2,"DT")
+3101014
+"^DD",1130580001.201,1130580001.20111,.01,3)
+NUMERATOR PATIENTS
+"^DD",1130580001.201,1130580001.20111,.01,"DT")
+3101014
+"^DD",1130580001.201,1130580001.20112,0)
+DENOMINATOR SUB-FIELD^^.01^1
+"^DD",1130580001.201,1130580001.20112,0,"DT")
+3101012
+"^DD",1130580001.201,1130580001.20112,0,"IX","B",1130580001.20112,.01)
+
+"^DD",1130580001.201,1130580001.20112,0,"NM","DENOMINATOR")
+
+"^DD",1130580001.201,1130580001.20112,0,"UP")
+1130580001.2011
+"^DD",1130580001.201,1130580001.20112,.01,0)
+DENOMINATOR^MP2'^DPT(^0;1^Q
+"^DD",1130580001.201,1130580001.20112,.01,.1)
+DENOMINATOR PATIENTS
+"^DD",1130580001.201,1130580001.20112,.01,1,0)
+^.1
+"^DD",1130580001.201,1130580001.20112,.01,1,1,0)
+1130580001.20112^B
+"^DD",1130580001.201,1130580001.20112,.01,1,1,1)
+S ^C0Q(201,DA(2),5,DA(1),3,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.201,1130580001.20112,.01,1,1,2)
+K ^C0Q(201,DA(2),5,DA(1),3,"B",$E(X,1,30),DA)
+"^DD",1130580001.201,1130580001.20112,.01,1,2,0)
+1130580001.201^ADBYP
+"^DD",1130580001.201,1130580001.20112,.01,1,2,1)
+S ^C0Q(201,"ADBYP",$E(X,1,30),DA(2),DA(1),DA)=""
+"^DD",1130580001.201,1130580001.20112,.01,1,2,2)
+K ^C0Q(201,"ADBYP",$E(X,1,30),DA(2),DA(1),DA)
+"^DD",1130580001.201,1130580001.20112,.01,1,2,"DT")
+3101014
+"^DD",1130580001.201,1130580001.20112,.01,3)
+DENOMINATOR PATIENTS
+"^DD",1130580001.201,1130580001.20112,.01,"DT")
+3101014
+"^DD",1130580001.401,1130580001.401,0)
+FIELD^^1.015^14
+"^DD",1130580001.401,1130580001.401,0,"DDA")
+N
+"^DD",1130580001.401,1130580001.401,0,"DT")
+3120207
+"^DD",1130580001.401,1130580001.401,0,"IX","AMMS",1130580001.401,2)
+
+"^DD",1130580001.401,1130580001.401,0,"IX","AQMS",1130580001.401,2.1)
+
+"^DD",1130580001.401,1130580001.401,0,"IX","B",1130580001.401,.01)
+
+"^DD",1130580001.401,1130580001.401,0,"NM","C0Q PARAMETER")
+
+"^DD",1130580001.401,1130580001.401,0,"VRPK")
+QUALITY MEASURES
+"^DD",1130580001.401,1130580001.401,.01,0)
+NAME^RF^^0;1^K:$L(X)>30!(X?.N)!($L(X)<3)!'(X'?1P.E) X
+"^DD",1130580001.401,1130580001.401,.01,1,0)
+^.1
+"^DD",1130580001.401,1130580001.401,.01,1,1,0)
+1130580001.401^B
+"^DD",1130580001.401,1130580001.401,.01,1,1,1)
+S ^C0Q(401,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.401,1130580001.401,.01,1,1,2)
+K ^C0Q(401,"B",$E(X,1,30),DA)
+"^DD",1130580001.401,1130580001.401,.01,3)
+NAME MUST BE 3-30 CHARACTERS, NOT NUMERIC OR STARTING WITH PUNCTUATION
+"^DD",1130580001.401,1130580001.401,.02,0)
+MEASUREMENT PERIOD KEY^F^^0;2^K:$L(X)>60!($L(X)<1) X
+"^DD",1130580001.401,1130580001.401,.02,.1)
+YEAR KEY FOR MEASUREMENT PERIOD IE MU12
+"^DD",1130580001.401,1130580001.401,.02,3)
+Answer must be 1-60 characters in length.
+"^DD",1130580001.401,1130580001.401,.02,21,0)
+^^3^3^3120103^
+"^DD",1130580001.401,1130580001.401,.02,21,1,0)
+Meaningful Use and Quality Measures are generally computed for a 
+"^DD",1130580001.401,1130580001.401,.02,21,2,0)
+particular fiscal year. The Measurement Period Key changes every year 
+"^DD",1130580001.401,1130580001.401,.02,21,3,0)
+when new parameters are set up to govern the computations for that year. 
+"^DD",1130580001.401,1130580001.401,.02,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,.03,0)
+PARAMETER TYPE^S^INP:INPATIENT;EP:OUTPATIENT;ALL:SUPERUSERS;^0;3^Q
+"^DD",1130580001.401,1130580001.401,.03,.1)
+C0Q PARAMETER TYPE
+"^DD",1130580001.401,1130580001.401,.03,21,0)
+^^6^6^3120103^
+"^DD",1130580001.401,1130580001.401,.03,21,1,0)
+If the current parameter record is type INP it will define the processing 
+"^DD",1130580001.401,1130580001.401,.03,21,2,0)
+for inpatient patients. Type EP defines the processing for one group of 
+"^DD",1130580001.401,1130580001.401,.03,21,3,0)
+oupatient patients where a group is the patients with a visit at one or 
+"^DD",1130580001.401,1130580001.401,.03,21,4,0)
+more clinics specified in the CLINIC multiple. Type ALL is used to 
+"^DD",1130580001.401,1130580001.401,.03,21,5,0)
+specify a set of subscribers who have access to all Measurement Sets in 
+"^DD",1130580001.401,1130580001.401,.03,21,6,0)
+the specifies Measurement Period.
+"^DD",1130580001.401,1130580001.401,.03,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,1,0)
+INP MU MEASUREMENT SET^P1130580001.201'^C0Q(201,^0;4^Q
+"^DD",1130580001.401,1130580001.401,1,.1)
+INPATIENT MEANINGFUL USE MEASUREMENT SET
+"^DD",1130580001.401,1130580001.401,1,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,1.015,0)
+DIVISION REPORTING^P40.8'^DG(40.8,^4;1^Q
+"^DD",1130580001.401,1130580001.401,1.015,.1)
+MEDICAL CENTER DIVISION FOR THIS PARAMETER
+"^DD",1130580001.401,1130580001.401,1.015,"DT")
+3120207
+"^DD",1130580001.401,1130580001.401,1.1,0)
+INP QUALITY MEASUREMENT SET^P1130580001.201'^C0Q(201,^0;5^Q
+"^DD",1130580001.401,1130580001.401,1.1,.1)
+INPATIENT QUALITY MEASUREMENT SET
+"^DD",1130580001.401,1130580001.401,1.1,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,2,0)
+EP MU MEASUREMENT SET^P1130580001.201'^C0Q(201,^0;6^Q
+"^DD",1130580001.401,1130580001.401,2,.1)
+OUTPATIENT MEANINGFUL USE MEASUREMENT SET
+"^DD",1130580001.401,1130580001.401,2,1,0)
+^.1
+"^DD",1130580001.401,1130580001.401,2,1,1,0)
+1130580001.401^AMMS
+"^DD",1130580001.401,1130580001.401,2,1,1,1)
+S ^C0Q(401,"AMMS",$E(X,1,30),DA)=""
+"^DD",1130580001.401,1130580001.401,2,1,1,2)
+K ^C0Q(401,"AMMS",$E(X,1,30),DA)
+"^DD",1130580001.401,1130580001.401,2,1,1,3)
+USED BY THE CODE. SEE DESCRIPTION.
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",0)
+^.101^5^5^3120530^^^
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",1,0)
+Indexes the IEN of the Measurement Set. Used so that we can walk back to 
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",2,0)
+a parameter when processing a specific IEN.
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",3,0)
+ 
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",4,0)
+You can get the IEN of the measurement set using 
+"^DD",1130580001.401,1130580001.401,2,1,1,"%D",5,0)
+$O(^C0Q(401,"AMMS",MSIEN,"")).
+"^DD",1130580001.401,1130580001.401,2,1,1,"DT")
+3120530
+"^DD",1130580001.401,1130580001.401,2,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,2.1,0)
+EP QUALITY MEASUREMENT SET^P1130580001.201'^C0Q(201,^0;7^Q
+"^DD",1130580001.401,1130580001.401,2.1,.1)
+OUTPATIENT QUALITY MEASUREMENT SET
+"^DD",1130580001.401,1130580001.401,2.1,1,0)
+^.1
+"^DD",1130580001.401,1130580001.401,2.1,1,1,0)
+1130580001.401^AQMS
+"^DD",1130580001.401,1130580001.401,2.1,1,1,1)
+S ^C0Q(401,"AQMS",$E(X,1,30),DA)=""
+"^DD",1130580001.401,1130580001.401,2.1,1,1,2)
+K ^C0Q(401,"AQMS",$E(X,1,30),DA)
+"^DD",1130580001.401,1130580001.401,2.1,1,1,3)
+USED BY THE CODE. SEE DESCRIPTION.
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",0)
+^^5^5^3120530^
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",1,0)
+Indexes the IEN of the Measurement Set. Used so that we can walk back to 
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",2,0)
+a parameter when processing a specific IEN.
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",3,0)
+ 
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",4,0)
+You can get the IEN of the measurement set using 
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"%D",5,0)
+$O(^C0Q(401,"AQMS",MSIEN,"")).
+"^DD",1130580001.401,1130580001.401,2.1,1,1,"DT")
+3120530
+"^DD",1130580001.401,1130580001.401,2.1,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,2.2,0)
+CLINIC^1130580001.411P^^1;0
+"^DD",1130580001.401,1130580001.401,2.3,0)
+PATIENT LIST LABEL^F^^2;1^K:$L(X)>20!($L(X)<1) X
+"^DD",1130580001.401,1130580001.401,2.3,.1)
+MU PATIENT LIST LABEL
+"^DD",1130580001.401,1130580001.401,2.3,3)
+Answer must be 1-20 characters in length.
+"^DD",1130580001.401,1130580001.401,2.3,21,0)
+^^3^3^3120103^
+"^DD",1130580001.401,1130580001.401,2.3,21,1,0)
+When there is more than one clinic in this reporting group, this field is 
+"^DD",1130580001.401,1130580001.401,2.3,21,2,0)
+used to contain a label for the patient lists. If it is not defined, the 
+"^DD",1130580001.401,1130580001.401,2.3,21,3,0)
+name of the first clinic defined is used as the label.
+"^DD",1130580001.401,1130580001.401,2.3,"DT")
+3120103
+"^DD",1130580001.401,1130580001.401,3,0)
+SUBSCRIBER^1130580001.4013P^^3;0
+"^DD",1130580001.401,1130580001.401,5.1,0)
+VTE CMS MEASUREMENT SET^P1130580001.201'^C0Q(201,^5;1^Q
+"^DD",1130580001.401,1130580001.401,5.1,3)
+Enter VTE Measure Set to use for Inpatient CMS QRDA Reporting
+"^DD",1130580001.401,1130580001.401,5.1,21,0)
+^^3^3^3120801^^^
+"^DD",1130580001.401,1130580001.401,5.1,21,1,0)
+This field holds the VTE measure set for reporting information to the
+"^DD",1130580001.401,1130580001.401,5.1,21,2,0)
+Centers for Medicare & Medicaid Services (CMS) Hospital Reporting (HR)
+"^DD",1130580001.401,1130580001.401,5.1,21,3,0)
+2012 EHR incentive pilot.
+"^DD",1130580001.401,1130580001.401,5.1,23,0)
+^^3^3^3120801^
+"^DD",1130580001.401,1130580001.401,5.1,23,1,0)
+See 
+"^DD",1130580001.401,1130580001.401,5.1,23,2,0)
+http://qualitynet.org/dcs/ContentServer?c=Page&pagename=QnetPublic%2FPage%
+"^DD",1130580001.401,1130580001.401,5.1,23,3,0)
+2FQnetTier3&cid=1228772217179
+"^DD",1130580001.401,1130580001.401,5.1,"DT")
+3120801
+"^DD",1130580001.401,1130580001.401,5.2,0)
+STK CMS MEASUREMENT SET^P1130580001.201'^C0Q(201,^5;2^Q
+"^DD",1130580001.401,1130580001.401,5.2,3)
+Enter STK Measure Set to use for Inpatient CMS QRDA Reporting
+"^DD",1130580001.401,1130580001.401,5.2,21,0)
+^^3^3^3120801^
+"^DD",1130580001.401,1130580001.401,5.2,21,1,0)
+This field holds the STK measure set for reporting information to the
+"^DD",1130580001.401,1130580001.401,5.2,21,2,0)
+Centers for Medicare & Medicaid Services (CMS) Hospital Reporting (HR)
+"^DD",1130580001.401,1130580001.401,5.2,21,3,0)
+2012 EHR incentive pilot.  
+"^DD",1130580001.401,1130580001.401,5.2,23,0)
+^^3^3^3120801^
+"^DD",1130580001.401,1130580001.401,5.2,23,1,0)
+See 
+"^DD",1130580001.401,1130580001.401,5.2,23,2,0)
+http://qualitynet.org/dcs/ContentServer?c=Page&pagename=QnetPublic%2FPage%
+"^DD",1130580001.401,1130580001.401,5.2,23,3,0)
+2FQnetTier3&cid=1228772217179
+"^DD",1130580001.401,1130580001.401,5.2,"DT")
+3120801
+"^DD",1130580001.401,1130580001.401,5.3,0)
+ED CMS MEASUREMENT SET^P1130580001.201'^C0Q(201,^5;3^Q
+"^DD",1130580001.401,1130580001.401,5.3,3)
+Enter ED Measure Set to use for Inpatient CMS QRDA Reporting
+"^DD",1130580001.401,1130580001.401,5.3,21,0)
+^^3^3^3120801^
+"^DD",1130580001.401,1130580001.401,5.3,21,1,0)
+This field holds the ED measure set for reporting information to the
+"^DD",1130580001.401,1130580001.401,5.3,21,2,0)
+Centers for Medicare & Medicaid Services (CMS) Hospital Reporting (HR)
+"^DD",1130580001.401,1130580001.401,5.3,21,3,0)
+2012 EHR incentive pilot.
+"^DD",1130580001.401,1130580001.401,5.3,23,0)
+^^3^3^3120801^
+"^DD",1130580001.401,1130580001.401,5.3,23,1,0)
+See 
+"^DD",1130580001.401,1130580001.401,5.3,23,2,0)
+http://qualitynet.org/dcs/ContentServer?c=Page&pagename=QnetPublic%2FPage%
+"^DD",1130580001.401,1130580001.401,5.3,23,3,0)
+2FQnetTier3&cid=1228772217179
+"^DD",1130580001.401,1130580001.401,5.3,"DT")
+3120801
+"^DD",1130580001.401,1130580001.4013,0)
+SUBSCRIBER SUB-FIELD^^.02^2
+"^DD",1130580001.401,1130580001.4013,0,"DT")
+3120103
+"^DD",1130580001.401,1130580001.4013,0,"IX","B",1130580001.4013,.01)
+
+"^DD",1130580001.401,1130580001.4013,0,"NM","SUBSCRIBER")
+
+"^DD",1130580001.401,1130580001.4013,0,"UP")
+1130580001.401
+"^DD",1130580001.401,1130580001.4013,.01,0)
+SUBSCRIBER^MP200'^VA(200,^0;1^Q
+"^DD",1130580001.401,1130580001.4013,.01,.1)
+SUBSCRIBERS TO THIS MEASUREMENT SET
+"^DD",1130580001.401,1130580001.4013,.01,1,0)
+^.1
+"^DD",1130580001.401,1130580001.4013,.01,1,1,0)
+1130580001.4013^B
+"^DD",1130580001.401,1130580001.4013,.01,1,1,1)
+S ^C0Q(401,DA(1),3,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.401,1130580001.4013,.01,1,1,2)
+K ^C0Q(401,DA(1),3,"B",$E(X,1,30),DA)
+"^DD",1130580001.401,1130580001.4013,.01,"DT")
+3120103
+"^DD",1130580001.401,1130580001.4013,.02,0)
+DEFAULT^S^1:YES;0:NO;^0;2^Q
+"^DD",1130580001.401,1130580001.4013,.02,.1)
+DISPLAY AS SUBSCRIBER DEFAULT MEASUREMENT SET
+"^DD",1130580001.401,1130580001.4013,.02,"DT")
+3120103
+"^DD",1130580001.401,1130580001.411,0)
+CLINIC SUB-FIELD^^.01^1
+"^DD",1130580001.401,1130580001.411,0,"DT")
+3120103
+"^DD",1130580001.401,1130580001.411,0,"IX","B",1130580001.411,.01)
+
+"^DD",1130580001.401,1130580001.411,0,"NM","CLINIC")
+
+"^DD",1130580001.401,1130580001.411,0,"UP")
+1130580001.401
+"^DD",1130580001.401,1130580001.411,.01,0)
+CLINIC^MP44'^SC(^0;1^Q
+"^DD",1130580001.401,1130580001.411,.01,.1)
+OUTPATIENT CLINIC
+"^DD",1130580001.401,1130580001.411,.01,1,0)
+^.1
+"^DD",1130580001.401,1130580001.411,.01,1,1,0)
+1130580001.411^B
+"^DD",1130580001.401,1130580001.411,.01,1,1,1)
+S ^C0Q(401,DA(1),1,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.401,1130580001.411,.01,1,1,2)
+K ^C0Q(401,DA(1),1,"B",$E(X,1,30),DA)
+"^DD",1130580001.401,1130580001.411,.01,"DT")
+3120103
+"^DIC",1130580001.101,1130580001.101,0)
+C0Q QUALITY MEASURE^1130580001.101
+"^DIC",1130580001.101,1130580001.101,0,"GL")
+^C0Q(101,
+"^DIC",1130580001.101,1130580001.101,"%",0)
+^1.005^^
+"^DIC",1130580001.101,"B","C0Q QUALITY MEASURE",1130580001.101)
+
+"^DIC",1130580001.201,1130580001.201,0)
+C0Q MEASUREMENT SET^1130580001.201
+"^DIC",1130580001.201,1130580001.201,0,"GL")
+^C0Q(201,
+"^DIC",1130580001.201,1130580001.201,"%",0)
+^1.005^^0
+"^DIC",1130580001.201,1130580001.201,"%D",0)
+^^3^3^3120731^
+"^DIC",1130580001.201,1130580001.201,"%D",1,0)
+This file contains the groupings of Measurements found in the Quality 
+"^DIC",1130580001.201,1130580001.201,"%D",2,0)
+Measures file. It is tied to the parameters file as the set of 
+"^DIC",1130580001.201,1130580001.201,"%D",3,0)
+measurements to report for a site.
+"^DIC",1130580001.201,"B","C0Q MEASUREMENT SET",1130580001.201)
+
+"^DIC",1130580001.401,1130580001.401,0)
+C0Q PARAMETER^1130580001.401
+"^DIC",1130580001.401,1130580001.401,0,"GL")
+^C0Q(401,
+"^DIC",1130580001.401,1130580001.401,"%",0)
+^1.005^^0
+"^DIC",1130580001.401,1130580001.401,"%D",0)
+^^7^7^3120103^
+"^DIC",1130580001.401,1130580001.401,"%D",1,0)
+This parameter file was created by George Lilly 12/2011 for the C0Q 
+"^DIC",1130580001.401,1130580001.401,"%D",2,0)
+Meaningful Use and Quality Measurement Project funded in part by Oroville 
+"^DIC",1130580001.401,1130580001.401,"%D",3,0)
+Hospital. It controls the updating of Meaningful Use patient lists and 
+"^DIC",1130580001.401,1130580001.401,"%D",4,0)
+C0Q MEASUREMENT SETs for a specific Measurement Period. In general, this 
+"^DIC",1130580001.401,1130580001.401,"%D",5,0)
+file should be updated using the C0Q SETUP options because the 
+"^DIC",1130580001.401,1130580001.401,"%D",6,0)
+combiniation of fields in each record varies depending on the updating 
+"^DIC",1130580001.401,1130580001.401,"%D",7,0)
+behavior that is desired. 
+"^DIC",1130580001.401,"B","C0Q PARAMETER",1130580001.401)
+
+**END**
+**END**

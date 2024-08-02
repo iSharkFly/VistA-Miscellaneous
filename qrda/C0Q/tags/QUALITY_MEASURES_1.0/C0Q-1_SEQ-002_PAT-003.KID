@@ -1,0 +1,3188 @@
+KIDS Distribution saved on Aug 06, 2012@11:32:48
+QUALITY MEASURES 1.0 PATCH 3
+**KIDS**:C0Q*1.0*3^
+
+**INSTALL NAME**
+C0Q*1.0*3
+"BLD",7936,0)
+C0Q*1.0*3^QUALITY MEASURES^0^3120806^y
+"BLD",7936,1,0)
+^^155^155^3120803^
+"BLD",7936,1,1,0)
+ Summary
+"BLD",7936,1,2,0)
+ ======= 
+"BLD",7936,1,3,0)
+ This build contains the Quality Measures file (#1130580001.101) fully
+"BLD",7936,1,4,0)
+ populated with the Reminder Rule Sets and if applicable Reminder Extract 
+"BLD",7936,1,5,0)
+ definitions for use with the Quality Measures package for reporting for
+"BLD",7936,1,6,0)
+ Meaningful use Stage I. 
+"BLD",7936,1,7,0)
+ 
+"BLD",7936,1,8,0)
+ Source, Copyright, & Licensing:
+"BLD",7936,1,9,0)
+ ===============================
+"BLD",7936,1,10,0)
+ This patch to WorldVistA 2.0 was produced by Sam Habiel on a copy of Dew 
+"BLD",7936,1,11,0)
+Drop and tested on a virgin instance of WV EHR 3-09 patched with PXRM 2.0
+"BLD",7936,1,12,0)
+patches 12 and 17. The build was produced in July 2012.
+"BLD",7936,1,13,0)
+ Copyright WorldVistA 2012.
+"BLD",7936,1,14,0)
+ Licensed under GPL version 2 or later. Find it here: 
+"BLD",7936,1,15,0)
+http://www.gnu.org/licenses/gpl-2.0.html
+"BLD",7936,1,16,0)
+ Released through VISTA Forum.
+"BLD",7936,1,17,0)
+ 
+"BLD",7936,1,18,0)
+ Functionality:
+"BLD",7936,1,19,0)
+ ==============
+"BLD",7936,1,20,0)
+ This patch is a pure data patch. It only installs reference data in the 
+"BLD",7936,1,21,0)
+C0Q QUALITY MEASURE file (#1130580001.101). It relies on Reminder Package
+"BLD",7936,1,22,0)
+data (specifically rule sets and extracts) sent in C0Q*1.0*2.
+"BLD",7936,1,23,0)
+        
+"BLD",7936,1,24,0)
+ Package Elements:
+"BLD",7936,1,25,0)
+ =================
+"BLD",7936,1,26,0)
+ This build transports entries in the C0Q QUALITY MEASURE file.
+"BLD",7936,1,27,0)
+ 
+"BLD",7936,1,28,0)
+ Routines:
+"BLD",7936,1,29,0)
+ =========
+"BLD",7936,1,30,0)
+ <None>
+"BLD",7936,1,31,0)
+ 
+"BLD",7936,1,32,0)
+ Documentation:
+"BLD",7936,1,33,0)
+ <None besides this KIDS description>
+"BLD",7936,1,34,0)
+ 
+"BLD",7936,1,35,0)
+ Test Sites:
+"BLD",7936,1,36,0)
+ ===========
+"BLD",7936,1,37,0)
+ <None>
+"BLD",7936,1,38,0)
+ 
+"BLD",7936,1,39,0)
+ Compliance:
+"BLD",7936,1,40,0)
+ ===========
+"BLD",7936,1,41,0)
+ This software complies with the VA MUMPS Programming Standards and
+"BLD",7936,1,42,0)
+ Conventions (version 3 April 2007).
+"BLD",7936,1,43,0)
+ 
+"BLD",7936,1,44,0)
+ Installation Instructions:
+"BLD",7936,1,45,0)
+ ==========================
+"BLD",7936,1,46,0)
+ Pre-installation:
+"BLD",7936,1,47,0)
+ 
+"BLD",7936,1,48,0)
+ Prerequisite patches: (both found on the trac server here:
+"BLD",7936,1,49,0)
+ https://trac.opensourcevista.net/svn/qrda/C0Q/trunk/kids/)
+"BLD",7936,1,50,0)
+  C0Q*1.0*2
+"BLD",7936,1,51,0)
+  QUALITY MEASURES 1.0
+"BLD",7936,1,52,0)
+ 
+"BLD",7936,1,53,0)
+ Users can remain on the system while this patch is installed.
+"BLD",7936,1,54,0)
+ 
+"BLD",7936,1,55,0)
+ Install Time - less than 1 minute.
+"BLD",7936,1,56,0)
+ 
+"BLD",7936,1,57,0)
+ 1.  LOAD TRANSPORT GLOBAL
+"BLD",7936,1,58,0)
+ 
+"BLD",7936,1,59,0)
+     Choose the PackMan message containing this patch and invoke the
+"BLD",7936,1,60,0)
+     INSTALL/CHECK MESSAGE PackMan option to unload the build, or 
+"BLD",7936,1,61,0)
+     Use the Load a Distribution option in KIDS to load it from a 
+"BLD",7936,1,62,0)
+     host file.
+"BLD",7936,1,63,0)
+ 
+"BLD",7936,1,64,0)
+ 2.  START UP KIDS
+"BLD",7936,1,65,0)
+ 
+"BLD",7936,1,66,0)
+      Start up the Kernel Installation and Distribution System Menu
+"BLD",7936,1,67,0)
+      [XPD MAIN]:
+"BLD",7936,1,68,0)
+ 
+"BLD",7936,1,69,0)
+           Edits and Distribution ...
+"BLD",7936,1,70,0)
+           Utilities ...
+"BLD",7936,1,71,0)
+           Installation ...
+"BLD",7936,1,72,0)
+ 
+"BLD",7936,1,73,0)
+ Select Kernel Installation & Distribution System Option: INStallation
+"BLD",7936,1,74,0)
+                                                          ---
+"BLD",7936,1,75,0)
+           Load a Distribution
+"BLD",7936,1,76,0)
+           Print Transport Global
+"BLD",7936,1,77,0)
+           Compare Transport Global to Current System
+"BLD",7936,1,78,0)
+           Verify Checksums in Transport Global
+"BLD",7936,1,79,0)
+           Install Package(s)
+"BLD",7936,1,80,0)
+           Restart Install of Package(s)
+"BLD",7936,1,81,0)
+           Unload a Distribution
+"BLD",7936,1,82,0)
+           Backup a Transport Global
+"BLD",7936,1,83,0)
+ 
+"BLD",7936,1,84,0)
+ Select Installation Option:
+"BLD",7936,1,85,0)
+ 
+"BLD",7936,1,86,0)
+ 3.  Select Installation Option:
+"BLD",7936,1,87,0)
+ 
+"BLD",7936,1,88,0)
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+"BLD",7936,1,89,0)
+             NAME, enter C0Q*1.0*3):
+"BLD",7936,1,90,0)
+ 
+"BLD",7936,1,91,0)
+     a.  Backup a Transport Global - This option will create a backup
+"BLD",7936,1,92,0)
+         message of any routines exported with this patch. It will not
+"BLD",7936,1,93,0)
+         backup any other changes such as DD's or templates.
+"BLD",7936,1,94,0)
+     b.  Compare Transport Global to Current System - This option will
+"BLD",7936,1,95,0)
+         allow you to view all changes that will be made when this patch
+"BLD",7936,1,96,0)
+         is installed.  It compares all components of this patch
+"BLD",7936,1,97,0)
+         (routines, DD's, templates, etc.).
+"BLD",7936,1,98,0)
+     c.  Verify Checksums in Transport Global - This option will allow
+"BLD",7936,1,99,0)
+         you to ensure the integrity of the routines that are in the
+"BLD",7936,1,100,0)
+         transport global.
+"BLD",7936,1,101,0)
+ 
+"BLD",7936,1,102,0)
+ 4.  Select Installation Option: Install Package(s)
+"BLD",7936,1,103,0)
+ 
+"BLD",7936,1,104,0)
+     **This is the step to start the installation of this KIDS patch:
+"BLD",7936,1,105,0)
+ 
+"BLD",7936,1,106,0)
+     a.  Choose the Install Package(s) option to start the patch install
+"BLD",7936,1,107,0)
+         and enter "C0Q*1.0*3" at the INSTALL NAME prompt.
+"BLD",7936,1,108,0)
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+"BLD",7936,1,109,0)
+         Install? NO//'  answer NO
+"BLD",7936,1,110,0)
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+"BLD",7936,1,111,0)
+         NO//'  answer NO
+"BLD",7936,1,112,0)
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+"BLD",7936,1,113,0)
+         and Protocols? NO//'  answer NO
+"BLD",7936,1,114,0)
+ 
+"BLD",7936,1,115,0)
+ 
+"BLD",7936,1,116,0)
+Here is an example installation log.
+"BLD",7936,1,117,0)
+Select INSTALL NAME: C0Q*1.0*3       Loaded from Distribution     Loaded 
+"BLD",7936,1,118,0)
+from Di
+"BLD",7936,1,119,0)
+stribution  8/3/12@16:32:30
+"BLD",7936,1,120,0)
+     => SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+"BLD",7936,1,121,0)
+ 
+"BLD",7936,1,122,0)
+This Distribution was loaded on Aug 03, 2012@16:32:30 with header of 
+"BLD",7936,1,123,0)
+   SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+"BLD",7936,1,124,0)
+   It consisted of the following Install(s):
+"BLD",7936,1,125,0)
+      C0Q*1.0*3
+"BLD",7936,1,126,0)
+ 
+"BLD",7936,1,127,0)
+   Checking C0Q*1.0*3 for overlap with VOE 1.0 . OK
+"BLD",7936,1,128,0)
+            No overlap found
+"BLD",7936,1,129,0)
+DEVICE: HOME// PHOME  HOME PRINTER
+"BLD",7936,1,130,0)
+ 
+"BLD",7936,1,131,0)
+ 
+"BLD",7936,1,132,0)
+ Install Started for C0Q*1.0*3 : 
+"BLD",7936,1,133,0)
+               Aug 03, 2012@16:35:24
+"BLD",7936,1,134,0)
+ 
+"BLD",7936,1,135,0)
+Build Distribution Date: Aug 03, 2012
+"BLD",7936,1,136,0)
+ 
+"BLD",7936,1,137,0)
+ Installing Routines:.
+"BLD",7936,1,138,0)
+               Aug 03, 2012@16:35:24
+"BLD",7936,1,139,0)
+ 
+"BLD",7936,1,140,0)
+ Installing Data Dictionaries: ..
+"BLD",7936,1,141,0)
+               Aug 03, 2012@16:35:24
+"BLD",7936,1,142,0)
+ 
+"BLD",7936,1,143,0)
+ Installing Data: 
+"BLD",7936,1,144,0)
+               Aug 03, 2012@16:35:24
+"BLD",7936,1,145,0)
+ 
+"BLD",7936,1,146,0)
+ Updating Routine file.....
+"BLD",7936,1,147,0)
+ 
+"BLD",7936,1,148,0)
+ Updating KIDS files.......
+"BLD",7936,1,149,0)
+ 
+"BLD",7936,1,150,0)
+ C0Q*1.0*3 Installed. 
+"BLD",7936,1,151,0)
+               Aug 03, 2012@16:35:24
+"BLD",7936,1,152,0)
+ 
+"BLD",7936,1,153,0)
+ Not a VA primary domain
+"BLD",7936,1,154,0)
+ 
+"BLD",7936,1,155,0)
+ NO Install Message sent 
+"BLD",7936,4,0)
+^9.64PA^1130580001.101^1
+"BLD",7936,4,1130580001.101,0)
+1130580001.101
+"BLD",7936,4,1130580001.101,222)
+y^y^f^^y^^y^o^n
+"BLD",7936,4,"B",1130580001.101,1130580001.101)
+
+"BLD",7936,6.3)
+12
+"BLD",7936,"ABPKG")
+n
+"BLD",7936,"KRN",0)
+^9.67PA^779.2^20
+"BLD",7936,"KRN",.4,0)
+.4
+"BLD",7936,"KRN",.401,0)
+.401
+"BLD",7936,"KRN",.402,0)
+.402
+"BLD",7936,"KRN",.403,0)
+.403
+"BLD",7936,"KRN",.5,0)
+.5
+"BLD",7936,"KRN",.84,0)
+.84
+"BLD",7936,"KRN",3.6,0)
+3.6
+"BLD",7936,"KRN",3.8,0)
+3.8
+"BLD",7936,"KRN",9.2,0)
+9.2
+"BLD",7936,"KRN",9.8,0)
+9.8
+"BLD",7936,"KRN",19,0)
+19
+"BLD",7936,"KRN",19.1,0)
+19.1
+"BLD",7936,"KRN",101,0)
+101
+"BLD",7936,"KRN",409.61,0)
+409.61
+"BLD",7936,"KRN",771,0)
+771
+"BLD",7936,"KRN",779.2,0)
+779.2
+"BLD",7936,"KRN",870,0)
+870
+"BLD",7936,"KRN",8989.51,0)
+8989.51
+"BLD",7936,"KRN",8989.52,0)
+8989.52
+"BLD",7936,"KRN",8994,0)
+8994
+"BLD",7936,"KRN","B",.4,.4)
+
+"BLD",7936,"KRN","B",.401,.401)
+
+"BLD",7936,"KRN","B",.402,.402)
+
+"BLD",7936,"KRN","B",.403,.403)
+
+"BLD",7936,"KRN","B",.5,.5)
+
+"BLD",7936,"KRN","B",.84,.84)
+
+"BLD",7936,"KRN","B",3.6,3.6)
+
+"BLD",7936,"KRN","B",3.8,3.8)
+
+"BLD",7936,"KRN","B",9.2,9.2)
+
+"BLD",7936,"KRN","B",9.8,9.8)
+
+"BLD",7936,"KRN","B",19,19)
+
+"BLD",7936,"KRN","B",19.1,19.1)
+
+"BLD",7936,"KRN","B",101,101)
+
+"BLD",7936,"KRN","B",409.61,409.61)
+
+"BLD",7936,"KRN","B",771,771)
+
+"BLD",7936,"KRN","B",779.2,779.2)
+
+"BLD",7936,"KRN","B",870,870)
+
+"BLD",7936,"KRN","B",8989.51,8989.51)
+
+"BLD",7936,"KRN","B",8989.52,8989.52)
+
+"BLD",7936,"KRN","B",8994,8994)
+
+"BLD",7936,"QUES",0)
+^9.62^^
+"BLD",7936,"REQB",0)
+^9.611^2^2
+"BLD",7936,"REQB",1,0)
+C0Q*1.0*2^2
+"BLD",7936,"REQB",2,0)
+QUALITY MEASURES 1.0^2
+"BLD",7936,"REQB","B","C0Q*1.0*2",1)
+
+"BLD",7936,"REQB","B","QUALITY MEASURES 1.0",2)
+
+"DATA",1130580001.101,4,0)
+PQRI MEASURE 124^^^2.16.840.1.113883.3.249.11.11
+"DATA",1130580001.101,4,1)
+Measure #124: Health Information Technology (HIT): Adoption/Use of Electronic Health Records
+"DATA",1130580001.101,4,4)
+PQRI-124
+"DATA",1130580001.101,4,5)
+Adoption/Use of Electronic Health Records (EHR)
+"DATA",1130580001.101,4,6,0)
+^^3^3^3101013^
+"DATA",1130580001.101,4,6,1,0)
+Documents whether provider has adopted and is using health inf
+"DATA",1130580001.101,4,6,2,0)
+ormation technology. To qualify, the provider must havea adopted and be 
+"DATA",1130580001.101,4,6,3,0)
+using a certified/qualified electronic health record (EHR)
+"DATA",1130580001.101,6,0)
+PQRI MEASURE 47^^^2.16.840.1.113883.3.249.11.52
+"DATA",1130580001.101,6,1)
+Measure #47: Advance Care Plan
+"DATA",1130580001.101,6,4)
+PQRI-47
+"DATA",1130580001.101,6,5)
+Advance Care Plan
+"DATA",1130580001.101,6,6,0)
+^1130580001.111^5^5^3101014^^^
+"DATA",1130580001.101,6,6,1,0)
+Percentage of patients age 65 and older who have an advanced care plan or 
+"DATA",1130580001.101,6,6,2,0)
+surrogate decision maker documented in the medical record or documented 
+"DATA",1130580001.101,6,6,3,0)
+in the medical record that an advance care plan was discussed but the 
+"DATA",1130580001.101,6,6,4,0)
+patient did not wish or was not able to name a surrogate decision maker 
+"DATA",1130580001.101,6,6,5,0)
+or provide an advance care plan.
+"DATA",1130580001.101,7,0)
+PQRI MEASURE 48^^^2.16.840.1.113883.3.249.11.53
+"DATA",1130580001.101,7,1)
+Measure #48: Urinary Incontinence: Assessment of Presence or Absence of Urinary Incontinence in Women Aged 65 Years and Older
+"DATA",1130580001.101,7,4)
+PQRI-48
+"DATA",1130580001.101,7,5)
+Assessment of Presence or Absence of Urinary Incontinence in Women Aged 65 Years and Older
+"DATA",1130580001.101,7,6,0)
+^^3^3^3101013^
+"DATA",1130580001.101,7,6,1,0)
+Percentage of patients equal to or older than 65 years of age at the 
+"DATA",1130580001.101,7,6,2,0)
+beginning of the measurement perion who were assesed for the presence or 
+"DATA",1130580001.101,7,6,3,0)
+absence of urinary incontinence within 12 months
+"DATA",1130580001.101,12,0)
+MU EP NQF 0043^^^2.16.840.1.113883.3.249.11.8
+"DATA",1130580001.101,12,1)
+Measure #111: Preventive Care and Screening: Pneumonia Vaccination for Patients 65 Years and Older
+"DATA",1130580001.101,12,4)
+PQRI-111
+"DATA",1130580001.101,12,5)
+Pneumonia Vaccination for Patients 65 Years and Older
+"DATA",1130580001.101,12,6,0)
+^1130580001.111^2^2^3120730^^
+"DATA",1130580001.101,12,6,1,0)
+Percentage of patients afed 65 years and older who have ever r
+"DATA",1130580001.101,12,6,2,0)
+eceived a pneumoccal vaccine
+"DATA",1130580001.101,12,7)
+NQF0043
+"DATA",1130580001.101,14,0)
+PQRI MEASURE 39^^^2.16.840.1.113883.3.249.11.51
+"DATA",1130580001.101,14,1)
+Measure #39: Screening or Therapy for Osteoporosis for Women Aged 65 Years and Older
+"DATA",1130580001.101,14,4)
+PQRI-39
+"DATA",1130580001.101,14,5)
+Screening or Therapy for Osteoporosis for Women Aged 65 Years and Older
+"DATA",1130580001.101,14,6,0)
+^^3^3^3101013^
+"DATA",1130580001.101,14,6,1,0)
+Percentage of patients who had a DXA measurement ordered or pe
+"DATA",1130580001.101,14,6,2,0)
+rformed at least once since age 60 or pharmacologic therapy prescribed 
+"DATA",1130580001.101,14,6,3,0)
+within 12 months before the end of the measurement period
+"DATA",1130580001.101,16,0)
+PQRI MEASURE 173^^^2.16.840.1.113883.3.249.11.55
+"DATA",1130580001.101,16,1)
+Measure #173: Preventive Care and Screening: Unhealthy Alcohol Use - Screening
+"DATA",1130580001.101,16,4)
+PQRI-173
+"DATA",1130580001.101,16,5)
+Preventive Care and Screening: Unhealthy Alcohol Use - Screening
+"DATA",1130580001.101,16,6,0)
+^^2^2^3101013^
+"DATA",1130580001.101,16,6,1,0)
+Percentage of patients aged 18 years and older who were screen
+"DATA",1130580001.101,16,6,2,0)
+ed for unhealthy alcohol use using a systematic method within 24 months
+"DATA",1130580001.101,23,0)
+MU HOS NQF 0495
+"DATA",1130580001.101,23,1)
+ED THROUGHPUT ARRIVAL TO DEPARTURE
+"DATA",1130580001.101,23,5)
+ED THROUGHPUT ARRIVAL TO DEPARTURE
+"DATA",1130580001.101,23,6,0)
+^1130580001.111^3^3^3110430^^^^
+"DATA",1130580001.101,23,6,1,0)
+Median time from emergency department arrival to time of departure from 
+"DATA",1130580001.101,23,6,2,0)
+the emergency room for patients admitted to the facility from the
+"DATA",1130580001.101,23,6,3,0)
+emergency department
+"DATA",1130580001.101,23,7)
+NQF0495^^^^^^88^165
+"DATA",1130580001.101,24,0)
+MU HOS NQF 0497
+"DATA",1130580001.101,24,1)
+ED THROUGHPUT ADMITTING DECISION TO DEPARTURE
+"DATA",1130580001.101,24,5)
+ED THROUGHPUT ADMITTING DECISION TO DEPARTURE
+"DATA",1130580001.101,24,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,24,6,1,0)
+Median time from admit decision time to time of departure from the 
+"DATA",1130580001.101,24,6,2,0)
+emergency department of emergency department patients admitted to 
+"DATA",1130580001.101,24,6,3,0)
+inpatient status
+"DATA",1130580001.101,24,7)
+NQF0497^^^^^^90^168
+"DATA",1130580001.101,25,0)
+MU HOS NQF 0435
+"DATA",1130580001.101,25,1)
+Ischemic stroke.Discharge on anti-thrombotics  
+"DATA",1130580001.101,25,5)
+ Ischemic stroke.Discharge on anti-thrombotic
+"DATA",1130580001.101,25,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,25,6,1,0)
+Ischemic stroke patients prescribed antithrombotic therapy at hospital 
+"DATA",1130580001.101,25,6,2,0)
+discharge
+"DATA",1130580001.101,25,7)
+NQF0435^^^^^^114^115
+"DATA",1130580001.101,26,0)
+MU HOS NQF 0436
+"DATA",1130580001.101,26,1)
+ Ischemic stroke.Anticoagulation for A-fib/flutter
+"DATA",1130580001.101,26,5)
+Ischemic stroke.Anticoagulation for A-fib/flutter
+"DATA",1130580001.101,26,6,0)
+^1130580001.111^2^2^3110430^^^
+"DATA",1130580001.101,26,6,1,0)
+ Ischemic stroke patients with atrial fibrillation/flutter who are 
+"DATA",1130580001.101,26,6,2,0)
+prescribed anticoagulation therapy at hospital discharge
+"DATA",1130580001.101,26,7)
+NQF0436^^^^^^116^117
+"DATA",1130580001.101,27,0)
+MU HOS NQF 0437
+"DATA",1130580001.101,27,1)
+ Ischemic stroke.Thrombolytic therapy for patients arriving within 2 hours of symptom onset
+"DATA",1130580001.101,27,5)
+Ischemic stroke.Thrombolytic therapy for patients arriving within 2 hours of symptom onset
+"DATA",1130580001.101,27,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,27,6,1,0)
+Acute ischemic stroke patients who arrive at this hospital within 2 
+"DATA",1130580001.101,27,6,2,0)
+hours of time last known well and for whom IV t-PA was initiated at this 
+"DATA",1130580001.101,27,6,3,0)
+hospital within 3 hours of time last known well.
+"DATA",1130580001.101,27,7)
+NQF0437^^^^^^119^118
+"DATA",1130580001.101,28,0)
+MU HOS NQF 0438
+"DATA",1130580001.101,28,1)
+Ischemic or hemorrhagic stroke.Antithrombotic therapy by day 2
+"DATA",1130580001.101,28,5)
+Ischemic or hemorrhagic stroke.Antithrombotic therapy by day 2
+"DATA",1130580001.101,28,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,28,6,1,0)
+Ischemic stroke patients administered antithrombotic therapy by the 
+"DATA",1130580001.101,28,6,2,0)
+end of hospital day 2.
+"DATA",1130580001.101,28,7)
+NQF0438^^^^^^120^121
+"DATA",1130580001.101,29,0)
+MU HOS NQF 0439
+"DATA",1130580001.101,29,1)
+Ischemic stroke.Discharge on statins
+"DATA",1130580001.101,29,5)
+Ischemic stroke.Discharge on statins
+"DATA",1130580001.101,29,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,29,6,1,0)
+Ischemic stroke patients with LDL > 100 mg/dL, or LDL not measured, or, 
+"DATA",1130580001.101,29,6,2,0)
+who were on a lipid-lowering medication prior to hospital arrival are
+"DATA",1130580001.101,29,6,3,0)
+prescribed statin medication at hospital discharge
+"DATA",1130580001.101,29,7)
+NQF0439^^^^^^122^123
+"DATA",1130580001.101,30,0)
+MU HOS NQF 0440
+"DATA",1130580001.101,30,1)
+Ischemic or hemorrhagic stroke.Stroke education
+"DATA",1130580001.101,30,5)
+Ischemic or hemorrhagic stroke.Stroke education
+"DATA",1130580001.101,30,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,30,6,1,0)
+Ischemic or hemorrhagic stroke patients or their caregivers who were 
+"DATA",1130580001.101,30,6,2,0)
+given educational materials during the hospital stay addressing all of the
+"DATA",1130580001.101,30,6,3,0)
+following: activation of emergency medical system, need for follow-up
+"DATA",1130580001.101,30,6,4,0)
+after discharge, medications prescribed at discharge, risk factors for
+"DATA",1130580001.101,30,6,5,0)
+stroke, and warning signs and symptoms of stroke.
+"DATA",1130580001.101,30,7)
+NQF0440^^^^^^124^125
+"DATA",1130580001.101,31,0)
+MU HOS NQF 0441
+"DATA",1130580001.101,31,1)
+Ischemic or hemorrhagic stroke.Rehabilitation assessment
+"DATA",1130580001.101,31,5)
+Ischemic or hemorrhagic stroke.Rehabilitation assessment
+"DATA",1130580001.101,31,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,31,6,1,0)
+Ischemic or hemorrhagic stroke patients who were assessed for 
+"DATA",1130580001.101,31,6,2,0)
+rehabilitation services.
+"DATA",1130580001.101,31,7)
+NQF0441^^^^^^126^127
+"DATA",1130580001.101,32,0)
+MU HOS NQF 0371
+"DATA",1130580001.101,32,1)
+VTE prophylaxis within 24 hours of arrival  
+"DATA",1130580001.101,32,5)
+VTE prophylaxis within 24 hours of arrival  
+"DATA",1130580001.101,32,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,32,6,1,0)
+This measure assesses the number of patients who received VTE prophylaxis 
+"DATA",1130580001.101,32,6,2,0)
+or have documentation why no VTE prophylaxis was given the day of or the 
+"DATA",1130580001.101,32,6,3,0)
+day after hospital admission or surgery end date for surgeries that start
+"DATA",1130580001.101,32,6,4,0)
+the day of or the day after hospital admission.
+"DATA",1130580001.101,32,7)
+NQF0371^^^^^^69^67
+"DATA",1130580001.101,33,0)
+MU HOS NQF 0372
+"DATA",1130580001.101,33,1)
+ICU VTE prophylaxis  
+"DATA",1130580001.101,33,5)
+ICU VTE prophylaxis
+"DATA",1130580001.101,33,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,33,6,1,0)
+This measure assesses the number of patients who received VTE prophylaxis 
+"DATA",1130580001.101,33,6,2,0)
+or have documentation why no VTE prophylaxis was given the day of or the 
+"DATA",1130580001.101,33,6,3,0)
+day after the initial admission (or transfer) to the Intensive Care Unit
+"DATA",1130580001.101,33,6,4,0)
+(ICU) or surgery end date for surgeries that start the day of or the day
+"DATA",1130580001.101,33,6,5,0)
+after ICU admission (or transfer).
+"DATA",1130580001.101,33,7)
+NQF0372^^^^^^128^71
+"DATA",1130580001.101,34,0)
+MU HOS NQF 0373
+"DATA",1130580001.101,34,1)
+Anticoagulation overlap therapy  
+"DATA",1130580001.101,34,5)
+Anticoagulation overlap therapy
+"DATA",1130580001.101,34,6,0)
+^^8^8^3110430^
+"DATA",1130580001.101,34,6,1,0)
+This measure assesses the number of patients diagnosed with confirmed VTE 
+"DATA",1130580001.101,34,6,2,0)
+who received an overlap of parenteral (intravenous [IV] or subcutaneous 
+"DATA",1130580001.101,34,6,3,0)
+[subcu]) anticoagulation and warfarin therapy. For patients who received
+"DATA",1130580001.101,34,6,4,0)
+less than five days of overlap therapy, they must be discharged on both
+"DATA",1130580001.101,34,6,5,0)
+medications. Overlap therapy must be administered for at least five days
+"DATA",1130580001.101,34,6,6,0)
+with an international normalized ratio (INR) . 2 prior to discontinuation
+"DATA",1130580001.101,34,6,7,0)
+of the parenteral anticoagulation therapy or the patient must be
+"DATA",1130580001.101,34,6,8,0)
+discharged on both medications.
+"DATA",1130580001.101,34,7)
+NQF0373^^^^^^129^144
+"DATA",1130580001.101,35,0)
+MU HOS NQF 0374
+"DATA",1130580001.101,35,1)
+Platelet monitoring on unfractionated heparin
+"DATA",1130580001.101,35,5)
+Platelet monitoring on unfractionated heparin
+"DATA",1130580001.101,35,6,0)
+^^10^10^3110430^
+"DATA",1130580001.101,35,6,1,0)
+This measure assesses the number of patients diagnosed with confirmed VTE 
+"DATA",1130580001.101,35,6,2,0)
+who received intravenous (IV) UFH therapy dosages AND had their platelet 
+"DATA",1130580001.101,35,6,3,0)
+counts monitored using defined parameters such as a nomogram or
+"DATA",1130580001.101,35,6,4,0)
+protocol This measure assesses the number of patients diagnosed with
+"DATA",1130580001.101,35,6,5,0)
+confirmed VTE who received intravenous (IV) UFH therapy dosages AND had
+"DATA",1130580001.101,35,6,6,0)
+their platelet counts monitored using defined parameters such as a
+"DATA",1130580001.101,35,6,7,0)
+nomogram or protocol This measure assesses the number of patients
+"DATA",1130580001.101,35,6,8,0)
+diagnosed with confirmed VTE who received intravenous (IV) UFH therapy
+"DATA",1130580001.101,35,6,9,0)
+dosages AND had their platelet counts monitored using defined parameters
+"DATA",1130580001.101,35,6,10,0)
+such as a nomogram or protocol
+"DATA",1130580001.101,35,7)
+NQF0374^^^^^^145^146
+"DATA",1130580001.101,36,0)
+MU HOS NQF 0375
+"DATA",1130580001.101,36,1)
+VTE discharge instructions
+"DATA",1130580001.101,36,5)
+VTE discharge instructions
+"DATA",1130580001.101,36,6,0)
+^^11^11^3110430^
+"DATA",1130580001.101,36,6,1,0)
+This measure assesses the number of patients diagnosed with confirmed VTE 
+"DATA",1130580001.101,36,6,2,0)
+that are discharged to home, to home with home health, home hospice or 
+"DATA",1130580001.101,36,6,3,0)
+discharged/transferred to court/law enforcement on warfarin with written 
+"DATA",1130580001.101,36,6,4,0)
+discharge instructions that address all four criteria: compliance issues,
+"DATA",1130580001.101,36,6,5,0)
+dietary advice, follow-up This measure assesses the number of patients
+"DATA",1130580001.101,36,6,6,0)
+diagnosed with confirmed VTE that are discharged to home, to home with
+"DATA",1130580001.101,36,6,7,0)
+home health, home hospice or discharged/transferred to court/law
+"DATA",1130580001.101,36,6,8,0)
+enforcement on warfarin with written discharge instructions that address
+"DATA",1130580001.101,36,6,9,0)
+all four criteria: compliance issues, dietary advice, follow-up
+"DATA",1130580001.101,36,6,10,0)
+monitoring, and information about the potential for adverse drug 
+"DATA",1130580001.101,36,6,11,0)
+reactions/interactions.
+"DATA",1130580001.101,36,7)
+NQF0375^^^^^^147^156
+"DATA",1130580001.101,37,0)
+MU HOS NQF 0376
+"DATA",1130580001.101,37,1)
+Incidence of potentially preventable VTE
+"DATA",1130580001.101,37,5)
+Incidence of potentially preventable VTE
+"DATA",1130580001.101,37,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,37,6,1,0)
+This measure assesses the number of patients diagnosed with confirmed VTE 
+"DATA",1130580001.101,37,6,2,0)
+during hospitalization (not present on arrival) who did not receive VTE 
+"DATA",1130580001.101,37,6,3,0)
+prophylaxis between hospital admission and the day before the VTE
+"DATA",1130580001.101,37,6,4,0)
+diagnostic testing order date.
+"DATA",1130580001.101,37,7)
+NQF0376^^^^^^158^162
+"DATA",1130580001.101,39,0)
+MU EP NQF 0421^^^2.16.840.1.113883.3.249.11.54
+"DATA",1130580001.101,39,1)
+NQF0421 Adult Weight Screening and Follow-Up
+"DATA",1130580001.101,39,4)
+PQRI-128
+"DATA",1130580001.101,39,5)
+NQF0421 Adult Weight Screening and Follow-Up
+"DATA",1130580001.101,39,6,0)
+^1130580001.111^6^6^3110628^^^^
+"DATA",1130580001.101,39,6,1,0)
+Percentage of patients aged 18 
+"DATA",1130580001.101,39,6,2,0)
+years and older with a calculated BMI in the past 
+"DATA",1130580001.101,39,6,3,0)
+six months or during the current visit documented in 
+"DATA",1130580001.101,39,6,4,0)
+the medical record AND if the most recent BMI is 
+"DATA",1130580001.101,39,6,5,0)
+outside parameters, a follow-up plan is 
+"DATA",1130580001.101,39,6,6,0)
+documented.
+"DATA",1130580001.101,39,7)
+NQF0421^^^^^^321^320^10
+"DATA",1130580001.101,40,0)
+MU EP NQF 0013^^^2.16.840.1.113883.3.249.11.56
+"DATA",1130580001.101,40,1)
+NQF0013 Hypertension: Blood Pressure Measurement
+"DATA",1130580001.101,40,4)
+PQRI-13
+"DATA",1130580001.101,40,5)
+NQF0013 Hypertension: Blood Pressure Measurement
+"DATA",1130580001.101,40,6,0)
+^1130580001.111^4^4^3110628^^
+"DATA",1130580001.101,40,6,1,0)
+Percentage of patient visits for patients  
+"DATA",1130580001.101,40,6,2,0)
+aged 18 years and older with a diagnosis of hypertension 
+"DATA",1130580001.101,40,6,3,0)
+who have been seen for at least 2 office visits, with blood 
+"DATA",1130580001.101,40,6,4,0)
+pressure (BP) recorded
+"DATA",1130580001.101,40,7)
+NQF0013^^^^^^142^167
+"DATA",1130580001.101,41,0)
+MU EP NQF 0028A^^^2.16.840.1.113883.3.249.11.59
+"DATA",1130580001.101,41,1)
+NQF0028A Preventive Care and Screening  Measure Pair: a. Tobacco Use Assessment,b. Tobacco Cessation Intervention 
+"DATA",1130580001.101,41,4)
+PQRI-28
+"DATA",1130580001.101,41,5)
+NQF0028A Tobacco Use Assessment
+"DATA",1130580001.101,41,6,0)
+^1130580001.111^7^7^3110625^^^
+"DATA",1130580001.101,41,6,1,0)
+ Percentage of patients aged 18 years and  
+"DATA",1130580001.101,41,6,2,0)
+older who have been seen for at least 2 office visits who 
+"DATA",1130580001.101,41,6,3,0)
+were queried about tobacco use one or more times within 
+"DATA",1130580001.101,41,6,4,0)
+24 months  b. Percentage of patients aged 18 years and 
+"DATA",1130580001.101,41,6,5,0)
+older  identified as tobacco users within the past 24 
+"DATA",1130580001.101,41,6,6,0)
+months and have been seen for at least 2 office visits, 
+"DATA",1130580001.101,41,6,7,0)
+who received cessation intervention.
+"DATA",1130580001.101,41,7)
+NQF0028A^^^^^^157^160
+"DATA",1130580001.101,42,0)
+MU EP NQF 0041^^^2.16.840.1.113883.3.249.11.7
+"DATA",1130580001.101,42,1)
+Preventive Care and Screening: Influenza Immunization for Patients >= 50 Years Old 
+"DATA",1130580001.101,42,4)
+PQRI-110
+"DATA",1130580001.101,42,5)
+NQF0041 Influenza Immunization 50 years and older
+"DATA",1130580001.101,42,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,42,6,1,0)
+Percentage of patients aged 50 years 
+"DATA",1130580001.101,42,6,2,0)
+and older who received an influenza immunization 
+"DATA",1130580001.101,42,6,3,0)
+during the flu season (September through 
+"DATA",1130580001.101,42,6,4,0)
+February). 
+"DATA",1130580001.101,42,7)
+NQF0041^^^^^^242^243
+"DATA",1130580001.101,43,0)
+MU EP NQF 0024
+"DATA",1130580001.101,43,1)
+NQF0024 Weight Assessment and Counseling for Children and Adolescents (ALL)
+"DATA",1130580001.101,43,5)
+NQF0024 Weight Assessment and Counseling for Children and Adolescents (ALL)
+"DATA",1130580001.101,43,6,0)
+^^6^6^3120803^
+"DATA",1130580001.101,43,6,1,0)
+Percentage of patients 2 -17 years of age 
+"DATA",1130580001.101,43,6,2,0)
+who had an outpatient visit with a Primary Care Physician 
+"DATA",1130580001.101,43,6,3,0)
+(PCP) or OB/GYN and who had evidence of BMI 
+"DATA",1130580001.101,43,6,4,0)
+percentile documentation, counseling for nutrition and 
+"DATA",1130580001.101,43,6,5,0)
+counseling for physical activity during the measurement 
+"DATA",1130580001.101,43,6,6,0)
+year. This specific Quality Measure is for all the children.
+"DATA",1130580001.101,43,7)
+NQF0024 ALL^^^^^^151^149
+"DATA",1130580001.101,44,0)
+MU EP NQF 0038^^^2.16.840.1.113883.3.249.11.60
+"DATA",1130580001.101,44,1)
+Childhood Immunization Status
+"DATA",1130580001.101,44,4)
+PQRI-38
+"DATA",1130580001.101,44,5)
+Childhood Immunization Status
+"DATA",1130580001.101,44,6,0)
+^^14^14^3110430^
+"DATA",1130580001.101,44,6,1,0)
+Percentage of children 2 years of age who 
+"DATA",1130580001.101,44,6,2,0)
+had four diphtheria, tetanus and acellular  pertussis 
+"DATA",1130580001.101,44,6,3,0)
+(DTaP); three polio(IPV), one measles, ,mumps and 
+"DATA",1130580001.101,44,6,4,0)
+rubella (MMR); two H influenza type B (HiB); three 
+"DATA",1130580001.101,44,6,5,0)
+Percentage of children 2 years of age who 
+"DATA",1130580001.101,44,6,6,0)
+had four diphtheria, tetanus and acellular  pertussis 
+"DATA",1130580001.101,44,6,7,0)
+(DTaP); three polio(IPV), one measles, ,mumps and 
+"DATA",1130580001.101,44,6,8,0)
+rubella (MMR); two H influenza type B (HiB); three 
+"DATA",1130580001.101,44,6,9,0)
+hepatitis B (Hep B); one chicken pox (VZV); four 
+"DATA",1130580001.101,44,6,10,0)
+pneumococcal conjugate (PCV); two hepatitis A (Hep A); 
+"DATA",1130580001.101,44,6,11,0)
+two or three rotavirus (RV); and two influenza (flu) 
+"DATA",1130580001.101,44,6,12,0)
+vaccines by their second birthday. The measure 
+"DATA",1130580001.101,44,6,13,0)
+calculates a rate for each vaccine and nine separate 
+"DATA",1130580001.101,44,6,14,0)
+combination rates.
+"DATA",1130580001.101,44,7)
+NQF0038
+"DATA",1130580001.101,45,0)
+MU EP NQF 0059^^^2.16.840.1.113883.3.249.11.2
+"DATA",1130580001.101,45,1)
+Diabetes: Hemoglobin A1c Poor Contro
+"DATA",1130580001.101,45,4)
+PQRI-1
+"DATA",1130580001.101,45,5)
+Diabetes: NQF0059 Hemoglobin A1c Poor Control
+"DATA",1130580001.101,45,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,45,6,1,0)
+Percentage of patients 18 - 75 years of age with diabetes (type 1 
+"DATA",1130580001.101,45,6,2,0)
+or type 2) who had hemoglobin A1c > 9.0%.
+"DATA",1130580001.101,45,7)
+NQF0059^^^^^^260^258
+"DATA",1130580001.101,46,0)
+MU EP NQF 0064^^^2.16.840.1.113883.3.249.11.3
+"DATA",1130580001.101,46,1)
+Diabetes: Low Density Lipoprotein (LDL) Management and Control  
+"DATA",1130580001.101,46,4)
+PQRI-2
+"DATA",1130580001.101,46,5)
+NQF0064 Diabetes: Low Density Lipoprotein (LDL) Management and Control  
+"DATA",1130580001.101,46,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,46,6,1,0)
+Percentage of patients 18-75 years of age with diabetes (type 1 
+"DATA",1130580001.101,46,6,2,0)
+or type 2) who had LDL-C < 100 mg/dL).Percentage of patients 18-75 years 
+"DATA",1130580001.101,46,6,3,0)
+of age with diabetes (type 1 or type 2) who had LDL-C < 100 mg/dL).
+"DATA",1130580001.101,46,7)
+NQF0064^^^^^^248^258
+"DATA",1130580001.101,47,0)
+MU EP NQF 0061^^^2.16.840.1.113883.3.249.11.4
+"DATA",1130580001.101,47,1)
+Blood Pressure Management
+"DATA",1130580001.101,47,4)
+PQRI-3
+"DATA",1130580001.101,47,5)
+NQF0061 Diabetes: Blood Pressure Management
+"DATA",1130580001.101,47,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,47,6,1,0)
+Percentage of patients 18 - 75 years of age with 
+"DATA",1130580001.101,47,6,2,0)
+diabetes (type 1 or type 2) who had blood pressure <140/90 mmHg.
+"DATA",1130580001.101,47,7)
+NQF0061^^^^^^262^258
+"DATA",1130580001.101,48,0)
+MU EP NQF 0081^^^2.16.840.1.113883.3.249.11.5
+"DATA",1130580001.101,48,1)
+Heart Failure (HF): Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD) 
+"DATA",1130580001.101,48,4)
+PQRI-5
+"DATA",1130580001.101,48,5)
+Heart Failure (HF): Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD) 
+"DATA",1130580001.101,48,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,48,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,48,6,2,0)
+diagnosis of heart failure and LVSD (LVEF < 40%) who were 
+"DATA",1130580001.101,48,6,3,0)
+prescribed ACE inhibitor or ARB therapy
+"DATA",1130580001.101,48,7)
+NQF0081
+"DATA",1130580001.101,49,0)
+MU EP NQF 0070^^^2.16.840.1.113883.3.249.11.6
+"DATA",1130580001.101,49,1)
+CMS Measure #7: Coronary Artery Disease (CAD): Beta-Blocker Therapy for CAD Patients with Prior Myocardial Infarction (MI)
+"DATA",1130580001.101,49,4)
+PQRI-7
+"DATA",1130580001.101,49,5)
+Percentage of patients 18 aged 18 years and older wit a diagnosis of CAD and prior MI who were prescribed beta-blocker therapy
+"DATA",1130580001.101,49,6,0)
+^^3^3^3101013^
+"DATA",1130580001.101,49,6,1,0)
+Percentage of patients aged 18 years and older with a diagnosis of 
+"DATA",1130580001.101,49,6,2,0)
+coronary artery disease and a prior MI who where prescribed beta-blocker 
+"DATA",1130580001.101,49,6,3,0)
+therapy
+"DATA",1130580001.101,49,7)
+NQF0070
+"DATA",1130580001.101,50,0)
+MU EP NQF 0031^^^2.16.840.1.113883.3.249.11.9
+"DATA",1130580001.101,50,1)
+Breast Cancer Screening
+"DATA",1130580001.101,50,4)
+PQRI-112
+"DATA",1130580001.101,50,5)
+Breast Cancer Screening
+"DATA",1130580001.101,50,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,50,6,1,0)
+Percentage of women 40-69 years of age who had a 
+"DATA",1130580001.101,50,6,2,0)
+mammogram to screen for breast cancer
+"DATA",1130580001.101,50,7)
+NQF0031
+"DATA",1130580001.101,51,0)
+MU EP NQF 0034^^^2.16.840.1.113883.3.249.11.10
+"DATA",1130580001.101,51,1)
+Colorectal Cancer Screening
+"DATA",1130580001.101,51,4)
+PQRI-113
+"DATA",1130580001.101,51,5)
+Colorectal Cancer Screening
+"DATA",1130580001.101,51,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,51,6,1,0)
+Percentage of adults 50-75 years of age who had appropriate screening for
+"DATA",1130580001.101,51,6,2,0)
+colorectal cancer.
+"DATA",1130580001.101,51,7)
+NQF0034
+"DATA",1130580001.101,52,0)
+MU EP NQF 0067
+"DATA",1130580001.101,52,1)
+Coronary Artery Disease (CAD): Oral Antiplatelet Therapy Prescribed for Patients with CAD 
+"DATA",1130580001.101,52,5)
+Coronary Artery Disease (CAD): Oral Antiplatelet Therapy Prescribed for Patients with CAD 
+"DATA",1130580001.101,52,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,52,6,1,0)
+Percentage of patients aged 18 years  and older with a 
+"DATA",1130580001.101,52,6,2,0)
+diagnosis of CAD who were prescribed oral antiplatelet therapy.
+"DATA",1130580001.101,52,7)
+NQF0067
+"DATA",1130580001.101,53,0)
+MU EP NQF 0083
+"DATA",1130580001.101,53,1)
+Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD) 
+"DATA",1130580001.101,53,5)
+Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD)
+"DATA",1130580001.101,53,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,53,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,53,6,2,0)
+diagnosis of heart failure who also have LVSD (LVEF < 40%) and who were 
+"DATA",1130580001.101,53,6,3,0)
+prescribed beta-blocker therapy
+"DATA",1130580001.101,53,7)
+NQF0083
+"DATA",1130580001.101,54,0)
+MU EP NQF 0105
+"DATA",1130580001.101,54,1)
+Anti-depressant medication management:  (a) Effective Acute Phase Treatment,(b)Effective Continuation Phase Treatment  
+"DATA",1130580001.101,54,5)
+Anti-depressant medication management:  (a) Effective Acute Phase Treatment,(b)Effective Continuation Phase Treatment  
+"DATA",1130580001.101,54,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,54,6,1,0)
+The percentage of patients 18 years of age and older 
+"DATA",1130580001.101,54,6,2,0)
+who were diagnosed with a new episode of major depression, treated 
+"DATA",1130580001.101,54,6,3,0)
+with antidepressant medication, and who remained on an 
+"DATA",1130580001.101,54,6,4,0)
+antidepressant medication treatment.
+"DATA",1130580001.101,54,7)
+NQF0105
+"DATA",1130580001.101,55,0)
+MU EP NQF 0086
+"DATA",1130580001.101,55,1)
+Primary Open Angle Glaucoma (POAG): Optic Nerve Evaluation
+"DATA",1130580001.101,55,5)
+Primary Open Angle Glaucoma (POAG): Optic Nerve Evaluation
+"DATA",1130580001.101,55,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,55,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,55,6,2,0)
+diagnosis of POAG who have been seen for at least two office visits 
+"DATA",1130580001.101,55,6,3,0)
+who have an optic nerve head evaluation during one or more office 
+"DATA",1130580001.101,55,6,4,0)
+visits within 12 months.
+"DATA",1130580001.101,55,7)
+NQF0086
+"DATA",1130580001.101,56,0)
+MU EP NQF 0088
+"DATA",1130580001.101,56,1)
+Diabetic Retinopathy: Documentation of Presence or Absence of Macular Edema and Level of Severity of Retinopathy 
+"DATA",1130580001.101,56,5)
+Diabetic Retinopathy: Documentation of Presence or Absence of Macular Edema and Level of Severity of Retinopathy 
+"DATA",1130580001.101,56,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,56,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,56,6,2,0)
+diagnosis of diabetic retinopathy who had a dilated macular or fundus 
+"DATA",1130580001.101,56,6,3,0)
+exam performed which included documentation of the level of severity 
+"DATA",1130580001.101,56,6,4,0)
+of  retinopathy and the presence or absence of macular edema during 
+"DATA",1130580001.101,56,6,5,0)
+one or more office visits within 12 months.
+"DATA",1130580001.101,56,7)
+NQF0088
+"DATA",1130580001.101,57,0)
+MU EP NQF 0089
+"DATA",1130580001.101,57,1)
+Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care 
+"DATA",1130580001.101,57,5)
+Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care 
+"DATA",1130580001.101,57,6,0)
+^^6^6^3110430^
+"DATA",1130580001.101,57,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,57,6,2,0)
+diagnosis of diabetic retinopathy who had a dilated macular or fundus 
+"DATA",1130580001.101,57,6,3,0)
+exam performed with documented communication to the physician who 
+"DATA",1130580001.101,57,6,4,0)
+manages the ongoing care of the patient with diabetes mellitus 
+"DATA",1130580001.101,57,6,5,0)
+regarding the findings of the macular or fundus exam at least once 
+"DATA",1130580001.101,57,6,6,0)
+within 12 months.
+"DATA",1130580001.101,57,7)
+NQF0089
+"DATA",1130580001.101,58,0)
+MU EP NQF 0047
+"DATA",1130580001.101,58,1)
+Asthma Pharmacologic Therapy
+"DATA",1130580001.101,58,5)
+Asthma Pharmacologic Therapy
+"DATA",1130580001.101,58,6,0)
+^1130580001.111^4^4^3110430^^
+"DATA",1130580001.101,58,6,1,0)
+Percentage of patients aged 5 through 40 years with a 
+"DATA",1130580001.101,58,6,2,0)
+diagnosis of mild, moderate, or severe persistent asthma who were 
+"DATA",1130580001.101,58,6,3,0)
+prescribed either the preferred long-term control medication (inhaled 
+"DATA",1130580001.101,58,6,4,0)
+corticosteroid) or an acceptable alternative treatment
+"DATA",1130580001.101,58,7)
+NQF0047
+"DATA",1130580001.101,59,0)
+MU EP NQF 0001
+"DATA",1130580001.101,59,1)
+Asthma Assessment
+"DATA",1130580001.101,59,5)
+Asthma Assessment 
+"DATA",1130580001.101,59,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,59,6,1,0)
+Percentage of patients aged 5 through 40 years with a 
+"DATA",1130580001.101,59,6,2,0)
+diagnosis of asthma and who have been seen for at least 2 office 
+"DATA",1130580001.101,59,6,3,0)
+visits, who were evaluated during at least one office visit within 12 
+"DATA",1130580001.101,59,6,4,0)
+months for the frequency (numeric) of daytime and nocturnal asthma 
+"DATA",1130580001.101,59,6,5,0)
+symptoms.
+"DATA",1130580001.101,59,7)
+NQF0001
+"DATA",1130580001.101,60,0)
+MU EP NQF 0002
+"DATA",1130580001.101,60,1)
+Oncology Breast Cancer: Hormonal Therapy for Stage IC-IIIC Estrogen Receptor/Progesterone Receptor (ER/PR) Positive Breat Cancer 
+"DATA",1130580001.101,60,5)
+Oncology Breast Cancer: Hormonal Therapy for Stage IC-IIIC Estrogen Receptor/Progesterone Receptor (ER/PR) Positive Breast Cancer 
+"DATA",1130580001.101,60,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,60,6,1,0)
+Percentage of female patients aged 18 years and older 
+"DATA",1130580001.101,60,6,2,0)
+with Stage IC through IIIC, ER or PR positive breast cancer who were 
+"DATA",1130580001.101,60,6,3,0)
+prescribed tamoxifen or aromatase inhibitor (AI) during the 12-month 
+"DATA",1130580001.101,60,6,4,0)
+reporting period.
+"DATA",1130580001.101,60,7)
+NQF0002
+"DATA",1130580001.101,61,0)
+MU EP NQF 0385
+"DATA",1130580001.101,61,1)
+Oncology Colon Cancer: Chemotherapy for Stage III Colon Cancer Patients 
+"DATA",1130580001.101,61,5)
+Oncology Colon Cancer: Chemotherapy for Stage III Colon Cancer Patients 
+"DATA",1130580001.101,61,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,61,6,1,0)
+Percentage of patients aged 18 years and older with 
+"DATA",1130580001.101,61,6,2,0)
+Stage IIIA through IIIC colon cancer who are referred for adjuvant 
+"DATA",1130580001.101,61,6,3,0)
+chemotherapy, prescribed adjuvant chemotherapy, or have previously 
+"DATA",1130580001.101,61,6,4,0)
+received adjuvant chemotherapy within the 12-month reporting period
+"DATA",1130580001.101,61,7)
+NQF0385
+"DATA",1130580001.101,62,0)
+MU EP NQF 0389
+"DATA",1130580001.101,62,1)
+Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients 
+"DATA",1130580001.101,62,5)
+Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients 
+"DATA",1130580001.101,62,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,62,6,1,0)
+Percentage of patients, regardless of age, with a diagnosis of 
+"DATA",1130580001.101,62,6,2,0)
+prostate cancer at low risk of recurrence receiving interstitial prostate 
+"DATA",1130580001.101,62,6,3,0)
+brachytherapy, OR external beam radiotherapy to the prostate, OR radical 
+"DATA",1130580001.101,62,6,4,0)
+prostatectomy, OR cryotherapy who did not have a bone scan performed at 
+"DATA",1130580001.101,62,6,5,0)
+any time since diagnosis of prostate cancer.
+"DATA",1130580001.101,62,7)
+NQF0389
+"DATA",1130580001.101,63,0)
+MU EP NQF 0027
+"DATA",1130580001.101,63,1)
+Smoking Smokers and Tobacco Users to Quit,b. Discussing Smoking and Tobacco use Cessation Medications, c. Discussing Smoking and Tobacco use Cessation Strategies and Tobacco Use Cessation, Medical assistance: a. Advising 
+"DATA",1130580001.101,63,5)
+Smoking and Tobacco Use Cessation
+"DATA",1130580001.101,63,6,0)
+^^5^5^3110430^
+"DATA",1130580001.101,63,6,1,0)
+Percentage of patients 18 years of age and older who were 
+"DATA",1130580001.101,63,6,2,0)
+current smokers or tobacco users, who were seen by a practitioner during 
+"DATA",1130580001.101,63,6,3,0)
+the measurement year and who received advice to quit smoking or  tobacco
+"DATA",1130580001.101,63,6,4,0)
+use or whose practitioner recommended or discussed smoking or tobacco use
+"DATA",1130580001.101,63,6,5,0)
+cessation medications, methods or strategies
+"DATA",1130580001.101,63,7)
+NQF0027
+"DATA",1130580001.101,64,0)
+MU EP NQF 0055
+"DATA",1130580001.101,64,1)
+Diabetes: Eye Exam
+"DATA",1130580001.101,64,5)
+Diabetes: Eye Exam
+"DATA",1130580001.101,64,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,64,6,1,0)
+Percentage of patients 18 -75 years of age with diabetes (type 1 
+"DATA",1130580001.101,64,6,2,0)
+or type 2) who had a retinal or dilated eye exam or a negative retinal 
+"DATA",1130580001.101,64,6,3,0)
+exam (no evidence of retinopathy) by an eye care professional
+"DATA",1130580001.101,64,7)
+NQF0055
+"DATA",1130580001.101,65,0)
+MU EP NQF 0062
+"DATA",1130580001.101,65,1)
+Diabetes: Urine Screening
+"DATA",1130580001.101,65,5)
+Diabetes: Urine Screening
+"DATA",1130580001.101,65,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,65,6,1,0)
+Percentage of patients 18 - 75 years of age with diabetes (type 1 
+"DATA",1130580001.101,65,6,2,0)
+or type 2) who had a nephropathy screening test or evidence of 
+"DATA",1130580001.101,65,6,3,0)
+nephropathy.
+"DATA",1130580001.101,65,7)
+NQF0062
+"DATA",1130580001.101,66,0)
+MU EP NQF 0056
+"DATA",1130580001.101,66,1)
+Diabetes:  Foot Exam
+"DATA",1130580001.101,66,5)
+Diabetes:  Foot Exam
+"DATA",1130580001.101,66,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,66,6,1,0)
+The percentage of patients aged 18 - 75 years with diabetes 
+"DATA",1130580001.101,66,6,2,0)
+(type 1 or type 2) who had a foot exam (visual inspection, sensory exam 
+"DATA",1130580001.101,66,6,3,0)
+with monofilament, or pulse exam).
+"DATA",1130580001.101,66,7)
+NQF0056
+"DATA",1130580001.101,67,0)
+MU EP NQF 0074
+"DATA",1130580001.101,67,1)
+Coronary Artery Disease (CAD): Drug Therapy for Lowering LDLCholesterol
+"DATA",1130580001.101,67,5)
+Coronary Artery Disease (CAD): Drug Therapy for Lowering LDLCholesterol
+"DATA",1130580001.101,67,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,67,6,1,0)
+Percentage of patients aged 18 years and older with a 
+"DATA",1130580001.101,67,6,2,0)
+diagnosis of CAD who were prescribed a lipid-lowering therapy (based 
+"DATA",1130580001.101,67,6,3,0)
+on current ACC/AHA guidelines).
+"DATA",1130580001.101,67,7)
+NQF0074
+"DATA",1130580001.101,68,0)
+MU EP NQF 0084
+"DATA",1130580001.101,68,1)
+Heart Failure (HF): Warfarin Therapy Patients with Atrial Fibrillation
+"DATA",1130580001.101,68,5)
+Heart Failure (HF): Warfarin Therapy Patients with Atrial Fibrillation
+"DATA",1130580001.101,68,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,68,6,1,0)
+Percentage of all patients aged 18 years and older with a 
+"DATA",1130580001.101,68,6,2,0)
+diagnosis of heart failure and paroxysmal or chronic atrial fibrillation 
+"DATA",1130580001.101,68,6,3,0)
+who were prescribed warfarin therapy.
+"DATA",1130580001.101,68,7)
+NQF0084
+"DATA",1130580001.101,69,0)
+MU EP NQF 0073
+"DATA",1130580001.101,69,1)
+Ischemic Vascular Disease (IVD):  Blood Pressure Management
+"DATA",1130580001.101,69,5)
+Ischemic Vascular Disease (IVD):  Blood Pressure Management
+"DATA",1130580001.101,69,6,0)
+^^11^11^3110430^
+"DATA",1130580001.101,69,6,1,0)
+Percentage of patients 18 years of age and older who 
+"DATA",1130580001.101,69,6,2,0)
+were discharged alive for acute myocardial infarction (AMI), coronary 
+"DATA",1130580001.101,69,6,3,0)
+artery bypass graft (CABG) or percutaneous transluminal coronary 
+"DATA",1130580001.101,69,6,4,0)
+Percentage of patients 18 years of age and older who 
+"DATA",1130580001.101,69,6,5,0)
+were discharged alive for acute myocardial infarction (AMI), coronary 
+"DATA",1130580001.101,69,6,6,0)
+artery bypass graft (CABG) or percutaneous transluminal coronary 
+"DATA",1130580001.101,69,6,7,0)
+angioplasty (PTCA) from January 1- November 1 of the year prior to 
+"DATA",1130580001.101,69,6,8,0)
+the measurement year, or who had a diagnosis of ischemic vascular 
+"DATA",1130580001.101,69,6,9,0)
+disease (IVD) during the measurement year and the year prior to the 
+"DATA",1130580001.101,69,6,10,0)
+measurement year and whose recent blood pressure is in control 
+"DATA",1130580001.101,69,6,11,0)
+(<140/90 mmHg).
+"DATA",1130580001.101,69,7)
+NQF0073
+"DATA",1130580001.101,70,0)
+MU EP NQF 0068
+"DATA",1130580001.101,70,1)
+Ischemic Vascular Disease (IVD):  Use of Aspirin or Another Antithrombotic 
+"DATA",1130580001.101,70,5)
+ Ischemic Vascular Disease (IVD):  Use of Aspirin or Another Antithrombotic 
+"DATA",1130580001.101,70,6,0)
+^^8^8^3110430^
+"DATA",1130580001.101,70,6,1,0)
+ Percentage of patients 18 years of age and older who were 
+"DATA",1130580001.101,70,6,2,0)
+discharged alive for acute myocardial infarction (AMI), coronary artery 
+"DATA",1130580001.101,70,6,3,0)
+bypass graft (CABG) or percutaneous transluminal coronary 
+"DATA",1130580001.101,70,6,4,0)
+angioplasty (PTCA) from January 1-November 1 of the year prior to the 
+"DATA",1130580001.101,70,6,5,0)
+measurement year, or who had a diagnosis of ischemic vascular 
+"DATA",1130580001.101,70,6,6,0)
+disease (IVD) during the measurement year and the year prior to the 
+"DATA",1130580001.101,70,6,7,0)
+measurement year and who had documentation of use of aspirin or 
+"DATA",1130580001.101,70,6,8,0)
+another antithrombotic during the measurement year
+"DATA",1130580001.101,70,7)
+NQF0068
+"DATA",1130580001.101,71,0)
+MU EP NQF 0004
+"DATA",1130580001.101,71,1)
+ Initiation and Engagement of Alcohol and Other Drug  Dependence Treatment:(a)Initiation,(b)Engagement 
+"DATA",1130580001.101,71,5)
+Initiation and Engagement of Alcohol and Other Drug  Dependence Treatment:(a) Initiation,(b) Engagement 
+"DATA",1130580001.101,71,6,0)
+^^6^6^3110430^
+"DATA",1130580001.101,71,6,1,0)
+The percentage of adolescent and adult patients with a new 
+"DATA",1130580001.101,71,6,2,0)
+episode of alcohol and other drug (AOD) dependence who initiate treatment 
+"DATA",1130580001.101,71,6,3,0)
+through an inpatient AOD admission, outpatient visit, intensive 
+"DATA",1130580001.101,71,6,4,0)
+outpatient encounter or partial hospitalization within 14 days of the
+"DATA",1130580001.101,71,6,5,0)
+diagnosis and who initiated treatment and who had two or more additional
+"DATA",1130580001.101,71,6,6,0)
+services with an AOD diagnosis within 30 days of the initiation visit.
+"DATA",1130580001.101,71,7)
+NQF0004
+"DATA",1130580001.101,72,0)
+MU EP NQF 0012
+"DATA",1130580001.101,72,1)
+Prenatal Care:  Screening for Human Immunodeficiency Virus (HIV)
+"DATA",1130580001.101,72,5)
+Prenatal Care:  Screening for Human Immunodeficiency Virus (HIV)
+"DATA",1130580001.101,72,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,72,6,1,0)
+Percentage of patients, regardless of age, who gave birth during 
+"DATA",1130580001.101,72,6,2,0)
+a 12-month period who were screened for HIV infection during the first or 
+"DATA",1130580001.101,72,6,3,0)
+second prenatal care visit.
+"DATA",1130580001.101,72,7)
+NQF0012
+"DATA",1130580001.101,73,0)
+MU EP NQF 0014
+"DATA",1130580001.101,73,1)
+Prenatal Care:  Anti-D Immune Globulin
+"DATA",1130580001.101,73,5)
+Prenatal Care:  Anti-D Immune Globulin 
+"DATA",1130580001.101,73,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,73,6,1,0)
+Percentage of D (Rh) negative, unsensitized patients, regardless 
+"DATA",1130580001.101,73,6,2,0)
+of age, who gave birth during a 12-month period who received anti-D 
+"DATA",1130580001.101,73,6,3,0)
+immune globulin at 26-30 weeks gestation.
+"DATA",1130580001.101,73,7)
+NQD0014
+"DATA",1130580001.101,74,0)
+MU EP NQF 0018
+"DATA",1130580001.101,74,1)
+Controlling High Blood Pressure
+"DATA",1130580001.101,74,5)
+Controlling High Blood Pressure
+"DATA",1130580001.101,74,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,74,6,1,0)
+The percentage of patients 18-85 years of age who had a 
+"DATA",1130580001.101,74,6,2,0)
+diagnosis of hypertension and whose BP was adequately controlled during 
+"DATA",1130580001.101,74,6,3,0)
+the measurement year 
+"DATA",1130580001.101,74,7)
+NQF0018
+"DATA",1130580001.101,75,0)
+MU EP NQF 0032
+"DATA",1130580001.101,75,1)
+Cervical Cancer Screening
+"DATA",1130580001.101,75,5)
+Cervical Cancer Screening
+"DATA",1130580001.101,75,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,75,6,1,0)
+Percentage of women 21-64 years of age, who received one or 
+"DATA",1130580001.101,75,6,2,0)
+more Pap tests to screen for cervical cancer
+"DATA",1130580001.101,75,7)
+NQF0032
+"DATA",1130580001.101,76,0)
+MU EP NQF 0033
+"DATA",1130580001.101,76,1)
+Chlamydia Screening for Women
+"DATA",1130580001.101,76,5)
+Chlamydia Screening for Women
+"DATA",1130580001.101,76,6,0)
+^^3^3^3110430^
+"DATA",1130580001.101,76,6,1,0)
+Percentage of women 15- 24 years of age who were identified as sexually
+"DATA",1130580001.101,76,6,2,0)
+active and who had at least one test for chlamydia during the measurement
+"DATA",1130580001.101,76,6,3,0)
+year.
+"DATA",1130580001.101,76,7)
+NQF0033
+"DATA",1130580001.101,77,0)
+MU EP NQF 0036
+"DATA",1130580001.101,77,1)
+Use of Appropriate Medications for Asthma
+"DATA",1130580001.101,77,5)
+Use of Appropriate Medications for Asthma
+"DATA",1130580001.101,77,6,0)
+^^4^4^3110430^
+"DATA",1130580001.101,77,6,1,0)
+Percentage of patients 5 - 50 years of age who were identified as having
+"DATA",1130580001.101,77,6,2,0)
+persistent asthma and were appropriately prescribed medication during the
+"DATA",1130580001.101,77,6,3,0)
+measurement year. Report three age stratifications (5-11 years, 12-50
+"DATA",1130580001.101,77,6,4,0)
+years, and total). 
+"DATA",1130580001.101,77,7)
+NQF0036
+"DATA",1130580001.101,78,0)
+MU EP NQF 0052
+"DATA",1130580001.101,78,1)
+Low Back Pain: Use of Imaging Studies
+"DATA",1130580001.101,78,5)
+Low Back Pain: Use of Imaging Studies
+"DATA",1130580001.101,78,6,0)
+^1130580001.111^3^3^3110430^^
+"DATA",1130580001.101,78,6,1,0)
+Percentage of patients with a primary diagnosis of low back pain 
+"DATA",1130580001.101,78,6,2,0)
+who did not have an imaging study (plain x-ray, MRI, CT scan) within 28 
+"DATA",1130580001.101,78,6,3,0)
+days of diagnosis.
+"DATA",1130580001.101,78,7)
+NQF0052
+"DATA",1130580001.101,79,0)
+MU EP NQF 0075
+"DATA",1130580001.101,79,1)
+Ischemic Vascular Disease (IVD): Complete Lipid Panel and LDL Control 
+"DATA",1130580001.101,79,5)
+Ischemic Vascular Disease (IVD): Complete Lipid Panel and LDL Control 
+"DATA",1130580001.101,79,6,0)
+^^7^7^3110430^
+"DATA",1130580001.101,79,6,1,0)
+Percentage of patients 18 years of age and older who were discharged alive
+"DATA",1130580001.101,79,6,2,0)
+for acute myocardial infarction (AMI), coronary artery bypass graft (CABG)
+"DATA",1130580001.101,79,6,3,0)
+or percutaneous transluminal angioplasty (PTCA) from January 1-November1
+"DATA",1130580001.101,79,6,4,0)
+of the year prior to the measurement year, or who had a diagnosis of
+"DATA",1130580001.101,79,6,5,0)
+ischemic vascular disease (IVD) during the measurement year and the year
+"DATA",1130580001.101,79,6,6,0)
+prior to the measurement year and who had a complete lipid profile
+"DATA",1130580001.101,79,6,7,0)
+performed during the measurement year and whose LDL-C<100 mg/dL
+"DATA",1130580001.101,79,7)
+NQF0075
+"DATA",1130580001.101,80,0)
+MU EP NQF 0575
+"DATA",1130580001.101,80,1)
+Diabetes:  Hemoglobin A1c Control (<8.0%)
+"DATA",1130580001.101,80,5)
+Diabetes:  Hemoglobin A1c Control (<8.0%)
+"DATA",1130580001.101,80,6,0)
+^^2^2^3110430^
+"DATA",1130580001.101,80,6,1,0)
+The percentage of patients 18-75 years of age with diabetes 
+"DATA",1130580001.101,80,6,2,0)
+(type 1 or type 2) who had hemoglobin A1c <8.0%
+"DATA",1130580001.101,80,7)
+NQF0575
+"DATA",1130580001.101,81,0)
+MU EP NQF 0028B
+"DATA",1130580001.101,81,1)
+NQF0028B Preventive Care and Screening  Measure Pair: a. Tobacco Use Assessment,b. Tobacco Cessation Intervention 
+"DATA",1130580001.101,81,5)
+NQF0028B Tobacco Use Assessment and Cessation Intervention
+"DATA",1130580001.101,81,6,0)
+^1130580001.111^7^7^3110625^^^^
+"DATA",1130580001.101,81,6,1,0)
+ Percentage of patients aged 18 years and  
+"DATA",1130580001.101,81,6,2,0)
+older who have been seen for at least 2 office visits who 
+"DATA",1130580001.101,81,6,3,0)
+were queried about tobacco use one or more times within 
+"DATA",1130580001.101,81,6,4,0)
+24 months  b. Percentage of patients aged 18 years and 
+"DATA",1130580001.101,81,6,5,0)
+older  identified as tobacco users within the past 24 
+"DATA",1130580001.101,81,6,6,0)
+months and have been seen for at least 2 office visits, 
+"DATA",1130580001.101,81,6,7,0)
+who received cessation intervention.
+"DATA",1130580001.101,81,7)
+NQF0028B^^^^^^154^160
+"DATA",1130580001.101,82,0)
+MU EP NQF 0024 2-10Y
+"DATA",1130580001.101,82,1)
+NQF0024 Weight Assessment and Counseling for Children and Adolescents (2-10)
+"DATA",1130580001.101,82,5)
+Weight Assessment and Counseling for Children 2-10 Years Old
+"DATA",1130580001.101,82,6,0)
+^^6^6^3120803^
+"DATA",1130580001.101,82,6,1,0)
+Percentage of patients 2-10 years of age 
+"DATA",1130580001.101,82,6,2,0)
+who had an outpatient visit with a Primary Care Physician 
+"DATA",1130580001.101,82,6,3,0)
+(PCP) or OB/GYN and who had evidence of BMI 
+"DATA",1130580001.101,82,6,4,0)
+percentile documentation, counseling for nutrition and 
+"DATA",1130580001.101,82,6,5,0)
+counseling for physical activity during the measurement 
+"DATA",1130580001.101,82,6,6,0)
+year. Only for those 2-10 years of age.
+"DATA",1130580001.101,82,7)
+NQF0024 2-10Y^^^^^^334^338
+"DATA",1130580001.101,83,0)
+MU EP NQF 0038 NUM1 DPT
+"DATA",1130580001.101,83,5)
+NQF0038 NUM1 DPT
+"DATA",1130580001.101,83,7)
+NQF0038 NUM1 DPT^^^^^^329^192^11
+"DATA",1130580001.101,84,0)
+MU EP NQF 0038 NUM2 IPV
+"DATA",1130580001.101,84,5)
+NQF0038 NUM2 IPV
+"DATA",1130580001.101,84,7)
+NQF0038 NUM2 IPV^^^^^^224^192^11
+"DATA",1130580001.101,85,0)
+MU EP NQF 0038 NUM3 MMR
+"DATA",1130580001.101,85,5)
+NQF0038 NUM3 MMR
+"DATA",1130580001.101,85,7)
+NQF0038 NUM3 MMR^^^^^^183^192^11
+"DATA",1130580001.101,86,0)
+MU EP NQF 0038 NUM4 HiB
+"DATA",1130580001.101,86,5)
+NQF0038 NUM4 HiB
+"DATA",1130580001.101,86,7)
+NQF0038 NUM4 HiB^^^^^^189^192^11
+"DATA",1130580001.101,87,0)
+MU EP NQF 0038 NUM5 HEP B
+"DATA",1130580001.101,87,5)
+NQF0038 NUM5 HEP B
+"DATA",1130580001.101,87,7)
+NQF0038 NUM5 HEP B^^^^^^194^192^11
+"DATA",1130580001.101,88,0)
+MU EP NQF 0038 NUM6 VZV
+"DATA",1130580001.101,88,5)
+NQF0038 NUM6 VZV
+"DATA",1130580001.101,88,7)
+NQF0038 NUM6 VZV^^^^^^198^192^11
+"DATA",1130580001.101,89,0)
+MU EP NQF 0038 NUM7 PCV
+"DATA",1130580001.101,89,5)
+NQF0038 NUM7 PCV
+"DATA",1130580001.101,89,7)
+NQF0038 NUM7 PCV^^^^^^205^192^11
+"DATA",1130580001.101,90,0)
+MU EP NQF 0038 NUM8 HEP A
+"DATA",1130580001.101,90,5)
+NQF0038 NUM8 HEP A
+"DATA",1130580001.101,90,7)
+NQF0038 NUM8 HEP A^^^^^^208^192^11
+"DATA",1130580001.101,91,0)
+MU EP NQF 0038 NUM9 RV
+"DATA",1130580001.101,91,5)
+NQF0038 NUM9
+"DATA",1130580001.101,91,7)
+NQF0038 NUM9^^^^^^216^192^11
+"DATA",1130580001.101,92,0)
+MU EP NQF 0038 NUM10 FLU
+"DATA",1130580001.101,92,5)
+NQF0038 NUM10
+"DATA",1130580001.101,92,7)
+NQF0038 NUM10^^^^^^331^192^11
+"DATA",1130580001.101,93,0)
+MU EP NQF 0038 NUM11 COMBO5
+"DATA",1130580001.101,93,5)
+NQF0038 NUM11 COMBO5
+"DATA",1130580001.101,93,7)
+NQF0038 NUM11 COMBO5^^^^^^228^192^11
+"DATA",1130580001.101,94,0)
+MU EP NQF 0038 NUM12 COMBO6
+"DATA",1130580001.101,94,5)
+NQF0038 NUM12 COMBO6
+"DATA",1130580001.101,94,7)
+NQF0038 NUM12 COMBO6^^^^^^231^192^11
+"DATA",1130580001.101,95,0)
+MU 2011 INP ADV DIRECTIVES
+"DATA",1130580001.101,95,5)
+Advance Directives
+"DATA",1130580001.101,96,0)
+MU 2011 INP CPOE
+"DATA",1130580001.101,96,5)
+CPOE for Medications
+"DATA",1130580001.101,97,0)
+MU 2011 INP MED RECON
+"DATA",1130580001.101,97,5)
+Medication Reconcilliation
+"DATA",1130580001.101,98,0)
+MU 2011 INP PROBLEM LIST
+"DATA",1130580001.101,98,5)
+Problem List
+"DATA",1130580001.101,99,0)
+MU 2011 INP VITAL SIGNS
+"DATA",1130580001.101,99,5)
+Record Vital Signs
+"DATA",1130580001.101,100,0)
+MU 2011 INP SMOKING STATUS
+"DATA",1130580001.101,100,5)
+Smoking Status
+"DATA",1130580001.101,101,0)
+MU 2011 INP MED LIST
+"DATA",1130580001.101,101,5)
+Active Medication List
+"DATA",1130580001.101,102,0)
+MU 2011 INP ALLERGY LIST
+"DATA",1130580001.101,102,5)
+Medication Allergy List
+"DATA",1130580001.101,103,0)
+MU 2011 INP DEMOGRAPHICS
+"DATA",1130580001.101,103,5)
+Record Demographics
+"DATA",1130580001.101,104,0)
+MU EP NQF 0024 11-17Y
+"DATA",1130580001.101,104,1)
+NQF0024 Weight Assessment and Counseling for Children and Adolescents (11-17)
+"DATA",1130580001.101,104,5)
+Weight Assessment and Counseling for Children and Adolescents 11-17 years old
+"DATA",1130580001.101,104,6,0)
+^^6^6^3120803^
+"DATA",1130580001.101,104,6,1,0)
+Percentage of patients 11-17 years of age 
+"DATA",1130580001.101,104,6,2,0)
+who had an outpatient visit with a Primary Care Physician 
+"DATA",1130580001.101,104,6,3,0)
+(PCP) or OB/GYN and who had evidence of BMI 
+"DATA",1130580001.101,104,6,4,0)
+percentile documentation, counseling for nutrition and 
+"DATA",1130580001.101,104,6,5,0)
+counseling for physical activity during the measurement 
+"DATA",1130580001.101,104,6,6,0)
+year. Only for those 11-17 years old.
+"DATA",1130580001.101,104,7)
+NQF0024 11-17Y^^^^^^336^340
+"FIA",1130580001.101)
+C0Q QUALITY MEASURE
+"FIA",1130580001.101,0)
+^C0Q(101,
+"FIA",1130580001.101,0,0)
+1130580001.101I
+"FIA",1130580001.101,0,1)
+y^y^f^^y^^y^o^n
+"FIA",1130580001.101,0,10)
+
+"FIA",1130580001.101,0,11)
+
+"FIA",1130580001.101,0,"RLRO")
+
+"FIA",1130580001.101,0,"VR")
+1.0^C0Q
+"FIA",1130580001.101,1130580001.101)
+0
+"FIA",1130580001.101,1130580001.111)
+0
+"FRV1",1130580001.101,"104,7",7)
+MU NQF0024 BMI PERCENTILE 11-17Y RS
+"FRV1",1130580001.101,"104,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"104,7",8)
+MU NQF0024 BMI 11-17Y DENOM RS
+"FRV1",1130580001.101,"104,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"23,7",7)
+MU ED-1 NUMER RS
+"FRV1",1130580001.101,"23,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"23,7",8)
+MU ED-1 DENOM RS
+"FRV1",1130580001.101,"23,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"24,7",7)
+MU ED-2 NUMER RS
+"FRV1",1130580001.101,"24,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"24,7",8)
+MU ED-2 DENOM RS
+"FRV1",1130580001.101,"24,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"25,7",7)
+MU STK-2 NUMER RS
+"FRV1",1130580001.101,"25,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"25,7",8)
+MU STK-2 DENOM RS
+"FRV1",1130580001.101,"25,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"26,7",7)
+MU STK-3 NUMER RS
+"FRV1",1130580001.101,"26,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"26,7",8)
+MU STK-3 DENOM RS
+"FRV1",1130580001.101,"26,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"27,7",7)
+MU STK-4 NUMER RS
+"FRV1",1130580001.101,"27,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"27,7",8)
+MU STK-4 DENOM RS
+"FRV1",1130580001.101,"27,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"28,7",7)
+MU STK-5 NUMER RS
+"FRV1",1130580001.101,"28,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"28,7",8)
+MU STK-5 DENOM RS
+"FRV1",1130580001.101,"28,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"29,7",7)
+MU STK-6 NUMER RS
+"FRV1",1130580001.101,"29,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"29,7",8)
+MU STK-6 DENOM RS
+"FRV1",1130580001.101,"29,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"30,7",7)
+MU STK-8 NUMER RS
+"FRV1",1130580001.101,"30,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"30,7",8)
+MU STK-8 DENOM RS
+"FRV1",1130580001.101,"30,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"31,7",7)
+MU STK-10 NUMER RS
+"FRV1",1130580001.101,"31,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"31,7",8)
+MU STK-10 DENOM RS
+"FRV1",1130580001.101,"31,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"32,7",7)
+MU VTE-1 NUMER RS
+"FRV1",1130580001.101,"32,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"32,7",8)
+MU VTE-1 DENOM RS
+"FRV1",1130580001.101,"32,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"33,7",7)
+MU VTE-2 NUMER RS
+"FRV1",1130580001.101,"33,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"33,7",8)
+MU VTE-2 DENOM RS
+"FRV1",1130580001.101,"33,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"34,7",7)
+MU VTE-3 NUMER RS
+"FRV1",1130580001.101,"34,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"34,7",8)
+MU VTE-3 DENOM RS
+"FRV1",1130580001.101,"34,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"35,7",7)
+MU VTE-4 NUMER RS
+"FRV1",1130580001.101,"35,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"35,7",8)
+MU VTE-4 DENOM RS
+"FRV1",1130580001.101,"35,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"36,7",7)
+MU VTE-5 NUMER RS
+"FRV1",1130580001.101,"36,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"36,7",8)
+MU VTE-5 DENOM RS
+"FRV1",1130580001.101,"36,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"37,7",7)
+MU VTE-6 NUMER RS
+"FRV1",1130580001.101,"37,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"37,7",8)
+MU VTE-6 DENOM RS
+"FRV1",1130580001.101,"37,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"39,7",7)
+MU NQF0421 BMI NUM ALL RS
+"FRV1",1130580001.101,"39,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"39,7",8)
+MU NQF0421 BMI DENOM ALL RS
+"FRV1",1130580001.101,"39,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"39,7",9)
+MU NQF0421 ADULT BMI
+"FRV1",1130580001.101,"39,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"40,7",7)
+MU NQF0013 HTN NUMER2 RS
+"FRV1",1130580001.101,"40,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"40,7",8)
+MU NQF0013 HTN DENOM2 RS
+"FRV1",1130580001.101,"40,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"41,7",7)
+MU NQF0028A TOBACCO SCREEN NUM RS
+"FRV1",1130580001.101,"41,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"41,7",8)
+MU NQF0028B TOBACCO INTERV DENOM RS
+"FRV1",1130580001.101,"41,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"42,7",7)
+MU NQF0041 FLU RS
+"FRV1",1130580001.101,"42,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"42,7",8)
+MU NQF0041 FLU DENOM RS
+"FRV1",1130580001.101,"42,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"43,7",7)
+MU NQF0024 BMI 2-17YR NUM RS
+"FRV1",1130580001.101,"43,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"43,7",8)
+MU NQF0024 BMI 2-17YRS DEM RS
+"FRV1",1130580001.101,"43,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"45,7",7)
+MU NQF0059 HBA1C NUM RS
+"FRV1",1130580001.101,"45,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"45,7",8)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1",1130580001.101,"45,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"46,7",7)
+MU NQF0064 NUM LDL RS
+"FRV1",1130580001.101,"46,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"46,7",8)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1",1130580001.101,"46,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"47,7",7)
+MU NQF0061 NUM DM BP<140/90 RS
+"FRV1",1130580001.101,"47,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"47,7",8)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1",1130580001.101,"47,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"81,7",7)
+MU NQF0028B TOBACCO INTERV NUM2 RS
+"FRV1",1130580001.101,"81,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"81,7",8)
+MU NQF0028B TOBACCO INTERV DENOM RS
+"FRV1",1130580001.101,"81,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"82,7",7)
+MU NQF0024 BMI PERCENTILE 2-10Y RS
+"FRV1",1130580001.101,"82,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"82,7",8)
+MU NQF0024 BMI 2-10Y DENOM RS
+"FRV1",1130580001.101,"82,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"83,7",7)
+MU NQF0038 NUM1 DPT RS
+"FRV1",1130580001.101,"83,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"83,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"83,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"83,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"83,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"84,7",7)
+MU NQF0038 NUM2 IPV RS
+"FRV1",1130580001.101,"84,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"84,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"84,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"84,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"84,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"85,7",7)
+MU NQF0038 NUM3-ALL RS
+"FRV1",1130580001.101,"85,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"85,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"85,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"85,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"85,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"86,7",7)
+MU NQF0038 NUM4 HIB RS
+"FRV1",1130580001.101,"86,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"86,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"86,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"86,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"86,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"87,7",7)
+MU NQF0038 NUM5 RS
+"FRV1",1130580001.101,"87,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"87,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"87,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"87,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"87,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"88,7",7)
+MU NQF0038 NUM6 VZV RS
+"FRV1",1130580001.101,"88,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"88,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"88,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"88,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"88,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"89,7",7)
+MU NQF0038 NUM7 PCV RS
+"FRV1",1130580001.101,"89,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"89,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"89,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"89,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"89,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"90,7",7)
+MU NQF0038 NUM8 HEP A RS
+"FRV1",1130580001.101,"90,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"90,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"90,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"90,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"90,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"91,7",7)
+MU NQF0038 NUM9 RV RS
+"FRV1",1130580001.101,"91,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"91,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"91,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"91,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"91,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"92,7",7)
+MU NQF0038 NUM10 INFLUENZA RS
+"FRV1",1130580001.101,"92,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"92,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"92,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"92,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"92,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"93,7",7)
+MU NQF0038 NUM11 COMBO5 RS
+"FRV1",1130580001.101,"93,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"93,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"93,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"93,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"93,7",9,"F")
+;PXRM(810.2,
+"FRV1",1130580001.101,"94,7",7)
+MU NQF0038 NUM12 COMBO6 RS
+"FRV1",1130580001.101,"94,7",7,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"94,7",8)
+MU NQF0038 DENOM RS
+"FRV1",1130580001.101,"94,7",8,"F")
+;PXRM(810.4,
+"FRV1",1130580001.101,"94,7",9)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1",1130580001.101,"94,7",9,"F")
+;PXRM(810.2,
+"FRV1K",1130580001.101,"104,7",7)
+B
+"FRV1K",1130580001.101,"104,7",7,1)
+MU NQF0024 BMI PERCENTILE 11-17Y RS
+"FRV1K",1130580001.101,"104,7",8)
+B
+"FRV1K",1130580001.101,"104,7",8,1)
+MU NQF0024 BMI 11-17Y DENOM RS
+"FRV1K",1130580001.101,"23,7",7)
+B
+"FRV1K",1130580001.101,"23,7",7,1)
+MU ED-1 NUMER RS
+"FRV1K",1130580001.101,"23,7",8)
+B
+"FRV1K",1130580001.101,"23,7",8,1)
+MU ED-1 DENOM RS
+"FRV1K",1130580001.101,"24,7",7)
+B
+"FRV1K",1130580001.101,"24,7",7,1)
+MU ED-2 NUMER RS
+"FRV1K",1130580001.101,"24,7",8)
+B
+"FRV1K",1130580001.101,"24,7",8,1)
+MU ED-2 DENOM RS
+"FRV1K",1130580001.101,"25,7",7)
+B
+"FRV1K",1130580001.101,"25,7",7,1)
+MU STK-2 NUMER RS
+"FRV1K",1130580001.101,"25,7",8)
+B
+"FRV1K",1130580001.101,"25,7",8,1)
+MU STK-2 DENOM RS
+"FRV1K",1130580001.101,"26,7",7)
+B
+"FRV1K",1130580001.101,"26,7",7,1)
+MU STK-3 NUMER RS
+"FRV1K",1130580001.101,"26,7",8)
+B
+"FRV1K",1130580001.101,"26,7",8,1)
+MU STK-3 DENOM RS
+"FRV1K",1130580001.101,"27,7",7)
+B
+"FRV1K",1130580001.101,"27,7",7,1)
+MU STK-4 NUMER RS
+"FRV1K",1130580001.101,"27,7",8)
+B
+"FRV1K",1130580001.101,"27,7",8,1)
+MU STK-4 DENOM RS
+"FRV1K",1130580001.101,"28,7",7)
+B
+"FRV1K",1130580001.101,"28,7",7,1)
+MU STK-5 NUMER RS
+"FRV1K",1130580001.101,"28,7",8)
+B
+"FRV1K",1130580001.101,"28,7",8,1)
+MU STK-5 DENOM RS
+"FRV1K",1130580001.101,"29,7",7)
+B
+"FRV1K",1130580001.101,"29,7",7,1)
+MU STK-6 NUMER RS
+"FRV1K",1130580001.101,"29,7",8)
+B
+"FRV1K",1130580001.101,"29,7",8,1)
+MU STK-6 DENOM RS
+"FRV1K",1130580001.101,"30,7",7)
+B
+"FRV1K",1130580001.101,"30,7",7,1)
+MU STK-8 NUMER RS
+"FRV1K",1130580001.101,"30,7",8)
+B
+"FRV1K",1130580001.101,"30,7",8,1)
+MU STK-8 DENOM RS
+"FRV1K",1130580001.101,"31,7",7)
+B
+"FRV1K",1130580001.101,"31,7",7,1)
+MU STK-10 NUMER RS
+"FRV1K",1130580001.101,"31,7",8)
+B
+"FRV1K",1130580001.101,"31,7",8,1)
+MU STK-10 DENOM RS
+"FRV1K",1130580001.101,"32,7",7)
+B
+"FRV1K",1130580001.101,"32,7",7,1)
+MU VTE-1 NUMER RS
+"FRV1K",1130580001.101,"32,7",8)
+B
+"FRV1K",1130580001.101,"32,7",8,1)
+MU VTE-1 DENOM RS
+"FRV1K",1130580001.101,"33,7",7)
+B
+"FRV1K",1130580001.101,"33,7",7,1)
+MU VTE-2 NUMER RS
+"FRV1K",1130580001.101,"33,7",8)
+B
+"FRV1K",1130580001.101,"33,7",8,1)
+MU VTE-2 DENOM RS
+"FRV1K",1130580001.101,"34,7",7)
+B
+"FRV1K",1130580001.101,"34,7",7,1)
+MU VTE-3 NUMER RS
+"FRV1K",1130580001.101,"34,7",8)
+B
+"FRV1K",1130580001.101,"34,7",8,1)
+MU VTE-3 DENOM RS
+"FRV1K",1130580001.101,"35,7",7)
+B
+"FRV1K",1130580001.101,"35,7",7,1)
+MU VTE-4 NUMER RS
+"FRV1K",1130580001.101,"35,7",8)
+B
+"FRV1K",1130580001.101,"35,7",8,1)
+MU VTE-4 DENOM RS
+"FRV1K",1130580001.101,"36,7",7)
+B
+"FRV1K",1130580001.101,"36,7",7,1)
+MU VTE-5 NUMER RS
+"FRV1K",1130580001.101,"36,7",8)
+B
+"FRV1K",1130580001.101,"36,7",8,1)
+MU VTE-5 DENOM RS
+"FRV1K",1130580001.101,"37,7",7)
+B
+"FRV1K",1130580001.101,"37,7",7,1)
+MU VTE-6 NUMER RS
+"FRV1K",1130580001.101,"37,7",8)
+B
+"FRV1K",1130580001.101,"37,7",8,1)
+MU VTE-6 DENOM RS
+"FRV1K",1130580001.101,"39,7",7)
+B
+"FRV1K",1130580001.101,"39,7",7,1)
+MU NQF0421 BMI NUM ALL RS
+"FRV1K",1130580001.101,"39,7",8)
+B
+"FRV1K",1130580001.101,"39,7",8,1)
+MU NQF0421 BMI DENOM ALL RS
+"FRV1K",1130580001.101,"39,7",9)
+B
+"FRV1K",1130580001.101,"39,7",9,1)
+MU NQF0421 ADULT BMI
+"FRV1K",1130580001.101,"40,7",7)
+B
+"FRV1K",1130580001.101,"40,7",7,1)
+MU NQF0013 HTN NUMER2 RS
+"FRV1K",1130580001.101,"40,7",8)
+B
+"FRV1K",1130580001.101,"40,7",8,1)
+MU NQF0013 HTN DENOM2 RS
+"FRV1K",1130580001.101,"41,7",7)
+B
+"FRV1K",1130580001.101,"41,7",7,1)
+MU NQF0028A TOBACCO SCREEN NUM RS
+"FRV1K",1130580001.101,"41,7",8)
+B
+"FRV1K",1130580001.101,"41,7",8,1)
+MU NQF0028B TOBACCO INTERV DENOM RS
+"FRV1K",1130580001.101,"42,7",7)
+B
+"FRV1K",1130580001.101,"42,7",7,1)
+MU NQF0041 FLU RS
+"FRV1K",1130580001.101,"42,7",8)
+B
+"FRV1K",1130580001.101,"42,7",8,1)
+MU NQF0041 FLU DENOM RS
+"FRV1K",1130580001.101,"43,7",7)
+B
+"FRV1K",1130580001.101,"43,7",7,1)
+MU NQF0024 BMI 2-17YR NUM RS
+"FRV1K",1130580001.101,"43,7",8)
+B
+"FRV1K",1130580001.101,"43,7",8,1)
+MU NQF0024 BMI 2-17YRS DEM RS
+"FRV1K",1130580001.101,"45,7",7)
+B
+"FRV1K",1130580001.101,"45,7",7,1)
+MU NQF0059 HBA1C NUM RS
+"FRV1K",1130580001.101,"45,7",8)
+B
+"FRV1K",1130580001.101,"45,7",8,1)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1K",1130580001.101,"46,7",7)
+B
+"FRV1K",1130580001.101,"46,7",7,1)
+MU NQF0064 NUM LDL RS
+"FRV1K",1130580001.101,"46,7",8)
+B
+"FRV1K",1130580001.101,"46,7",8,1)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1K",1130580001.101,"47,7",7)
+B
+"FRV1K",1130580001.101,"47,7",7,1)
+MU NQF0061 NUM DM BP<140/90 RS
+"FRV1K",1130580001.101,"47,7",8)
+B
+"FRV1K",1130580001.101,"47,7",8,1)
+MU NQF0059 DM DENOM-ALL RS
+"FRV1K",1130580001.101,"81,7",7)
+B
+"FRV1K",1130580001.101,"81,7",7,1)
+MU NQF0028B TOBACCO INTERV NUM2 RS
+"FRV1K",1130580001.101,"81,7",8)
+B
+"FRV1K",1130580001.101,"81,7",8,1)
+MU NQF0028B TOBACCO INTERV DENOM RS
+"FRV1K",1130580001.101,"82,7",7)
+B
+"FRV1K",1130580001.101,"82,7",7,1)
+MU NQF0024 BMI PERCENTILE 2-10Y RS
+"FRV1K",1130580001.101,"82,7",8)
+B
+"FRV1K",1130580001.101,"82,7",8,1)
+MU NQF0024 BMI 2-10Y DENOM RS
+"FRV1K",1130580001.101,"83,7",7)
+B
+"FRV1K",1130580001.101,"83,7",7,1)
+MU NQF0038 NUM1 DPT RS
+"FRV1K",1130580001.101,"83,7",8)
+B
+"FRV1K",1130580001.101,"83,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"83,7",9)
+B
+"FRV1K",1130580001.101,"83,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"84,7",7)
+B
+"FRV1K",1130580001.101,"84,7",7,1)
+MU NQF0038 NUM2 IPV RS
+"FRV1K",1130580001.101,"84,7",8)
+B
+"FRV1K",1130580001.101,"84,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"84,7",9)
+B
+"FRV1K",1130580001.101,"84,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"85,7",7)
+B
+"FRV1K",1130580001.101,"85,7",7,1)
+MU NQF0038 NUM3-ALL RS
+"FRV1K",1130580001.101,"85,7",8)
+B
+"FRV1K",1130580001.101,"85,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"85,7",9)
+B
+"FRV1K",1130580001.101,"85,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"86,7",7)
+B
+"FRV1K",1130580001.101,"86,7",7,1)
+MU NQF0038 NUM4 HIB RS
+"FRV1K",1130580001.101,"86,7",8)
+B
+"FRV1K",1130580001.101,"86,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"86,7",9)
+B
+"FRV1K",1130580001.101,"86,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"87,7",7)
+B
+"FRV1K",1130580001.101,"87,7",7,1)
+MU NQF0038 NUM5 RS
+"FRV1K",1130580001.101,"87,7",8)
+B
+"FRV1K",1130580001.101,"87,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"87,7",9)
+B
+"FRV1K",1130580001.101,"87,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"88,7",7)
+B
+"FRV1K",1130580001.101,"88,7",7,1)
+MU NQF0038 NUM6 VZV RS
+"FRV1K",1130580001.101,"88,7",8)
+B
+"FRV1K",1130580001.101,"88,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"88,7",9)
+B
+"FRV1K",1130580001.101,"88,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"89,7",7)
+B
+"FRV1K",1130580001.101,"89,7",7,1)
+MU NQF0038 NUM7 PCV RS
+"FRV1K",1130580001.101,"89,7",8)
+B
+"FRV1K",1130580001.101,"89,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"89,7",9)
+B
+"FRV1K",1130580001.101,"89,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"90,7",7)
+B
+"FRV1K",1130580001.101,"90,7",7,1)
+MU NQF0038 NUM8 HEP A RS
+"FRV1K",1130580001.101,"90,7",8)
+B
+"FRV1K",1130580001.101,"90,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"90,7",9)
+B
+"FRV1K",1130580001.101,"90,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"91,7",7)
+B
+"FRV1K",1130580001.101,"91,7",7,1)
+MU NQF0038 NUM9 RV RS
+"FRV1K",1130580001.101,"91,7",8)
+B
+"FRV1K",1130580001.101,"91,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"91,7",9)
+B
+"FRV1K",1130580001.101,"91,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"92,7",7)
+B
+"FRV1K",1130580001.101,"92,7",7,1)
+MU NQF0038 NUM10 INFLUENZA RS
+"FRV1K",1130580001.101,"92,7",8)
+B
+"FRV1K",1130580001.101,"92,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"92,7",9)
+B
+"FRV1K",1130580001.101,"92,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"93,7",7)
+B
+"FRV1K",1130580001.101,"93,7",7,1)
+MU NQF0038 NUM11 COMBO5 RS
+"FRV1K",1130580001.101,"93,7",8)
+B
+"FRV1K",1130580001.101,"93,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"93,7",9)
+B
+"FRV1K",1130580001.101,"93,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"FRV1K",1130580001.101,"94,7",7)
+B
+"FRV1K",1130580001.101,"94,7",7,1)
+MU NQF0038 NUM12 COMBO6 RS
+"FRV1K",1130580001.101,"94,7",8)
+B
+"FRV1K",1130580001.101,"94,7",8,1)
+MU NQF0038 DENOM RS
+"FRV1K",1130580001.101,"94,7",9)
+B
+"FRV1K",1130580001.101,"94,7",9,1)
+MU NQF0038 CHILDREN'S IMMUNIZATIONS
+"IX",1130580001.101,1130580001.101,"B",0)
+1130580001.101^B^New-Style B Index. Will be used as part of the key.^R^^F^IR^I^1130580001.101^^^^^LS
+"IX",1130580001.101,1130580001.101,"B",1)
+S ^C0Q(101,"B",$E(X,1,30),DA)=""
+"IX",1130580001.101,1130580001.101,"B",2)
+K ^C0Q(101,"B",$E(X,1,30),DA)
+"IX",1130580001.101,1130580001.101,"B",2.5)
+K ^C0Q(101,"B")
+"IX",1130580001.101,1130580001.101,"B",11.1,0)
+^.114IA^1^1
+"IX",1130580001.101,1130580001.101,"B",11.1,1,0)
+1^F^1130580001.101^.01^30^1^F
+"IX",1130580001.101,1130580001.101,"MU",0)
+1130580001.101^MU^MEANINGFUL USE YEAR KEY^R^^F^IR^I^1130580001.101^^^^^LS
+"IX",1130580001.101,1130580001.101,"MU",1)
+S ^C0Q(101,"MU",$E(X,1,30),DA)=""
+"IX",1130580001.101,1130580001.101,"MU",2)
+K ^C0Q(101,"MU",$E(X,1,30),DA)
+"IX",1130580001.101,1130580001.101,"MU",2.5)
+K ^C0Q(101,"MU")
+"IX",1130580001.101,1130580001.101,"MU",11.1,0)
+^.114IA^1^1
+"IX",1130580001.101,1130580001.101,"MU",11.1,1,0)
+1^F^1130580001.101^.3^30^1^F
+"KEY",1130580001.101,1130580001.101,"A",0)
+1130580001.101^A^P^562
+"KEY",1130580001.101,1130580001.101,"A",2,0)
+^.312IA^1^1
+"KEY",1130580001.101,1130580001.101,"A",2,1,0)
+.01^1130580001.101^1
+"KEYPTR",1130580001.101,1130580001.101,"A")
+1130580001.101^B
+"MBREQ")
+0
+"PGL",1130580001.101,0,2,1)
+NUMERATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;2^Q
+"PGL",1130580001.101,0,3,2)
+DENOMINATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;3^Q
+"PGL",1130580001.101,7,2,1.1)
+ALTERNATIVE NUMERATOR LIST^P1130580001.301'^C0Q(301,^7;2^Q
+"PGL",1130580001.101,7,3,2.1)
+ALTERNATIVE DENOMINATOR LIST^P1130580001.301'^C0Q(301,^7;3^Q
+"PGL",1130580001.101,7,4,1.5)
+NEGATIVE NUMERATOR LIST^P810.5'^PXRMXP(810.5,^7;4^Q
+"PGL",1130580001.101,7,5,1.51)
+ALTERNATE NEGATIVE NUM LIST^P1130580001.301'^C0Q(301,^7;5^Q
+"PGL",1130580001.101,7,7,1.2)
+NUMERATOR RULE SET^*P810.4'^PXRM(810.4,^7;7^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"PGL",1130580001.101,7,8,2.2)
+DENOMINATOR RULE SET^*P810.4'^PXRM(810.4,^7;8^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"PGL",1130580001.101,7,9,2.5)
+EXTRACT DEFINITION^P810.2'^PXRM(810.2,^7;9^Q
+"PKG",215,-1)
+1^1
+"PKG",215,0)
+QUALITY MEASURES^C0Q^Tracks and Prints Quality Measures
+"PKG",215,20,0)
+^9.402P^^
+"PKG",215,22,0)
+^9.49I^1^1
+"PKG",215,22,1,0)
+1.0^3120731^3120806^8
+"PKG",215,22,1,"PAH",1,0)
+3^3120806^8
+"PKG",215,22,1,"PAH",1,1,0)
+^^155^155^3120806
+"PKG",215,22,1,"PAH",1,1,1,0)
+ Summary
+"PKG",215,22,1,"PAH",1,1,2,0)
+ ======= 
+"PKG",215,22,1,"PAH",1,1,3,0)
+ This build contains the Quality Measures file (#1130580001.101) fully
+"PKG",215,22,1,"PAH",1,1,4,0)
+ populated with the Reminder Rule Sets and if applicable Reminder Extract 
+"PKG",215,22,1,"PAH",1,1,5,0)
+ definitions for use with the Quality Measures package for reporting for
+"PKG",215,22,1,"PAH",1,1,6,0)
+ Meaningful use Stage I. 
+"PKG",215,22,1,"PAH",1,1,7,0)
+ 
+"PKG",215,22,1,"PAH",1,1,8,0)
+ Source, Copyright, & Licensing:
+"PKG",215,22,1,"PAH",1,1,9,0)
+ ===============================
+"PKG",215,22,1,"PAH",1,1,10,0)
+ This patch to WorldVistA 2.0 was produced by Sam Habiel on a copy of Dew 
+"PKG",215,22,1,"PAH",1,1,11,0)
+Drop and tested on a virgin instance of WV EHR 3-09 patched with PXRM 2.0
+"PKG",215,22,1,"PAH",1,1,12,0)
+patches 12 and 17. The build was produced in July 2012.
+"PKG",215,22,1,"PAH",1,1,13,0)
+ Copyright WorldVistA 2012.
+"PKG",215,22,1,"PAH",1,1,14,0)
+ Licensed under GPL version 2 or later. Find it here: 
+"PKG",215,22,1,"PAH",1,1,15,0)
+http://www.gnu.org/licenses/gpl-2.0.html
+"PKG",215,22,1,"PAH",1,1,16,0)
+ Released through VISTA Forum.
+"PKG",215,22,1,"PAH",1,1,17,0)
+ 
+"PKG",215,22,1,"PAH",1,1,18,0)
+ Functionality:
+"PKG",215,22,1,"PAH",1,1,19,0)
+ ==============
+"PKG",215,22,1,"PAH",1,1,20,0)
+ This patch is a pure data patch. It only installs reference data in the 
+"PKG",215,22,1,"PAH",1,1,21,0)
+C0Q QUALITY MEASURE file (#1130580001.101). It relies on Reminder Package
+"PKG",215,22,1,"PAH",1,1,22,0)
+data (specifically rule sets and extracts) sent in C0Q*1.0*2.
+"PKG",215,22,1,"PAH",1,1,23,0)
+        
+"PKG",215,22,1,"PAH",1,1,24,0)
+ Package Elements:
+"PKG",215,22,1,"PAH",1,1,25,0)
+ =================
+"PKG",215,22,1,"PAH",1,1,26,0)
+ This build transports entries in the C0Q QUALITY MEASURE file.
+"PKG",215,22,1,"PAH",1,1,27,0)
+ 
+"PKG",215,22,1,"PAH",1,1,28,0)
+ Routines:
+"PKG",215,22,1,"PAH",1,1,29,0)
+ =========
+"PKG",215,22,1,"PAH",1,1,30,0)
+ <None>
+"PKG",215,22,1,"PAH",1,1,31,0)
+ 
+"PKG",215,22,1,"PAH",1,1,32,0)
+ Documentation:
+"PKG",215,22,1,"PAH",1,1,33,0)
+ <None besides this KIDS description>
+"PKG",215,22,1,"PAH",1,1,34,0)
+ 
+"PKG",215,22,1,"PAH",1,1,35,0)
+ Test Sites:
+"PKG",215,22,1,"PAH",1,1,36,0)
+ ===========
+"PKG",215,22,1,"PAH",1,1,37,0)
+ <None>
+"PKG",215,22,1,"PAH",1,1,38,0)
+ 
+"PKG",215,22,1,"PAH",1,1,39,0)
+ Compliance:
+"PKG",215,22,1,"PAH",1,1,40,0)
+ ===========
+"PKG",215,22,1,"PAH",1,1,41,0)
+ This software complies with the VA MUMPS Programming Standards and
+"PKG",215,22,1,"PAH",1,1,42,0)
+ Conventions (version 3 April 2007).
+"PKG",215,22,1,"PAH",1,1,43,0)
+ 
+"PKG",215,22,1,"PAH",1,1,44,0)
+ Installation Instructions:
+"PKG",215,22,1,"PAH",1,1,45,0)
+ ==========================
+"PKG",215,22,1,"PAH",1,1,46,0)
+ Pre-installation:
+"PKG",215,22,1,"PAH",1,1,47,0)
+ 
+"PKG",215,22,1,"PAH",1,1,48,0)
+ Prerequisite patches: (both found on the trac server here:
+"PKG",215,22,1,"PAH",1,1,49,0)
+ https://trac.opensourcevista.net/svn/qrda/C0Q/trunk/kids/)
+"PKG",215,22,1,"PAH",1,1,50,0)
+  C0Q*1.0*2
+"PKG",215,22,1,"PAH",1,1,51,0)
+  QUALITY MEASURES 1.0
+"PKG",215,22,1,"PAH",1,1,52,0)
+ 
+"PKG",215,22,1,"PAH",1,1,53,0)
+ Users can remain on the system while this patch is installed.
+"PKG",215,22,1,"PAH",1,1,54,0)
+ 
+"PKG",215,22,1,"PAH",1,1,55,0)
+ Install Time - less than 1 minute.
+"PKG",215,22,1,"PAH",1,1,56,0)
+ 
+"PKG",215,22,1,"PAH",1,1,57,0)
+ 1.  LOAD TRANSPORT GLOBAL
+"PKG",215,22,1,"PAH",1,1,58,0)
+ 
+"PKG",215,22,1,"PAH",1,1,59,0)
+     Choose the PackMan message containing this patch and invoke the
+"PKG",215,22,1,"PAH",1,1,60,0)
+     INSTALL/CHECK MESSAGE PackMan option to unload the build, or 
+"PKG",215,22,1,"PAH",1,1,61,0)
+     Use the Load a Distribution option in KIDS to load it from a 
+"PKG",215,22,1,"PAH",1,1,62,0)
+     host file.
+"PKG",215,22,1,"PAH",1,1,63,0)
+ 
+"PKG",215,22,1,"PAH",1,1,64,0)
+ 2.  START UP KIDS
+"PKG",215,22,1,"PAH",1,1,65,0)
+ 
+"PKG",215,22,1,"PAH",1,1,66,0)
+      Start up the Kernel Installation and Distribution System Menu
+"PKG",215,22,1,"PAH",1,1,67,0)
+      [XPD MAIN]:
+"PKG",215,22,1,"PAH",1,1,68,0)
+ 
+"PKG",215,22,1,"PAH",1,1,69,0)
+           Edits and Distribution ...
+"PKG",215,22,1,"PAH",1,1,70,0)
+           Utilities ...
+"PKG",215,22,1,"PAH",1,1,71,0)
+           Installation ...
+"PKG",215,22,1,"PAH",1,1,72,0)
+ 
+"PKG",215,22,1,"PAH",1,1,73,0)
+ Select Kernel Installation & Distribution System Option: INStallation
+"PKG",215,22,1,"PAH",1,1,74,0)
+                                                          ---
+"PKG",215,22,1,"PAH",1,1,75,0)
+           Load a Distribution
+"PKG",215,22,1,"PAH",1,1,76,0)
+           Print Transport Global
+"PKG",215,22,1,"PAH",1,1,77,0)
+           Compare Transport Global to Current System
+"PKG",215,22,1,"PAH",1,1,78,0)
+           Verify Checksums in Transport Global
+"PKG",215,22,1,"PAH",1,1,79,0)
+           Install Package(s)
+"PKG",215,22,1,"PAH",1,1,80,0)
+           Restart Install of Package(s)
+"PKG",215,22,1,"PAH",1,1,81,0)
+           Unload a Distribution
+"PKG",215,22,1,"PAH",1,1,82,0)
+           Backup a Transport Global
+"PKG",215,22,1,"PAH",1,1,83,0)
+ 
+"PKG",215,22,1,"PAH",1,1,84,0)
+ Select Installation Option:
+"PKG",215,22,1,"PAH",1,1,85,0)
+ 
+"PKG",215,22,1,"PAH",1,1,86,0)
+ 3.  Select Installation Option:
+"PKG",215,22,1,"PAH",1,1,87,0)
+ 
+"PKG",215,22,1,"PAH",1,1,88,0)
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+"PKG",215,22,1,"PAH",1,1,89,0)
+             NAME, enter C0Q*1.0*3):
+"PKG",215,22,1,"PAH",1,1,90,0)
+ 
+"PKG",215,22,1,"PAH",1,1,91,0)
+     a.  Backup a Transport Global - This option will create a backup
+"PKG",215,22,1,"PAH",1,1,92,0)
+         message of any routines exported with this patch. It will not
+"PKG",215,22,1,"PAH",1,1,93,0)
+         backup any other changes such as DD's or templates.
+"PKG",215,22,1,"PAH",1,1,94,0)
+     b.  Compare Transport Global to Current System - This option will
+"PKG",215,22,1,"PAH",1,1,95,0)
+         allow you to view all changes that will be made when this patch
+"PKG",215,22,1,"PAH",1,1,96,0)
+         is installed.  It compares all components of this patch
+"PKG",215,22,1,"PAH",1,1,97,0)
+         (routines, DD's, templates, etc.).
+"PKG",215,22,1,"PAH",1,1,98,0)
+     c.  Verify Checksums in Transport Global - This option will allow
+"PKG",215,22,1,"PAH",1,1,99,0)
+         you to ensure the integrity of the routines that are in the
+"PKG",215,22,1,"PAH",1,1,100,0)
+         transport global.
+"PKG",215,22,1,"PAH",1,1,101,0)
+ 
+"PKG",215,22,1,"PAH",1,1,102,0)
+ 4.  Select Installation Option: Install Package(s)
+"PKG",215,22,1,"PAH",1,1,103,0)
+ 
+"PKG",215,22,1,"PAH",1,1,104,0)
+     **This is the step to start the installation of this KIDS patch:
+"PKG",215,22,1,"PAH",1,1,105,0)
+ 
+"PKG",215,22,1,"PAH",1,1,106,0)
+     a.  Choose the Install Package(s) option to start the patch install
+"PKG",215,22,1,"PAH",1,1,107,0)
+         and enter "C0Q*1.0*3" at the INSTALL NAME prompt.
+"PKG",215,22,1,"PAH",1,1,108,0)
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+"PKG",215,22,1,"PAH",1,1,109,0)
+         Install? NO//'  answer NO
+"PKG",215,22,1,"PAH",1,1,110,0)
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+"PKG",215,22,1,"PAH",1,1,111,0)
+         NO//'  answer NO
+"PKG",215,22,1,"PAH",1,1,112,0)
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+"PKG",215,22,1,"PAH",1,1,113,0)
+         and Protocols? NO//'  answer NO
+"PKG",215,22,1,"PAH",1,1,114,0)
+ 
+"PKG",215,22,1,"PAH",1,1,115,0)
+ 
+"PKG",215,22,1,"PAH",1,1,116,0)
+Here is an example installation log.
+"PKG",215,22,1,"PAH",1,1,117,0)
+Select INSTALL NAME: C0Q*1.0*3       Loaded from Distribution     Loaded 
+"PKG",215,22,1,"PAH",1,1,118,0)
+from Di
+"PKG",215,22,1,"PAH",1,1,119,0)
+stribution  8/3/12@16:32:30
+"PKG",215,22,1,"PAH",1,1,120,0)
+     => SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+"PKG",215,22,1,"PAH",1,1,121,0)
+ 
+"PKG",215,22,1,"PAH",1,1,122,0)
+This Distribution was loaded on Aug 03, 2012@16:32:30 with header of 
+"PKG",215,22,1,"PAH",1,1,123,0)
+   SDFGHJKL  ;Created on Aug 03, 2012@16:31:28
+"PKG",215,22,1,"PAH",1,1,124,0)
+   It consisted of the following Install(s):
+"PKG",215,22,1,"PAH",1,1,125,0)
+      C0Q*1.0*3
+"PKG",215,22,1,"PAH",1,1,126,0)
+ 
+"PKG",215,22,1,"PAH",1,1,127,0)
+   Checking C0Q*1.0*3 for overlap with VOE 1.0 . OK
+"PKG",215,22,1,"PAH",1,1,128,0)
+            No overlap found
+"PKG",215,22,1,"PAH",1,1,129,0)
+DEVICE: HOME// PHOME  HOME PRINTER
+"PKG",215,22,1,"PAH",1,1,130,0)
+ 
+"PKG",215,22,1,"PAH",1,1,131,0)
+ 
+"PKG",215,22,1,"PAH",1,1,132,0)
+ Install Started for C0Q*1.0*3 : 
+"PKG",215,22,1,"PAH",1,1,133,0)
+               Aug 03, 2012@16:35:24
+"PKG",215,22,1,"PAH",1,1,134,0)
+ 
+"PKG",215,22,1,"PAH",1,1,135,0)
+Build Distribution Date: Aug 03, 2012
+"PKG",215,22,1,"PAH",1,1,136,0)
+ 
+"PKG",215,22,1,"PAH",1,1,137,0)
+ Installing Routines:.
+"PKG",215,22,1,"PAH",1,1,138,0)
+               Aug 03, 2012@16:35:24
+"PKG",215,22,1,"PAH",1,1,139,0)
+ 
+"PKG",215,22,1,"PAH",1,1,140,0)
+ Installing Data Dictionaries: ..
+"PKG",215,22,1,"PAH",1,1,141,0)
+               Aug 03, 2012@16:35:24
+"PKG",215,22,1,"PAH",1,1,142,0)
+ 
+"PKG",215,22,1,"PAH",1,1,143,0)
+ Installing Data: 
+"PKG",215,22,1,"PAH",1,1,144,0)
+               Aug 03, 2012@16:35:24
+"PKG",215,22,1,"PAH",1,1,145,0)
+ 
+"PKG",215,22,1,"PAH",1,1,146,0)
+ Updating Routine file.....
+"PKG",215,22,1,"PAH",1,1,147,0)
+ 
+"PKG",215,22,1,"PAH",1,1,148,0)
+ Updating KIDS files.......
+"PKG",215,22,1,"PAH",1,1,149,0)
+ 
+"PKG",215,22,1,"PAH",1,1,150,0)
+ C0Q*1.0*3 Installed. 
+"PKG",215,22,1,"PAH",1,1,151,0)
+               Aug 03, 2012@16:35:24
+"PKG",215,22,1,"PAH",1,1,152,0)
+ 
+"PKG",215,22,1,"PAH",1,1,153,0)
+ Not a VA primary domain
+"PKG",215,22,1,"PAH",1,1,154,0)
+ 
+"PKG",215,22,1,"PAH",1,1,155,0)
+ NO Install Message sent 
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"SEC","^DD",1130580001.101,1130580001.101,3.1,9)
+
+"SEC","^DIC",1130580001.101,1130580001.101,0,"AUDIT")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"DD")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"DEL")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"LAYGO")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"RD")
+@
+"SEC","^DIC",1130580001.101,1130580001.101,0,"WR")
+@
+"VER")
+8.0^22.0
+"^DD",1130580001.101,1130580001.101,0)
+FIELD^^.3^18
+"^DD",1130580001.101,1130580001.101,0,"DDA")
+N
+"^DD",1130580001.101,1130580001.101,0,"DT")
+3111201
+"^DD",1130580001.101,1130580001.101,0,"ID",.7)
+W:$D(^(5)) "   ",$P(^(5),U,1)
+"^DD",1130580001.101,1130580001.101,0,"IX","B",1130580001.101,.01)
+
+"^DD",1130580001.101,1130580001.101,0,"NM","C0Q QUALITY MEASURE")
+
+"^DD",1130580001.101,1130580001.101,0,"PT",1130580001.2011,.01)
+
+"^DD",1130580001.101,1130580001.101,0,"VRPK")
+C0Q
+"^DD",1130580001.101,1130580001.101,.01,0)
+NAME^RF^^0;1^K:$L(X)>30!($L(X)<1)!'(X'?1P.E) X
+"^DD",1130580001.101,1130580001.101,.01,.1)
+MEASURE NAME
+"^DD",1130580001.101,1130580001.101,.01,1,0)
+^.1
+"^DD",1130580001.101,1130580001.101,.01,1,1,0)
+1130580001.101^B
+"^DD",1130580001.101,1130580001.101,.01,1,1,1)
+S ^C0Q(101,"B",$E(X,1,30),DA)=""
+"^DD",1130580001.101,1130580001.101,.01,1,1,2)
+K ^C0Q(101,"B",$E(X,1,30),DA)
+"^DD",1130580001.101,1130580001.101,.01,3)
+Answer must be 1-30 characters in length
+"^DD",1130580001.101,1130580001.101,.01,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,.3,0)
+MU YEAR KEY^F^^7;6^K:$L(X)>30!($L(X)<1) X
+"^DD",1130580001.101,1130580001.101,.3,.1)
+MEANINGFUL USE YEAR KEY
+"^DD",1130580001.101,1130580001.101,.3,3)
+Answer must be 1-30 characters in length.
+"^DD",1130580001.101,1130580001.101,.3,"DT")
+3111201
+"^DD",1130580001.101,1130580001.101,.5,0)
+TITLE^F^^1;1^K:$L(X)>240!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.5,.1)
+MEASURE TITLE
+"^DD",1130580001.101,1130580001.101,.5,3)
+Answer must be 3-240 characters in length
+"^DD",1130580001.101,1130580001.101,.5,"DT")
+3110430
+"^DD",1130580001.101,1130580001.101,.61,0)
+VERY LONG DESCRIPTION^1130580001.111^^6;0
+"^DD",1130580001.101,1130580001.101,.7,0)
+DISPLAY NAME^F^^5;1^K:$L(X)>240!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.7,.1)
+QRDA DISPLAY NAME
+"^DD",1130580001.101,1130580001.101,.7,3)
+Answer must be 3-240 characters in length
+"^DD",1130580001.101,1130580001.101,.7,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,.8,0)
+REPORTING NAME^F^^7;1^K:$L(X)>30!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,.8,.1)
+REPORTING MEASURE NAME
+"^DD",1130580001.101,1130580001.101,.8,3)
+Answer must be 3-30 characters in length
+"^DD",1130580001.101,1130580001.101,.8,"DT")
+3110615
+"^DD",1130580001.101,1130580001.101,1,0)
+NUMERATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;2^Q
+"^DD",1130580001.101,1130580001.101,1,.1)
+MEASURE NUMERATOR PATIENT LIST
+"^DD",1130580001.101,1130580001.101,1,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,1.1,0)
+ALTERNATIVE NUMERATOR LIST^P1130580001.301'^C0Q(301,^7;2^Q
+"^DD",1130580001.101,1130580001.101,1.1,"DT")
+3110805
+"^DD",1130580001.101,1130580001.101,1.2,0)
+NUMERATOR RULE SET^*P810.4'^PXRM(810.4,^7;7^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"^DD",1130580001.101,1130580001.101,1.2,3)
+Enter the reminder rule set to use for this measure.
+"^DD",1130580001.101,1130580001.101,1.2,12)
+If the type of the reminder list rule is a Rule Set.
+"^DD",1130580001.101,1130580001.101,1.2,12.1)
+S DIC("S")="I $P(^(0),U,3)=3"
+"^DD",1130580001.101,1130580001.101,1.2,21,0)
+^^5^5^3120716^
+"^DD",1130580001.101,1130580001.101,1.2,21,1,0)
+This is the numerator reminder rule set to use for the quality measure.
+"^DD",1130580001.101,1130580001.101,1.2,21,2,0)
+ 
+"^DD",1130580001.101,1130580001.101,1.2,21,3,0)
+The rule set is used to generate a patient list, which this package 
+"^DD",1130580001.101,1130580001.101,1.2,21,4,0)
+referneces. The contents of the patient list will produce the count for 
+"^DD",1130580001.101,1130580001.101,1.2,21,5,0)
+the measure. This count is for the numerator.
+"^DD",1130580001.101,1130580001.101,1.2,"DT")
+3120716
+"^DD",1130580001.101,1130580001.101,1.5,0)
+NEGATIVE NUMERATOR LIST^P810.5'^PXRMXP(810.5,^7;4^Q
+"^DD",1130580001.101,1130580001.101,1.5,.1)
+LIST OF PATIENTS THAT DO NOT MEET THE REQUIREMENTS
+"^DD",1130580001.101,1130580001.101,1.5,"DT")
+3110809
+"^DD",1130580001.101,1130580001.101,1.51,0)
+ALTERNATE NEGATIVE NUM LIST^P1130580001.301'^C0Q(301,^7;5^Q
+"^DD",1130580001.101,1130580001.101,1.51,.1)
+NEGATIVE NUMERATOR LIST IN C0Q PATIENT LIST FILE
+"^DD",1130580001.101,1130580001.101,1.51,"DT")
+3110809
+"^DD",1130580001.101,1130580001.101,2,0)
+DENOMINATOR PATIENT LIST^P810.5'^PXRMXP(810.5,^0;3^Q
+"^DD",1130580001.101,1130580001.101,2,.1)
+MEASURE DENOMINATOR PATIENT LIST
+"^DD",1130580001.101,1130580001.101,2,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,2.1,0)
+ALTERNATIVE DENOMINATOR LIST^P1130580001.301'^C0Q(301,^7;3^Q
+"^DD",1130580001.101,1130580001.101,2.1,"DT")
+3110805
+"^DD",1130580001.101,1130580001.101,2.2,0)
+DENOMINATOR RULE SET^*P810.4'^PXRM(810.4,^7;8^S DIC("S")="I $P(^(0),U,3)=3" D ^DIC K DIC S DIC=$G(DIE),X=+Y K:Y<0 X
+"^DD",1130580001.101,1130580001.101,2.2,3)
+Enter the reminder rule set to use for this measure.
+"^DD",1130580001.101,1130580001.101,2.2,12)
+If the type of the reminder list rule is a Rule Set.
+"^DD",1130580001.101,1130580001.101,2.2,12.1)
+S DIC("S")="I $P(^(0),U,3)=3"
+"^DD",1130580001.101,1130580001.101,2.2,21,0)
+^^5^5^3120716^
+"^DD",1130580001.101,1130580001.101,2.2,21,1,0)
+This is the denominator reminder rule set to use for the quality measure.
+"^DD",1130580001.101,1130580001.101,2.2,21,2,0)
+ 
+"^DD",1130580001.101,1130580001.101,2.2,21,3,0)
+The rule set is used to generate a patient list, which this package
+"^DD",1130580001.101,1130580001.101,2.2,21,4,0)
+referneces. The contents of the patient list will produce the count for
+"^DD",1130580001.101,1130580001.101,2.2,21,5,0)
+the measure. This count is for the denominator.
+"^DD",1130580001.101,1130580001.101,2.2,"DT")
+3120716
+"^DD",1130580001.101,1130580001.101,2.5,0)
+EXTRACT DEFINITION^P810.2'^PXRM(810.2,^7;9^Q
+"^DD",1130580001.101,1130580001.101,2.5,3)
+Select a Reminder Extract Definition for this measure
+"^DD",1130580001.101,1130580001.101,2.5,21,0)
+^^4^4^3120726^
+"^DD",1130580001.101,1130580001.101,2.5,21,1,0)
+If this measure depends upon a reminder extract definition, you can add 
+"^DD",1130580001.101,1130580001.101,2.5,21,2,0)
+this extract definition here. This will alter how the Quality Measures 
+"^DD",1130580001.101,1130580001.101,2.5,21,3,0)
+package computes the measure to use the extract in addition and prior to
+"^DD",1130580001.101,1130580001.101,2.5,21,4,0)
+the rule sets.
+"^DD",1130580001.101,1130580001.101,2.5,"DT")
+3120726
+"^DD",1130580001.101,1130580001.101,3,0)
+QRDA TEMPLATE ROOT^F^^0;4^K:$L(X)>120!($L(X)<3) X
+"^DD",1130580001.101,1130580001.101,3,.1)
+MEASURE TEMPLATE ROOT FOR QRDA DOCUMENT
+"^DD",1130580001.101,1130580001.101,3,3)
+Answer must be 3-120 characters in length
+"^DD",1130580001.101,1130580001.101,3,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,3.1,0)
+QRDA MEASURE SYSTEM OID^CJ^^ ; ^S X="2.16.840.1.113883.3.249.12"
+"^DD",1130580001.101,1130580001.101,3.1,.1)
+QRDA SYSTEM OID (FIXED)
+"^DD",1130580001.101,1130580001.101,3.1,9.01)
+
+"^DD",1130580001.101,1130580001.101,3.1,9.1)
+S X="2.16.840.1.113883.3.249.12"
+"^DD",1130580001.101,1130580001.101,3.1,"DT")
+3101012
+"^DD",1130580001.101,1130580001.101,3.2,0)
+QRDA CODE^F^^4;1^K:$L(X)>80!($L(X)<1) X
+"^DD",1130580001.101,1130580001.101,3.2,.1)
+QRDA MEASURE CODE
+"^DD",1130580001.101,1130580001.101,3.2,3)
+Answer must be 1-80 characters in length
+"^DD",1130580001.101,1130580001.101,3.2,"DT")
+3101012
+"^DD",1130580001.101,1130580001.111,0)
+VERY LONG DESCRIPTION SUB-FIELD^^.01^1
+"^DD",1130580001.101,1130580001.111,0,"DT")
+3101013
+"^DD",1130580001.101,1130580001.111,0,"NM","VERY LONG DESCRIPTION")
+
+"^DD",1130580001.101,1130580001.111,0,"UP")
+1130580001.101
+"^DD",1130580001.101,1130580001.111,.01,0)
+VERY LONG DESCRIPTION^Wx^^0;1
+"^DD",1130580001.101,1130580001.111,.01,.1)
+LONGER DESCRIPTION - IF IT DOESN'T FIT IN .6
+"^DD",1130580001.101,1130580001.111,.01,3)
+LONGER DESCRIPTION - INSTEAD OF LONG DESCRIPTION
+"^DD",1130580001.101,1130580001.111,.01,"DT")
+3101013
+"^DIC",1130580001.101,1130580001.101,0)
+C0Q QUALITY MEASURE^1130580001.101
+"^DIC",1130580001.101,1130580001.101,0,"GL")
+^C0Q(101,
+"^DIC",1130580001.101,"B","C0Q QUALITY MEASURE",1130580001.101)
+
+**END**
+**END**

@@ -1,0 +1,4 @@
+Documentation for the package as well as installation can be found in 
+Vistapedia.
+
+http://www.vistapedia.com/index.php/C0Q_Quality_Reporting_1.0

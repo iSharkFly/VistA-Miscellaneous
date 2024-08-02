@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+   <realmCode code="US"/>
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+   <templateId root="2.16.840.1.113883.10.20.12"/>
+   <templateId root="2.16.840.1.113883.3.249.11.100.1"/>
+   <id root="2.16.840.1.113883.3.543" extension="@@@UUID-DOC@@@"/>
+   <code code="55182-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Quality Measure Report"/>
+   <title>QRDA Incidence Report</title>
+   <effectiveTime value="20100703"/>
+   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+   <languageCode code="en-US"/>
+   <setId root="2.16.840.1.113883.3.543" extension="@@@UUID-SET@@@"/>
+   <versionNumber value="1"/>
+   <recordTarget>
+      <patientRole>
+         <id extension="666000669" root="SSN"/>
+         <addr use="H">
+            <streetAddressLine>Any Street</streetAddressLine>
+            <city>Any Town</city>
+            <state/>
+            <postalCode/>
+         </addr>
+         <telecom/>
+         <patient>
+            <name>
+               <given>OUTPATIENT</given>
+               <family>SIXTYNINE</family>
+            </name>
+            <administrativeGenderCode displayName="MALE" code="M" codeSystemName="HL7 AdministrativeGender" codeSystem=""/>
+            <birthTime value="19450309120000"/>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <author>
+      <time value="20100703"/>
+      <assignedAuthor>
+         <id root="2.16.840.1.113883.3.249.6" extension="100001"/>
+         <assignedPerson>
+            <name>
+               <given>Nancy</given>
+               <family>Anthracite</family>
+               <suffix>MD</suffix>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+            <name>WorldVistA Test Clinic</name>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <informant>
+      <assignedEntity>
+         <id nullFlavor="NA"/>
+         <representedOrganization>
+            <id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+            <name>World VistA Test Clinic</name>
+         </representedOrganization>
+      </assignedEntity>
+   </informant>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization>
+            <id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+            <name>WorldVistA Test Clinic</name>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <legalAuthenticator>
+      <time value="20100703"/>
+      <signatureCode code="S"/>
+      <assignedEntity>
+         <id root="2.16.840.1.113883.3.543" extension="111111"/>
+         <assignedPerson>
+            <name>
+               <given>Nancy</given>
+               <family>Anthracite</family>
+               <suffix>MD</suffix>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.16.840.1.113883.3.543" extension="1558574526"/>
+            <name>WorldVistA Test Clinic</name>
+         </representedOrganization>
+      </assignedEntity>
+   </legalAuthenticator>
+   <participant typeCode="PRF">
+      <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+      <associatedEntity classCode="PROV">
+         <id root="2.16.840.1.113883.3.249.6" extension="111111"/>
+         <associatedPerson>
+            <name>
+               <prefix>Dr.</prefix>
+               <given>Nancy</given>
+               <family>Anthracite</family>
+            </name>
+         </associatedPerson>
+      </associatedEntity>
+   </participant>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <templateId root="2.16.840.1.113883.3.249.11.50"/>
+               <code code="55185-3" codeSystem="2.16.840.1.113883.6.1"/>
+               <title>Measure set: CMS EHR Measure Set</title>
+               <text>2010 Measures Set Measures</text>
+               <component>
+                  <section>
+                     <templateId root="2.16.840.1.113883.3.249.11.2"/>
+                     <code code="55186-1" codeSystem="2.16.840.1.113883.6.1"/>
+                     <title>Measure Section</title>
+                     <text>
+                        <list>
+                           <item>CMS Measure #1: Diabetes Mellitus: Hemoglobin A1c Poor Control in Diabetes Mellitus</item>
+                        </list>
+                     </text>
+                     <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="DEF">
+                           <id root="2.16.840.1.113883.3.249.11.2"/>
+                           <code code="PQRI-1" codeSystem="2.16.840.1.113883.3.249.12" displayName="Hemoglobin A1c Poor Control in Diabetes Mellitus"/>
+                           <text>Percentage of patients 18 through 75 years with diabetes mellitus who had most recent hemoglobin A1C greater than 9.0%</text>
+                           <statusCode code="completed"/>
+                        </act>
+                     </entry>
+                     <component>
+                        <section>
+                           <code code="55187-9" codeSystem="2.16.840.1.113883.6.1"/>
+                           <title>Reporting Parameters</title>
+                           <text>
+                              <list>
+                                 <item>Reporting Period Jan 1, 2010 to Dec 31, 2010</item>
+                              </list>
+                           </text>
+                           <entry>
+                              <act classCode="ACT" moodCode="EVN">
+                                 <code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters"/>
+                                 <effectiveTime>
+                                    <low value="20100101"/>
+                                    <high value="20101231"/>
+                                 </effectiveTime>
+                              </act>
+                           </entry>
+                        </section>
+                     </component>
+                     <component>
+                        <section>
+                           <code code="55188-7" codeSystem="2.16.840.1.113883.6.1"/>
+                           <title>Patient Data</title>
+                        </section>
+                     </component>
+                     <component>
+                        <section>
+                           <templateId root="2.16.840.1.113883.3.88.11.83.103" assigningAuthorityName="HITSP/C83"/>
+                           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" assigningAuthorityName="IHE PCC"/>
+                           <templateId root="2.16.840.1.113883.10.20.1.11" assigningAuthorityName="HL7 CCD"/>
+                           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+                           <title>Problems</title>
+                           <text>
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th>Type</th>
+                                       <th>Date</th>
+                                       <th>Code</th>
+                                       <th>Description</th>
+                                       <th>Status</th>
+                                       <th>Source</th>
+                                    </tr>
+                                    <tr>
+                                       <td>Problem</td>
+                                       <td>
+                                          <table>
+                                             <tbody>
+                                                <tr xmlns="">
+                                                   <td>Sep 16, 2010</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </td>
+                                       <td>250.00 (ICD9CM)
+		</td>
+                                       <td ID="PROBLEM1">Diabetes Mellitus without mention of Complication, type II or unspecified type,</td>
+                                       <td>Active</td>
+                                       <td>MATTHEW M KING   </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </text>
+                           <entry typeCode="DRIV">
+                              <act classCode="ACT" moodCode="EVN">
+                                 <templateId root="2.16.840.1.113883.10.20.1.27"/>
+                                 <id root="PROBLEM1" extension="CCRObjectID"/>
+                                 <code nullFlavor="NA"/>
+                                 <performer typeCode="PRF">
+                                    <assignedEntity>
+                                       <id extension="ACTORPROVIDER_10000000183" root="CCRActorID"/>
+                                       <addr use="WP">
+                                          <streetAddressLine>VA MEDICAL CENTER</streetAddressLine>
+                                          <city>ALBANY</city>
+                                          <state>NY</state>
+                                          <postalCode>12180</postalCode>
+                                       </addr>
+                                       <telecom/>
+                                       <assignedPerson>
+                                          <name>
+                                             <given>MATTHEW</given>
+                                             <given>M</given>
+                                             <family>KING</family>
+                                          </name>
+                                       </assignedPerson>
+                                    </assignedEntity>
+                                 </performer>
+                                 <entryRelationship typeCode="SUBJ">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="CCD"/>
+                                       <templateId root="2.16.840.1.113883.3.249.11.100.8"/>
+                                       <id root="PROBLEM1" extension="CCRObjectID"/>
+                                       <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                                       <statusCode code="completed"/>
+                                       <text>
+                                          <reference value="#PROBLEM1"/>
+                                       </text>
+                                       <effectiveTime>
+                                          <low value="20100916"/>
+                                          <high nullFlavor="UNK"/>
+                                       </effectiveTime>
+                                       <value displayName="Diabetes Mellitus without mention of Complication, type II or unspecified type," code="250.00" codeSystemName="ICD9CM" codeSystem=""/>
+                                       <entryRelationship typeCode="REFR">
+                                          <observation classCode="OBS" moodCode="EVN">
+                                             <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                                             <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
+                                             <statusCode code="completed"/>
+                                             <value>
+                                                <originalText>Active</originalText>
+                                             </value>
+                                          </observation>
+                                       </entryRelationship>
+                                    </observation>
+                                 </entryRelationship>
+                              </act>
+                           </entry>
+                        </section>
+                     </component>
+                     <component>
+                        <section>
+                           <templateId root="2.16.840.1.113883.10.20.1.12"/>
+                           <code code="47519-4" codeSystem="2.16.840.1.113883.6.1"/>
+                           <title>Procedures</title>
+                           <text>
+                              <table>
+                                 <tbody>
+                                    <tr>
+                                       <th>Type</th>
+                                       <th>Date</th>
+                                       <th>Code</th>
+                                       <th>Description</th>
+                                       <th>Location</th>
+                                       <th>Substance</th>
+                                       <th>Method</th>
+                                       <th>Position</th>
+                                       <th>Site</th>
+                                       <th>Status</th>
+                                       <th>Source</th>
+                                    </tr>
+                                    <tr id="PROCEDURE_4067_7">
+                                       <td/>
+                                       <table>
+                                          <tbody>
+                                             <tr xmlns="">
+                                                <td>Procedure Date:
+          </td>
+                                                <td>Sep 17, 2010</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <td>99213 (CPT-4)
+		</td>
+                                       <td>Office/Outpatient Visit of an Established Patient requiring (2 of 3) an Expanded History, an Exam and Medical Decision Making of Low Complexity (CPT-4 99213)</td>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td>Completed</td>
+                                       <td>MATTHEW M KING   </td>
+                                    </tr>
+                                    <tr id="PROCEDURE_4066_4">
+                                       <td/>
+                                       <table>
+                                          <tbody>
+                                             <tr xmlns="">
+                                                <td>Procedure Date:
+          </td>
+                                                <td>Sep 16, 2010</td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <td>99214 (CPT-4)
+		</td>
+                                       <td>Office/Outpatient Visit of an Established Patient requiring (2 of 3) a Detailed History, an Exam and Medical Decision Making of Moderate Complexity (CPT-4 99214)</td>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td/>
+                                       <td>Completed</td>
+                                       <td>MATTHEW M KING   </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </text>
+                           <entry typeCode="DRIV">
+                              <procedure classCode="PROC" moodCode="EVN">
+                                 <templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
+                                 <templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
+                                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
+                                 <id root="PROCEDURE_4067_7" extension="CCRObjectID"/>
+                                 <code displayName="Office/Outpatient Visit of an Established Patient requiring (2 of 3) an Expanded History, an Exam and Medical Decision Making of Low Complexity (CPT-4 99213)" code="99213" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+                                 <text>
+                                    <reference value="#PROCEDURE_4067_7"/>
+                                 </text>
+                                 <statusCode code="completed"/>
+                                 <effectiveTime>
+                                    <low value="20100917"/>
+                                    <high nullFlavor="UNK"/>
+                                 </effectiveTime>
+                              </procedure>
+                           </entry>
+                           <entry typeCode="DRIV">
+                              <procedure classCode="PROC" moodCode="EVN">
+                                 <templateId root="2.16.840.1.113883.3.88.11.83.17" assigningAuthorityName="HITSP C83"/>
+                                 <templateId root="2.16.840.1.113883.10.20.1.29" assigningAuthorityName="CCD"/>
+                                 <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.19" assigningAuthorityName="IHE PCC"/>
+                                 <id root="PROCEDURE_4066_4" extension="CCRObjectID"/>
+                                 <code displayName="Office/Outpatient Visit of an Established Patient requiring (2 of 3) a Detailed History, an Exam and Medical Decision Making of Moderate Complexity (CPT-4 99214)" code="99214" codeSystemName="CPT-4" codeSystem="2.16.840.1.113883.6.12"/>
+                                 <text>
+                                    <reference value="#PROCEDURE_4066_4"/>
+                                 </text>
+                                 <statusCode code="completed"/>
+                                 <effectiveTime>
+                                    <low value="20100916"/>
+                                    <high nullFlavor="UNK"/>
+                                 </effectiveTime>
+                              </procedure>
+                           </entry>
+                        </section>
+                     </component>
+                     <component>
+                        <section>
+                           <templateId root="2.16.840.1.113883.10.20.1.9"/>
+                           <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
+                           <title>Payers</title>
+                           <text/>
+                           <entry typeCode="DRIV">
+                              <act classCode="ACT" moodCode="DEF">
+                                 <templateId root="2.16.840.1.113883.10.20.1.20"/>
+                                 <id root="2.16.840.1.113883.3.543" extension="@@@UUID-PAYER@@@"/>
+                                 <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
+                                 <statusCode code="completed"/>
+                                 <entryRelationship typeCode="COMP">
+                                    <act classCode="ACT" moodCode="EVN">
+                                       <templateId root="2.16.840.1.113883.10.20.1.26"/>
+                                       <templateId root="2.16.840.1.113883.3.249.11.100.7"/>
+                                       <id root="dbbb6311-8a4d-11df-a4ee-0800200c9c66"/>
+                                       <code code="PUBLICPOL" codeSystem="2.16.840.1.113883.5.4" displayName="Public Healthcare"/>
+                                       <statusCode code="completed"/>
+                                       <performer typeCode="PRF">
+                                          <assignedEntity>
+                                             <id root="2.16.840.1.113883.12.86" extension="MC"/>
+                                          </assignedEntity>
+                                       </performer>
+                                       <participant typeCode="COV">
+                                          <participantRole>
+                                             <id root="2.16.840.1.113883.4.1" extension="@@SSN@@"/>
+                                             <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self"/>
+                                          </participantRole>
+                                       </participant>
+                                    </act>
+                                 </entryRelationship>
+                              </act>
+                           </entry>
+                        </section>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

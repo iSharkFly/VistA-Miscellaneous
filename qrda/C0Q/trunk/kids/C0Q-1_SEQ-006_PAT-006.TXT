@@ -1,0 +1,469 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 23, 2012                      Designation: C0Q*1*6  TEST v
+Package : QUALITY MEASURES                  Priority   : MANDATORY
+Version : 1                                 Status     : UNDER DEVELOPMENT
+=============================================================================
+
+Subject:  Support for Model Measure Sets
+
+Category:  ROUTINE
+           INPUT TEMPLATE
+           ENHANCEMENT
+
+Description:
+===========
+ 
+$TXT Created by MANAGER,SYSTEM at BETA.VISTA-OFFICE.ORG  (KIDS) on Tuesday, 10/2
+3/12 at 13:11
+ 
+ Source, Copyright, & Licensing:
+ ===============================
+ This patch to WorldVistA 2.0 was produced in a WV 3/09 Environment by George
+Lily on 23 October 2012 and released through VISTA Forum.
+ 
+ (C) Geroge Lilly 2012
+ Licensed under Package License: AGPL v3.
+ 
+ http://www.gnu.org/licenses/agpl-3.0.html
+ 
+ Functionality:
+ ==============
+ This patch adds support for using model Measurement Sets for creating a new
+Measurement Sets based on the model Measurement Sets. Usage instructions will
+be found at the end of this patch message.
+ 
+ Support Tickets:
+ <None>
+ 
+ Package Elements:
+ =================
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+ 
+1130580001.401C0Q PARAMETER                YES   NO    NO                  NO
+Partial DD: subDD: 1130580001.401fld: 6.1
+                              fld: 6.2
+ 
+INPUT TEMPLATE:                                ACTION:
+   C0Q EDIT OUPATIENT PARMS    FILE #1130580001.401SEND TO SITE
+ 
+ROUTINE:                                       ACTION:
+   C0QMU12                                        SEND TO SITE
+   C0QMU123                                       SEND TO SITE
+ Test Sites:
+ ===========
+ <None> 
+ 
+ Compliance:
+ ===========
+ This software complies with the VA MUMPS Programming Standards and
+ Conventions (version 3 April 2007), with the following exception:
+ 
+ C0QMU12  * *  591 Lines,  20662 Bytes, Checksum: B351357107
+                S - Routine exceeds SACC maximum size of 20000 (20662).
+                S - Routine code exceeds SACC maximum size of 15000 (16922).
+ 
+ 
+ This software has not been tested for 508 compliance.
+ 
+ Installation Instructions:
+ ==========================
+ Install Time - less than 1 minute
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0Q*1.0*6):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0Q*1.0*6" at the INSTALL NAME prompt. As part of the
+         Environment Check routine, the message below will display
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+Install Transcript:
+Select OPTION NAME: XPD MAIN       Kernel Installation & Distribution System
+ 
+Select Kernel Installation & Distribution System Option: INStallation
+ 
+Select Installation Option: 1  Load a Distribution
+Enter a Host File: C0Q*1.0*6
+ 
+KIDS Distribution saved on Oct 22, 2012@17:41:17
+Comment: FRDGHJKLFGHJKL
+ 
+This Distribution contains Transport Globals for the following Package(s):
+   C0Q*1.0*6
+Distribution OK!
+ 
+Want to Continue with Load? YES// 
+Loading Distribution...
+ 
+   C0Q*1.0*6
+Use INSTALL NAME: C0Q*1.0*6 to install this Distribution.
+ 
+Select Installation Option: 6  Install Package(s)
+Select INSTALL NAME: C0Q*1.0*6       Loaded from Distribution     Loaded from Di
+stribution  10/23/12@11:46:32
+     => FRDGHJKLFGHJKL  ;Created on Oct 22, 2012@17:41:17
+ 
+This Distribution was loaded on Oct 23, 2012@11:46:32 with header of 
+   FRDGHJKLFGHJKL  ;Created on Oct 22, 2012@17:41:17
+   It consisted of the following Install(s):
+      C0Q*1.0*6
+ 
+   Checking C0Q*1.0*6 for overlap with VOE 1.0 ... OK
+            No overlap found
+ 
+   Checking C0Q*1.0*6 for overlap with VOE 1.1 ... OK
+            No overlap found
+ 
+   Checking C0Q*1.0*6 for overlap with NO HOME 1.0 ... OK
+            No overlap found
+ 
+Checking Install for Package C0Q*1.0*6
+ 
+Install Questions for C0Q*1.0*6
+ 
+Incoming Files:
+ 
+   1130580001.401C0Q PARAMETER  (Partial Definition)
+Note:  You already have the 'C0Q PARAMETER' File.
+ 
+Want KIDS to INHIBIT LOGONs during the install? NO// 
+Want to DISABLE Scheduled Options, Menu Options, and Protocols? NO// 
+ 
+Enter the Device you want to print the Install messages.
+You can queue the install by enter a 'Q' at the device prompt.
+Enter a '^' to abort the install.
+ 
+DEVICE: HOME// 0;P-OTHER;80;9999  TELNET
+ 
+ Install Started for C0Q*1.0*6 : 
+               Oct 23, 2012@11:46:53
+ 
+Build Distribution Date: Oct 22, 2012
+ 
+ Installing Routines:...
+               Oct 23, 2012@11:46:53
+ 
+ Installing Data Dictionaries: ..
+               Oct 23, 2012@11:46:54
+ 
+ Installing PACKAGE COMPONENTS: 
+ 
+ Installing INPUT TEMPLATE..
+               Oct 23, 2012@11:46:54
+ 
+ Updating Routine file......
+ 
+ Updating KIDS files.......
+ 
+ C0Q*1.0*6 Installed. 
+               Oct 23, 2012@11:46:54
+ 
+ Not a VA primary domain
+ 
+ NO Install Message sent 
+ 
+Select Installation Option: 
+----------------------------
+ 
+Usage instructions:
+===================
+1. Create two measure sets, one for Performance Measures, and one for Quality
+Measures. If you have ones already created for other clinics, you can use them.
+It's okay for them to have filter lists, as these will be deleted by the
+software when the measure set is being copied.
+ 
+2. Attach these measure sets to an Outpatient Parameter in the fields: MODEL
+PERFORMANCE MEASURE SET and MODEL QUALITY MEASURE SET.  NB: The purpose of
+these fields is to generate the a measure set to use in the fields EP MU
+MEASUREMENT SET and EP QUALITY MEASUREMENT SET, respectively. If you have these
+filled out, the Model fields will have no effect. 
+ 
+3. Run the option EP UPDATE MU MEASURES. This create new measure sets based on
+the model measure sets and attach the appropriate filter lists.
+ 
+Miscellaneous remarks: If a model set is replaced and the option to update is
+reran, the behavior is not to delete the old created measure set but rather to
+merge the contents of the new model set into the old created measure set. I am
+not sure if this is the desirable behavior, but that is how it currently works.
+ 
+Transcript:
+Select QUALITY MEASUREMENT MENU Option: ?
+ 
+          COPY OVER PATIENT LISTS
+          ED-1 COMPUTATION
+          ED-2 COMPUTATION
+          EP UPDATE MU MEASURES
+          INP UPDATE MU MEASURES
+          PQRI MENU ...
+          PQRI PRINT XML
+          PRINT C0Q MEASURES
+          QRDA MENU ...
+          SETUP QUALITY REPORTING ...
+ 
+Enter ?? for more options, ??? for brief descriptions, ?OPTION for help text.
+ 
+Select QUALITY MEASUREMENT MENU Option: PRINT C0Q MEASURES
+ 
+Select C0Q MEASUREMENT SET NAME: DR OFF
+     1   DR OFFICE PERFORMANCE MEASURES  
+     2   DR OFFICE QUALITY MEASURES  
+CHOOSE 1-2: 1  DR OFFICE PERFORMANCE MEASURES
+ 
+DEVICE: HOME//   TELNET
+C0Q MEASUREMENTS LIST                          OCT 23,2012  12:04    PAGE 1
+MEASURE:DISPLAY NAME      DENOMINATOR    NUMERATOR           PERCENTAGE
+--------------------------------------------------------------------------------
+ 
+CPOE                               3             0              0.00
+ 
+PROBLEMS                           3             3            100.00
+ 
+ALLERGIES                          3             3            100.00
+ 
+Select C0Q MEASUREMENT SET NAME: DR OFF
+     1   DR OFFICE PERFORMANCE MEASURES  
+     2   DR OFFICE QUALITY MEASURES  
+CHOOSE 1-2: 2  DR OFFICE QUALITY MEASURES
+ 
+DEVICE: HOME//   TELNET
+C0Q MEASUREMENTS LIST                          OCT 23,2012  12:04    PAGE 1
+MEASURE:DISPLAY NAME      DENOMINATOR    NUMERATOR           PERCENTAGE
+--------------------------------------------------------------------------------
+ 
+NQF0013 Hypertension:              0             0              0.00
+Blood Pressure
+Measurement 
+ 
+NQF0028A Tobacco Use               0             0              0.00
+Assessment 
+ 
+NQF0028B Tobacco Use               0             0              0.00
+Assessment and Cessation
+Intervention 
+ 
+Select C0Q MEASUREMENT SET NAME: 
+ 
+Select QUALITY MEASUREMENT MENU Option: SETUP QUALITY REPORTING
+ 
+Select SETUP QUALITY REPORTING Option: EP EDIT PARMS
+ 
+Select C0Q PARAMETER NAME: ACME CLINIC #1
+  Are you adding 'ACME CLINIC #1' as a new C0Q PARAMETER (the 2ND)? No// Y
+  (Yes)
+NAME: ACME CLINIC #1// 
+MEASUREMENT PERIOD KEY: MU12
+PARAMETER TYPE: OU  OUTPATIENT
+EP MU MEASUREMENT SET: 
+EP QUALITY MEASUREMENT SET: 
+Select CLINIC: ACME CLINIC #1       
+  Are you adding 'ACME CLINIC #1' as a new CLINIC (the 1ST for this C0Q PARAMET
+ER)? No// Y  (Yes)
+Select CLINIC: 
+PATIENT LIST LABEL: 
+Select SUBSCRIBER: 
+MODEL PERFORMANCE MEASURE SET: DR,P  DR OFFICE PERFORMANCE MEASURES
+MODEL QUALITY MEASURE SET: DR,Q  DR OFFICE QUALITY MEASURES
+ 
+Select C0Q PARAMETER NAME: 
+ 
+Select SETUP QUALITY REPORTING Option: 
+ 
+Select QUALITY MEASUREMENT MENU Option: EP UPDATE MU MEASURES
+Jan 04, 2008@19:14:59
+Jan 02, 2008@18:40:58
+Nov 26, 2005@13:10:24
+Nov 26, 2005@14:12:42
+Nov 25, 2005@20:31:13
+Aug 02, 2005@08:40:36
+Aug 01, 2005@15:08:49
+Aug 01, 2005@15:21:18
+Jul 29, 2005@11:44:36
+Jul 29, 2005@11:53:15
+Jul 29, 2005@12:04:45
+Jul 28, 2005@12:20:20
+Jul 28, 2005@16:16:03
+Jul 27, 2005@11:21:04
+Jul 27, 2005@11:24:55
+Jul 27, 2005@11:41:40
+Jul 27, 2005@11:47:38
+Jul 27, 2005@11:49:41
+Jul 27, 2005@11:50:26
+Jul 27, 2005@15:45:45
+Jul 25, 2005@08:37:24
+Jul 24, 2005@11:01:55
+Jul 24, 2005@14:22:11
+Jul 24, 2005@16:22:29
+Jul 24, 2005@17:17:01
+Jul 24, 2005@17:33:39
+Jul 23, 2005@16:14:54
+Jul 23, 2005@17:17:08
+Jul 23, 2005@17:24:01
+Jul 22, 2005@10:49:29
+Jul 22, 2005@16:46:52
+Jul 21, 2005@08:56:56
+Jul 21, 2005@12:10:54
+Jul 21, 2005@15:39:22
+Jul 21, 2005@15:39:29
+Jul 20, 2005@10:07:46
+Jul 20, 2005@10:44:03
+Jul 19, 2005@07:41:49
+Jul 19, 2005@08:52:13
+Jul 19, 2005@11:32:14
+Jul 19, 2005@11:36:08
+Jul 19, 2005@13:35:12
+Jul 19, 2005@15:43:18
+Jul 19, 2005@15:54:48
+Jul 18, 2005@17:57:49
+Jul 15, 2005@16:00
+Jul 08, 2005@13:03
+Jul 01, 2005@14:37:23
+Oct 23, 2012@12:02
+CREATING MU12-EP-ACME CLINIC #1-PatientC0QFDA(1130580001.2011,"1,13,",3)=0
+C0QFDA(1130580001.2011,"2,13,",3)=100
+C0QFDA(1130580001.2011,"3,13,",3)=100
+C0QFDA(1130580001.2011,"1,14,",3)=0
+C0QFDA(1130580001.2011,"2,14,",3)=0
+C0QFDA(1130580001.2011,"3,14,",3)=0
+C0QFDA(1130580001.2011,"1,15,",1.1)=0
+C0QFDA(1130580001.2011,"1,15,",2.1)=1
+C0QFDA(1130580001.20112,"+1,1,15,",.01)=3
+C0QFDA(1130580001.2011,"1,15,",3)=0
+C0QFDA(1130580001.2011,"2,15,",1.1)=1
+C0QFDA(1130580001.20111,"+1,2,15,",.01)=3
+C0QFDA(1130580001.2011,"2,15,",2.1)=1
+C0QFDA(1130580001.20112,"+1,2,15,",.01)=3
+C0QFDA(1130580001.2011,"2,15,",3)=100
+C0QFDA(1130580001.2011,"3,15,",1.1)=1
+C0QFDA(1130580001.20111,"+1,3,15,",.01)=3
+C0QFDA(1130580001.2011,"3,15,",2.1)=1
+C0QFDA(1130580001.20112,"+1,3,15,",.01)=3
+C0QFDA(1130580001.2011,"3,15,",3)=100
+C0QFDA(1130580001.2011,"1,16,",1.1)=0
+C0QFDA(1130580001.2011,"1,16,",2.1)=0
+C0QFDA(1130580001.2011,"1,16,",3)=0
+C0QFDA(1130580001.2011,"2,16,",1.1)=0
+C0QFDA(1130580001.2011,"2,16,",2.1)=0
+C0QFDA(1130580001.2011,"2,16,",3)=0
+C0QFDA(1130580001.2011,"3,16,",1.1)=0
+C0QFDA(1130580001.2011,"3,16,",2.1)=0
+C0QFDA(1130580001.2011,"3,16,",3)=0
+ 
+Select QUALITY MEASUREMENT MENU Option: PRINT C0Q MEASURES
+ 
+Select C0Q MEASUREMENT SET NAME: ACME
+     1   ACME CLINIC #1 PR  
+     2   ACME CLINIC #1 QM  
+CHOOSE 1-2: 1  ACME CLINIC #1 PR
+ 
+DEVICE: HOME//   TELNET
+C0Q MEASUREMENTS LIST                          OCT 23,2012  12:05    PAGE 1
+MEASURE:DISPLAY NAME      DENOMINATOR    NUMERATOR           PERCENTAGE
+--------------------------------------------------------------------------------
+ 
+CPOE                               1             0              0.00
+ 
+PROBLEMS                           1             1            100.00
+ 
+ALLERGIES                          1             1            100.00
+ 
+Select C0Q MEASUREMENT SET NAME: ACME  
+     1   ACME CLINIC #1 PR  
+     2   ACME CLINIC #1 QM  
+CHOOSE 1-2: 2  ACME CLINIC #1 QM
+ 
+DEVICE: HOME//   TELNET
+C0Q MEASUREMENTS LIST                          OCT 23,2012  12:05    PAGE 1
+MEASURE:DISPLAY NAME      DENOMINATOR    NUMERATOR           PERCENTAGE
+--------------------------------------------------------------------------------
+ 
+NQF0013 Hypertension:              0             0              0.00
+Blood Pressure
+Measurement 
+ 
+NQF0028A Tobacco Use               0             0              0.00
+Assessment 
+ 
+NQF0028B Tobacco Use               0             0              0.00
+Assessment and Cessation
+Intervention 
+ 
+
+
+Routine Information:
+====================
+
+
+The second line of each of these routines now looks like:
+ ;;1.0;QUALITY MEASURES;**[Patch List]**;May 21, 2012;Build 2
+
+The checksums below are new checksums, and
+ can be checked with CHECK1^XTSUMBLD.
+
+Routine Name: C0QMU12
+    Before:       n/a   After:B351357107  **1,5,6**
+Routine Name: C0QMU123
+    Before:       n/a   After:  B4208272  **6**
+ 
+Routine list of preceding patches: 5
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   OCT 23,2012
+  Completed By:                        Date Completed:   
+  Released By :                        Date Released :   
+=============================================================================
+

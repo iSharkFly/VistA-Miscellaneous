@@ -1,0 +1,216 @@
+DHCP Patch Display                                             Page: 1
+=============================================================================
+Run Date: OCT 18, 2012                      Designation: C0Q*1*5  TEST v
+Package : QUALITY MEASURES                  Priority   : MANDATORY
+Version : 1                                 Status     : UNDER DEVELOPMENT
+=============================================================================
+
+Subject:  Miscellaneous and necessary bug fixes
+
+Category:  ROUTINE
+           OTHER
+
+Description:
+===========
+ 
+TYPE: SINGLE PACKAGE                               TRACK NATIONALLY: YES
+NATIONAL PACKAGE: QUALITY MEASURES               ALPHA/BETA TESTING: NO
+ 
+DESCRIPTION:
+============
+Written by Sam Habiel on 17 October 2012 and released through VISTA Forum.
+ 
+Licensed under package license (currently GPL 2.0)
+ 
+FUNCTIONALITY:
+==============
+This build fixes various bugs in the Quality Measurements package 
+discovered during testing.
+ 
+ 1. Empty lists are created in advance for Outpatients. Previously, they
+were not created, even though an entry point existed (INITCLST). 
+ 
+ 2. The Vitals lookup code that calls CPRS code didn't include today. 
+This was fixed by adding .999999 to today's date.
+ 
+ 3. File security (@ sign everywhere) didn't permit normal users to edit 
+the file. Previous, I defeated the @ sign protection by setting DLAYGO. 
+However, DLAYGO got killed by Fileman after each edit, which meant that 
+you can only edit one entry at a time before heading back out and back in 
+to edit another entry. After discussion with Fileman developers, the 
+proper way to do this was to not to use DLAYGO but rather remove the @ 
+signs for Read, Write, and Laygo in the Files Definitions.
+ 
+ - File list where protections were changed.
+ --> C0Q MEASUREMENT SET (1130580001.201)
+ --> C0Q QUALITY MEASURE (1130580001.101)
+ --> C0Q PARAMETER (1130580001.401)
+ 
+ - Options which don't use DLAYGO anymore.
+ --> EDIT SUPERUSERS [C0Q EDIT SUPERUSERS]
+ --> EP EDIT PARMS [C0Q EDIT OUTPATIENT PARMS]
+ --> INP EDIT PARMS [C0Q EDIT INP PARMS]
+ --> MEASURE SET EDIT [C0Q EDIT MEASURE SET]
+ --> MU MEASURE EDIT [C0Q EDIT MU MEASURE]
+ --> QUALITY MEASURE EDIT [C0Q EDIT QUALITY MEASURE]
+ 
+4. The Outpatient Quality Measurement Set which is specified in the 
+Parameters was being completely ignored. This is fixed.
+ 
+5. The variable C0QNALT was not being newed in C0QUPDT. It acts as a flag 
+indicating the type of measure (Performance vs Quality Measure). Since it 
+was left lying around, a Quality Measure was mistakenly interpreted as a 
+performance measure, giving you a result of zero, since there is no 
+data for this Quality Measure.
+ 
+6. The option that executes the logic for Outpatients C0Q EP UPDATE MU 
+MEASURES didn't display the time on the dates of the Visits being
+processed correctly. This patch fixes this.
+ 
+SUPPORT TICKETS:
+================
+None
+ 
+PACKAGE ELEMENTS:
+=================
+ 
+ENVIRONMENT CHECK:                               DELETE ENV ROUTINE: 
+ PRE-INIT ROUTINE:                          DELETE PRE-INIT ROUTINE: 
+POST-INIT ROUTINE: POST^C0Q1P5             DELETE POST-INIT ROUTINE: No
+PRE-TRANSPORT RTN: TRAN^C0Q1P5
+ 
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+ 
+1130580001.101C0Q QUALITY MEASURE          YES   YES   NO                  
+ 
+1130580001.201C0Q MEASUREMENT SET          YES   YES   NO                  
+ 
+                                           UP    SEND  DATA                USER
+                                           DATE  SEC.  COMES   SITE  RSLV  OVER
+FILE #      FILE NAME                      DD    CODE  W/FILE  DATA  PTRS  RIDE
+-------------------------------------------------------------------------------
+ 
+1130580001.401C0Q PARAMETER                YES   YES   NO                  
+ 
+ROUTINE:                                       ACTION:
+   C0Q1P5                                         SEND TO SITE
+   C0QMU12                                        SEND TO SITE
+   C0QUPDT                                        SEND TO SITE
+ 
+OPTION:                                        ACTION:
+   C0Q EDIT INP PARMS                             SEND TO SITE
+   C0Q EDIT MEASURE SET                           SEND TO SITE
+   C0Q EDIT MU MEASURE                            SEND TO SITE
+   C0Q EDIT OUTPATIENT PARMS                      SEND TO SITE
+   C0Q EDIT QUALITY MEASURE                       SEND TO SITE
+   C0Q EDIT SUPERUSERS                            SEND TO SITE
+ 
+DOCUMENTATION:
+==============
+http://www.vistapedia.com/index.php/C0Q_Quality_Reporting_1.0
+ 
+COMPLIANCE:
+===========
+This software complies with the VA MUMPS Programming Standards and
+ Conventions (version 3 April 2007), except for the following:
+ 
+ C0QMU12  * *  541 Lines,  18707 Bytes, Checksum: B280797584
+        S - Routine code exceeds SACC maximum size of 15000 (15513).
+ 
+Blood Bank Clearance: This software doesn't interact with the Blood Bank module.
+ 
+Installation Instructions:
+==========================
+Install Time - less than 1 minute.
+ 
+ 1.  LOAD TRANSPORT GLOBAL
+ 
+     Choose the PackMan message containing this patch and invoke the
+     INSTALL/CHECK MESSAGE PackMan option to unload the build.
+ 
+ 2.  START UP KIDS
+ 
+      Start up the Kernel Installation and Distribution System Menu
+      [XPD MAIN]:
+ 
+           Edits and Distribution ...
+           Utilities ...
+           Installation ...
+ 
+ Select Kernel Installation & Distribution System Option: INStallation
+                                                          ---
+           Load a Distribution
+           Print Transport Global
+           Compare Transport Global to Current System
+           Verify Checksums in Transport Global
+           Install Package(s)
+           Restart Install of Package(s)
+           Unload a Distribution
+           Backup a Transport Global
+ 
+ Select Installation Option:
+ 
+ 3.  Select Installation Option:
+ 
+     NOTE:  The following are OPTIONAL - (When prompted for the INSTALL
+             NAME, enter C0Q*1.0*5):
+ 
+     a.  Backup a Transport Global - This option will create a backup
+         message of any routines exported with this patch. It will not
+         backup any other changes such as DD's or templates.
+     b.  Compare Transport Global to Current System - This option will
+         allow you to view all changes that will be made when this patch
+         is installed.  It compares all components of this patch
+         (routines, DD's, templates, etc.).
+     c.  Verify Checksums in Transport Global - This option will allow
+         you to ensure the integrity of the routines that are in the
+         transport global.
+ 
+ 4.  Select Installation Option: Install Package(s)
+ 
+     **This is the step to start the installation of this KIDS patch:
+ 
+     a.  Choose the Install Package(s) option to start the patch install
+         and enter "C0Q*1.0*5" at the INSTALL NAME prompt. As part of the
+         Environment Check routine, the message below will display
+     b.  When prompted 'Want KIDS to Rebuild Menu Trees Upon Completion of
+         Install? NO//'  answer NO
+     c.  When prompted 'Want KIDS to INHIBIT LOGONs during the install?
+         NO//'  answer NO
+     d.  When prompted 'Want to DISABLE Scheduled Options, Menu Options,
+         and Protocols? NO//'  answer NO
+ 
+  5.  Post installation: No post installation tasks are necessary.
+ 
+
+
+Routine Information:
+====================
+
+
+The second line of each of these routines now looks like:
+ ;;1.0;QUALITY MEASURES;**[Patch List]**;Oct 17, 2012;Build 9
+
+The checksums below are new checksums, and
+ can be checked with CHECK1^XTSUMBLD.
+
+Routine Name: C0Q1P5
+    Before:       n/a   After:   B619258  **5**
+Routine Name: C0QMU12
+    Before:       n/a   After:B280797584  **1,5**
+Routine Name: C0QUPDT
+    Before:       n/a   After: B78768309  **1,5**
+ 
+Routine list of preceding patches: 1
+
+
+=============================================================================
+User Information:  
+  Entered By  :   HABIEL,SAM           Date Entered  :   OCT 18,2012
+  Completed By:                        Date Completed:   
+  Released By :                        Date Released :   
+=============================================================================
+
