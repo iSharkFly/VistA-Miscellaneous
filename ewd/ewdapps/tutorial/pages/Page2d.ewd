@@ -1,0 +1,15 @@
+<ewd:config isFirstPage="false">
+<html>
+ <head>
+  <title>Test Page</title>
+ </head>
+ <body bgcolor="#C5E3E4">
+  <p>This is a second test page</p>
+  <br>Hello <?= #username ?><br>
+  Your password is <?= #password ?><br>
+  Your session ID is <?= #ewd_sessid ?>
+  <br><br>
+  <a href=ewdLogout.ewd>Log out</a>
+  <hr>
+ </body>
+</html>

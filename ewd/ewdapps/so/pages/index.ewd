@@ -1,0 +1,82 @@
+<ewd:comment>
+(C) Sam Habiel 2011
+License: Inherits EWD License, whatever it is.
+</ewd:comment>
+
+<ewd:config isFirstPage="true" prePageScript="setup^ewdu">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VISTA Sign-On</title>
+    
+    <!-- Redirect Javascript for EWD Errors -->
+    <script type="text/javascript">
+        var VISTA = {};  // Mi Casa
+
+        // Makes the EWD Error show up in a div rather than a pop-up
+        VISTA.redirectEWDErrorToDiv = function () {
+            EWD.page.errorMessage = function (msg) {
+                if (msg !== '') 
+                {
+                    var errDiv = document.getElementById('error');
+                    errDiv.innerHTML = msg;
+                }
+            };
+        };
+        
+        // If AC contains an ; disable Verify Code field
+        VISTA.checkAC = function (ac) {
+            var vc = document.getElementById("vc");
+            
+            if (ac.indexOf(";") > -1)
+            {
+                vc.disabled = "disabled";
+                vc.placeholder = "ALREADY ENTERED";
+                vc.style.background = "#646060";
+            }
+            else
+            {
+                vc.disabled = null;
+                vc.placeholder = "Verify Code";
+                vc.style.background = null;
+            }
+        };
+    </script>
+    <!-- End -->
+
+    </head>
+    <body onload="VISTA.redirectEWDErrorToDiv()">
+       <form id="login" method="post" action="ewd">
+            <h1>Sign On to VISTA</h1>
+            <div id="intro">
+                <p>
+                    <ewd:forEach sessionName="so.introtxt" index="$n" return="$line">
+                    <?= $line ?> <br />
+                    </ewd:forEach>
+                </p>
+            </div>
+            <fieldset id="inputs">
+                <table>
+                    <tr>
+                    <td valign="middle"><label for="ac">Access Code</label></td>
+                    <td valign="middle"><input id="ac" type="password" oninput="VISTA.checkAC(this.value)" placeholder="Access Code" autofocus required></td>
+                    </tr>
+                    <tr>
+                    <td valign="middle"><label for="vc">Verify Code</label></td>
+                    <td valign="middle"><input id="vc" type="password" placeholder="Verify Code"></td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td><label for="cvc">Change Verify Code</label><input id="cvc" value="cvc" type="checkbox"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div id="error">
+            </div>
+            <fieldset id="actions">
+                <input type="submit" name="submit" id="submit" value="Sign On" action="so^ewdu" nextpage="menu">
+                <a href="">Help</a>
+            </fieldset>
+        </form>
+    </body>
+</html>

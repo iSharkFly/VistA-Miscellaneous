@@ -1,0 +1,26 @@
+<ewd:config isFirstPage="true" />
+
+<html>
+<head><title>Test Page</title></head>
+<body bgcolor="#C5E3E4">
+<p>This is a test page</p>
+<h3>Please enter your username and password:</h3>
+<form method="post" action="ewd">
+ <table border=0>
+  <tr>
+   <td>Username: </td>
+   <td><input type="text" name="username" focus="true" /></td>
+  </tr>
+  <tr>
+   <td>Password: </td>
+   <td><input type="password" name="password" /></td>
+  </tr>
+  <tr>
+   <td><input type="submit" name="Submit" value="Login" action="login^KBANDemo" nextpage="Page2e" /></td>
+  </tr>
+ </table>
+</form>
+<br /><br />
+<a href="ewdLogout.ewd">Log out</a>
+</body>
+</html>

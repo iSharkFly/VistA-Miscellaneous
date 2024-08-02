@@ -1,0 +1,4 @@
+<ewd:config isFirstPage="false" pageType="ajax" prePageScript="INQ^C0EDIINQUIRE">
+<ewd:forEach sessionName="DIINQUIRE" index="$lineNo" return="$data">
+    <?= $data ?><br />
+</ewd:forEach>

@@ -1,0 +1,10 @@
+<ewd:config>
+<head>
+<title>Test Page</title>
+</head>
+<body bgcolor="#C5E3E4">
+<p>This is a test page</p>
+<a href=Page2b.ewd>Go to page 2</a><br><br>
+<a href=ewdLogout.ewd>Log out</a>
+</body>
+</html>

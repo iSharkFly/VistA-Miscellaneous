@@ -1,0 +1,33 @@
+<ewd:config isFirstPage="false">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Edit User Characteristics</title>
+</head>
+<body>
+<div style="text-align: center">
+<h1>Edit User Characteristics</h1>
+<hr />
+<table style="border:0px; text-align:right; margin-left:auto; margin-right:auto;">
+<tr>
+<td><fm:edit dd="200" fields="1" iens="#DUZ" /></td>
+<td><fm:edit dd="200" fields=".131" iens="#DUZ" /></td>
+</tr>
+<tr>
+<td><fm:edit dd="200" fields="13" iens="#DUZ" /></td>
+<td><fm:edit dd="200" fields=".132" iens="#DUZ" /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><fm:edit dd="200" fields=".137" iens="#DUZ" /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><fm:edit dd="200" fields=".138" iens="#DUZ" /></td>
+</tr>
+</table>
+<hr />
+<fm:edit dd="200" fields="200.05;200.09;31.2;31.3" iens="#DUZ" />
+</div>
+</body>
+</html>

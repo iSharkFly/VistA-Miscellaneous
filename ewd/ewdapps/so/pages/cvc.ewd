@@ -1,0 +1,37 @@
+<ewd:comment>
+(C) Sam Habiel 2011
+Inherits EWD License, whatever it is.
+</ewd:comment>
+<ewd:config isFirstPage="false" prePageScript="whoami^ewdu">
+<html>
+<head>
+    <title>Change Verify Code</title>
+</head>
+<body>
+<h1>Change Verify Code</h1>
+<form id="content" method="POST" action="ewd">
+  <table>
+     <tr>
+       <td>Username: </td>
+       <td><?= #Name ?></td>
+     </tr>
+     <tr>
+       <td><label for="vc1">Verify Code (existing):</label> </td>
+       <td><input type="password" name="vc1" value="<?= #vc ?>"></td>
+     </tr>
+     <tr>
+       <td><label for="vc2">Verify Code (new):</label> </td>
+       <td><input type="password" name="vc2"></td>
+     </tr>
+     <tr>
+       <td><label for="vc3">Verify Code (confirm):</label> </td>
+       <td><input type="password" name="vc3"></td>
+     </tr>
+     <tr>
+       <td><input type="submit" id="submit" name="submit" value="Save" action="cvc^ewdu" nextpage="menu"></td>
+     </tr>
+  </table>
+</form>
+</body>
+</html>
+

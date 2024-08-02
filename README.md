@@ -20,3 +20,9 @@ https://trac.opensourcevista.net/svn/pharmacy-utils
 
 ## mu_tests
 https://trac.opensourcevista.net/svn/mu-tests
+
+## djigzo
+https://trac.opensourcevista.net/svn/Djigzo
+
+## ewd
+https://trac.opensourcevista.net/svn/EWD

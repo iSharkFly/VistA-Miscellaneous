@@ -1,0 +1,25 @@
+<ewd:config isFirstPage="false">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu System</title>
+        <script type="text/javascript">
+            var ln = function()
+            {
+                EWD.ajax.getPage({"page": "installedapps", "targetId": "intro"});
+            };
+        </script>
+    </head>
+    <body onload="ln()">
+       <form id="menu" method="post" action="ewd">
+            <h1>Menu</h1>
+            <fieldset id="fs">
+                <input type="submit" name="Submit" id="submit" value="Bed Board" action="sss^ewdu">
+                <a href="">Help</a>
+            </fieldset>
+        <div id="intro">
+        </div>
+        </form> 
+    </body>
+</html>
+

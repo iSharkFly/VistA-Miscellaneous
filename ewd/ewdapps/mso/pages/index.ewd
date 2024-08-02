@@ -1,0 +1,20 @@
+<ewd:config isFirstPage="true" cachePage="false" pageTimeout="1200" prePageScript="setup^ewdu">
+<st:container rootPath="/sencha-1.1/" title="VISTA Sign-On">
+    <st:images>
+        <st:image type="tabletStartupScreen" src="/sencha-1.1/examples/kitchensink/resources/img/tablet_startup.png" />
+        <st:image type="phoneStartupScreen" src="/sencha-1.1/examples/kitchensink/resources/img/phone_startup.png" />
+        <st:image type="icon" src="/sencha-1.1/examples/kitchensink/resources/img/icon.png" addGloss="true" />
+    </st:images>
+    <st:content>
+        <st:panel fullscreen="true" scroll="vertical">
+            <st:toolbar dock="top" title="VISTA Sign-On" />
+                <div id="intro" style="text-align: center">
+                    <p><?= #so.sitename ?></p>
+                </div>
+            <st:toolbar dock="bottom" id="bottomToolbar" 
+                title="Session: <?= #ewd_sessid ?>">
+            </st:toolbar>
+        </st:panel>
+    </st:content>
+</st:container>
+

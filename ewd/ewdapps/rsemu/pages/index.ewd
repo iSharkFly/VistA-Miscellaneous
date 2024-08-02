@@ -1,0 +1,28 @@
+<ewd:config isFirstPage="true" websockets="true" cachePage="false">
+<html>
+<head>
+<title>Roll and Scroll Emulator</title>
+<script type="text/javascript">
+    //must be defined before body is loaded.
+    EWD.sockets.serverMessageHandler = function (msg)
+    {
+       document.getElementById("message").innerHTML = "Sent from GT.M: " + msg.message;
+    };
+
+    //can only work after body is loaded. Body loads socket.io.
+    function helloSockets() {
+        EWD.sockets.sendMessage({type: "testing", message:  "This is my message for you to use"});
+     };
+    
+    //GT.M Test
+    function GTMTest() {
+        EWD.sockets.sendMessage({type: "M", message: "hello"});
+    };
+
+</script>
+</head>
+<body onload="helloSockets()">
+<div id="message">
+</div>
+</body>
+</html>

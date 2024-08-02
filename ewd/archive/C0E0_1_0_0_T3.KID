@@ -1,0 +1,1772 @@
+KIDS Distribution saved on Mar 02, 2010@00:57:50
+select only screenman records for the mapping file
+**KIDS**:C0E0*1.0*0^
+
+**INSTALL NAME**
+C0E0*1.0*0
+"BLD",6969,0)
+C0E0*1.0*0^^0^3100302^n
+"BLD",6969,4,0)
+^9.64PA^70050^1
+"BLD",6969,4,70050,0)
+70050
+"BLD",6969,4,70050,222)
+y^y^f^^n^^y^o^n
+"BLD",6969,4,70050,224)
+I $$GET1^DIQ(70050,Y_",",.02)="screenman"
+"BLD",6969,4,"B",70050,70050)
+
+"BLD",6969,6.3)
+3
+"BLD",6969,"KRN",0)
+^9.67PA^8989.52^19
+"BLD",6969,"KRN",.4,0)
+.4
+"BLD",6969,"KRN",.401,0)
+.401
+"BLD",6969,"KRN",.401,"NM",0)
+^9.68A^1^1
+"BLD",6969,"KRN",.401,"NM",1,0)
+C0E SCREENMAN RECORDS    FILE #70050^70050^0
+"BLD",6969,"KRN",.401,"NM","B","C0E SCREENMAN RECORDS    FILE #70050",1)
+
+"BLD",6969,"KRN",.402,0)
+.402
+"BLD",6969,"KRN",.403,0)
+.403
+"BLD",6969,"KRN",.5,0)
+.5
+"BLD",6969,"KRN",.84,0)
+.84
+"BLD",6969,"KRN",3.6,0)
+3.6
+"BLD",6969,"KRN",3.8,0)
+3.8
+"BLD",6969,"KRN",9.2,0)
+9.2
+"BLD",6969,"KRN",9.8,0)
+9.8
+"BLD",6969,"KRN",9.8,"NM",0)
+^9.68A^8^8
+"BLD",6969,"KRN",9.8,"NM",1,0)
+C0CROB^^0^B1053192
+"BLD",6969,"KRN",9.8,"NM",2,0)
+C0CEX^^0^B811998
+"BLD",6969,"KRN",9.8,"NM",3,0)
+C0E0000A^^0^B14799604
+"BLD",6969,"KRN",9.8,"NM",4,0)
+C0E0000F^^0^B32569634
+"BLD",6969,"KRN",9.8,"NM",5,0)
+C0E0000E^^0^B27501668
+"BLD",6969,"KRN",9.8,"NM",6,0)
+C0E0000R^^0^B66670061
+"BLD",6969,"KRN",9.8,"NM",7,0)
+C0E0001I^^0^B20127196
+"BLD",6969,"KRN",9.8,"NM",8,0)
+C0E0002^^0^B92918287
+"BLD",6969,"KRN",9.8,"NM","B","C0CEX",2)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0CROB",1)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0000A",3)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0000E",5)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0000F",4)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0000R",6)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0001I",7)
+
+"BLD",6969,"KRN",9.8,"NM","B","C0E0002",8)
+
+"BLD",6969,"KRN",19,0)
+19
+"BLD",6969,"KRN",19.1,0)
+19.1
+"BLD",6969,"KRN",101,0)
+101
+"BLD",6969,"KRN",409.61,0)
+409.61
+"BLD",6969,"KRN",771,0)
+771
+"BLD",6969,"KRN",870,0)
+870
+"BLD",6969,"KRN",8989.51,0)
+8989.51
+"BLD",6969,"KRN",8989.52,0)
+8989.52
+"BLD",6969,"KRN",8994,0)
+8994
+"BLD",6969,"KRN","B",.4,.4)
+
+"BLD",6969,"KRN","B",.401,.401)
+
+"BLD",6969,"KRN","B",.402,.402)
+
+"BLD",6969,"KRN","B",.403,.403)
+
+"BLD",6969,"KRN","B",.5,.5)
+
+"BLD",6969,"KRN","B",.84,.84)
+
+"BLD",6969,"KRN","B",3.6,3.6)
+
+"BLD",6969,"KRN","B",3.8,3.8)
+
+"BLD",6969,"KRN","B",9.2,9.2)
+
+"BLD",6969,"KRN","B",9.8,9.8)
+
+"BLD",6969,"KRN","B",19,19)
+
+"BLD",6969,"KRN","B",19.1,19.1)
+
+"BLD",6969,"KRN","B",101,101)
+
+"BLD",6969,"KRN","B",409.61,409.61)
+
+"BLD",6969,"KRN","B",771,771)
+
+"BLD",6969,"KRN","B",870,870)
+
+"BLD",6969,"KRN","B",8989.51,8989.51)
+
+"BLD",6969,"KRN","B",8989.52,8989.52)
+
+"BLD",6969,"KRN","B",8994,8994)
+
+"BLD",6969,"QUES",0)
+^9.62^^
+"DATA",70050,12,0)
+23407^screenman^ewdajaxerror
+"DATA",70050,13,0)
+23408^screenman^ewdajaxerrorredirect
+"DATA",70050,14,0)
+23409^screenman^ewderror
+"DATA",70050,15,0)
+23410^screenman^ewderrorredirect
+"DATA",70050,16,0)
+23411^screenman^index
+"DATA",70050,16,1,0)
+^^10^10^3100301^
+"DATA",70050,16,1,1,0)
+<ewd:config isfirstpage="true">
+"DATA",70050,16,1,2,0)
+<html>
+"DATA",70050,16,1,3,0)
+<header>
+"DATA",70050,16,1,4,0)
+<title>Screenman Menu</title>
+"DATA",70050,16,1,5,0)
+</header>
+"DATA",70050,16,1,6,0)
+<body>
+"DATA",70050,16,1,7,0)
+Hello World<br><br>
+"DATA",70050,16,1,8,0)
+<a href="test1.ewd">test1 page</a>
+"DATA",70050,16,1,9,0)
+</body>
+"DATA",70050,16,1,10,0)
+</html>
+"DATA",70050,17,0)
+23412^screenman^test1
+"DATA",70050,17,1,0)
+^70050.02^25^25^3100302^^
+"DATA",70050,17,1,1,0)
+<ewd:config isfirstpage="false" prepagescript="TEST1^C0CROB">
+"DATA",70050,17,1,2,0)
+<html>
+"DATA",70050,17,1,3,0)
+<head>
+"DATA",70050,17,1,4,0)
+<script language="javascript">
+"DATA",70050,17,1,5,0)
+function ValidateTitle(value) {
+"DATA",70050,17,1,6,0)
+ewd:VALIDATETITLE^C0CROB(value);
+"DATA",70050,17,1,7,0)
+}
+"DATA",70050,17,1,8,0)
+</script>
+"DATA",70050,17,1,9,0)
+<title>Screenman Test</title>
+"DATA",70050,17,1,10,0)
+</head>
+"DATA",70050,17,1,11,0)
+<body>
+"DATA",70050,17,1,12,0)
+<form method="post" action="ewd">
+"DATA",70050,17,1,13,0)
+<center>Edit an Existing User</center>
+"DATA",70050,17,1,14,0)
+<div id="name">
+"DATA",70050,17,1,15,0)
+NAME: <?= #name ?>
+"DATA",70050,17,1,16,0)
+</div>
+"DATA",70050,17,1,17,0)
+<hr>
+"DATA",70050,17,1,18,0)
+TITLE: <input type="text" name="TITLE" value="*" 
+"DATA",70050,17,1,19,0)
+onchange="ValidateTitle(this.value)" /><br><br> 
+"DATA",70050,17,1,20,0)
+SSN: <input type="text" name="SSN" value="*" /><br><br>
+"DATA",70050,17,1,21,0)
+<input type="submit" name="submit" value="save" action="SAVEFORM^C0CROB"
+"DATA",70050,17,1,22,0)
+nextpage="test1" /> 
+"DATA",70050,17,1,23,0)
+</form> 
+"DATA",70050,17,1,24,0)
+</body>
+"DATA",70050,17,1,25,0)
+</html>
+"FIA",70050)
+C0EWD ROUTINE MAP
+"FIA",70050,0)
+^C0E(70050,
+"FIA",70050,0,0)
+70050PI
+"FIA",70050,0,1)
+y^y^f^^n^^y^o^n
+"FIA",70050,0,10)
+
+"FIA",70050,0,11)
+I $$GET1^DIQ(70050,Y_",",.02)="screenman"
+"FIA",70050,0,"RLRO")
+
+"FIA",70050,70050)
+0
+"FIA",70050,70050.01)
+0
+"FIA",70050,70050.02)
+0
+"IX",70050,70050,"AZEWD",0)
+70050^AZEWD^MAINTAINS THE ZEWD ROUTINE MAP GLOBAL^MU^^R^IR^I^70050^^^^^A
+"IX",70050,70050,"AZEWD",1)
+D SETZEWD^C0CEX(X(1),X(2),X(3)) Q
+"IX",70050,70050,"AZEWD",2)
+D KILLZEWD^C0CEX(X(1),X(2),X(3)) Q
+"IX",70050,70050,"AZEWD",11.1,0)
+^.114IA^3^3
+"IX",70050,70050,"AZEWD",11.1,1,0)
+1^F^70050^.01^^^F
+"IX",70050,70050,"AZEWD",11.1,2,0)
+2^F^70050^.02^^^F
+"IX",70050,70050,"AZEWD",11.1,3,0)
+3^F^70050^.03^^^F
+"IX",70050,70050,"C",0)
+70050^C^REGULAR CROSS REFERENCE OF THE PAGE NAME^R^^F^IR^I^70050^^^^^LS
+"IX",70050,70050,"C",1)
+S ^C0E(70050,"C",$E(X,1,60),DA)=""
+"IX",70050,70050,"C",2)
+K ^C0E(70050,"C",$E(X,1,60),DA)
+"IX",70050,70050,"C",2.5)
+K ^C0E(70050,"C")
+"IX",70050,70050,"C",11.1,0)
+^.114IA^1^1
+"IX",70050,70050,"C",11.1,1,0)
+1^F^70050^.03^60^1^F
+"IX",70050,70050,"C",11.1,1,3)
+
+"KRN",.401,1794,-1)
+0^1
+"KRN",.401,1794,0)
+C0E SCREENMAN RECORDS^3100302.0014^@^70050^^@^3100302
+"KRN",.401,1794,2,0)
+^.4014^1^1
+"KRN",.401,1794,2,1,0)
+70050^.02^EWD APPLICATION^^^^^^^4
+"KRN",.401,1794,2,1,"F")
+screenmamz^screenman
+"KRN",.401,1794,2,1,"GET")
+S DISX(1)=$P($G(^C0E(70050,D0,0)),U,2)
+"KRN",.401,1794,2,1,"QCON")
+I DISX(1)="screenman"
+"KRN",.401,1794,2,1,"T")
+screenman^screenman
+"KRN",.401,1794,2,1,"TXT")
+EWD APPLICATION equals screenman
+"KRN",.401,1794,2,"B",70050,1)
+
+"MBREQ")
+0
+"ORD",6,.401)
+.401;6;;;EDEOUT^DIFROMSO(.401,DA,"",XPDA);FPRE^DIFROMSI(.401,"",XPDA);EPRE^DIFROMSI(.401,DA,$E("N",$G(XPDNEW)),XPDA,"",OLDA);;EPOST^DIFROMSI(.401,DA,"",XPDA);DEL^DIFROMSK(.401,"",%)
+"ORD",6,.401,0)
+SORT TEMPLATE
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+8
+"RTN","C0CEX")
+0^2^B811998
+"RTN","C0CEX",1,0)
+C0CEX   ; CCDCCR/GPL - C0E ROUTINE FOR ^zewd GLOBAL; 3/1/10
+"RTN","C0CEX",2,0)
+ ;;1.0;C0C;;Mar 1, 2010 ;Build 3
+"RTN","C0CEX",3,0)
+SETZEWD(ZROUTINE,ZAPP,ZPAGE) ;USED BY THE ZEWD CROSS REFERENCE TO 
+"RTN","C0CEX",4,0)
+ ; SET THE ^zewd GLOBAL FOR EWD FOR A PAGE
+"RTN","C0CEX",5,0)
+ N ZR
+"RTN","C0CEX",6,0)
+ I $G(ZAPP)="" Q  ;
+"RTN","C0CEX",7,0)
+ I $G(ZPAGE)="" Q  ;
+"RTN","C0CEX",8,0)
+ I $G(ZROUTINE)="" Q  ;
+"RTN","C0CEX",9,0)
+ S ZR=$$GET1^DIQ(9.8,ZROUTINE_",",.01,"E") ; EXTERNAL NAME OF ROUTINE
+"RTN","C0CEX",10,0)
+ S ^zewd("routineMap",ZAPP,ZPAGE)=ZR ; SET THE EWD MAPPING GLOBAL
+"RTN","C0CEX",11,0)
+ Q
+"RTN","C0CEX",12,0)
+ ;
+"RTN","C0CEX",13,0)
+KILLZEWD(ZROUTINE,ZAPP,ZPAGE) ;USED BY THE ZEWD CROSS REFERENCE TO
+"RTN","C0CEX",14,0)
+ ; KILL THE ^zewd GLOBAL FOR EWD FOR A PAGE
+"RTN","C0CEX",15,0)
+ I $G(ZAPP)="" Q  ;
+"RTN","C0CEX",16,0)
+ I $G(ZPAGE)="" Q  ;
+"RTN","C0CEX",17,0)
+ K ^zewd("routineMap",ZAPP,ZPAGE)
+"RTN","C0CEX",18,0)
+ Q
+"RTN","C0CROB")
+0^1^B1053192
+"RTN","C0CROB",1,0)
+ ;;C0CROB
+"RTN","C0CROB",2,0)
+ ;;;;;;Build 3
+"RTN","C0CROB",3,0)
+TEST1(sessid) ;
+"RTN","C0CROB",4,0)
+ D setSessionValue^%zewdAPI("name","PROVIDER,TWOHUNDREDNINETYSIX",sessid)
+"RTN","C0CROB",5,0)
+ S TITLE=$G(^C0CROB("TITLE"))
+"RTN","C0CROB",6,0)
+ I TITLE="" S TITLE="Scholar Extraordinaire"
+"RTN","C0CROB",7,0)
+ D setSessionValue^%zewdAPI("TITLE",TITLE,sessid)
+"RTN","C0CROB",8,0)
+ Q ""
+"RTN","C0CROB",9,0)
+SAVEFORM(sessid) ;
+"RTN","C0CROB",10,0)
+ S TITLE=$$getSessionValue^%zewdAPI("TITLE",sessid)
+"RTN","C0CROB",11,0)
+ I TITLE="" Q "You must enter a title"
+"RTN","C0CROB",12,0)
+ S ^C0CROB("TITLE")=TITLE
+"RTN","C0CROB",13,0)
+ Q ""
+"RTN","C0CROB",14,0)
+VALIDATETITLE(value) ;
+"RTN","C0CROB",15,0)
+ I value="" Q "alert('you must enter a title');"
+"RTN","C0CROB",16,0)
+ Q ""
+"RTN","C0E0000A")
+0^3^B14799604
+"RTN","C0E0000A",1,0)
+ ;GT.M version of page ewdAjaxError (screenman application)
+"RTN","C0E0000A",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:22;;;;;Build 3
+"RTN","C0E0000A",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0000A",4,0)
+ QUIT
+"RTN","C0E0000A",5,0)
+ ;
+"RTN","C0E0000A",6,0)
+run ;
+"RTN","C0E0000A",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0000A",8,0)
+ s ok=$$pre()
+"RTN","C0E0000A",9,0)
+ i ok d body
+"RTN","C0E0000A",10,0)
+ QUIT
+"RTN","C0E0000A",11,0)
+ ;
+"RTN","C0E0000A",12,0)
+pre() ;
+"RTN","C0E0000A",13,0)
+ ;
+"RTN","C0E0000A",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0000A",15,0)
+ ;
+"RTN","C0E0000A",16,0)
+ s confirmText="Click OK if you're sure you want to delete this record"
+"RTN","C0E0000A",17,0)
+ s sessionArray("ewd_isFirstPage")="1"
+"RTN","C0E0000A",18,0)
+ s sessionArray("ewd_sessid_timeout")="1200"
+"RTN","C0E0000A",19,0)
+ s sessionArray("ewd_prePageScript")=""
+"RTN","C0E0000A",20,0)
+ s sessionArray("ewd_default_timeout")="1200"
+"RTN","C0E0000A",21,0)
+ s sessionArray("ewd_persistRequest")="true"
+"RTN","C0E0000A",22,0)
+ s sessionArray("ewd_pageTitle")=""
+"RTN","C0E0000A",23,0)
+ s sessionArray("ewd_errorPage")="ewdError"
+"RTN","C0E0000A",24,0)
+ s sessionArray("ewd_templatePrePageScript")=""
+"RTN","C0E0000A",25,0)
+ s sessionArray("ewd_onErrorScript")=""
+"RTN","C0E0000A",26,0)
+ s sessionArray("ewd_appName")="screenman"
+"RTN","C0E0000A",27,0)
+ s sessionArray("ewd_pageName")="ewdAjaxError"
+"RTN","C0E0000A",28,0)
+ s sessionArray("ewd_translationMode")="0"
+"RTN","C0E0000A",29,0)
+ s sessionArray("ewd_technology")="gtm"
+"RTN","C0E0000A",30,0)
+ s sessionArray("ewd_pageType")=""
+"RTN","C0E0000A",31,0)
+ s Error=$$startSession^%zewdPHP("ewdAjaxError",.%KEY,.%CGIEVAR,.sessionArray,.filesArray)
+"RTN","C0E0000A",32,0)
+ s sessid=$g(sessionArray("ewd_sessid"))
+"RTN","C0E0000A",33,0)
+ i Error["Enterprise Web Developer Error :",$g(sessionArray("ewd_pageType"))="ajax" d
+"RTN","C0E0000A",34,0)
+ . s Error=$p(Error,":",2,200)
+"RTN","C0E0000A",35,0)
+ . s Error=$$replaceAll^%zewdAPI(Error,"<br>",": ")
+"RTN","C0E0000A",36,0)
+ . s Error="EWD runtime error: "_Error
+"RTN","C0E0000A",37,0)
+ i $e(Error,1,32)="Enterprise Web Developer Error :" d  QUIT 0
+"RTN","C0E0000A",38,0)
+ . n errorPage
+"RTN","C0E0000A",39,0)
+ . s errorPage=$g(sessionArray("ewd_errorPage"))
+"RTN","C0E0000A",40,0)
+ . i errorPage="" s errorPage="ewdError"
+"RTN","C0E0000A",41,0)
+ . i $g(sessionArray("ewd_pageType"))="ajax" s errorPage="ewdAjaxErrorRedirect"
+"RTN","C0E0000A",42,0)
+ . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),errorPage,,,sessid,Error)
+"RTN","C0E0000A",43,0)
+ s stop=0
+"RTN","C0E0000A",44,0)
+ i Error="" d  i stop QUIT 0
+"RTN","C0E0000A",45,0)
+ . n nextpage
+"RTN","C0E0000A",46,0)
+ . s nextpage=$$getSessionValue^%zewdAPI("ewd_nextPage",sessid)
+"RTN","C0E0000A",47,0)
+ . i nextpage'="" d
+"RTN","C0E0000A",48,0)
+ . . n x
+"RTN","C0E0000A",49,0)
+ . . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),nextpage,$$getSessionValue^%zewdAPI("ewd_token",sessid),$$getSessionValue^%zewdAPI("ewd_pageToken",sessid))
+"RTN","C0E0000A",50,0)
+ . . s stop=1
+"RTN","C0E0000A",51,0)
+ i $$getSessionValue^%zewdAPI("ewd_warning",sessid)'="" d
+"RTN","C0E0000A",52,0)
+ . s Error=$$getSessionValue^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000A",53,0)
+ . d deleteFromSession^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000A",54,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0000A",55,0)
+ s ctype="text/html"
+"RTN","C0E0000A",56,0)
+ d mergeArrayFromSession^%zewdAPI(.headers,"ewd.header",sessid)
+"RTN","C0E0000A",57,0)
+ i $d(headers) d
+"RTN","C0E0000A",58,0)
+ . n lcname,name
+"RTN","C0E0000A",59,0)
+ . s name=""
+"RTN","C0E0000A",60,0)
+ . f  s name=$o(headers(name)) q:name=""  d
+"RTN","C0E0000A",61,0)
+ . . s lcname=$$zcvt^%zewdAPI(name,"l")
+"RTN","C0E0000A",62,0)
+ . . i lcname="content-type" s ctype=headers(name) q
+"RTN","C0E0000A",63,0)
+ . . w name_": "_headers(name)_$c(13,10)
+"RTN","C0E0000A",64,0)
+ w "Content-type: "_ctype_$c(13,10)
+"RTN","C0E0000A",65,0)
+ w $c(13,10)
+"RTN","C0E0000A",66,0)
+ QUIT 1
+"RTN","C0E0000A",67,0)
+ ;
+"RTN","C0E0000A",68,0)
+body ;
+"RTN","C0E0000A",69,0)
+ w "<ewdajaxerror>"_$c(13,10)
+"RTN","C0E0000A",70,0)
+ w $$getSessionValue^%zewdAPI("ewd_ajaxError",sessid)
+"RTN","C0E0000A",71,0)
+ w "</ewdajaxerror>"_$c(13,10)
+"RTN","C0E0000A",72,0)
+ QUIT
+"RTN","C0E0000E")
+0^5^B27501668
+"RTN","C0E0000E",1,0)
+ ;GT.M version of page ewdError (screenman application)
+"RTN","C0E0000E",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:23;;;;;Build 3
+"RTN","C0E0000E",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0000E",4,0)
+ QUIT
+"RTN","C0E0000E",5,0)
+ ;
+"RTN","C0E0000E",6,0)
+run ;
+"RTN","C0E0000E",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0000E",8,0)
+ s ok=$$pre()
+"RTN","C0E0000E",9,0)
+ i ok d body
+"RTN","C0E0000E",10,0)
+ QUIT
+"RTN","C0E0000E",11,0)
+ ;
+"RTN","C0E0000E",12,0)
+pre() ;
+"RTN","C0E0000E",13,0)
+ ;
+"RTN","C0E0000E",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0000E",15,0)
+ ;
+"RTN","C0E0000E",16,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0000E",17,0)
+ w "Content-type: text/html"_$c(13,10,13,10)
+"RTN","C0E0000E",18,0)
+ QUIT 1
+"RTN","C0E0000E",19,0)
+ ;
+"RTN","C0E0000E",20,0)
+body ;
+"RTN","C0E0000E",21,0)
+ w ""_$c(13,10)
+"RTN","C0E0000E",22,0)
+ w "<html>"_$c(13,10)
+"RTN","C0E0000E",23,0)
+ w "<head>"_$c(13,10)
+"RTN","C0E0000E",24,0)
+ w "<title>Enterprise Web Developer : A run-time error has occurred</title>"_$c(13,10)
+"RTN","C0E0000E",25,0)
+ w "<style type=""text/css"">"_$c(13,10)
+"RTN","C0E0000E",26,0)
+ w "   body {background: #ffffff ;}"_$c(13,10)
+"RTN","C0E0000E",27,0)
+ w "   .headerBlock {width: 100% ; background : #111111 ; horizontal-align : center ; }"_$c(13,10)
+"RTN","C0E0000E",28,0)
+ w "   .headerBlock[class] {width: 100% ; background : #111111 ; horizontal-align : center ; position: relative ; top : 30px ; border-right-style : solid ; border-right-width: 2px ; }"_$c(13,10)
+"RTN","C0E0000E",29,0)
+ w "   #headerText {vertical-align: center ; font-family: Arial, sans-serif ; color: #dddddd ; font-size: 11pt ; margin-left: 10px}"_$c(13,10)
+"RTN","C0E0000E",30,0)
+ w "   #headerSubject {vertical-align: center ; font-family: Arial, sans-serif ; color: #dddddd ; font-size: 11pt ; position: relative ; top: -30px ; text-align: center ;}"_$c(13,10)
+"RTN","C0E0000E",31,0)
+ w "   .selectedTab {border-style: outset ; background: #eeeedd ; padding-left: 8px ; padding-right: 8px ;}"_$c(13,10)
+"RTN","C0E0000E",32,0)
+ w "   .unselectedTab {border-style: groove ; padding-left: 8px ; padding-right: 8px ;}"_$c(13,10)
+"RTN","C0E0000E",33,0)
+ w "   #tabs {cursor : pointer ; height: 20px ;  background : #cccccc ; text-align: center ; position: relative ; left: 25px ; font-family : Arial, Helvetica, sens-serif ; font-size: 11pt}"_$c(13,10)
+"RTN","C0E0000E",34,0)
+ w "   #mainArea {background : #dfe2f1 ; padding: 0 ; horizontal-align: center ; width : 100% ; height: auto ; border-style: solid ; border-left-width: 1px ; border-right-width: 1px ; padding-top : 0px ; margin-top : 0px}"_$c(13,10)
+"RTN","C0E0000E",35,0)
+ w "   #workArea {background : #ffffff ; horizontal-align: center ; position: relative ; top: -6px ; left: 25px ; width : 95% ; height: auto ; font-family : Arial, Helvetica, sens-serif ; font-size: 12pt ; border-style: outset}"_$c(13,10)
+"RTN","C0E0000E",36,0)
+ w "   #pageTitle {width: 100% ; height: 50px ; text-align : center ; horizontal-align : center ; font-family: Arial, sans-serif ;}"_$c(13,10)
+"RTN","C0E0000E",37,0)
+ w "   .footerBlock {width: 100% ; background : #111111 ; horizontal-align : center ;}"_$c(13,10)
+"RTN","C0E0000E",38,0)
+ w "   .footerBlock[class] {width: 100% ; background : #111111 ; horizontal-align : center ; position: relative ; top : -15px ; border-right-style : solid ; border-right-width: 2px ; }"_$c(13,10)
+"RTN","C0E0000E",39,0)
+ w "   #footerText {vertical-align: center ; font-family: Arial, sans-serif ; color: #dddddd ; font-size: 8pt ; margin-left : 10px}"_$c(13,10)
+"RTN","C0E0000E",40,0)
+ w "   #tableblock {text-align: center ; margin-top: 40px}"_$c(13,10)
+"RTN","C0E0000E",41,0)
+ w "   #hiddenForm {visibility: hidden ;}"_$c(13,10)
+"RTN","C0E0000E",42,0)
+ w "</style>"_$c(13,10)
+"RTN","C0E0000E",43,0)
+ w "</head>"_$c(13,10)
+"RTN","C0E0000E",44,0)
+ w "<body>"_$c(13,10)
+"RTN","C0E0000E",45,0)
+ w ""_$c(13,10)
+"RTN","C0E0000E",46,0)
+ w "      <div id=""mainArea"">"_$c(13,10)
+"RTN","C0E0000E",47,0)
+ w "        <div id=""pageTitle"">"_$c(13,10)
+"RTN","C0E0000E",48,0)
+ w "           <h1>Enterprise Web Developer (Build 790)</h1>"_$c(13,10)
+"RTN","C0E0000E",49,0)
+ w "        </div>"_$c(13,10)
+"RTN","C0E0000E",50,0)
+ w ""_$c(13,10)
+"RTN","C0E0000E",51,0)
+ w "        <div id=""workArea"">"_$c(13,10)
+"RTN","C0E0000E",52,0)
+ w "          <div id=""tableblock"">"_$c(13,10)
+"RTN","C0E0000E",53,0)
+ w "           <h3>An Error has occurred</h3>"_$c(13,10)
+"RTN","C0E0000E",54,0)
+ w "           <br>"_$c(13,10)
+"RTN","C0E0000E",55,0)
+ w "           <h3>"_$g(%KEY("error"))_"</h3>"_$c(13,10)
+"RTN","C0E0000E",56,0)
+ w "          </div>"_$c(13,10)
+"RTN","C0E0000E",57,0)
+ w "        </div>"_$c(13,10)
+"RTN","C0E0000E",58,0)
+ w "     </div>"_$c(13,10)
+"RTN","C0E0000E",59,0)
+ w ""_$c(13,10)
+"RTN","C0E0000E",60,0)
+ w "     <div class=footerBlock>"_$c(13,10)
+"RTN","C0E0000E",61,0)
+ w "              <p id=""footerText"">&nbsp;&copy; 2004-2009 M/Gateway Developments Ltd All Rights Reserved</p>"_$c(13,10)
+"RTN","C0E0000E",62,0)
+ w "     </div>"_$c(13,10)
+"RTN","C0E0000E",63,0)
+ w "</body>"_$c(13,10)
+"RTN","C0E0000E",64,0)
+ w "</html>"_$c(13,10)
+"RTN","C0E0000E",65,0)
+ QUIT
+"RTN","C0E0000F")
+0^4^B32569634
+"RTN","C0E0000F",1,0)
+ ;GT.M version of page ewdAjaxErrorRedirect (screenman application)
+"RTN","C0E0000F",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:22;;;;;Build 3
+"RTN","C0E0000F",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0000F",4,0)
+ QUIT
+"RTN","C0E0000F",5,0)
+ ;
+"RTN","C0E0000F",6,0)
+run ;
+"RTN","C0E0000F",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0000F",8,0)
+ s ok=$$pre()
+"RTN","C0E0000F",9,0)
+ i ok d body
+"RTN","C0E0000F",10,0)
+ QUIT
+"RTN","C0E0000F",11,0)
+ ;
+"RTN","C0E0000F",12,0)
+pre() ;
+"RTN","C0E0000F",13,0)
+ ;
+"RTN","C0E0000F",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0000F",15,0)
+ ;
+"RTN","C0E0000F",16,0)
+ s confirmText="Click OK if you're sure you want to delete this record"
+"RTN","C0E0000F",17,0)
+ s sessionArray("ewd_isFirstPage")="0"
+"RTN","C0E0000F",18,0)
+ s sessionArray("ewd_sessid_timeout")="1200"
+"RTN","C0E0000F",19,0)
+ s sessionArray("ewd_prePageScript")=""
+"RTN","C0E0000F",20,0)
+ s sessionArray("ewd_default_timeout")="1200"
+"RTN","C0E0000F",21,0)
+ s sessionArray("ewd_persistRequest")="true"
+"RTN","C0E0000F",22,0)
+ s sessionArray("ewd_pageTitle")=""
+"RTN","C0E0000F",23,0)
+ s sessionArray("ewd_errorPage")="ewdError"
+"RTN","C0E0000F",24,0)
+ s sessionArray("ewd_templatePrePageScript")=""
+"RTN","C0E0000F",25,0)
+ s sessionArray("ewd_onErrorScript")=""
+"RTN","C0E0000F",26,0)
+ s sessionArray("ewd_appName")="screenman"
+"RTN","C0E0000F",27,0)
+ s sessionArray("ewd_pageName")="ewdAjaxErrorRedirect"
+"RTN","C0E0000F",28,0)
+ s sessionArray("ewd_translationMode")="0"
+"RTN","C0E0000F",29,0)
+ s sessionArray("ewd_technology")="gtm"
+"RTN","C0E0000F",30,0)
+ s sessionArray("ewd_pageType")="ajax"
+"RTN","C0E0000F",31,0)
+ s tokens("ewdAjaxError")=$$setNextPageToken^%zewdGTMRuntime("ewdAjaxError")
+"RTN","C0E0000F",32,0)
+ s tokens("ewdErrorRedirect")=$$setNextPageToken^%zewdGTMRuntime("ewdErrorRedirect")
+"RTN","C0E0000F",33,0)
+ s Error=$$startSession^%zewdPHP("ewdAjaxErrorRedirect",.%KEY,.%CGIEVAR,.sessionArray,.filesArray)
+"RTN","C0E0000F",34,0)
+ s sessid=$g(sessionArray("ewd_sessid"))
+"RTN","C0E0000F",35,0)
+ i Error["Enterprise Web Developer Error :",$g(sessionArray("ewd_pageType"))="ajax" d
+"RTN","C0E0000F",36,0)
+ . s Error=$p(Error,":",2,200)
+"RTN","C0E0000F",37,0)
+ . s Error=$$replaceAll^%zewdAPI(Error,"<br>",": ")
+"RTN","C0E0000F",38,0)
+ . s Error="EWD runtime error: "_Error
+"RTN","C0E0000F",39,0)
+ i $e(Error,1,32)="Enterprise Web Developer Error :" d  QUIT 0
+"RTN","C0E0000F",40,0)
+ . n errorPage
+"RTN","C0E0000F",41,0)
+ . s errorPage=$g(sessionArray("ewd_errorPage"))
+"RTN","C0E0000F",42,0)
+ . i errorPage="" s errorPage="ewdError"
+"RTN","C0E0000F",43,0)
+ . i $g(sessionArray("ewd_pageType"))="ajax" s errorPage="ewdAjaxErrorRedirect"
+"RTN","C0E0000F",44,0)
+ . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),errorPage,,,sessid,Error)
+"RTN","C0E0000F",45,0)
+ s stop=0
+"RTN","C0E0000F",46,0)
+ i Error="" d  i stop QUIT 0
+"RTN","C0E0000F",47,0)
+ . n nextpage
+"RTN","C0E0000F",48,0)
+ . s nextpage=$$getSessionValue^%zewdAPI("ewd_nextPage",sessid)
+"RTN","C0E0000F",49,0)
+ . i nextpage'="" d
+"RTN","C0E0000F",50,0)
+ . . n x
+"RTN","C0E0000F",51,0)
+ . . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),nextpage,$$getSessionValue^%zewdAPI("ewd_token",sessid),$$getSessionValue^%zewdAPI("ewd_pageToken",sessid))
+"RTN","C0E0000F",52,0)
+ . . s stop=1
+"RTN","C0E0000F",53,0)
+ i $$getSessionValue^%zewdAPI("ewd_warning",sessid)'="" d
+"RTN","C0E0000F",54,0)
+ . s Error=$$getSessionValue^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000F",55,0)
+ . d deleteFromSession^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000F",56,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0000F",57,0)
+ s ctype="text/html"
+"RTN","C0E0000F",58,0)
+ d mergeArrayFromSession^%zewdAPI(.headers,"ewd.header",sessid)
+"RTN","C0E0000F",59,0)
+ i $d(headers) d
+"RTN","C0E0000F",60,0)
+ . n lcname,name
+"RTN","C0E0000F",61,0)
+ . s name=""
+"RTN","C0E0000F",62,0)
+ . f  s name=$o(headers(name)) q:name=""  d
+"RTN","C0E0000F",63,0)
+ . . s lcname=$$zcvt^%zewdAPI(name,"l")
+"RTN","C0E0000F",64,0)
+ . . i lcname="content-type" s ctype=headers(name) q
+"RTN","C0E0000F",65,0)
+ . . w name_": "_headers(name)_$c(13,10)
+"RTN","C0E0000F",66,0)
+ w "Content-type: "_ctype_$c(13,10)
+"RTN","C0E0000F",67,0)
+ w $c(13,10)
+"RTN","C0E0000F",68,0)
+ QUIT 1
+"RTN","C0E0000F",69,0)
+ ;
+"RTN","C0E0000F",70,0)
+body ;
+"RTN","C0E0000F",71,0)
+ if ($g(Error)="") d
+"RTN","C0E0000F",72,0)
+ .w "   <span>"_$c(13,10)
+"RTN","C0E0000F",73,0)
+ .w "      <div href='/ewd/screenman/ewdErrorRedirect.mgwsi?ewd_token="_$g(^%zewdSession("session",sessid,"ewd_token"))_"&n="_tokens("ewdErrorRedirect")_"&ewd_urlNo=ewdAjaxErrorRedirect1' id=""zewdRef"">"_$c(13,10)
+"RTN","C0E0000F",74,0)
+ .w "</div>"_$c(13,10)
+"RTN","C0E0000F",75,0)
+ .w "   </span>"_$c(13,10)
+"RTN","C0E0000F",76,0)
+ .
+"RTN","C0E0000F",77,0)
+ w "<span id=""ewdajaxonload"">"_$c(13,10)
+"RTN","C0E0000F",78,0)
+ w " var ewdtext='"_$$jsEscape^%zewdGTMRuntime(Error)_"' ; if (ewdtext != '') {    if (ewdtext.substring(0,11) == 'javascript:') {       ewdtext=ewdtext.substring(11) ;       eval(ewdtext) ;    }    else {       EWD.ajax.alert('"_$$htmlEscape^%zewdGTMRuntime($$jsEscape^%zewdGTMRuntime(Error))_"')    }"_$c(13,10)
+"RTN","C0E0000F",79,0)
+ s id=""
+"RTN","C0E0000F",80,0)
+ f  s id=$o(^%zewdSession("session","ewd_idList",id)) q:id=""  d
+"RTN","C0E0000F",81,0)
+ . w "idPointer = document.getElementById('"_id_"') ; "
+"RTN","C0E0000F",82,0)
+ . w "if (idPointer != null) idPointer.className='"_$g(^%zewdSession("session","ewd_idList"))_"' ; "
+"RTN","C0E0000F",83,0)
+ s id=""
+"RTN","C0E0000F",84,0)
+ f  s id=$o(^%zewdSession("session","ewd_errorFields",id)) q:id=""  d
+"RTN","C0E0000F",85,0)
+ . w "idPointer = document.getElementById('"_id_"') ; "
+"RTN","C0E0000F",86,0)
+ . w "if (idPointer != null) idPointer.className='"_$g(^%zewdSession("session","ewd_errorClass"))_"' ; "
+"RTN","C0E0000F",87,0)
+ k ^%zewdSession("session","ewd_hasErrors")
+"RTN","C0E0000F",88,0)
+ k ^%zewdSession("session","ewd_errorFields")
+"RTN","C0E0000F",89,0)
+ k ^%zewdSession("session","ewd_idList")
+"RTN","C0E0000F",90,0)
+ w " } else {document.location = document.getElementById(""zewdRef"").getAttribute(""href"") ; }"_""
+"RTN","C0E0000F",91,0)
+ w "</span>"_$c(13,10)
+"RTN","C0E0000F",92,0)
+ QUIT
+"RTN","C0E0000R")
+0^6^B66670061
+"RTN","C0E0000R",1,0)
+ ;GT.M version of page ewdErrorRedirect (screenman application)
+"RTN","C0E0000R",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:22;;;;;Build 3
+"RTN","C0E0000R",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0000R",4,0)
+ QUIT
+"RTN","C0E0000R",5,0)
+ ;
+"RTN","C0E0000R",6,0)
+run ;
+"RTN","C0E0000R",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0000R",8,0)
+ s ok=$$pre()
+"RTN","C0E0000R",9,0)
+ i ok d body
+"RTN","C0E0000R",10,0)
+ QUIT
+"RTN","C0E0000R",11,0)
+ ;
+"RTN","C0E0000R",12,0)
+pre() ;
+"RTN","C0E0000R",13,0)
+ ;
+"RTN","C0E0000R",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0000R",15,0)
+ ;
+"RTN","C0E0000R",16,0)
+ s confirmText="Click OK if you're sure you want to delete this record"
+"RTN","C0E0000R",17,0)
+ s sessionArray("ewd_isFirstPage")="0"
+"RTN","C0E0000R",18,0)
+ s sessionArray("ewd_sessid_timeout")="1200"
+"RTN","C0E0000R",19,0)
+ s sessionArray("ewd_prePageScript")="ajaxErrorRedirect^%zewdAPI"
+"RTN","C0E0000R",20,0)
+ s sessionArray("ewd_default_timeout")="1200"
+"RTN","C0E0000R",21,0)
+ s sessionArray("ewd_persistRequest")="true"
+"RTN","C0E0000R",22,0)
+ s sessionArray("ewd_pageTitle")=""
+"RTN","C0E0000R",23,0)
+ s sessionArray("ewd_errorPage")="ewdError"
+"RTN","C0E0000R",24,0)
+ s sessionArray("ewd_templatePrePageScript")=""
+"RTN","C0E0000R",25,0)
+ s sessionArray("ewd_onErrorScript")=""
+"RTN","C0E0000R",26,0)
+ s sessionArray("ewd_appName")="screenman"
+"RTN","C0E0000R",27,0)
+ s sessionArray("ewd_pageName")="ewdErrorRedirect"
+"RTN","C0E0000R",28,0)
+ s sessionArray("ewd_translationMode")="0"
+"RTN","C0E0000R",29,0)
+ s sessionArray("ewd_technology")="gtm"
+"RTN","C0E0000R",30,0)
+ s sessionArray("ewd_pageType")=""
+"RTN","C0E0000R",31,0)
+ s ebToken("setErrorClasses^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("setErrorClasses^%zewdAPI",.sessionArray)
+"RTN","C0E0000R",32,0)
+ s ebToken("saveJSON^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("saveJSON^%zewdAPI",.sessionArray)
+"RTN","C0E0000R",33,0)
+ s ebToken("getJSON^%zewdCompiler13")=$$createEBToken^%zewdGTMRuntime("getJSON^%zewdCompiler13",.sessionArray)
+"RTN","C0E0000R",34,0)
+ s ebToken("mergeToJSObject^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("mergeToJSObject^%zewdAPI",.sessionArray)
+"RTN","C0E0000R",35,0)
+ s Error=$$startSession^%zewdPHP("ewdErrorRedirect",.%KEY,.%CGIEVAR,.sessionArray,.filesArray)
+"RTN","C0E0000R",36,0)
+ s sessid=$g(sessionArray("ewd_sessid"))
+"RTN","C0E0000R",37,0)
+ i Error["Enterprise Web Developer Error :",$g(sessionArray("ewd_pageType"))="ajax" d
+"RTN","C0E0000R",38,0)
+ . s Error=$p(Error,":",2,200)
+"RTN","C0E0000R",39,0)
+ . s Error=$$replaceAll^%zewdAPI(Error,"<br>",": ")
+"RTN","C0E0000R",40,0)
+ . s Error="EWD runtime error: "_Error
+"RTN","C0E0000R",41,0)
+ i $e(Error,1,32)="Enterprise Web Developer Error :" d  QUIT 0
+"RTN","C0E0000R",42,0)
+ . n errorPage
+"RTN","C0E0000R",43,0)
+ . s errorPage=$g(sessionArray("ewd_errorPage"))
+"RTN","C0E0000R",44,0)
+ . i errorPage="" s errorPage="ewdError"
+"RTN","C0E0000R",45,0)
+ . i $g(sessionArray("ewd_pageType"))="ajax" s errorPage="ewdAjaxErrorRedirect"
+"RTN","C0E0000R",46,0)
+ . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),errorPage,,,sessid,Error)
+"RTN","C0E0000R",47,0)
+ s stop=0
+"RTN","C0E0000R",48,0)
+ i Error="" d  i stop QUIT 0
+"RTN","C0E0000R",49,0)
+ . n nextpage
+"RTN","C0E0000R",50,0)
+ . s nextpage=$$getSessionValue^%zewdAPI("ewd_nextPage",sessid)
+"RTN","C0E0000R",51,0)
+ . i nextpage'="" d
+"RTN","C0E0000R",52,0)
+ . . n x
+"RTN","C0E0000R",53,0)
+ . . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),nextpage,$$getSessionValue^%zewdAPI("ewd_token",sessid),$$getSessionValue^%zewdAPI("ewd_pageToken",sessid))
+"RTN","C0E0000R",54,0)
+ . . s stop=1
+"RTN","C0E0000R",55,0)
+ i $$getSessionValue^%zewdAPI("ewd_warning",sessid)'="" d
+"RTN","C0E0000R",56,0)
+ . s Error=$$getSessionValue^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000R",57,0)
+ . d deleteFromSession^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0000R",58,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0000R",59,0)
+ s ctype="text/html"
+"RTN","C0E0000R",60,0)
+ d mergeArrayFromSession^%zewdAPI(.headers,"ewd.header",sessid)
+"RTN","C0E0000R",61,0)
+ i $d(headers) d
+"RTN","C0E0000R",62,0)
+ . n lcname,name
+"RTN","C0E0000R",63,0)
+ . s name=""
+"RTN","C0E0000R",64,0)
+ . f  s name=$o(headers(name)) q:name=""  d
+"RTN","C0E0000R",65,0)
+ . . s lcname=$$zcvt^%zewdAPI(name,"l")
+"RTN","C0E0000R",66,0)
+ . . i lcname="content-type" s ctype=headers(name) q
+"RTN","C0E0000R",67,0)
+ . . w name_": "_headers(name)_$c(13,10)
+"RTN","C0E0000R",68,0)
+ w "Content-type: "_ctype_$c(13,10)
+"RTN","C0E0000R",69,0)
+ w $c(13,10)
+"RTN","C0E0000R",70,0)
+ QUIT 1
+"RTN","C0E0000R",71,0)
+ ;
+"RTN","C0E0000R",72,0)
+body ;
+"RTN","C0E0000R",73,0)
+ w "<html>"_$c(13,10)
+"RTN","C0E0000R",74,0)
+ w "   <head>"_$c(13,10)
+"RTN","C0E0000R",75,0)
+ w "      <link href=""/resources/ewd.css"" rel=""stylesheet"" type=""text/css"" />"_$c(13,10)
+"RTN","C0E0000R",76,0)
+ w "      <script src=""/resources/ewdScripts.js"">"_$c(13,10)
+"RTN","C0E0000R",77,0)
+ w "</script>"_$c(13,10)
+"RTN","C0E0000R",78,0)
+ w "      <title>"_$c(13,10)
+"RTN","C0E0000R",79,0)
+ w "Ajax Error Redirect page"_""
+"RTN","C0E0000R",80,0)
+ w "      </title>"_$c(13,10)
+"RTN","C0E0000R",81,0)
+ w "      <head>"_$c(13,10)
+"RTN","C0E0000R",82,0)
+ w "         <body onload=""EWD.page.setErrorClass() ; EWD.page.errorMessage('"_$$htmlEscape^%zewdGTMRuntime($$jsEscape^%zewdGTMRuntime(Error))_"')"">"_$c(13,10)
+"RTN","C0E0000R",83,0)
+ w "Please wait...."_""
+"RTN","C0E0000R",84,0)
+ w "         </body>"_$c(13,10)
+"RTN","C0E0000R",85,0)
+ w "      </head>"_$c(13,10)
+"RTN","C0E0000R",86,0)
+ w "      <script language=""javascript"">"_$c(13,10)
+"RTN","C0E0000R",87,0)
+ w "       EWD.page.confirmText='"_$$jsEscape^%zewdGTMRuntime(confirmText)_"' ;"_$c(13,10)
+"RTN","C0E0000R",88,0)
+ w "  EWD.page.setOnSubmit =  function(obj,confirmText) { "_$c(13,10)
+"RTN","C0E0000R",89,0)
+ w "                            str='return EWD.page.displayConfirm(""' + confirmText+ '"")' ;"_$c(13,10)
+"RTN","C0E0000R",90,0)
+ w "                            obj.form.onsubmit=new Function(str) ;"_$c(13,10)
+"RTN","C0E0000R",91,0)
+ w "                          } ;"_$c(13,10)
+"RTN","C0E0000R",92,0)
+ w "  EWD.page.setErrorClass = function () { "_$c(13,10)
+"RTN","C0E0000R",93,0)
+ w "                             if ('"_$$getSessionValue^%zewdAPI("ewd_hasErrors",sessid)_"' == '1') {"_$c(13,10)
+"RTN","C0E0000R",94,0)
+ w "                               EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("setErrorClasses^%zewdAPI")_"','','synch','','') ;"_$c(13,10)
+"RTN","C0E0000R",95,0)
+ w "                             }"_$c(13,10)
+"RTN","C0E0000R",96,0)
+ w "                           } ;"_$c(13,10)
+"RTN","C0E0000R",97,0)
+ w "  EWD.utils.putObjectToSession = function (objName) { "_$c(13,10)
+"RTN","C0E0000R",98,0)
+ w "                           var json,x ;"_$c(13,10)
+"RTN","C0E0000R",99,0)
+ w "                           if (typeof(dojo) != ""undefined"") {"_$c(13,10)
+"RTN","C0E0000R",100,0)
+ w "                             x = ""json = dojo.toJson("" + objName + "")"" ;"_$c(13,10)
+"RTN","C0E0000R",101,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0000R",102,0)
+ w "                           }"_$c(13,10)
+"RTN","C0E0000R",103,0)
+ w "                           else {"_$c(13,10)
+"RTN","C0E0000R",104,0)
+ w "                             //x = ""json="" + objName + "".toJSONString()"" ;"_$c(13,10)
+"RTN","C0E0000R",105,0)
+ w "                             //eval(x) ;"_$c(13,10)
+"RTN","C0E0000R",106,0)
+ w "                             x = ""json=toJsonString("" + objName + "");"" ;"_$c(13,10)
+"RTN","C0E0000R",107,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0000R",108,0)
+ w "                             //json=toJsonString(objName);"_$c(13,10)
+"RTN","C0E0000R",109,0)
+ w "                           }"_$c(13,10)
+"RTN","C0E0000R",110,0)
+ w "                           EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("saveJSON^%zewdAPI")_"&px1=' + objName + '&px2=' + json + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0000R",111,0)
+ w "                         } ;"_$c(13,10)
+"RTN","C0E0000R",112,0)
+ w "  EWD.utils.getObjectFromSession = function (objName, refresh, addRefCol) { "_$c(13,10)
+"RTN","C0E0000R",113,0)
+ w "                          if (refresh) {"_$c(13,10)
+"RTN","C0E0000R",114,0)
+ w "                             eval(""delete("" + objName + "") ;"") ;"_$c(13,10)
+"RTN","C0E0000R",115,0)
+ w "                             var objExists = ""undefined"" ;"_$c(13,10)
+"RTN","C0E0000R",116,0)
+ w "                          }"_$c(13,10)
+"RTN","C0E0000R",117,0)
+ w "                          else {"_$c(13,10)
+"RTN","C0E0000R",118,0)
+ w "                             var x = ""var objExists = typeof("" + objName + "");"" ;"_$c(13,10)
+"RTN","C0E0000R",119,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0000R",120,0)
+ w "                          }"_$c(13,10)
+"RTN","C0E0000R",121,0)
+ w "                          if (objExists == ""undefined"") {"_$c(13,10)
+"RTN","C0E0000R",122,0)
+ w "                            var addRef = 0 ;"_$c(13,10)
+"RTN","C0E0000R",123,0)
+ w "                            if (addRefCol) addRef = 1;"_$c(13,10)
+"RTN","C0E0000R",124,0)
+ w "                            EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("getJSON^%zewdCompiler13")_"&px1=' + objName + '&px2=' + addRef + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0000R",125,0)
+ w ""_""
+"RTN","C0E0000R",126,0)
+ w "                          };"_$c(13,10)
+"RTN","C0E0000R",127,0)
+ w "                        } ;"_$c(13,10)
+"RTN","C0E0000R",128,0)
+ w "  EWD.utils.mergeObjectFromSession = function (sessionName,JSObjName) { "_$c(13,10)
+"RTN","C0E0000R",129,0)
+ w "                            EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("mergeToJSObject^%zewdAPI")_"&px1=' + sessionName + '&px2=' + JSObjName + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0000R",130,0)
+ w "                        } ;"_$c(13,10)
+"RTN","C0E0000R",131,0)
+ w ""_""
+"RTN","C0E0000R",132,0)
+ w "      </script>"_$c(13,10)
+"RTN","C0E0000R",133,0)
+ w "   </head>"_$c(13,10)
+"RTN","C0E0000R",134,0)
+ w "</html>"_$c(13,10)
+"RTN","C0E0000R",135,0)
+ QUIT
+"RTN","C0E0001I")
+0^7^B20127196
+"RTN","C0E0001I",1,0)
+ ;GT.M version of page index (screenman application)
+"RTN","C0E0001I",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:23;;;;;Build 3
+"RTN","C0E0001I",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0001I",4,0)
+ QUIT
+"RTN","C0E0001I",5,0)
+ ;
+"RTN","C0E0001I",6,0)
+run ;
+"RTN","C0E0001I",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0001I",8,0)
+ s ok=$$pre()
+"RTN","C0E0001I",9,0)
+ i ok d body
+"RTN","C0E0001I",10,0)
+ QUIT
+"RTN","C0E0001I",11,0)
+ ;
+"RTN","C0E0001I",12,0)
+pre() ;
+"RTN","C0E0001I",13,0)
+ ;
+"RTN","C0E0001I",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0001I",15,0)
+ ;
+"RTN","C0E0001I",16,0)
+ s confirmText="Click OK if you're sure you want to delete this record"
+"RTN","C0E0001I",17,0)
+ s sessionArray("ewd_isFirstPage")="1"
+"RTN","C0E0001I",18,0)
+ s sessionArray("ewd_sessid_timeout")="1200"
+"RTN","C0E0001I",19,0)
+ s sessionArray("ewd_prePageScript")=""
+"RTN","C0E0001I",20,0)
+ s sessionArray("ewd_default_timeout")="1200"
+"RTN","C0E0001I",21,0)
+ s sessionArray("ewd_persistRequest")="true"
+"RTN","C0E0001I",22,0)
+ s sessionArray("ewd_pageTitle")=""
+"RTN","C0E0001I",23,0)
+ s sessionArray("ewd_errorPage")="ewdError"
+"RTN","C0E0001I",24,0)
+ s sessionArray("ewd_templatePrePageScript")=""
+"RTN","C0E0001I",25,0)
+ s sessionArray("ewd_onErrorScript")=""
+"RTN","C0E0001I",26,0)
+ s sessionArray("ewd_appName")="screenman"
+"RTN","C0E0001I",27,0)
+ s sessionArray("ewd_pageName")="index"
+"RTN","C0E0001I",28,0)
+ s sessionArray("ewd_translationMode")="0"
+"RTN","C0E0001I",29,0)
+ s sessionArray("ewd_technology")="gtm"
+"RTN","C0E0001I",30,0)
+ s sessionArray("ewd_pageType")=""
+"RTN","C0E0001I",31,0)
+ s tokens("test1")=$$setNextPageToken^%zewdGTMRuntime("test1")
+"RTN","C0E0001I",32,0)
+ s Error=$$startSession^%zewdPHP("index",.%KEY,.%CGIEVAR,.sessionArray,.filesArray)
+"RTN","C0E0001I",33,0)
+ s sessid=$g(sessionArray("ewd_sessid"))
+"RTN","C0E0001I",34,0)
+ i Error["Enterprise Web Developer Error :",$g(sessionArray("ewd_pageType"))="ajax" d
+"RTN","C0E0001I",35,0)
+ . s Error=$p(Error,":",2,200)
+"RTN","C0E0001I",36,0)
+ . s Error=$$replaceAll^%zewdAPI(Error,"<br>",": ")
+"RTN","C0E0001I",37,0)
+ . s Error="EWD runtime error: "_Error
+"RTN","C0E0001I",38,0)
+ i $e(Error,1,32)="Enterprise Web Developer Error :" d  QUIT 0
+"RTN","C0E0001I",39,0)
+ . n errorPage
+"RTN","C0E0001I",40,0)
+ . s errorPage=$g(sessionArray("ewd_errorPage"))
+"RTN","C0E0001I",41,0)
+ . i errorPage="" s errorPage="ewdError"
+"RTN","C0E0001I",42,0)
+ . i $g(sessionArray("ewd_pageType"))="ajax" s errorPage="ewdAjaxErrorRedirect"
+"RTN","C0E0001I",43,0)
+ . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),errorPage,,,sessid,Error)
+"RTN","C0E0001I",44,0)
+ s stop=0
+"RTN","C0E0001I",45,0)
+ i Error="" d  i stop QUIT 0
+"RTN","C0E0001I",46,0)
+ . n nextpage
+"RTN","C0E0001I",47,0)
+ . s nextpage=$$getSessionValue^%zewdAPI("ewd_nextPage",sessid)
+"RTN","C0E0001I",48,0)
+ . i nextpage'="" d
+"RTN","C0E0001I",49,0)
+ . . n x
+"RTN","C0E0001I",50,0)
+ . . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),nextpage,$$getSessionValue^%zewdAPI("ewd_token",sessid),$$getSessionValue^%zewdAPI("ewd_pageToken",sessid))
+"RTN","C0E0001I",51,0)
+ . . s stop=1
+"RTN","C0E0001I",52,0)
+ i $$getSessionValue^%zewdAPI("ewd_warning",sessid)'="" d
+"RTN","C0E0001I",53,0)
+ . s Error=$$getSessionValue^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0001I",54,0)
+ . d deleteFromSession^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0001I",55,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0001I",56,0)
+ s ctype="text/html"
+"RTN","C0E0001I",57,0)
+ d mergeArrayFromSession^%zewdAPI(.headers,"ewd.header",sessid)
+"RTN","C0E0001I",58,0)
+ i $d(headers) d
+"RTN","C0E0001I",59,0)
+ . n lcname,name
+"RTN","C0E0001I",60,0)
+ . s name=""
+"RTN","C0E0001I",61,0)
+ . f  s name=$o(headers(name)) q:name=""  d
+"RTN","C0E0001I",62,0)
+ . . s lcname=$$zcvt^%zewdAPI(name,"l")
+"RTN","C0E0001I",63,0)
+ . . i lcname="content-type" s ctype=headers(name) q
+"RTN","C0E0001I",64,0)
+ . . w name_": "_headers(name)_$c(13,10)
+"RTN","C0E0001I",65,0)
+ w "Content-type: "_ctype_$c(13,10)
+"RTN","C0E0001I",66,0)
+ w $c(13,10)
+"RTN","C0E0001I",67,0)
+ QUIT 1
+"RTN","C0E0001I",68,0)
+ ;
+"RTN","C0E0001I",69,0)
+body ;
+"RTN","C0E0001I",70,0)
+ w "<html>"_$c(13,10)
+"RTN","C0E0001I",71,0)
+ w "   <header>"_$c(13,10)
+"RTN","C0E0001I",72,0)
+ w "      <title>"_$c(13,10)
+"RTN","C0E0001I",73,0)
+ w "Screenman Menu"_""
+"RTN","C0E0001I",74,0)
+ w "      </title>"_$c(13,10)
+"RTN","C0E0001I",75,0)
+ w "   </header>"_$c(13,10)
+"RTN","C0E0001I",76,0)
+ w "   <body onload=""EWD.page.setErrorClass() ; EWD.page.errorMessage('"_$$htmlEscape^%zewdGTMRuntime($$jsEscape^%zewdGTMRuntime(Error))_"')"">"_$c(13,10)
+"RTN","C0E0001I",77,0)
+ w "Hello World"_""
+"RTN","C0E0001I",78,0)
+ w "      <br />"_$c(13,10)
+"RTN","C0E0001I",79,0)
+ w "      <br />"_$c(13,10)
+"RTN","C0E0001I",80,0)
+ w "      <a href='/ewd/screenman/test1.mgwsi?ewd_token="_$g(^%zewdSession("session",sessid,"ewd_token"))_"&n="_tokens("test1")_"&ewd_urlNo=index1'>"_$c(13,10)
+"RTN","C0E0001I",81,0)
+ w "test1 page"_""
+"RTN","C0E0001I",82,0)
+ w "      </a>"_$c(13,10)
+"RTN","C0E0001I",83,0)
+ w "   </body>"_$c(13,10)
+"RTN","C0E0001I",84,0)
+ w "</html>"_$c(13,10)
+"RTN","C0E0001I",85,0)
+ QUIT
+"RTN","C0E0002")
+0^8^B92918287
+"RTN","C0E0002",1,0)
+ ;GT.M version of page test1 (screenman application)
+"RTN","C0E0002",2,0)
+ ;Compiled on Sun, 28 Feb 2010 19:55:23;;;;;Build 3
+"RTN","C0E0002",3,0)
+ ;using Enterprise Web Developer (Build 790)
+"RTN","C0E0002",4,0)
+ QUIT
+"RTN","C0E0002",5,0)
+ ;
+"RTN","C0E0002",6,0)
+run ;
+"RTN","C0E0002",7,0)
+ n confirmText,ebToken,Error,formInfo,ok,sessid,sessionArray,tokens
+"RTN","C0E0002",8,0)
+ s ok=$$pre()
+"RTN","C0E0002",9,0)
+ i ok d body
+"RTN","C0E0002",10,0)
+ QUIT
+"RTN","C0E0002",11,0)
+ ;
+"RTN","C0E0002",12,0)
+pre() ;
+"RTN","C0E0002",13,0)
+ ;
+"RTN","C0E0002",14,0)
+ n ctype,ewdAction,headers,jump,quitStatus,pageTitle,stop,urlNo
+"RTN","C0E0002",15,0)
+ ;
+"RTN","C0E0002",16,0)
+ s confirmText="Click OK if you're sure you want to delete this record"
+"RTN","C0E0002",17,0)
+ s sessionArray("ewd_isFirstPage")="0"
+"RTN","C0E0002",18,0)
+ s sessionArray("ewd_sessid_timeout")="1200"
+"RTN","C0E0002",19,0)
+ s sessionArray("ewd_prePageScript")="TEST1^C0CROB"
+"RTN","C0E0002",20,0)
+ s sessionArray("ewd_default_timeout")="1200"
+"RTN","C0E0002",21,0)
+ s sessionArray("ewd_persistRequest")="true"
+"RTN","C0E0002",22,0)
+ s sessionArray("ewd_pageTitle")=""
+"RTN","C0E0002",23,0)
+ s sessionArray("ewd_errorPage")="ewdError"
+"RTN","C0E0002",24,0)
+ s sessionArray("ewd_templatePrePageScript")=""
+"RTN","C0E0002",25,0)
+ s sessionArray("ewd_onErrorScript")=""
+"RTN","C0E0002",26,0)
+ s sessionArray("ewd_appName")="screenman"
+"RTN","C0E0002",27,0)
+ s sessionArray("ewd_pageName")="test1"
+"RTN","C0E0002",28,0)
+ s sessionArray("ewd_translationMode")="0"
+"RTN","C0E0002",29,0)
+ s sessionArray("ewd_technology")="gtm"
+"RTN","C0E0002",30,0)
+ s sessionArray("ewd_pageType")=""
+"RTN","C0E0002",31,0)
+ s ebToken("setErrorClasses^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("setErrorClasses^%zewdAPI",.sessionArray)
+"RTN","C0E0002",32,0)
+ s ebToken("saveJSON^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("saveJSON^%zewdAPI",.sessionArray)
+"RTN","C0E0002",33,0)
+ s ebToken("getJSON^%zewdCompiler13")=$$createEBToken^%zewdGTMRuntime("getJSON^%zewdCompiler13",.sessionArray)
+"RTN","C0E0002",34,0)
+ s ebToken("mergeToJSObject^%zewdAPI")=$$createEBToken^%zewdGTMRuntime("mergeToJSObject^%zewdAPI",.sessionArray)
+"RTN","C0E0002",35,0)
+ s ebToken("VALIDATETITLE^C0CROB")=$$createEBToken^%zewdGTMRuntime("VALIDATETITLE^C0CROB",.sessionArray)
+"RTN","C0E0002",36,0)
+ s formInfo="SSN|text`TITLE|text`ewd_pressed|hidden`submit|submit`"
+"RTN","C0E0002",37,0)
+ d setMethodAndNextPage^%zewdCompiler20("submit","SAVEFORM^C0CROB","test1",formInfo,.sessionArray)
+"RTN","C0E0002",38,0)
+ s Error=$$startSession^%zewdPHP("test1",.%KEY,.%CGIEVAR,.sessionArray,.filesArray)
+"RTN","C0E0002",39,0)
+ s sessid=$g(sessionArray("ewd_sessid"))
+"RTN","C0E0002",40,0)
+ i Error["Enterprise Web Developer Error :",$g(sessionArray("ewd_pageType"))="ajax" d
+"RTN","C0E0002",41,0)
+ . s Error=$p(Error,":",2,200)
+"RTN","C0E0002",42,0)
+ . s Error=$$replaceAll^%zewdAPI(Error,"<br>",": ")
+"RTN","C0E0002",43,0)
+ . s Error="EWD runtime error: "_Error
+"RTN","C0E0002",44,0)
+ i $e(Error,1,32)="Enterprise Web Developer Error :" d  QUIT 0
+"RTN","C0E0002",45,0)
+ . n errorPage
+"RTN","C0E0002",46,0)
+ . s errorPage=$g(sessionArray("ewd_errorPage"))
+"RTN","C0E0002",47,0)
+ . i errorPage="" s errorPage="ewdError"
+"RTN","C0E0002",48,0)
+ . i $g(sessionArray("ewd_pageType"))="ajax" s errorPage="ewdAjaxErrorRedirect"
+"RTN","C0E0002",49,0)
+ . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),errorPage,,,sessid,Error)
+"RTN","C0E0002",50,0)
+ s stop=0
+"RTN","C0E0002",51,0)
+ i Error="" d  i stop QUIT 0
+"RTN","C0E0002",52,0)
+ . n nextpage
+"RTN","C0E0002",53,0)
+ . s nextpage=$$getSessionValue^%zewdAPI("ewd_nextPage",sessid)
+"RTN","C0E0002",54,0)
+ . i nextpage'="" d
+"RTN","C0E0002",55,0)
+ . . n x
+"RTN","C0E0002",56,0)
+ . . d writeHTTPHeader^%zewdGTMRuntime(sessionArray("ewd_appName"),nextpage,$$getSessionValue^%zewdAPI("ewd_token",sessid),$$getSessionValue^%zewdAPI("ewd_pageToken",sessid))
+"RTN","C0E0002",57,0)
+ . . s stop=1
+"RTN","C0E0002",58,0)
+ i $$getSessionValue^%zewdAPI("ewd_warning",sessid)'="" d
+"RTN","C0E0002",59,0)
+ . s Error=$$getSessionValue^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0002",60,0)
+ . d deleteFromSession^%zewdAPI("ewd_warning",sessid)
+"RTN","C0E0002",61,0)
+ w "HTTP/1.1 200 OK"_$c(13,10)
+"RTN","C0E0002",62,0)
+ s ctype="text/html"
+"RTN","C0E0002",63,0)
+ d mergeArrayFromSession^%zewdAPI(.headers,"ewd.header",sessid)
+"RTN","C0E0002",64,0)
+ i $d(headers) d
+"RTN","C0E0002",65,0)
+ . n lcname,name
+"RTN","C0E0002",66,0)
+ . s name=""
+"RTN","C0E0002",67,0)
+ . f  s name=$o(headers(name)) q:name=""  d
+"RTN","C0E0002",68,0)
+ . . s lcname=$$zcvt^%zewdAPI(name,"l")
+"RTN","C0E0002",69,0)
+ . . i lcname="content-type" s ctype=headers(name) q
+"RTN","C0E0002",70,0)
+ . . w name_": "_headers(name)_$c(13,10)
+"RTN","C0E0002",71,0)
+ w "Content-type: "_ctype_$c(13,10)
+"RTN","C0E0002",72,0)
+ w $c(13,10)
+"RTN","C0E0002",73,0)
+ QUIT 1
+"RTN","C0E0002",74,0)
+ ;
+"RTN","C0E0002",75,0)
+body ;
+"RTN","C0E0002",76,0)
+ w "<html>"_$c(13,10)
+"RTN","C0E0002",77,0)
+ w "   <head>"_$c(13,10)
+"RTN","C0E0002",78,0)
+ w "      <link href=""/resources/ewd.css"" rel=""stylesheet"" type=""text/css"" />"_$c(13,10)
+"RTN","C0E0002",79,0)
+ w "      <script src=""/resources/ewdScripts.js"">"_$c(13,10)
+"RTN","C0E0002",80,0)
+ w "</script>"_$c(13,10)
+"RTN","C0E0002",81,0)
+ w "      <script language=""javascript"">"_$c(13,10)
+"RTN","C0E0002",82,0)
+ w ""_$c(13,10)
+"RTN","C0E0002",83,0)
+ w "function ValidateTitle(value) {"_$c(13,10)
+"RTN","C0E0002",84,0)
+ w "EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("VALIDATETITLE^C0CROB")_"&px1=' + value + '','','synch','','');"_$c(13,10)
+"RTN","C0E0002",85,0)
+ w "}"_$c(13,10)
+"RTN","C0E0002",86,0)
+ w ""_""
+"RTN","C0E0002",87,0)
+ w "      </script>"_$c(13,10)
+"RTN","C0E0002",88,0)
+ w "      <title>"_$c(13,10)
+"RTN","C0E0002",89,0)
+ w "Screenman Test"_""
+"RTN","C0E0002",90,0)
+ w "      </title>"_$c(13,10)
+"RTN","C0E0002",91,0)
+ w "      <script language=""javascript"">"_$c(13,10)
+"RTN","C0E0002",92,0)
+ w "       EWD.page.confirmText='"_$$jsEscape^%zewdGTMRuntime(confirmText)_"' ;"_$c(13,10)
+"RTN","C0E0002",93,0)
+ w "  EWD.page.setOnSubmit =  function(obj,confirmText) { "_$c(13,10)
+"RTN","C0E0002",94,0)
+ w "                            str='return EWD.page.displayConfirm(""' + confirmText+ '"")' ;"_$c(13,10)
+"RTN","C0E0002",95,0)
+ w "                            obj.form.onsubmit=new Function(str) ;"_$c(13,10)
+"RTN","C0E0002",96,0)
+ w "                          } ;"_$c(13,10)
+"RTN","C0E0002",97,0)
+ w "  EWD.page.setErrorClass = function () { "_$c(13,10)
+"RTN","C0E0002",98,0)
+ w "                             if ('"_$$getSessionValue^%zewdAPI("ewd_hasErrors",sessid)_"' == '1') {"_$c(13,10)
+"RTN","C0E0002",99,0)
+ w "                               EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("setErrorClasses^%zewdAPI")_"','','synch','','') ;"_$c(13,10)
+"RTN","C0E0002",100,0)
+ w "                             }"_$c(13,10)
+"RTN","C0E0002",101,0)
+ w "                           } ;"_$c(13,10)
+"RTN","C0E0002",102,0)
+ w "  EWD.utils.putObjectToSession = function (objName) { "_$c(13,10)
+"RTN","C0E0002",103,0)
+ w "                           var json,x ;"_$c(13,10)
+"RTN","C0E0002",104,0)
+ w "                           if (typeof(dojo) != ""undefined"") {"_$c(13,10)
+"RTN","C0E0002",105,0)
+ w "                             x = ""json = dojo.toJson("" + objName + "")"" ;"_$c(13,10)
+"RTN","C0E0002",106,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0002",107,0)
+ w "                           }"_$c(13,10)
+"RTN","C0E0002",108,0)
+ w "                           else {"_$c(13,10)
+"RTN","C0E0002",109,0)
+ w "                             //x = ""json="" + objName + "".toJSONString()"" ;"_$c(13,10)
+"RTN","C0E0002",110,0)
+ w "                             //eval(x) ;"_$c(13,10)
+"RTN","C0E0002",111,0)
+ w "                             x = ""json=toJsonString("" + objName + "");"" ;"_$c(13,10)
+"RTN","C0E0002",112,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0002",113,0)
+ w "                             //json=toJsonString(objName);"_$c(13,10)
+"RTN","C0E0002",114,0)
+ w "                           }"_$c(13,10)
+"RTN","C0E0002",115,0)
+ w "                           EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("saveJSON^%zewdAPI")_"&px1=' + objName + '&px2=' + json + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0002",116,0)
+ w "                         } ;"_$c(13,10)
+"RTN","C0E0002",117,0)
+ w "  EWD.utils.getObjectFromSession = function (objName, refresh, addRefCol) { "_$c(13,10)
+"RTN","C0E0002",118,0)
+ w "                          if (refresh) {"_$c(13,10)
+"RTN","C0E0002",119,0)
+ w "                             eval(""delete("" + objName + "") ;"") ;"_$c(13,10)
+"RTN","C0E0002",120,0)
+ w "                             var objExists = ""undefined"" ;"_$c(13,10)
+"RTN","C0E0002",121,0)
+ w "                          }"_$c(13,10)
+"RTN","C0E0002",122,0)
+ w "                          else {"_$c(13,10)
+"RTN","C0E0002",123,0)
+ w "                             var x = ""var objExists = typeof("" + objName + "");"" ;"_$c(13,10)
+"RTN","C0E0002",124,0)
+ w "                             eval(x) ;"_$c(13,10)
+"RTN","C0E0002",125,0)
+ w "                          }"_$c(13,10)
+"RTN","C0E0002",126,0)
+ w "                          if (objExists == ""undefined"") {"_$c(13,10)
+"RTN","C0E0002",127,0)
+ w "                            var addRef = 0 ;"_$c(13,10)
+"RTN","C0E0002",128,0)
+ w "                            if (addRefCol) addRef = 1;"_$c(13,10)
+"RTN","C0E0002",129,0)
+ w "                            EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("getJSON^%zewdCompiler13")_"&px1=' + objName + '&px2=' + addRef + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0002",130,0)
+ w ""_""
+"RTN","C0E0002",131,0)
+ w "                          };"_$c(13,10)
+"RTN","C0E0002",132,0)
+ w "                        } ;"_$c(13,10)
+"RTN","C0E0002",133,0)
+ w "  EWD.utils.mergeObjectFromSession = function (sessionName,JSObjName) { "_$c(13,10)
+"RTN","C0E0002",134,0)
+ w "                            EWD.ajax.makeRequest('"_$$getRootURL^%zewdCompiler("gtm")_"ewdeb/eb.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"&eb="_ebToken("mergeToJSObject^%zewdAPI")_"&px1=' + sessionName + '&px2=' + JSObjName + '','','synch','','') ;"_$c(13,10)
+"RTN","C0E0002",135,0)
+ w "                        } ;"_$c(13,10)
+"RTN","C0E0002",136,0)
+ w ""_""
+"RTN","C0E0002",137,0)
+ w "      </script>"_$c(13,10)
+"RTN","C0E0002",138,0)
+ w "   </head>"_$c(13,10)
+"RTN","C0E0002",139,0)
+ w "   <body onload=""EWD.page.setErrorClass() ; EWD.page.errorMessage('"_$$htmlEscape^%zewdGTMRuntime($$jsEscape^%zewdGTMRuntime(Error))_"')"">"_$c(13,10)
+"RTN","C0E0002",140,0)
+ w "      <form action='/ewd/screenman/test1.mgwsi?ewd_token="_$$getSessionValue^%zewdAPI("ewd_token",sessid)_"' method=""post"" name=""ewdForm1"">"_$c(13,10)
+"RTN","C0E0002",141,0)
+ w "         <center>"_$c(13,10)
+"RTN","C0E0002",142,0)
+ w "Edit an Existing User"_""
+"RTN","C0E0002",143,0)
+ w "         </center>"_$c(13,10)
+"RTN","C0E0002",144,0)
+ w "         <div id=""name"">"_$c(13,10)
+"RTN","C0E0002",145,0)
+ w "NAME: "_$$getSessionValue^%zewdAPI("name",sessid)
+"RTN","C0E0002",146,0)
+ w "         </div>"_$c(13,10)
+"RTN","C0E0002",147,0)
+ w "         <hr />"_$c(13,10)
+"RTN","C0E0002",148,0)
+ w "TITLE:"_""
+"RTN","C0E0002",149,0)
+ w "         <input id=""TITLE"" name=""TITLE"" onchange=""ValidateTitle(this.value)"" type=""text"" value='"_$$getSessionValue^%zewdAPI("TITLE",sessid)_"' />"_$c(13,10)
+"RTN","C0E0002",150,0)
+ w "         <br />"_$c(13,10)
+"RTN","C0E0002",151,0)
+ w "         <br />"_$c(13,10)
+"RTN","C0E0002",152,0)
+ w "SSN:"_""
+"RTN","C0E0002",153,0)
+ w "         <input id=""SSN"" name=""SSN"" type=""text"" value='"_$$getSessionValue^%zewdAPI("SSN",sessid)_"' />"_$c(13,10)
+"RTN","C0E0002",154,0)
+ w "         <br />"_$c(13,10)
+"RTN","C0E0002",155,0)
+ w "         <br />"_$c(13,10)
+"RTN","C0E0002",156,0)
+ w "         <input id=""submit"" name=""submit"" onclick=""this.form.ewd_action.value=this.name ; this.form.ewd_pressed.value=this.name"" type=""submit"" value=""save"" />"_$c(13,10)
+"RTN","C0E0002",157,0)
+ w "         <input name=""ewd_action"" type=""hidden"" value="""" />"_$c(13,10)
+"RTN","C0E0002",158,0)
+ w "         <input name=""ewd_pressed"" type=""hidden"" value="""" />"_$c(13,10)
+"RTN","C0E0002",159,0)
+ w "      </form>"_$c(13,10)
+"RTN","C0E0002",160,0)
+ w "   </body>"_$c(13,10)
+"RTN","C0E0002",161,0)
+ w "</html>"_$c(13,10)
+"RTN","C0E0002",162,0)
+ QUIT
+"SEC","^DIC",70050,70050,0,"AUDIT")
+@
+"SEC","^DIC",70050,70050,0,"DD")
+@
+"SEC","^DIC",70050,70050,0,"DEL")
+@
+"SEC","^DIC",70050,70050,0,"LAYGO")
+@
+"SEC","^DIC",70050,70050,0,"RD")
+@
+"SEC","^DIC",70050,70050,0,"WR")
+@
+"VER")
+8.0^22.0
+"^DD",70050,70050,0)
+FIELD^^1^5
+"^DD",70050,70050,0,"DDA")
+N
+"^DD",70050,70050,0,"DT")
+3100301
+"^DD",70050,70050,0,"ID",.02)
+W "   ",$P(^(0),U,2)
+"^DD",70050,70050,0,"ID",.03)
+W "   ",$P(^(0),U,3)
+"^DD",70050,70050,0,"IX","B",70050,.01)
+
+"^DD",70050,70050,0,"NM","C0EWD ROUTINE MAP")
+
+"^DD",70050,70050,.01,0)
+EWD ROUTINE^RP9.8'^DIC(9.8,^0;1^Q
+"^DD",70050,70050,.01,1,0)
+^.1
+"^DD",70050,70050,.01,1,1,0)
+70050^B
+"^DD",70050,70050,.01,1,1,1)
+S ^C0E(70050,"B",$E(X,1,30),DA)=""
+"^DD",70050,70050,.01,1,1,2)
+K ^C0E(70050,"B",$E(X,1,30),DA)
+"^DD",70050,70050,.01,3)
+NAMESPACED EWD COMPILED PAGE
+"^DD",70050,70050,.01,"DT")
+3100301
+"^DD",70050,70050,.02,0)
+EWD APPLICATION^F^^0;2^K:$L(X)>60!($L(X)<1) X
+"^DD",70050,70050,.02,3)
+NAME OF THE EWD APPLICATION
+"^DD",70050,70050,.02,"DT")
+3100301
+"^DD",70050,70050,.03,0)
+EWD PAGE NAME^F^^0;3^K:$L(X)>60!($L(X)<1) X
+"^DD",70050,70050,.03,3)
+EWD PAGE NAME 
+"^DD",70050,70050,.03,"DT")
+3100301
+"^DD",70050,70050,1,0)
+DESCRIPTION^70050.01^^2;0
+"^DD",70050,70050,2,0)
+EWD SOURCE^70050.02^^1;0
+"^DD",70050,70050.01,0)
+DESCRIPTION SUB-FIELD^^.01^1
+"^DD",70050,70050.01,0,"DT")
+3100301
+"^DD",70050,70050.01,0,"NM","DESCRIPTION")
+
+"^DD",70050,70050.01,0,"UP")
+70050
+"^DD",70050,70050.01,.01,0)
+DESCRIPTION^Wx^^0;1
+"^DD",70050,70050.01,.01,3)
+DESCRIPTION OF THE EWD PAGE
+"^DD",70050,70050.01,.01,"DT")
+3100301
+"^DD",70050,70050.02,0)
+EWD SOURCE SUB-FIELD^^.01^1
+"^DD",70050,70050.02,0,"DT")
+3100301
+"^DD",70050,70050.02,0,"NM","EWD SOURCE")
+
+"^DD",70050,70050.02,0,"UP")
+70050
+"^DD",70050,70050.02,.01,0)
+EWD SOURCE^WLx^^0;1
+"^DD",70050,70050.02,.01,3)
+EWD PAGE SOURCE CODE
+"^DD",70050,70050.02,.01,"DT")
+3100301
+"^DIC",70050,70050,0)
+C0EWD ROUTINE MAP^70050
+"^DIC",70050,70050,0,"GL")
+^C0E(70050,
+"^DIC",70050,"B","C0EWD ROUTINE MAP",70050)
+
+**END**
+**END**

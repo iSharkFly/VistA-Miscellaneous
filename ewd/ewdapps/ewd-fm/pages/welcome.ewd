@@ -1,0 +1,25 @@
+<ewd:config isFirstPage="false" prepageScript="getInfo^KBANDemo">
+<html>
+ <head>
+  <title>Welcome to Edit Your Stuff Portal</title>
+ </head>
+ <body>
+  <div>
+  <h1>Welcome to Edit Your Stuff Portal</h1>
+  <hr />
+  <p>You are: 
+  <?= #Name ?>
+  </p>
+  <p>You can do the following<p>
+  <ul>
+  <li><a href="display.ewd">Display User Characteristics</a></li>
+  <li><a href="modesig.ewd">Modify Your Electronic Signature</a></li>
+  <li><a href="editchar.ewd">Edit your Contact Information</a></li>
+  </ul>
+  <p>Your session ID is 
+  <?= #ewd_sessid ?>
+  </p>
+  <br><br>
+  <a href=ewdLogout.ewd>Log out</a>
+ </body>
+</html>

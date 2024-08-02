@@ -1,0 +1,36 @@
+<ewd:config isFirstPage="false">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+SAM = {};  //My global storage object
+SAM.x = function () {
+    // ewd:esigjs^KBANDemo('SAM[20.4]');
+    // document.forms[0].F200I20_4.value = SAM['20.4']();
+    };
+SAM.val = function (dd,iens,field,value,name) {
+    // Ignore dd and field; we derive it instead from name
+    // Later versions will dymanically fetch the value of the field to check
+    // from the name of the input element
+    // Value needs to be urlencoded.
+	 var q = 'dd=' + dd + '&iens=' + iens + '&field=' + field + '&value=' + value + '&name=' + name;
+    EWD.ajax.getPage({page: 'valfield', targetId: 'testdiv', nvp: q})
+    };
+</script>
+<title>Edit Electronic Signature</title>
+</head>
+<body bgcolor="#C5E3E4" onload='SAM.x()'>
+<div style="text-align: center">
+<h1>Edit Electronic Signature</h1>
+<hr />
+<form name="form" method="post" action="ewd">
+<label for="esig">Electronic Signature</label>
+<input type="text" name="DD200F20_4" value="*" onchange="SAM.val(200,<?= #DUZ ?>,20.4,this.value,this.name)" />
+<input type="submit" name="save" value="Save" action="saveEsig^KBANDemo" nextpage="welcome.ewd" />
+</form>
+</div>
+<div id="testdiv" style="background-color: purple; color: white; ">
+Testing
+</div>
+</body>
+</html>

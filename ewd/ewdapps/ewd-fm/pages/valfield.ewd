@@ -1,0 +1,12 @@
+<ewd:config pageType="ajax" isFirstPage="false" prePageScript="VAL^KBANEWD1">
+
+<script language="javascript">
+ if ("<?= #tmp.error ?>")
+ {
+ 	alert("<?= #tmp.error ?>")
+ }
+ else
+ {
+ 	document.getElementById("<?= #tmp.name ?>").innerHTML = "<?= #tmp.result ?>"
+ }
+</script>

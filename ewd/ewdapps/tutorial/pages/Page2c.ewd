@@ -1,0 +1,11 @@
+<ewd:config isFirstPage="false">
+<html>
+ <head>
+  <title>Test Page</title>
+ </head>
+ <body bgcolor="#C5E3E4">
+  <p>This is a second test page</p>
+  <a href=Page1c.ewd>Go back to to page 1</a><br><br>
+  <a href=ewdLogout.ewd>Log out</a>
+ </body>
+</html>

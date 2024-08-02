@@ -1,0 +1,21 @@
+<ewd:config isFirstPage="false" prePageScript="getUsernames^KBANDemo">
+<html>
+<head><title>Test Page</title></head>
+<body bgcolor="#C5E3E4">
+<h3>Select a user to edit</h3>
+<form method="post" action="ewd">
+  <table border=1>
+     <tr>
+       <td colspan=2>Select an existing username :</td>
+     </tr>
+     <tr>
+       <td><select name="user"></select>
+       <td><input type="submit" name="Edit" value="Select" nextpage="Page3e"></td>
+     </tr>
+  </table>
+</form>
+<br><br>
+<a href=ewdLogout.ewd>Log out</a>
+</body>
+</html>
+

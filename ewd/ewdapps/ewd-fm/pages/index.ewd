@@ -1,0 +1,34 @@
+<ewd:config isFirstPage="true" prePageScript="SignonTxt^KBANDemo">
+<html>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"> 
+<head><title>Test Page</title></head>
+<body bgcolor="#C5E3E4">
+<div style="text-align:center">
+<pre>
+<?= #signontxt ?>
+
+Username: clerk1
+
+Password: abc,123%
+</pre>
+</div>
+<h3>Please enter your username and password:</h3>
+<form method="post" action="ewd">
+ <table border=0>
+  <tr>
+   <td>Access Code: </td>
+   <td><input type="text" name="username" focus="true" /></td>
+  </tr>
+  <tr>
+   <td>Verify Code: </td>
+   <td><input type="password" name="password" /></td>
+  </tr>
+  <tr>
+   <td><input type="submit" name="Submit" value="Login" action="login^KBANDemo" nextpage="welcome" /></td>
+  </tr>
+ </table>
+</form>
+<br /><br />
+<a href="ewdLogout.ewd">Log out</a>
+</body>
+</html>

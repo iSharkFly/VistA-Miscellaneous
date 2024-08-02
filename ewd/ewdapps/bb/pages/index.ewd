@@ -1,0 +1,43 @@
+<ewd:comment>
+ Index Page
+ v 0.5
+ (c) Sam Habiel
+ Licensed under AGPL
+</ewd:comment>
+
+<ewd:config isFirstPage="false" prePageScript="init^jjihbb">
+<!DOCTYPE html>
+<html>
+<head>
+<title><?= #sitename ?> Bed Board</title>
+</head>
+<body>
+<h1 style="text-align: center"><?= #sitename ?> Bed Board</h1>
+<div id="bb" ajaxPage="bb" event="onTimer" time="5">
+Please wait 5 seconds for initial load...
+</div>
+<div id="legend">
+ <h3>Legend</h3>
+    <table border="1">
+    <tr>
+     <th>Color</th>
+     <th>Meaning</th>
+    </tr>
+    <tr>
+     <td class="mbed">210-B</td>
+     <td>Male Bed</td>
+    </tr>
+    <tr>
+     <td class="fbed">111-A</td>
+     <td>Female Bed</td>
+    </tr>
+    <tr>
+     <td class="mismatch">TEST,PATIENT</td>
+     <td>Male Patient in Female bed or the converse</td>
+    </tr>
+    <tr>
+     <td class="oos">TEST COMMENT</td>
+     <td>Bed is Out of Service</td>
+    </table>
+</div>
+</body>

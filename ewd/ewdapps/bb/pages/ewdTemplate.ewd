@@ -1,0 +1,41 @@
+<ewd:comment>
+BB Template File
+Bed Board v 0.5
+</ewd:comment>
+
+<ewd:Template>
+    <ewd:config defaultTimeout="99999999999" homePage="index.ewd">
+    <ewd:head>    
+    <ewd:comment>
+    Load the Session Values for DUZ etc.
+    </ewd:comment>
+    <ewd:execute method="r^ewdu" type="procedure" param1="#ewd_sessid">
+        <style type="text/css">
+            .fbed { color: white; background-color: #661A4C; font-weight: bold; padding: 2 ; border-radius: 5 ; white-space: nowrap }
+            .mbed { color: white; background-color: blue; font-weight: bold; padding: 2; border-radius: 5 ; white-space: nowrap }
+            .nbed { color: black; background-color: cornsilk; font-weight: bold; padding: 2; border-radius: 5; white-space: nowrap }
+            .okbed { }
+            .mismatch { background-color: yellow }
+            .small { font-size: x-small }
+            .oos { color: red; font-weight: bold }
+            .EDW { color: white; background-color: red; font-weight: bold; padding: 2; border-radius: 5 }
+            .MOT { color: white; background-color: green; font-weight: bold; padding: 2; border-radius: 5 }
+            h1,h2,h3,h4,h5,h6,p,td,th,span,a { font-family: sans-serif }
+            .end { color: white; background-color: black; border-top: 1px solid gray ; padding: 2px }
+        </style>
+    </ewd:head>
+    <ewd:body>
+    <ewd:header>
+    </ewd:header>
+    
+    <ewd:footer>
+    <div class="end">
+        <span class="small">EWD Session # <?= #ewd_sessid ?></span>
+        <span class="small">DUZ <?= #DUZ ?></span>
+        <span class="small">U <?= #U ?></span>
+        <span class="small">IO <?= #IO ?></span>
+        <a class="small" href="ewdLogout.ewd">Logout</a>
+    </div>
+    </ewd:footer>
+</ewd:body>
+</ewd:Template>

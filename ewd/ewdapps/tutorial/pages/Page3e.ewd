@@ -1,0 +1,38 @@
+<ewd:config isFirstPage="false" prePageScript="getInfo^KBANDemo">
+<html>
+<head><title>Test Page</title></head>
+<body bgcolor="#C5E3E4">
+<p>Set/Modify Verify Code</p>
+<form method="POST" action="ewd">
+  <table border=1>
+     <tr>
+       <td>Username: </td>
+       <td><?= #Name ?></td>
+     </tr>
+     <tr>
+       <td>Verify Code (existing): </td>
+       <td><input type="text" name="vc1" value="*"></td>
+     </tr>
+     <tr>
+       <td>Verify Code (new): </td>
+       <td><input type="text" name="vc2" value="*"></td>
+     </tr>
+     <tr>
+       <td>Verify Code (confirm): </td>
+       <td><input type="text" name="vc3" value="*"></td>
+     </tr>
+     <tr>
+       <td><input type="submit" name="save" value="Save" action="CVC^KBANDemo" nextpage="Page2e"></td>
+     </tr>
+  </table>
+</form>
+<p>Change other info</p>
+<form method="POST" action="ewd">
+<p>Office Phone: <input type="text" name="officePhone" value="<?= #officePhone ?>" /></p>
+<p><input type="submit" name="save2" value="Save Phones" action="savePhones^KBANDemo" /></p>
+<br><br>
+<a href="Page2e.ewd">Select another username</a><br><br>
+<a href=ewdLogout.ewd>Log out</a>
+</body>
+</html>
+

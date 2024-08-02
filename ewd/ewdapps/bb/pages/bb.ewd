@@ -1,0 +1,143 @@
+<ewd:comment>
+ Ajax page contains the beds that gets auto-updated every 5 seconds.
+ V 0.4
+ (c) Sam Habiel
+ Licensed under AGPL
+</ewd:comment>
+<ewd:config pageType="ajax" applyTemplate="false" prePageScript="getbeds^jjihbb">
+<div>
+    <table width="100%" style="border: 1px solid #CFCFC3; border-style: outset">
+        <ewd:comment>
+        First Row: Ward Names
+        ; Ward Data has the following structure:
+        ; occ beds/total^occmale/maletotal^occfemale/femaletotal^oos^emptymale/emptyfemale/emptytotal
+        </ewd:comment>
+        <tr>
+            <ewd:forEach sessionName="wardbed" index="$ward" return="$warddata">
+            <ewd:getPiece data="$warddata" asciiDelimiter="94" pieceNumber="1" return="$nBed">
+            <ewd:getPiece data="$warddata" asciiDelimiter="94" pieceNumber="2" return="$nMale">
+            <ewd:getPiece data="$warddata" asciiDelimiter="94" pieceNumber="3" return="$nFemale">
+            <ewd:getPiece data="$warddata" asciiDelimiter="94" pieceNumber="4" return="$nOOS">
+            <ewd:getPiece data="$warddata" asciiDelimiter="94" pieceNumber="5" return="$nAvail">
+            <th style="color: white; font-weight: bold; background-color: #357AE8; border: 1px solid #2F5BB7; text-align: center">
+                <?= $ward ?> <br />
+                <ewd:getPiece data="$nBed" asciiDelimiter="47" pieceNumber="1" return="$nWardCensus">
+                (Census: <?= $nWardCensus ?>) <br />
+                (M: <?= $nMale ?> F: <?= $nFemale ?> OOS: <?= $nOOS ?>) <br />
+                <ewd:getPiece data="$nAvail" asciiDelimiter="47" pieceNumber="1" return="$nEmptyMaleBeds">
+                <ewd:getPiece data="$nAvail" asciiDelimiter="47" pieceNumber="2" return="$nEmptyFemaleBeds">
+                <ewd:getPiece data="$nAvail" asciiDelimiter="47" pieceNumber="3" return="$nEmptyBeds">
+                (Availability: M: <?= $nEmptyMaleBeds ?> F: <?= $nEmptyFemaleBeds ?> T: <?= $nEmptyBeds ?> )
+            </th>
+            </ewd:forEach>
+        </tr>
+
+        <ewd:comment>Second Row: Contents.
+        We use valign and style vertical align on the td b/c only valign works even though it's deprecated!
+        </ewd:comment>
+        <tr>
+            <ewd:forEach sessionName="wardbed" index="$ward">
+            <td valign="top" style="verical-align: top;">
+                <table style="padding:0; border:0"> 
+                    <ewd:forEach sessionName="wardbed" param1="$ward" index="$bed" return="$beddata">
+                    <ewd:comment>
+                    Bed Data is as follows:
+                    pt name^pt sex^adm date^lodger^EDW^MOT^bed oos?^bed oos msg^bed oss comment
+                    </ewd:comment>
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="1" return="$ptname">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="2" return="$sex">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="3" return="$admDate">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="4" return="$lodger">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="5" return="$edw">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="6" return="$mot">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="7" return="$oos">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="8" return="$oosmsg">
+                    <ewd:getPiece data="$beddata" asciiDelimiter="94" pieceNumber="9" return="$ooscomment">
+                    <ewd:getPiece data="$bed" asciidelimiter="45" pieceNumber="3" return="$bedsex">
+                    <tr>
+                        <ewd:comment>Bed: Color beds for males and females</ewd:comment>
+                        <ewd:if firstValue="$bedsex" operation="=" secondValue="M">
+                        <td class="mbed"><?= $bed ?></td>
+                        <ewd:elseif firstValue="$bedsex" operation="=" secondValue="F">
+                        <td class="fbed"><?= $bed ?></td>
+                        <ewd:else>
+                        <td class="nbed"><?= $bed ?></td>
+                        </ewd:if>
+
+                        <ewd:comment>Now, Patients...</ewd:comment>
+                        <td>
+                        <ewd:if firstValue="$ptname" operation="=" secondValue="">
+                            <ewd:comment>Do nothing here, for now.</ewd:comment>
+                        <ewd:else> 
+                            
+                            <ewd:comment> Print patients; mismatched beds show up in a different color</ewd:comment>
+                            <ewd:if firstValue="$bedsex" operation="=" secondValue="">
+                                <span class="okbed"><?= $ptname ?></span>
+                            <ewd:else>
+                                <ewd:if firstValue="$bedsex" operation="[" secondValue="$sex">
+                                <span class="okbed"><?= $ptname ?></span>
+                                <ewd:else>
+                                <span class="mismatch"><?= $ptname ?></span>
+                                </ewd:if>
+                            </ewd:if>
+                            
+                            <ewd:comment>Lodger</ewd:comment>
+                            <ewd:if firstValue="$lodger" operation="=" secondValue="1">
+                            <br />
+                            <span class="lodger">(reserved) (since <?= $admDate ?>)</span>
+                            </ewd:if>
+                            
+                            <ewd:comment>EDW</ewd:comment>
+                            <ewd:if firstValue="$edw" operation="=" secondValue="1">
+                            &nbsp;<span class="EDW">EDW</span>
+                            </ewd:if>
+                            
+                            <ewd:comment>MOT</ewd:comment>
+                            <ewd:if firstValue="$mot" operation="=" secondValue="1">
+                            &nbsp;<span class="MOT">MOT</span>
+                            </ewd:if>
+                        
+                        </ewd:if>
+
+                        <ewd:comment>Deal with Out Of Service Beds</ewd:comment>
+                        <ewd:if firstValue="$oos" operation="=" secondvalue="1">
+                            <span class="oos"><?= $oosmsg ?>: <?= $ooscomment ?></span>
+                        </ewd:if>
+                        </td>
+                    </tr>
+                    </ewd:forEach>
+                </table>
+            </td>
+            </ewd:forEach>
+        </tr>
+    </table>
+    <br />
+    <ewd:comment>
+    Here we have the Census Table
+    wardbed=beds^males^females^empty beds^occupancy %
+    </ewd:comment>
+    <ewd:getPiece data="#wardbed" asciiDelimiter="94" pieceNumber="1" return="$tBed">
+    <ewd:getPiece data="#wardbed" asciiDelimiter="94" pieceNumber="2" return="$tMale">
+    <ewd:getPiece data="#wardbed" asciiDelimiter="94" pieceNumber="3" return="$tFemale">
+    <ewd:getPiece data="#wardbed" asciiDelimiter="94" pieceNumber="4" return="$tEmptyBed">
+    <ewd:getPiece data="#wardbed" asciiDelimiter="94" pieceNumber="5" return="$occper">
+    <table width="100%" style="border: 1px solid #CFCFC3">
+        <tr>
+            <th colspan="100%" style="color: white; font-weight: bold; background-color: #357AE8">Census</th>
+        </tr>
+        <tr style="color: white; font-weight: bold; background-color: #357AE8; border: 1px solid #2F5BB7; text-align: center">
+            <td width="20%">Total Beds</td>
+            <td width="20%">Males</td>
+            <td width="20%">Females</td>
+            <td width="20%">Empty Beds</td>
+            <td width="20%">% Occupation</td>
+        </tr>
+        <tr style="font-weight: bold; text-align: center">
+            <td><?= $tBed ?></td>
+            <td><?= $tMale ?></td>
+            <td><?= $tFemale ?></td>
+            <td><?= $tEmptyBed ?></td>
+            <td><?= $occper ?></td>
+        </tr>
+    </table>
+</div>

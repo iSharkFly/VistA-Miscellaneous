@@ -1,0 +1,20 @@
+<ewd:config pageType="ajax" isFirstPage="false" prePageScript="listEWDApps^ewdu">
+<a href="redir.ewd?nextapp=bb">Bed Board</a><br />
+<a href="redir.ewd?nextapp=ewd-fm">EWD Fileman</a><br />
+<a href="redir.ewd?nextapp=DIINQUIRE">Inquire into File Entries</a>
+<ewd:ajaxOnLoad>
+    var x = function() {
+        apps = <?= #appsjson ?>;
+        var fs = document.getElementById("fs");
+        for (app in apps)
+        {
+            var input = document.createElement("input");
+            input.setAttribute('id',apps[app]);
+            input.setAttribute('type','button');
+            input.setAttribute('value',apps[app]);
+
+            fs.appendChild(input);
+        };
+    }();
+</ewd:ajaxOnLoad>
+

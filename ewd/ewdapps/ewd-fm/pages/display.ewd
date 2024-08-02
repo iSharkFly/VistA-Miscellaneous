@@ -1,0 +1,15 @@
+<ewd:config isFirstPage="false" prePageScript="DisplayUserCharacteristics^KBANDemo">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Display User Characteristics</title>
+</head>
+<body bgcolor="#C5E3E4">
+<div style="text-align: center">
+<h1>Display User Characteristics</h1>
+<hr />
+<textarea name="display" rows=24 cols=80 readonly="readonly">*</textarea>
+</div>
+</body>
+</html>
+

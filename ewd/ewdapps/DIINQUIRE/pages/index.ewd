@@ -1,0 +1,41 @@
+<ewd:config isFirstPage="false" prePageScript="FILES^C0EDIINQUIRE">
+<vista:session>
+<html>
+<head>
+<title>Inquire into File Entries</title>
+<script type="text/javascript">
+    var VISTA = {}; //Mi Casa
+    
+    VISTA.getEntries = function(value) {
+        ewd:ENTRY^C0EDIINQUIRE(value);
+        document.getElementById('fsEntry').style.visibility = 'visible';
+    };
+    
+    VISTA.showInqOpts = function() {
+        document.getElementById('fsInqOptions').style.visibility = 'visible';
+        }
+</script>
+</head>
+<body>
+<h1>Inquire into File Entries</h1>
+<form method="post" action="ewd">
+    <fieldset id="fsFile">
+        <label for="file">File:</label><select name="file" onChange="VISTA.getEntries(this.value)"></select>
+        <input type="button" value="Select" onClick="VISTA.getEntries(document.getElementById('file').value)">
+    </fieldset>
+    <fieldset id="fsEntry" style="visibility: hidden">
+        <label for="entry">Entry: </label><select name="entry" onChange="VISTA.showInqOpts()"></select>
+        <input type="button" value="Select" onClick="VISTA.showInqOpts()" />
+    </fieldset>
+    <fieldset id="fsInqOptions" style="visibility: hidden">
+        <p>Inquire Options</p>
+        <label for="R">Record Number:</label><input id="R" type="checkbox" name="outopt" value="R" /><br />
+        <label for="C">Computed Fields:</label><input id="C" type="checkbox" name="outopt" value="C" /><br />
+        <label for="A">Audit: </label><input id="A" type="checkbox" name="outopt" value="A" /><br />
+        <input type="submit" value="Submit" name="submit" ajax="true" nextpage="outputter" targetId="output" />
+    </fieldset>
+</form>
+<div id="output" style="font-family: Monospace; left: 10%; white-space: pre">
+</div>
+</body>
+</html>
