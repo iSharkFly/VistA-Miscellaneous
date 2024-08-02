@@ -1,0 +1,3734 @@
+KIDS Distribution saved on Nov 07, 2012@17:05:19
+FINAL MU STAGE 1 REG BUILD
+**KIDS**:VW MU REG 2.0^
+
+**INSTALL NAME**
+VW MU REG 2.0
+"BLD",7943,0)
+VW MU REG 2.0^^0^3121107^n
+"BLD",7943,1,0)
+^^10^10^3121107^
+"BLD",7943,1,1,0)
+Created by Sam Habiel. Created on October 4th 2012.
+"BLD",7943,1,2,0)
+ 
+"BLD",7943,1,3,0)
+License: GPL v2.
+"BLD",7943,1,4,0)
+ 
+"BLD",7943,1,5,0)
+Description:
+"BLD",7943,1,6,0)
+Adds all MU Registration Fields to WV and changes the registration 
+"BLD",7943,1,7,0)
+routines to use them.
+"BLD",7943,1,8,0)
+ 
+"BLD",7943,1,9,0)
+Full documentation can be found here:
+"BLD",7943,1,10,0)
+http://www.vistapedia.com/index.php/MU_Stage_1_Registration_Enhancements
+"BLD",7943,4,0)
+^9.64PA^200^2
+"BLD",7943,4,2,0)
+2
+"BLD",7943,4,2,2,0)
+^9.641^2.0256001^2
+"BLD",7943,4,2,2,2,0)
+PATIENT  (File-top level)
+"BLD",7943,4,2,2,2,1,0)
+^9.6411^.351^3
+"BLD",7943,4,2,2,2,1,.351,0)
+DATE OF DEATH
+"BLD",7943,4,2,2,2,1,250043.1,0)
+PRELIMINARY CAUSE OF DEATH
+"BLD",7943,4,2,2,2,1,256000,0)
+LANGUAGE PREFERENCE
+"BLD",7943,4,2,2,2.0256001,0)
+LANGUAGE SKILLS  (sub-file)
+"BLD",7943,4,2,2,2.0256001,1,0)
+^9.6411^^0
+"BLD",7943,4,2,222)
+y^n^p^^^^n^^n
+"BLD",7943,4,2,224)
+
+"BLD",7943,4,200,0)
+200
+"BLD",7943,4,200,2,0)
+^9.641^200.0256001^2
+"BLD",7943,4,200,2,200,0)
+NEW PERSON  (File-top level)
+"BLD",7943,4,200,2,200,1,0)
+^9.6411^256000^1
+"BLD",7943,4,200,2,200,1,256000,0)
+PREFERRED LANGUAGE
+"BLD",7943,4,200,2,200.0256001,0)
+LANGUAGE SKILLS  (sub-file)
+"BLD",7943,4,200,2,200.0256001,1,0)
+^9.6411^^
+"BLD",7943,4,200,222)
+y^n^p^^^^n^^n
+"BLD",7943,4,200,224)
+
+"BLD",7943,4,"APDD",2,2)
+
+"BLD",7943,4,"APDD",2,2,.351)
+
+"BLD",7943,4,"APDD",2,2,250043.1)
+
+"BLD",7943,4,"APDD",2,2,256000)
+
+"BLD",7943,4,"APDD",2,2.0256001)
+
+"BLD",7943,4,"APDD",200,200)
+
+"BLD",7943,4,"APDD",200,200,256000)
+
+"BLD",7943,4,"APDD",200,200.0256001)
+
+"BLD",7943,4,"B",2,2)
+
+"BLD",7943,4,"B",200,200)
+
+"BLD",7943,6.3)
+18
+"BLD",7943,"INIT")
+POST^VWREGPI
+"BLD",7943,"KRN",0)
+^9.67PA^779.2^20
+"BLD",7943,"KRN",.4,0)
+.4
+"BLD",7943,"KRN",.401,0)
+.401
+"BLD",7943,"KRN",.402,0)
+.402
+"BLD",7943,"KRN",.402,"NM",0)
+^9.68A^2^2
+"BLD",7943,"KRN",.402,"NM",1,0)
+VW LOCAL REGISTRATION TEMPLATE    FILE #2^2^0
+"BLD",7943,"KRN",.402,"NM",2,0)
+VW PRELIMINARY CAUSE OF DEATH    FILE #2^2^0
+"BLD",7943,"KRN",.402,"NM","B","VW LOCAL REGISTRATION TEMPLATE    FILE #2",1)
+
+"BLD",7943,"KRN",.402,"NM","B","VW PRELIMINARY CAUSE OF DEATH    FILE #2",2)
+
+"BLD",7943,"KRN",.403,0)
+.403
+"BLD",7943,"KRN",.5,0)
+.5
+"BLD",7943,"KRN",.84,0)
+.84
+"BLD",7943,"KRN",3.6,0)
+3.6
+"BLD",7943,"KRN",3.8,0)
+3.8
+"BLD",7943,"KRN",9.2,0)
+9.2
+"BLD",7943,"KRN",9.8,0)
+9.8
+"BLD",7943,"KRN",9.8,"NM",0)
+^9.68A^8^8
+"BLD",7943,"KRN",9.8,"NM",1,0)
+DGREG^^0^B78971450
+"BLD",7943,"KRN",9.8,"NM",2,0)
+DG10^^0^B27855507
+"BLD",7943,"KRN",9.8,"NM",3,0)
+VWUTIL^^0^B42164756
+"BLD",7943,"KRN",9.8,"NM",4,0)
+ORCXPND1^^0^B74010927
+"BLD",7943,"KRN",9.8,"NM",5,0)
+DGRPD^^0^B87299590
+"BLD",7943,"KRN",9.8,"NM",6,0)
+DGDEATH^^0^B43242813
+"BLD",7943,"KRN",9.8,"NM",7,0)
+DGPMV^^0^B19120801
+"BLD",7943,"KRN",9.8,"NM",8,0)
+DGRP2^^0^B19865142
+"BLD",7943,"KRN",9.8,"NM","B","DG10",2)
+
+"BLD",7943,"KRN",9.8,"NM","B","DGDEATH",6)
+
+"BLD",7943,"KRN",9.8,"NM","B","DGPMV",7)
+
+"BLD",7943,"KRN",9.8,"NM","B","DGREG",1)
+
+"BLD",7943,"KRN",9.8,"NM","B","DGRP2",8)
+
+"BLD",7943,"KRN",9.8,"NM","B","DGRPD",5)
+
+"BLD",7943,"KRN",9.8,"NM","B","ORCXPND1",4)
+
+"BLD",7943,"KRN",9.8,"NM","B","VWUTIL",3)
+
+"BLD",7943,"KRN",19,0)
+19
+"BLD",7943,"KRN",19,"NM",0)
+^9.68A^2^2
+"BLD",7943,"KRN",19,"NM",1,0)
+VW ENTER PRELIM CAUSE OF DEATH^^0
+"BLD",7943,"KRN",19,"NM",2,0)
+DG BED CONTROL^^2
+"BLD",7943,"KRN",19,"NM","B","DG BED CONTROL",2)
+
+"BLD",7943,"KRN",19,"NM","B","VW ENTER PRELIM CAUSE OF DEATH",1)
+
+"BLD",7943,"KRN",19.1,0)
+19.1
+"BLD",7943,"KRN",101,0)
+101
+"BLD",7943,"KRN",409.61,0)
+409.61
+"BLD",7943,"KRN",771,0)
+771
+"BLD",7943,"KRN",779.2,0)
+779.2
+"BLD",7943,"KRN",870,0)
+870
+"BLD",7943,"KRN",8989.51,0)
+8989.51
+"BLD",7943,"KRN",8989.52,0)
+8989.52
+"BLD",7943,"KRN",8994,0)
+8994
+"BLD",7943,"KRN","B",.4,.4)
+
+"BLD",7943,"KRN","B",.401,.401)
+
+"BLD",7943,"KRN","B",.402,.402)
+
+"BLD",7943,"KRN","B",.403,.403)
+
+"BLD",7943,"KRN","B",.5,.5)
+
+"BLD",7943,"KRN","B",.84,.84)
+
+"BLD",7943,"KRN","B",3.6,3.6)
+
+"BLD",7943,"KRN","B",3.8,3.8)
+
+"BLD",7943,"KRN","B",9.2,9.2)
+
+"BLD",7943,"KRN","B",9.8,9.8)
+
+"BLD",7943,"KRN","B",19,19)
+
+"BLD",7943,"KRN","B",19.1,19.1)
+
+"BLD",7943,"KRN","B",101,101)
+
+"BLD",7943,"KRN","B",409.61,409.61)
+
+"BLD",7943,"KRN","B",771,771)
+
+"BLD",7943,"KRN","B",779.2,779.2)
+
+"BLD",7943,"KRN","B",870,870)
+
+"BLD",7943,"KRN","B",8989.51,8989.51)
+
+"BLD",7943,"KRN","B",8989.52,8989.52)
+
+"BLD",7943,"KRN","B",8994,8994)
+
+"BLD",7943,"PRET")
+
+"BLD",7943,"QUES",0)
+^9.62^^
+"FIA",2)
+PATIENT
+"FIA",2,0)
+^DPT(
+"FIA",2,0,0)
+2I
+"FIA",2,0,1)
+y^n^p^^^^n^^n
+"FIA",2,0,10)
+
+"FIA",2,0,11)
+
+"FIA",2,0,"RLRO")
+
+"FIA",2,2)
+1
+"FIA",2,2,.351)
+
+"FIA",2,2,250043.1)
+
+"FIA",2,2,256000)
+
+"FIA",2,2,256001)
+
+"FIA",2,2.0256001)
+0
+"FIA",2,2.250043)
+0
+"FIA",200)
+NEW PERSON
+"FIA",200,0)
+^VA(200,
+"FIA",200,0,0)
+200Is
+"FIA",200,0,1)
+y^n^p^^^^n^^n
+"FIA",200,0,10)
+
+"FIA",200,0,11)
+
+"FIA",200,0,"RLRO")
+
+"FIA",200,200)
+1
+"FIA",200,200,256000)
+
+"FIA",200,200,256001)
+
+"FIA",200,200.0256001)
+0
+"INIT")
+POST^VWREGPI
+"IX",2,2,"ADGFM351",0)
+2^ADGFM351^This x-ref calls the DG FIELD MONITOR event point.^MU^^F^I^I^2^^^^^A
+"IX",2,2,"ADGFM351",.1,0)
+^^5^5^3020624
+"IX",2,2,"ADGFM351",.1,1,0)
+This cross reference activates the DG FIELD MONITOR event point.
+"IX",2,2,"ADGFM351",.1,2,0)
+Applications that wish to monitor edit activity related to this field may
+"IX",2,2,"ADGFM351",.1,3,0)
+subscribe to that event point and take action as indicated by the changes
+"IX",2,2,"ADGFM351",.1,4,0)
+that occur.  Refer to the DG FIELD MONITOR protocol for a description of
+"IX",2,2,"ADGFM351",.1,5,0)
+the information available at the time of the event.
+"IX",2,2,"ADGFM351",1)
+D FC^DGFCPROT(.DA,2,.351,"SET",$H,$G(DUZ),.X,.X1,.X2,$G(XQY0)) Q
+"IX",2,2,"ADGFM351",2)
+D FC^DGFCPROT(.DA,2,.351,"KILL",$H,$G(DUZ),.X,.X1,.X2,$G(XQY0)) Q
+"IX",2,2,"ADGFM351",11.1,0)
+^.114IA^1^1
+"IX",2,2,"ADGFM351",11.1,1,0)
+1^F^2^.351^^^F
+"IX",2,2,"ADGFMD351",0)
+2^ADGFMD351^This x-ref calls the DG FIELD MONITOR event point.^MU^^F^I^I^2^^^^^A
+"IX",2,2,"ADGFMD351",.1,0)
+^^5^5^3020820
+"IX",2,2,"ADGFMD351",.1,1,0)
+This cross reference activates the DG FIELD MONITOR event point.
+"IX",2,2,"ADGFMD351",.1,2,0)
+Applications that wish to monitor edit activity related to this field may
+"IX",2,2,"ADGFMD351",.1,3,0)
+subscribe to that event point and take action as indicated by the changes
+"IX",2,2,"ADGFMD351",.1,4,0)
+that occur.  Refer to the DG FIELD MONITOR protocol for a description of
+"IX",2,2,"ADGFMD351",.1,5,0)
+the information available at the time of the event.
+"IX",2,2,"ADGFMD351",1)
+D FC^DGFCPROT(.DA,2,.351,"SET",$H,$G(DUZ),.X,.X1,.X2,$G(XQY0)) Q
+"IX",2,2,"ADGFMD351",2)
+D FC^DGFCPROT(.DA,2,.351,"KILL",$H,$G(DUZ),.X,.X1,.X2,$G(XQY0)) Q
+"IX",2,2,"ADGFMD351",11.1,0)
+^.114IA^1^1
+"IX",2,2,"ADGFMD351",11.1,1,0)
+1^F^2^.351^^^F
+"KRN",.402,1733,-1)
+0^1
+"KRN",.402,1733,0)
+VW LOCAL REGISTRATION TEMPLATE^3121105.0927^@^2^^@^3121107
+"KRN",.402,1733,"DIAB",1,1,2.019906,0)
+ALL
+"KRN",.402,1733,"DR",1,2)
+W !,"Please Answer these questions";256000;19906;
+"KRN",.402,1733,"DR",2,2.019906)
+.01
+"KRN",.402,1749,-1)
+0^2
+"KRN",.402,1749,0)
+VW PRELIMINARY CAUSE OF DEATH^3121106.1458^^2^^^3121107
+"KRN",.402,1749,"DR",1,2)
+I '+$G(^DPT(D0,.35)) W !,"Date of Death not entered. Quitting.",! S Y="@999";250043.1;@999;
+"KRN",19,1893,-1)
+2^2
+"KRN",19,1893,0)
+DG BED CONTROL^Bed Control Menu^^M^.5^^^^^^^47^y
+"KRN",19,1893,10,0)
+^19.01IP^18^17
+"KRN",19,1893,10,18,0)
+11084
+"KRN",19,1893,10,18,"^")
+VW ENTER PRELIM CAUSE OF DEATH
+"KRN",19,1893,"U")
+BED CONTROL MENU
+"KRN",19,11084,-1)
+0^1
+"KRN",19,11084,0)
+VW ENTER PRELIM CAUSE OF DEATH^Enter preliminary cause of death for a patient^^E^^^^^^^^
+"KRN",19,11084,1,0)
+^^6^6^3121106^
+"KRN",19,11084,1,1,0)
+This option allows you to enter/edit a preliminary cause of death for a 
+"KRN",19,11084,1,2,0)
+patient. This is especially useful if the patient was discharged to DEATH 
+"KRN",19,11084,1,3,0)
+and the death date was filled automatically.
+"KRN",19,11084,1,4,0)
+ 
+"KRN",19,11084,1,5,0)
+'Death Entry' will allow you to enter the preliminary cause of death for 
+"KRN",19,11084,1,6,0)
+a patient as well.
+"KRN",19,11084,30)
+DPT(
+"KRN",19,11084,31)
+AEMQ
+"KRN",19,11084,50)
+DPT(
+"KRN",19,11084,51)
+[VW PRELIMINARY CAUSE OF DEATH]
+"KRN",19,11084,"U")
+ENTER PRELIMINARY CAUSE OF DEA
+"MBREQ")
+0
+"ORD",7,.402)
+.402;7;;;EDEOUT^DIFROMSO(.402,DA,"",XPDA);FPRE^DIFROMSI(.402,"",XPDA);EPRE^DIFROMSI(.402,DA,$E("N",$G(XPDNEW)),XPDA,"",OLDA);;EPOST^DIFROMSI(.402,DA,"",XPDA);DEL^DIFROMSK(.402,"",%)
+"ORD",7,.402,0)
+INPUT TEMPLATE
+"ORD",18,19)
+19;18;;;OPT^XPDTA;OPTF1^XPDIA;OPTE1^XPDIA;OPTF2^XPDIA;;OPTDEL^XPDIA
+"ORD",18,19,0)
+OPTION
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+9
+"RTN","DG10")
+0^2^B27855507
+"RTN","DG10",1,0)
+DG10 ;ALB/MRL,DAK,AEG,PHH-LOAD/EDIT PATIENT DATA ; 11/5/12 12:58pm
+"RTN","DG10",2,0)
+ ;;5.3;Registration;**32,109,139,149,182,326,513,425,574,642,658,634**;Aug 13, 1993;Build 18
+"RTN","DG10",3,0)
+ ; Modified from FOIA VISTA,
+"RTN","DG10",4,0)
+ ; Copyright (C) 2007 WorldVistA
+"RTN","DG10",5,0)
+ ;
+"RTN","DG10",6,0)
+ ; This program is free software; you can redistribute it and/or modify
+"RTN","DG10",7,0)
+ ; it under the terms of the GNU General Public License as published by
+"RTN","DG10",8,0)
+ ; the Free Software Foundation; either version 2 of the License, or
+"RTN","DG10",9,0)
+ ; (at your option) any later version.
+"RTN","DG10",10,0)
+ ;
+"RTN","DG10",11,0)
+ ; This program is distributed in the hope that it will be useful,
+"RTN","DG10",12,0)
+ ; but WITHOUT ANY WARRANTY; without even the implied warranty of
+"RTN","DG10",13,0)
+ ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"RTN","DG10",14,0)
+ ; GNU General Public License for more details.
+"RTN","DG10",15,0)
+ ;
+"RTN","DG10",16,0)
+ ; You should have received a copy of the GNU General Public License
+"RTN","DG10",17,0)
+ ; along with this program; if not, write to the Free Software
+"RTN","DG10",18,0)
+ ; Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+"RTN","DG10",19,0)
+START ;
+"RTN","DG10",20,0)
+ D LO^DGUTL
+"RTN","DG10",21,0)
+ I $G(DGPRFLG)=1,$G(DGPLOC)=1 D  G Q:$G(DGRPOUT),A1
+"RTN","DG10",22,0)
+ .; D EN^DGRPD,REG^IVMCQ($G(DFN))
+"RTN","DG10",23,0)
+ . D EN^DGRPD
+"RTN","DG10",24,0)
+ . Q:$G(DGRPOUT)
+"RTN","DG10",25,0)
+ . ;
+"RTN","DG10",26,0)
+ . ; ** start of VOE change 1 of 3: DAOU/WCJ,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DG10",27,0)
+ . ;
+"RTN","DG10",28,0)
+ . ; HEC query call only wanted/needed for VA agency code
+"RTN","DG10",29,0)
+ . ;
+"RTN","DG10",30,0)
+ . I $G(DUZ("AG"))="V" D REG^IVMCQ($G(DFN))
+"RTN","DG10",31,0)
+ . ;
+"RTN","DG10",32,0)
+ . ; ** end of VOE change 1 **
+"RTN","DG10",33,0)
+ . ;
+"RTN","DG10",34,0)
+ . D HINQ
+"RTN","DG10",35,0)
+ ;
+"RTN","DG10",36,0)
+A W !! K VET,DIE,DIC,CARD S DIC=2,DLAYGO=2,DIC(0)="ALEQM" K DIC("S") D ^DIC G Q:Y<0 S (DFN,DA)=+Y,DGNEW=$P(Y,"^",3) K DLAYGO
+"RTN","DG10",37,0)
+ ;
+"RTN","DG10",38,0)
+ D REGMU^VWUTIL ; Changes for Meaningful Use
+"RTN","DG10",39,0)
+ ;
+"RTN","DG10",40,0)
+ N Y D PAUSE I DGNEW D NEW^DGRP S DA=DFN,VET=$S($D(^DPT(DFN,"VET")):^("VET")'="Y",1:0)
+"RTN","DG10",41,0)
+ ;
+"RTN","DG10",42,0)
+ ;MPI QUERY
+"RTN","DG10",43,0)
+ ;check to see if CIRN PD/MPI is installed
+"RTN","DG10",44,0)
+ N X S X="MPIFAPI" X ^%ZOSF("TEST") G:'$T SKIP
+"RTN","DG10",45,0)
+ K MPIFRTN
+"RTN","DG10",46,0)
+ ;
+"RTN","DG10",47,0)
+ ; ** start of VOE change 2 of 3: DAOU/WCJ,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DG10",48,0)
+ ;
+"RTN","DG10",49,0)
+ ; MPI query call only wanted/needed for VA agency code
+"RTN","DG10",50,0)
+ ;
+"RTN","DG10",51,0)
+ I $G(DUZ("AG"))="V"!$$GET^XPAR("SYS","DG MPI") D MPIQ^MPIFAPI(DFN)
+"RTN","DG10",52,0)
+ ;
+"RTN","DG10",53,0)
+ ; ** end of VOE change 2 **
+"RTN","DG10",54,0)
+ ;
+"RTN","DG10",55,0)
+ K MPIFRTN
+"RTN","DG10",56,0)
+ ;
+"RTN","DG10",57,0)
+ I +$G(DGNEW) D
+"RTN","DG10",58,0)
+ . ; query CMOR for Patient Record Flag Assignments if NEW patient and
+"RTN","DG10",59,0)
+ . ; display results
+"RTN","DG10",60,0)
+ . I $$PRFQRY^DGPFAPI(DFN) D DISPPRF^DGPFAPI(DFN)
+"RTN","DG10",61,0)
+ ;
+"RTN","DG10",62,0)
+SKIP ;
+"RTN","DG10",63,0)
+ S DGELVER=0 D EN^DGRPD I $D(DGRPOUT) K DGRPOUT G A
+"RTN","DG10",64,0)
+ ;
+"RTN","DG10",65,0)
+ ; ** start of VOE change 3 of 3: DAOU/WCJ,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DG10",66,0)
+ ;
+"RTN","DG10",67,0)
+ ; these query calls only wanted/needed for VA agency code
+"RTN","DG10",68,0)
+ ;
+"RTN","DG10",69,0)
+ I $G(DUZ("AG"))="V" D HINQ,REG^IVMCQ($G(DFN))
+"RTN","DG10",70,0)
+ G A1
+"RTN","DG10",71,0)
+ ;
+"RTN","DG10",72,0)
+ ; ** end of VOE change 3 **
+"RTN","DG10",73,0)
+ ;
+"RTN","DG10",74,0)
+ ;
+"RTN","DG10",75,0)
+HINQ ;
+"RTN","DG10",76,0)
+ S Y=$S($D(^DG(43,1,0)):^(0),1:0) I $P(Y,U,27) S X="DVBHQZ4" X ^%ZOSF("TEST") I $T D
+"RTN","DG10",77,0)
+ .N DGROUT
+"RTN","DG10",78,0)
+ .S DGROUT=X
+"RTN","DG10",79,0)
+ .I $G(DFN) D
+"RTN","DG10",80,0)
+ ..N X,Y,DGRP
+"RTN","DG10",81,0)
+ ..F X=.3,.32 S DGRP(X)=$G(^DPT(DFN,X))
+"RTN","DG10",82,0)
+ ..W !,"     Money Verified: " S Y=$P(DGRP(.3),"^",6) X:Y]"" ^DD("DD") W $S(Y]"":Y,1:"NOT VERIFIED")
+"RTN","DG10",83,0)
+ ..W ?40,"   Service Verified: " S Y=$P(DGRP(.32),"^",2) X:Y]"" ^DD("DD") W $S(Y]"":Y,1:"NOT VERIFIED")
+"RTN","DG10",84,0)
+ .D @("EN^"_DGROUT) K Y Q  ;from dgdem0
+"RTN","DG10",85,0)
+ Q
+"RTN","DG10",86,0)
+ ;
+"RTN","DG10",87,0)
+ ;   SDIEMM is used as a flag by AMBCARE Incomplete Encounter Management
+"RTN","DG10",88,0)
+ ;   to bypass the embossing routines when calling load/edit from IEMM
+"RTN","DG10",89,0)
+ ;
+"RTN","DG10",90,0)
+A1 D  G H:'%,CK:%'=1 S DGRPV=0 D EN1^DGRP,MT(DFN),CP G Q:$G(DGPRFLG)=1 G Q:$G(SDIEMM) G Q:'$D(DA),EMBOS
+"RTN","DG10",91,0)
+ .W !,"Do you want to ",$S(DGNEW:"enter",1:"edit")," Patient Data"
+"RTN","DG10",92,0)
+ .S %=1 D YN^DICN
+"RTN","DG10",93,0)
+ .I +$G(DGNEW) Q
+"RTN","DG10",94,0)
+ .I $$ADD^DGADDUTL($G(DFN)) ;
+"RTN","DG10",95,0)
+ ;
+"RTN","DG10",96,0)
+H W !?5,"Enter 'YES' to enter/edit registration data or 'NO' to continue without",!?5,"editing."
+"RTN","DG10",97,0)
+ G A1
+"RTN","DG10",98,0)
+ ;
+"RTN","DG10",99,0)
+CK S DGEDCN=1 D ^DGRPC,MT(DFN),CP
+"RTN","DG10",100,0)
+ G Q:$G(DGPRFLG)=1 G Q:$G(SDIEMM)
+"RTN","DG10",101,0)
+ I $G(DGER)[55 K DIR S DIR(0)="Y",DIR("A")="Do you wish to return to Screen #9 to enter missing Income Data? " D ^DIR K DIR
+"RTN","DG10",102,0)
+ ;G:Y ^DGRP9
+"RTN","DG10",103,0)
+ ;
+"RTN","DG10",104,0)
+EMBOS ;W ! D EMBOS^DGQEMA G A
+"RTN","DG10",105,0)
+ G A
+"RTN","DG10",106,0)
+ ;
+"RTN","DG10",107,0)
+ ;
+"RTN","DG10",108,0)
+Q K X,Y,Z,DIC,DGELVER,DGNEW,DGRPV,VET Q
+"RTN","DG10",109,0)
+ ;
+"RTN","DG10",110,0)
+MT(DFN) ; Check if user requires a means test.  Ask user if they want to proceedif
+"RTN","DG10",111,0)
+ ; one is required
+"RTN","DG10",112,0)
+ I '$D(SDIEMM) DO
+"RTN","DG10",113,0)
+ .N DGREQF,DIV
+"RTN","DG10",114,0)
+ .D EN^DGMTR
+"RTN","DG10",115,0)
+ .I DGREQF D EDT^DGMTU(DFN,DT):$P($$MTS^DGMTU(DFN),U,2)="R"
+"RTN","DG10",116,0)
+ .Q
+"RTN","DG10",117,0)
+ I $D(SDIEMM) DO
+"RTN","DG10",118,0)
+ .N DGMTI
+"RTN","DG10",119,0)
+ .S DGMTI=$$LST^DGMTU(DFN,SCINF("ENCOUNTER"),1)
+"RTN","DG10",120,0)
+ .I $P(DGMTI,U,4)="R" D  I 1
+"RTN","DG10",121,0)
+ ..S DGMT0=$G(^DGMT(408.31,+DGMTI,0)),DGMTDT=$P(DGMT0,"^")
+"RTN","DG10",122,0)
+ ..I '$$OKTOCONT(DGMTDT) Q
+"RTN","DG10",123,0)
+ ..S DGMTI=+DGMTI,DGMTYPT=1,DGMTACT="COM",DGMTROU="COM^DGMTEO" D EN^DGMTSC
+"RTN","DG10",124,0)
+ .E  D WARNING
+"RTN","DG10",125,0)
+ .Q
+"RTN","DG10",126,0)
+ Q
+"RTN","DG10",127,0)
+ ;
+"RTN","DG10",128,0)
+WARNING ;
+"RTN","DG10",129,0)
+ ;prints a warning to the screen about means test
+"RTN","DG10",130,0)
+ ;
+"RTN","DG10",131,0)
+ W !!,"A means test for this encounter date was not found and may be required!"
+"RTN","DG10",132,0)
+ W !,"Further investigation will be needed."
+"RTN","DG10",133,0)
+ W !
+"RTN","DG10",134,0)
+ D PAUSE
+"RTN","DG10",135,0)
+ Q
+"RTN","DG10",136,0)
+ ;
+"RTN","DG10",137,0)
+PAUSE ;
+"RTN","DG10",138,0)
+ N DIR
+"RTN","DG10",139,0)
+ S DIR(0)="FAO",DIR("A")="Press ENTER to continue " D ^DIR
+"RTN","DG10",140,0)
+ Q
+"RTN","DG10",141,0)
+ ;
+"RTN","DG10",142,0)
+OKTOCONT(Y) ;
+"RTN","DG10",143,0)
+ ;
+"RTN","DG10",144,0)
+ N DIR
+"RTN","DG10",145,0)
+ W !!,"Patient Requires a means Test"
+"RTN","DG10",146,0)
+ X ^DD("DD")
+"RTN","DG10",147,0)
+ W !,"Primary Means Test Required from '",Y,"'",!
+"RTN","DG10",148,0)
+ ;
+"RTN","DG10",149,0)
+ I $D(SDIEMM),'$D(^XUSEC("SCENI MEANS TEST EDIT",DUZ)) DO  G OKQ
+"RTN","DG10",150,0)
+ .W !,$C(7),"You do not have the appropriate IEMM Security Key.  Contact your supervisor.",!
+"RTN","DG10",151,0)
+ .D PAUSE
+"RTN","DG10",152,0)
+ .S Y=0
+"RTN","DG10",153,0)
+ ;
+"RTN","DG10",154,0)
+ S DIR("A")="Do you wish to proceed with the means test at this time"
+"RTN","DG10",155,0)
+ S DIR("B")="YES"
+"RTN","DG10",156,0)
+ S DIR(0)="Y"
+"RTN","DG10",157,0)
+ D ^DIR
+"RTN","DG10",158,0)
+OKQ Q $S(Y=1:1,1:0)
+"RTN","DG10",159,0)
+ ;
+"RTN","DG10",160,0)
+CP ;If not (autoexempt or MTested) & no CP test this year then
+"RTN","DG10",161,0)
+ ;prompt for add/edit cp test
+"RTN","DG10",162,0)
+ N DIV,DGIB,DGIBDT,DGX,X,DIRUT,DTOUT
+"RTN","DG10",163,0)
+ G:'$P($G(^DG(43,1,0)),U,41) QTCP ;USE CP FLAG
+"RTN","DG10",164,0)
+ S DGIBDT=$S($D(DFN1):9999999-DFN1,1:DT)
+"RTN","DG10",165,0)
+ D EN^DGMTCOR
+"RTN","DG10",166,0)
+ I +$G(DGNOCOPF) S DGMTCOR=0
+"RTN","DG10",167,0)
+ I DGMTCOR D THRESH^DGMTCOU1(DGIBDT) D EDT^DGMTCOU(DFN,DT)
+"RTN","DG10",168,0)
+ K DGNOCOPF
+"RTN","DG10",169,0)
+QTCP Q
+"RTN","DGDEATH")
+0^6^B43242813
+"RTN","DGDEATH",1,0)
+DGDEATH ;ALB/MRL/PJR-PROCESS DECEASED PATIENTS ; 11/7/12 11:49am
+"RTN","DGDEATH",2,0)
+ ;;5.3;Registration;**45,84,101,149,392,545,595,568,563,725,772,VW1**;Aug 13, 1993;Build 18
+"RTN","DGDEATH",3,0)
+ ;
+"RTN","DGDEATH",4,0)
+ ; Change History
+"RTN","DGDEATH",5,0)
+ ; VW1 3121105: GET+7: added preliminary cause of death field to input template.
+"RTN","DGDEATH",6,0)
+ ;
+"RTN","DGDEATH",7,0)
+GET N DGMTI,DATA
+"RTN","DGDEATH",8,0)
+ S DGDTHEN="" W !! S DIC="^DPT(",DIC(0)="AEQMZ" D ^DIC G Q:Y'>0 S (DA,DFN)=+Y
+"RTN","DGDEATH",9,0)
+ S DGDOLD=$G(^DPT(DFN,.35))
+"RTN","DGDEATH",10,0)
+ I $D(^DPT(DFN,.1)) W !?3,"Patient is currently in-house.  Discharge him with a discharge type of DEATH." G GET
+"RTN","DGDEATH",11,0)
+ I $S($D(^DPT(DFN,.35)):^(.35),1:"") F DGY=0:0 S DGY=$O(^DGPM("ATID1",DFN,DGY)) Q:'DGY  S DGDA=$O(^(DGY,0)) I $D(^DGPM(+DGDA,0)),$P(^(0),"^",17)]"" S DGXX=$P(^(0),"^",17),DGXX=^DGPM(DGXX,0) I "^12^38^"[("^"_$P(DGXX,"^",18)_"^") G DIS
+"RTN","DGDEATH",12,0)
+ D NOW^%DTC S DGNOW=%
+"RTN","DGDEATH",13,0)
+ S ^TMP("DEATH",$J)=1
+"RTN","DGDEATH",14,0)
+ ; BEGIN WV CHANGE VEN/SMH: Add preliminary cause of death
+"RTN","DGDEATH",15,0)
+ ; K A W ! S DIE=DIC,DR=".351" D ^DIE ; before
+"RTN","DGDEATH",16,0)
+ K A W ! S DIE=DIC,DR=".351;S:(X=""""!(X=""@"")) Y=""@999"";250043.1;@999" D ^DIE ; after
+"RTN","DGDEATH",17,0)
+ ; END WV CHANGE VEN/SMH
+"RTN","DGDEATH",18,0)
+ I '$D(^DPT(DFN,.35)) K ^TMP("DEATH",$J) G GET
+"RTN","DGDEATH",19,0)
+ S DGDNEW=^DPT(DFN,.35)
+"RTN","DGDEATH",20,0)
+ I $P(DGDNEW,"^",1)="",$P(DGDNEW,"^",2)'="" S DR=".352////@" D ^DIE
+"RTN","DGDEATH",21,0)
+ I $P(DGDNEW,"^",1)="" K ^TMP("DEATH",$J) G GET
+"RTN","DGDEATH",22,0)
+SN I $P(DGDNEW,"^",1)'="" S DR=".353" D ^DIE I $P($G(^DPT(DFN,.35)),"^",3)']"" D SNDISP G SN
+"RTN","DGDEATH",23,0)
+ I DGDOLD'=DGDNEW D DISCHRGE
+"RTN","DGDEATH",24,0)
+ I $P(DGDOLD,"^",1)'=$P(DGDNEW,"^",1) D XFR
+"RTN","DGDEATH",25,0)
+ K ^TMP("DEATH",$J) G GET
+"RTN","DGDEATH",26,0)
+ ;
+"RTN","DGDEATH",27,0)
+DIS W !,"Patient has a discharge type of Death",!,"Edit the discharge",!
+"RTN","DGDEATH",28,0)
+Q K A,DA,DFN,DGDA,DIC,DIE,DR,DGXX,DGY,DGDTHEN,DGDOLD,DGDNEW,DGDONOT Q
+"RTN","DGDEATH",29,0)
+XFR ; called from set x-ref of field .351 of file 2
+"RTN","DGDEATH",30,0)
+ N DGPCMM,DGFAPT,DGFAPTI,DGFAPT1
+"RTN","DGDEATH",31,0)
+ Q:'$D(DFN)
+"RTN","DGDEATH",32,0)
+ K DGTEXT D ^DGPATV S DGDEATH=$$GET1^DIQ(2,DFN,.351,"I"),XMSUB="PATIENT HAS EXPIRED",DGCT=0
+"RTN","DGDEATH",33,0)
+ D DEMOG
+"RTN","DGDEATH",34,0)
+ S DGT=X-.0001,(Y,DGDDT)=X,DG1="" D:DGT]"" ^DGPMSTAT
+"RTN","DGDEATH",35,0)
+ S Y=$$FMTE^XLFDT(Y),Y=$S(Y]"":Y,1:"UNKNOWN")
+"RTN","DGDEATH",36,0)
+ S DGDONOT=0 D APTT3
+"RTN","DGDEATH",37,0)
+ D LINE("")
+"RTN","DGDEATH",38,0)
+ D LINE("      Date/Time of Death: "_DEATHVAL_$S(DGDONOT:"",'DG1:"",$D(DGDTHEN):"",1:"  (While an inpatient)"))
+"RTN","DGDEATH",39,0)
+ D LINE("")
+"RTN","DGDEATH",40,0)
+ I '$D(ADM),DG1,$D(^DGPM(+DGA1,0)) S ADM=+^DGPM($P(^(0),"^",14),0)
+"RTN","DGDEATH",41,0)
+ S Y=$$FMTE^XLFDT($S($D(ADM):ADM,1:""))
+"RTN","DGDEATH",42,0)
+ D LINE($S($D(DGDTHEN):"",DG1:"     Admission Date/Time: "_Y_$S((DGDDT-ADM)<1:"  (Within 24 hours of hospitalization)",1:""),1:""))
+"RTN","DGDEATH",43,0)
+ D LINE("")
+"RTN","DGDEATH",44,0)
+ S DGX=$P($G(^DGPM(+$G(DGA1),0)),"^",6),DGX=$P($G(^DIC(42,+DGX,0)),U,1)
+"RTN","DGDEATH",45,0)
+ D LINE($S($D(DGDTHEN):"",('DG1):"",$D(DGA1):"             Admitted To: "_$S(DGX]"":DGX,1:"UNKNOWN"),1:"")) K DGX
+"RTN","DGDEATH",46,0)
+ D LINE("")
+"RTN","DGDEATH",47,0)
+ I DG1&'$D(DGDTHEN) D 
+"RTN","DGDEATH",48,0)
+ . D LINE($S($D(DGXFR0):"           Last Transfer: "_$S($D(^DIC(42,+$P(DGXFR0,"^",6),0)):$P(^(0),"^"),1:"UNKNOWN"),1:""))
+"RTN","DGDEATH",49,0)
+ . D LINE("")
+"RTN","DGDEATH",50,0)
+F N DGARRAY,SDCNT S DGFAPT=DGDEATH,DGFAPTI=""
+"RTN","DGDEATH",51,0)
+ S DGARRAY("FLDS")=3,DGARRAY(4)=DFN,DGARRAY("SORT")="P",DGARRAY(1)=DT,DGARRAY(3)="I;R"
+"RTN","DGDEATH",52,0)
+ S SDCNT=$$SDAPI^SDAMA301(.DGARRAY)
+"RTN","DGDEATH",53,0)
+ ;
+"RTN","DGDEATH",54,0)
+ I SDCNT>0 F  S DGFAPT=$O(^TMP($J,"SDAMA301",DFN,DGFAPT)) Q:'DGFAPT  S DGFAPT1=$G(^TMP($J,"SDAMA301",DFN,DGFAPT)) Q:DGFAPT1']""  D  Q:DGFAPTI
+"RTN","DGDEATH",55,0)
+ .I $P($P(DGFAPT1,U,3),";")'["C" D LINE("NOTE: Patient has future appointments scheduled!!") S DGFAPTI=1
+"RTN","DGDEATH",56,0)
+ S DGSCHAD=0 D SA I DGSCHAD D LINE("NOTE: Patient had scheduled admissions which have been cancelled!!")
+"RTN","DGDEATH",57,0)
+ I 'DGVETS D LINE("Patient is a NON-VETERAN."_$S($D(^DIC(21,+$P($G(^DPT(DFN,.32)),"^",3),0)):"  ["_$P(^(0),"^",1)_"]",1:""))
+"RTN","DGDEATH",58,0)
+ S DGPCMM=$$PCMMXMY^SCAPMC25(1,DFN,,,0) ;creates xmy array
+"RTN","DGDEATH",59,0)
+ S DGCT=$$PCMAIL^SCMCMM(DFN,"DGTEXT",DT)
+"RTN","DGDEATH",60,0)
+Q1 S DGB=1 D ^DGBUL S X=DGDEATH
+"RTN","DGDEATH",61,0)
+ K DGDEATH,DGSCHAD,DGI,Y,DGDDT,^TMP($J,"SDAMA301") D KILL^DGPATV K ADM,DG1,DGA1,DGCT,DGT,DGXX,DGY,Z Q
+"RTN","DGDEATH",62,0)
+SA F DGI=0:0 S DGI=$O(^DGS(41.1,"B",DFN,DGI)) Q:'DGI  I $D(^DGS(41.1,DGI,0)),($P(^(0),"^",13)']""),($P(^(0),"^",17)']"") S $P(^(0),"^",13)=DGDEATH,$P(^(0),"^",14)=+DUZ,$P(^(0),"^",15)=1,$P(^(0),"^",16)=2,DGSCHAD=1
+"RTN","DGDEATH",63,0)
+ Q
+"RTN","DGDEATH",64,0)
+ ;
+"RTN","DGDEATH",65,0)
+DEL ; delete death bulletin
+"RTN","DGDEATH",66,0)
+ N DGPCMM,DELBY,DELTM,DTHINFO
+"RTN","DGDEATH",67,0)
+ S DFN=+$G(DA) I '$D(^DPT(DFN,0)) Q  ; no patient node
+"RTN","DGDEATH",68,0)
+ I +$G(^DPT(DFN,.35)) Q  ; not deletion
+"RTN","DGDEATH",69,0)
+ S DGDEATH=X,XMSUB="Patient Death has been Deleted",DGCT=0
+"RTN","DGDEATH",70,0)
+ D ^DGPATV
+"RTN","DGDEATH",71,0)
+ D LINE("The date of death for the following patient has been deleted.")
+"RTN","DGDEATH",72,0)
+ D LINE("")
+"RTN","DGDEATH",73,0)
+ D DEMOG
+"RTN","DGDEATH",74,0)
+ D LINE("")
+"RTN","DGDEATH",75,0)
+ S DGPCMM=$$PCMMXMY^SCAPMC25(1,DFN,,,0) ;creates xmy array
+"RTN","DGDEATH",76,0)
+ S DGCT=$$PCMAIL^SCMCMM(DFN,"DGTEXT",DT)
+"RTN","DGDEATH",77,0)
+ S DGB=1 D ^DGBUL S X=DGDEATH
+"RTN","DGDEATH",78,0)
+ K DGCT,DGDEATH D KILL^DGPATV
+"RTN","DGDEATH",79,0)
+ Q
+"RTN","DGDEATH",80,0)
+ ;
+"RTN","DGDEATH",81,0)
+DEMOG ; list main demographics
+"RTN","DGDEATH",82,0)
+ D LINE("                    NAME: "_DGNAME)
+"RTN","DGDEATH",83,0)
+ D LINE("                     SSN: "_$P(SSN,"^",2))
+"RTN","DGDEATH",84,0)
+ D LINE("                     DOB: "_$P(DOB,"^",2))
+"RTN","DGDEATH",85,0)
+ I DGVETS D
+"RTN","DGDEATH",86,0)
+ . N DGX
+"RTN","DGDEATH",87,0)
+ . S DGX=$G(^DPT(DFN,.31))
+"RTN","DGDEATH",88,0)
+ . S DGLOCATN=$$FIND1^DIC(4,"","MX","`"_+$P(DGX,U,4)),DGLOCATN=$S(+DGLOCATN>0:$P($$NS^XUAF4(DGLOCATN),U),1:"NOT LISTED")
+"RTN","DGDEATH",89,0)
+ . D LINE("   CLAIM FOLDER LOCATION: "_$S($D(DGLOCATN):DGLOCATN,1:"NOT LISTED"))
+"RTN","DGDEATH",90,0)
+ . D LINE("            CLAIM NUMBER: "_$S($P(DGX,"^",3)]"":$P(DGX,"^",3),1:"NOT LISTED"))
+"RTN","DGDEATH",91,0)
+ D LINE("   COORDINATING MASTER OF RECORD: "_DGCMOR)
+"RTN","DGDEATH",92,0)
+ D GETS^DIQ(2,DFN_",",".351;.353;.354;.355","E","DTHINFO")
+"RTN","DGDEATH",93,0)
+ S DEATHVAL=$G(DTHINFO(2,DFN_",",.351,"E"))
+"RTN","DGDEATH",94,0)
+ S DEATHVAL=$$FMTE^XLFDT(DEATHVAL),DEATHVAL=$S(DEATHVAL]"":DEATHVAL,1:"UNKNOWN")
+"RTN","DGDEATH",95,0)
+ S SOURCE=$G(DTHINFO(2,DFN_",",.353,"E"))
+"RTN","DGDEATH",96,0)
+ S DELTM=$G(DTHINFO(2,DFN_",",.354,"E"))
+"RTN","DGDEATH",97,0)
+ S DELBY=$G(DTHINFO(2,DFN_",",.355,"E"))
+"RTN","DGDEATH",98,0)
+ D LINE("")
+"RTN","DGDEATH",99,0)
+ D LINE("             LAST EDITED BY: "_DELBY)
+"RTN","DGDEATH",100,0)
+ D LINE("    DATE/TIME LAST MODIFIED: "_DELTM)
+"RTN","DGDEATH",101,0)
+ D LINE("     SOURCE OF NOTIFICATION: "_$S(SOURCE="":"UNDEFINED",1:SOURCE))
+"RTN","DGDEATH",102,0)
+ ;K DEATHVAL,SOURCE,DELTM,DELBY
+"RTN","DGDEATH",103,0)
+ Q
+"RTN","DGDEATH",104,0)
+ ;
+"RTN","DGDEATH",105,0)
+LINE(X) ; add line contained in X to array
+"RTN","DGDEATH",106,0)
+ S DGCT=DGCT+1
+"RTN","DGDEATH",107,0)
+ S DGTEXT(DGCT,0)=X
+"RTN","DGDEATH",108,0)
+ Q
+"RTN","DGDEATH",109,0)
+DSBULL ;
+"RTN","DGDEATH",110,0)
+ ;
+"RTN","DGDEATH",111,0)
+ I $G(IVMDODUP)=1 Q
+"RTN","DGDEATH",112,0)
+ S DFN=DA
+"RTN","DGDEATH",113,0)
+ I $D(DGPMDA) D  Q
+"RTN","DGDEATH",114,0)
+ .S DISTYPE=$P($G(^DGPM(DGPMDA,0)),"^",18)
+"RTN","DGDEATH",115,0)
+ .I $G(^DG(405.2,DISTYPE,0))["DEATH" D
+"RTN","DGDEATH",116,0)
+ ..S FDA(2,DFN_",",.353)=1 D FILE^DIE(,"FDA","BWFERR")
+"RTN","DGDEATH",117,0)
+ ..D DISCHRGE,XFR
+"RTN","DGDEATH",118,0)
+ I $D(^TMP("DEATH",$J)) Q
+"RTN","DGDEATH",119,0)
+ D DISCHRGE,XFR
+"RTN","DGDEATH",120,0)
+ Q
+"RTN","DGDEATH",121,0)
+DKBULL ;
+"RTN","DGDEATH",122,0)
+ S DFN=DA
+"RTN","DGDEATH",123,0)
+ S FDA(2,DFN_",",.353)="@"
+"RTN","DGDEATH",124,0)
+ I $D(^TMP("DEATH",$J)) S FDA(2,DFN_",",.355)=DUZ
+"RTN","DGDEATH",125,0)
+ D FILE^DIE(,"FDA",)
+"RTN","DGDEATH",126,0)
+ D DEL
+"RTN","DGDEATH",127,0)
+ Q
+"RTN","DGDEATH",128,0)
+DISCHRGE ;
+"RTN","DGDEATH",129,0)
+ ; If the patient is being discharged, determine values needed for 
+"RTN","DGDEATH",130,0)
+ ; Source of Notification and Date/Time last entered.
+"RTN","DGDEATH",131,0)
+ ;
+"RTN","DGDEATH",132,0)
+ I '$D(DGNOW) S DGNOW=$$HTFM^XLFDT($H)
+"RTN","DGDEATH",133,0)
+ I $G(DGDAUTO)'=1 S FDA(2,DFN_",",.354)=DGNOW
+"RTN","DGDEATH",134,0)
+ S FDA(2,DFN_",",.355)=DUZ
+"RTN","DGDEATH",135,0)
+ D FILE^DIE(,"FDA",)
+"RTN","DGDEATH",136,0)
+ Q
+"RTN","DGDEATH",137,0)
+APTT3 ;Check to exclude "While an Inpatient" from DOD Bulletin
+"RTN","DGDEATH",138,0)
+ ; Input:  DFN  Output: DGDONOT
+"RTN","DGDEATH",139,0)
+ N DATE,XIEN,TYPE,XDOD,YES
+"RTN","DGDEATH",140,0)
+ S DGDONOT=0
+"RTN","DGDEATH",141,0)
+ S XDOD=$P($G(^DPT(DFN,.35)),"^",1) I 'XDOD Q
+"RTN","DGDEATH",142,0)
+ S XDOD=$P(XDOD,".",1),YES=0,TYPE=""
+"RTN","DGDEATH",143,0)
+ I '$D(^DGPM("APTT3",DFN)) Q
+"RTN","DGDEATH",144,0)
+ S DATE=$O(^DGPM("APTT3",DFN,XDOD)) I 'DATE Q
+"RTN","DGDEATH",145,0)
+ I $P(DATE,".",1)=XDOD S YES=1
+"RTN","DGDEATH",146,0)
+ I ($P(DATE,".",1)-1)=XDOD S YES=1
+"RTN","DGDEATH",147,0)
+ S XIEN=$O(^DGPM("APTT3",DFN,DATE,"")) I 'XIEN Q
+"RTN","DGDEATH",148,0)
+ S TYPE=$P($G(^DGPM(XIEN,0)),"^",4)
+"RTN","DGDEATH",149,0)
+ I YES,'((TYPE=27)!(TYPE=32)) S DGDONOT=1
+"RTN","DGDEATH",150,0)
+ Q
+"RTN","DGDEATH",151,0)
+SNDISP ; Source of Notification display choices
+"RTN","DGDEATH",152,0)
+ N DIR,DTOUT,DUOUT,DIRUT,DIROUT,DGLIST,DGLNAME,I,X,Y
+"RTN","DGDEATH",153,0)
+ S DGLIST=$P($G(^DD(2,.353,0)),"^",3)
+"RTN","DGDEATH",154,0)
+ S Y=6
+"RTN","DGDEATH",155,0)
+ S DIR("?",1)=" "
+"RTN","DGDEATH",156,0)
+ S DIR("?",2)=" This is a required response. Please select from the following:"
+"RTN","DGDEATH",157,0)
+ S DIR("?",3)=" Entering '^' will take you back to the Source of Notification prompt"
+"RTN","DGDEATH",158,0)
+ S DIR("?",4)=" "
+"RTN","DGDEATH",159,0)
+ S DIR("?",5)=" "
+"RTN","DGDEATH",160,0)
+ F X=1:1 S DGLNAME=$P(DGLIST,";",X) Q:DGLNAME']""  S DIR("?",Y)="      "_$P(DGLNAME,":",1)_"      "_$P(DGLNAME,":",2) S Y=Y+1
+"RTN","DGDEATH",161,0)
+ S DIR("?",Y)=" "
+"RTN","DGDEATH",162,0)
+ F I=1:1 Q:'$D(DIR("?",I))  W !,DIR("?",I)
+"RTN","DGDEATH",163,0)
+ Q
+"RTN","DGPMV")
+0^7^B19120801
+"RTN","DGPMV",1,0)
+DGPMV ;ALB/MRL/MIR - PATIENT MOVEMENT DRIVER; 10 MAR 89 ; 11/5/12 1:00pm
+"RTN","DGPMV",2,0)
+ ;;5.3;Registration;**60,200,268,VW1**;Aug 13, 1993;Build 18
+"RTN","DGPMV",3,0)
+ ;
+"RTN","DGPMV",4,0)
+ ;OPTION         VALUE OF DGPMT
+"RTN","DGPMV",5,0)
+ ;------         --------------
+"RTN","DGPMV",6,0)
+ ;admit                 1
+"RTN","DGPMV",7,0)
+ ;transfer              2
+"RTN","DGPMV",8,0)
+ ;discharge             3
+"RTN","DGPMV",9,0)
+ ;check-in              4
+"RTN","DGPMV",10,0)
+ ;check-out             5
+"RTN","DGPMV",11,0)
+ ;t.s. transfer         6
+"RTN","DGPMV",12,0)
+ ;
+"RTN","DGPMV",13,0)
+ ; Change History:
+"RTN","DGPMV",14,0)
+ ; 3121105: *VW1* Added meaningful use questions in reg+1
+"RTN","DGPMV",15,0)
+PAT K ORACTION,ORMENU
+"RTN","DGPMV",16,0)
+ D LO^DGUTL I '$D(IOF) S IOP=$S($D(ION):ION,1:"HOME") D ^%ZIS K IOP
+"RTN","DGPMV",17,0)
+PAT1 W ! I DGPMT=5 S DGPMN=0 D SPCLU^DGPMV0 G OREN:'DGER,Q
+"RTN","DGPMV",18,0)
+ S DIC="^DPT(",DIC(0)="AEQMZ",DIC("A")=$S('$D(DGPMPC):$P("Admit^Transfer^Discharge^Check-in^Check-out^Specialty Change for","^",DGPMT),1:"Provider Change for")_" PATIENT: "
+"RTN","DGPMV",19,0)
+ S:DGPMT=1 DIC(0)=DIC(0)_"L",DLAYGO=2 S:"^1^4^"'[("^"_DGPMT_"^") DIC("S")="I $D(^DGPM($S(DGPMT'=5:""APTT1"",1:""APTT4""),+Y))" D ^DIC K DIC,DLAYGO G Q:Y'>0 S DFN=+Y,DGPMN=$P(Y,"^",3)
+"RTN","DGPMV",20,0)
+OREN S DGUSEOR=$$USINGOR()
+"RTN","DGPMV",21,0)
+ I DGUSEOR Q:'$D(ORVP)  S DFN=+ORVP,DGPMN="",Y(0)=$G(^DPT(DFN,0))
+"RTN","DGPMV",22,0)
+ I $$LODGER(DFN)&(DGPMT=1) D  Q
+"RTN","DGPMV",23,0)
+ .W !,*7,"Patient is a lodger...you can not add an admission!"
+"RTN","DGPMV",24,0)
+ .W !,"    Press RETURN to continue"
+"RTN","DGPMV",25,0)
+ .R XTEMP:30
+"RTN","DGPMV",26,0)
+ .D DISPOQ K DGPMDER
+"RTN","DGPMV",27,0)
+MOVE ;
+"RTN","DGPMV",28,0)
+ S XQORQUIT=1,DGPME=0 D UC
+"RTN","DGPMV",29,0)
+ G CHK:"^1^4^"[("^"_DGPMT_"^") I '$D(^DGPM("APTT"_$S(DGPMT'=5:1,1:4),DFN)) W !!,"'",$P(Y(0),"^",1),"' HAS NEVER BEEN ",$S(DGPMT'=5:"ADMITTED",1:"CHECK-IN")," TO THE DHCP ADMISSIONS MODULE" G PAT1:'DGUSEOR,Q
+"RTN","DGPMV",30,0)
+CHK D:DGPMN REG I 'DGPME,$D(^DPT(DFN,.35)),+^(.35) S Y=+^(.35) D DIED
+"RTN","DGPMV",31,0)
+ D NEW^DGPMVODS I $S('DGODSON:0,'$D(^DPT(DFN,.32)):1,'$D(^DIC(21,+$P(^(.32),"^",3),0)):1,1:0) S DGPME=1
+"RTN","DGPMV",32,0)
+ D:'DGPME ^DGPMV1 G PAT1:'DGUSEOR,Q
+"RTN","DGPMV",33,0)
+ ;
+"RTN","DGPMV",34,0)
+REG ;new patient
+"RTN","DGPMV",35,0)
+ ; WV Change by VEN/SMH *VW1*
+"RTN","DGPMV",36,0)
+ D REGMU^VWUTIL ; Extra questions for Meaningful Use
+"RTN","DGPMV",37,0)
+ ; End WV Change *VW1*
+"RTN","DGPMV",38,0)
+ D NEW^DGRP
+"RTN","DGPMV",39,0)
+ W !!,"NEW PATIENT!  WANT TO LOAD 10-10 DATA NOW" S %=1 D YN^DICN I %=1 D ENED^DGRP S:'$D(^DPT(DFN,0)) DGPME=1 Q
+"RTN","DGPMV",40,0)
+ Q:%>0  I % S DGPME=1 Q
+"RTN","DGPMV",41,0)
+ W !?4,"Answer YES if you want to load 10/10 data at this time otherwise answer NO.",*7 G REG
+"RTN","DGPMV",42,0)
+ ;
+"RTN","DGPMV",43,0)
+DIED X ^DD("DD") W !!,"PATIENT EXPIRED '",Y,"'...WANT TO CONTINUE" S %=2 D YN^DICN Q:%=1  I % S DGPME=1 Q
+"RTN","DGPMV",44,0)
+ W !?4,*7,"Answer YES if you want to continue this process even though the patient",!?4,"has expired otherwise answer NO!" G DIED
+"RTN","DGPMV",45,0)
+ ;
+"RTN","DGPMV",46,0)
+Q K %,DFN,DGER,DGPM5X,DGODS,DGODSON,DGPMUC,DGPME,DGPMN,DGPMT,DGPMPC,DIC,X,Y,^UTILITY("VAIP",$J) D KVAR^VADPT
+"RTN","DGPMV",47,0)
+ I '$G(DGUSEOR) K XQORQUIT
+"RTN","DGPMV",48,0)
+ K DGUSEOR
+"RTN","DGPMV",49,0)
+ Q
+"RTN","DGPMV",50,0)
+ ;
+"RTN","DGPMV",51,0)
+UC ; -- set type of mvt literal
+"RTN","DGPMV",52,0)
+ S DGPMUC=$P("ADMISSION^TRANSFER^DISCHARGE^LODGER CHECK-IN^CHECK-OUT LODGER^SPECIALTY TRANSFER^ROOM-BED CHANGE","^",DGPMT)
+"RTN","DGPMV",53,0)
+ I DGPMT=6,$D(DGPMPC) S DGPMUC="PROVIDER CHANGE"
+"RTN","DGPMV",54,0)
+ Q
+"RTN","DGPMV",55,0)
+ ;
+"RTN","DGPMV",56,0)
+CA ; -- bypass interactive process and allows editing of past admission
+"RTN","DGPMV",57,0)
+ ;    mvts
+"RTN","DGPMV",58,0)
+ ;
+"RTN","DGPMV",59,0)
+ ;    input: DFN
+"RTN","DGPMV",60,0)
+ ;           DGPMT  - mvt transaction type
+"RTN","DGPMV",61,0)
+ ;           DGPMCA - coresp. adm
+"RTN","DGPMV",62,0)
+ ;
+"RTN","DGPMV",63,0)
+ ;   output: Y - the mvt entry added/edited
+"RTN","DGPMV",64,0)
+ ;
+"RTN","DGPMV",65,0)
+ D UC
+"RTN","DGPMV",66,0)
+ K VAIP S VAIP("E")=DGPMCA N DGPMCA D INP^DGPMV10
+"RTN","DGPMV",67,0)
+ S DGPMBYP="" D C^DGPMV1
+"RTN","DGPMV",68,0)
+ S Y=DGPMBYP K DGPMUC,DGPMBYP
+"RTN","DGPMV",69,0)
+ Q
+"RTN","DGPMV",70,0)
+DISPO ;called from admission disposition types
+"RTN","DGPMV",71,0)
+ ;input  DGPMSVC=SVC OF WARD REQUIRED (FROM DISPOSITION TYPE FILE)
+"RTN","DGPMV",72,0)
+ ;           DFN=patient file IFN (this variable is NOT killed on exit)
+"RTN","DGPMV",73,0)
+ ;output DGPMDER=disposition error?? - FOR FUTURE USE
+"RTN","DGPMV",74,0)
+ ;
+"RTN","DGPMV",75,0)
+ S DGPMT=1,(DGPML,DGPMMD)="" K DGPMDER,VAIP S VAIP("D")="L" D UC^DGPMV,INP^DGPMV10,NOW^%DTC
+"RTN","DGPMV",76,0)
+ I DGPMVI(1)&('DGPMDCD!(DGPMDCD>%)) W !,"Patient is already an inpatient...editing the admission is not allowed." D DISPOQ K DGPMDER Q
+"RTN","DGPMV",77,0)
+ I $$LODGER(DFN) W !,*7,"Patient is a lodger...you can not add an admission!" D DISPOQ K DGPMDER Q
+"RTN","DGPMV",78,0)
+ ;next line should be involked in future release to error if wrong service
+"RTN","DGPMV",79,0)
+ ;I DGPMVI(1)&('DGPMDCD!(DGPMDCD>%)) S DGPMDER=$S(DGPMSVC="H"&("^NH^D^"'[("^"_DGPMSV_"^")):0,DGPMSVC=DGPMSV:0,1:1) W:DGPMDER=1 "Current inpatient, but not to proper service" Q
+"RTN","DGPMV",80,0)
+ D NEW^DGPMVODS I $S('DGODSON:0,'$D(^DPT(DFN,.32)):1,'$D(^DIC(21,+$P(^(.32),"^",3),0)):1,1:0) S DGPME=1
+"RTN","DGPMV",81,0)
+ S DEF="NOW",DGPM1X=0 D SEL^DGPMV2 I '$D(DGPMDER) S DGPMDER=1
+"RTN","DGPMV",82,0)
+DISPOQ D Q^DGPMV1 K DGODS,DGODSON,DGPMT,DGPMSV,DGPMSVC,DGPMUC,DGPMN,^UTILITY("VAIP",$J) Q
+"RTN","DGPMV",83,0)
+ ;
+"RTN","DGPMV",84,0)
+USINGOR() ; return a 1 if OE/RR option is being used or 0 otherwise
+"RTN","DGPMV",85,0)
+ N RETURN,X
+"RTN","DGPMV",86,0)
+ S RETURN=0,X=+$$VERSION^XPDUTL("OR")
+"RTN","DGPMV",87,0)
+ I X<3,$D(ORACTION) S RETURN=1
+"RTN","DGPMV",88,0)
+ I X'<3,$D(ORMENU) S RETURN=1
+"RTN","DGPMV",89,0)
+ Q RETURN
+"RTN","DGPMV",90,0)
+LODGER(DFN) ; Determine lodger status
+"RTN","DGPMV",91,0)
+ ; Input: DFN=patient IEN
+"RTN","DGPMV",92,0)
+ ; Output: '1' if currently a lodger, '0' otherwise
+"RTN","DGPMV",93,0)
+ N DGPMDCD,DGPMVI,I,X
+"RTN","DGPMV",94,0)
+ D LODGER^DGPMV10
+"RTN","DGPMV",95,0)
+ Q DGPMVI(2)=4
+"RTN","DGREG")
+0^1^B78971450
+"RTN","DGREG",1,0)
+DGREG ;ALB/JDS,MRL/PJR/PHH-REGISTER PATIENT ; 11/5/12 1:00pm
+"RTN","DGREG",2,0)
+ ;;5.3;Registration;**1,32,108,147,149,182,245,250,513,425,533,574,563,624,658,634**;Aug 13, 1993;Build 18
+"RTN","DGREG",3,0)
+ ; Modified from FOIA VISTA,
+"RTN","DGREG",4,0)
+ ; Copyright (C) 2007 WorldVistA
+"RTN","DGREG",5,0)
+ ;
+"RTN","DGREG",6,0)
+ ; This program is free software; you can redistribute it and/or modify
+"RTN","DGREG",7,0)
+ ; it under the terms of the GNU General Public License as published by
+"RTN","DGREG",8,0)
+ ; the Free Software Foundation; either version 2 of the License, or
+"RTN","DGREG",9,0)
+ ; (at your option) any later version.
+"RTN","DGREG",10,0)
+ ;
+"RTN","DGREG",11,0)
+START ;
+"RTN","DGREG",12,0)
+EN D LO^DGUTL S DGCLPR=""
+"RTN","DGREG",13,0)
+ N DGDIV
+"RTN","DGREG",14,0)
+ S DGDIV=$$PRIM^VASITE
+"RTN","DGREG",15,0)
+ S:DGDIV %ZIS("B")=$P($G(^DG(40.8,+DGDIV,"DEV")),U,1)
+"RTN","DGREG",16,0)
+ I $P(^DG(43,1,0),U,39) S %ZIS="NQ",%ZIS("A")="Select 1010 printer: " D ^%ZIS Q:POP  S (DGIO(10),DGIO("PRF"),DGIO("RT"),DGIO("HS"))=ION,DGASKDEV="" I $E(IOST,1,2)'["P-" W !,$C(7),"Not a printer" G DGREG
+"RTN","DGREG",17,0)
+ K %ZIS("B")
+"RTN","DGREG",18,0)
+ I '$D(DGIO),$P(^DG(43,1,0),U,30) S %ZIS="N",IOP="HOME" D ^%ZIS I $D(IOS),IOS,$D(^%ZIS(1,+IOS,99)),$D(^%ZIS(1,+^(99),0)) S Y=$P(^(0),U,1) W !,"Using closest printer ",Y,! F I=10,"PRF","RT","HS" S DGIO(I)=Y
+"RTN","DGREG",19,0)
+A D ENDREG($G(DFN))
+"RTN","DGREG",20,0)
+ ;
+"RTN","DGREG",21,0)
+ ; ** VOE change 1 of 4: DAOU/WCJ 2/1/2005,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DGREG",22,0)
+ ;
+"RTN","DGREG",23,0)
+ ; if not VA agency code, add DIC("DR") to default some identifiers and
+"RTN","DGREG",24,0)
+ ; skip others also, improve readability
+"RTN","DGREG",25,0)
+ ;
+"RTN","DGREG",26,0)
+ ; before change:
+"RTN","DGREG",27,0)
+ ; W !! S DIC=2,DIC(0)="ALEQM",DLAYGO=2 K DIC("S"),DIC("B") D ^DIC K DLAYGO G Q1:Y<0 S (DFN,DA)=+Y,DGNEW=$P(Y,"^",3) N Y D PAUSE^DG10 D BEGINREG(DFN) I DGNEW D NEW^DGRP
+"RTN","DGREG",28,0)
+ ;
+"RTN","DGREG",29,0)
+ ; after change:
+"RTN","DGREG",30,0)
+ W !!
+"RTN","DGREG",31,0)
+ N Y,DGREGY S DGREGY=1 D  I DGREGY<0 G Q1
+"RTN","DGREG",32,0)
+ . N DIC S DIC=2 ; Patient file
+"RTN","DGREG",33,0)
+ . S DIC(0)="ALEQM" ; ask, laygo, echo, question, and multi-index
+"RTN","DGREG",34,0)
+ . N DLAYGO S DLAYGO=2 ; override file access by user: allow laygo
+"RTN","DGREG",35,0)
+ . I $G(DUZ("AG"))'="V" D  ;adjust identifiers asked for VOE
+"RTN","DGREG",36,0)
+ . . S DIC("DR")=".02;.03;994;.301///N;391///VISTA OFFICE EHR;1901///N;.09"
+"RTN","DGREG",37,0)
+ . ;
+"RTN","DGREG",38,0)
+ . D ^DIC ; Select Patient
+"RTN","DGREG",39,0)
+ . ;
+"RTN","DGREG",40,0)
+ . I Y<0 S DGREGY=-1 Q
+"RTN","DGREG",41,0)
+ . K DIC("DR")
+"RTN","DGREG",42,0)
+ . S (DFN,DA)=+Y
+"RTN","DGREG",43,0)
+ . S DGNEW=$P(Y,"^",3) ; new patient?
+"RTN","DGREG",44,0)
+ . N Y D PAUSE^DG10 ; prompt user before continuing
+"RTN","DGREG",45,0)
+ . D BEGINREG(DFN) ; lock patient record
+"RTN","DGREG",46,0)
+ ;
+"RTN","DGREG",47,0)
+ ; ** end of VOE change 1 **
+"RTN","DGREG",48,0)
+ ;
+"RTN","DGREG",49,0)
+ ;; ask to continue if patient died - DG*5.3*563 - pjr 10/12/04
+"RTN","DGREG",50,0)
+ S DOD="" I $G(DFN) S DOD=$P($G(^DPT(DFN,.35)),"^",1)
+"RTN","DGREG",51,0)
+ I DOD S Y=DOD,DGPME=0 D DIED^DGPMV I DGPME K DFN,DGRPOUT G A
+"RTN","DGREG",52,0)
+ ;
+"RTN","DGREG",53,0)
+ D CIRN
+"RTN","DGREG",54,0)
+ ;
+"RTN","DGREG",55,0)
+ ; ** VOE change 2 of 4: DAOU/WCJ 2/1/2005,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DGREG",56,0)
+ ;
+"RTN","DGREG",57,0)
+ I $G(DGNEW) D NEW^DGRP ; execute new patient DR string
+"RTN","DGREG",58,0)
+ ;
+"RTN","DGREG",59,0)
+ ; send CMOR query and display results only if VA agency code
+"RTN","DGREG",60,0)
+ ;
+"RTN","DGREG",61,0)
+ ; before change:
+"RTN","DGREG",62,0)
+ ; I +$G(DGNEW) D
+"RTN","DGREG",63,0)
+ ;
+"RTN","DGREG",64,0)
+ ; after change:
+"RTN","DGREG",65,0)
+ I $G(DGNEW),$G(DUZ("AG"))="V" D
+"RTN","DGREG",66,0)
+ . ;
+"RTN","DGREG",67,0)
+ . ; end of change
+"RTN","DGREG",68,0)
+ . ;
+"RTN","DGREG",69,0)
+ . ; query CMOR for Patient Record Flag Assignments if NEW patient and
+"RTN","DGREG",70,0)
+ . ; display results.
+"RTN","DGREG",71,0)
+ . I $$PRFQRY^DGPFAPI(DFN) D DISPPRF^DGPFAPI(DFN)
+"RTN","DGREG",72,0)
+ ;
+"RTN","DGREG",73,0)
+ ; before change:
+"RTN","DGREG",74,0)
+ ; D ROMQRY
+"RTN","DGREG",75,0)
+ ;
+"RTN","DGREG",76,0)
+ ; after change:
+"RTN","DGREG",77,0)
+ I $G(DUZ("AG"))="V" D ROMQRY
+"RTN","DGREG",78,0)
+ ;
+"RTN","DGREG",79,0)
+ ; ** end of VOE change 2 **
+"RTN","DGREG",80,0)
+ ;
+"RTN","DGREG",81,0)
+ D REGMU^VWUTIL ; Changes for Meaningful Use
+"RTN","DGREG",82,0)
+ ;
+"RTN","DGREG",83,0)
+ S (DGFC,CURR)=0
+"RTN","DGREG",84,0)
+ D:'$G(DGNEW) WARN S DA=DFN,DGFC="^1",VET=$S($D(^DPT(DFN,"VET")):^("VET")'="Y",1:0)
+"RTN","DGREG",85,0)
+ S %ZIS="N",IOP="HOME" D ^%ZIS S DGELVER=0 D EN^DGRPD I $D(DGRPOUT) D ENDREG($G(DFN)) D HL7A08^VAFCDD01 K DFN,DGRPOUT G A
+"RTN","DGREG",86,0)
+ D HINQ^DG10
+"RTN","DGREG",87,0)
+ I $D(^DIC(195.4,1,"UP")) I ^("UP") D ADM^RTQ3
+"RTN","DGREG",88,0)
+ ;
+"RTN","DGREG",89,0)
+ ; ** VOE change 3 of 4: DAOU/WCJ 2/1/2005,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DGREG",90,0)
+ ;
+"RTN","DGREG",91,0)
+ ; send financial query only for VA agency code
+"RTN","DGREG",92,0)
+ ;
+"RTN","DGREG",93,0)
+ ; before change:
+"RTN","DGREG",94,0)
+ ; D REG^IVMCQ($G(DFN))  ; send financial query
+"RTN","DGREG",95,0)
+ ;
+"RTN","DGREG",96,0)
+ ; after change:
+"RTN","DGREG",97,0)
+ I $G(DUZ("AG"))="V" D REG^IVMCQ($G(DFN)) ; send financial query
+"RTN","DGREG",98,0)
+ ;
+"RTN","DGREG",99,0)
+ ; ** end of VOE change 3 **
+"RTN","DGREG",100,0)
+ ;
+"RTN","DGREG",101,0)
+ G A1
+"RTN","DGREG",102,0)
+ ;
+"RTN","DGREG",103,0)
+RT I $D(^DIC(195.4,1,"UP")) I ^("UP") S $P(DGFC,U,1)=DIV D ADM^RTQ3
+"RTN","DGREG",104,0)
+ Q
+"RTN","DGREG",105,0)
+ ;
+"RTN","DGREG",106,0)
+A1 W !,"Do you want to ",$S(DGNEW:"enter",1:"edit")," Patient Data" S %=1 D YN^DICN D  G H:'%,CK:%'=1 S DGRPV=0 D EN1^DGRP G Q:'$D(DA)
+"RTN","DGREG",107,0)
+ .I +$G(DGNEW) Q
+"RTN","DGREG",108,0)
+ .I $$ADD^DGADDUTL($G(DFN)) ;
+"RTN","DGREG",109,0)
+ G CH
+"RTN","DGREG",110,0)
+PR W !!,"Is the patient currently being followed in a clinic for the same condition" S %=0 D YN^DICN G Q:%=-1
+"RTN","DGREG",111,0)
+ I '% W !?4,$C(7),"Enter 'Y' if the patient is being followed in clinic for condition for which",!?6,"registered, 'N' if not." G PR
+"RTN","DGREG",112,0)
+ S CURR=% G SEEN
+"RTN","DGREG",113,0)
+ ;
+"RTN","DGREG",114,0)
+CK S DGEDCN=1 D ^DGRPC
+"RTN","DGREG",115,0)
+CH S X=$S('$D(^DPT(DFN,.36)):1,$P(^(.36),"^",1)']"":1,1:0),X1=$S('$D(^DPT(DFN,.32)):1,$P(^(.32),"^",3)']"":1,1:0) I 'X,'X1 G CH1
+"RTN","DGREG",116,0)
+CH1 S DA=DFN G PR:'$D(^DPT("ADA",1,DA)) W !!,"There is still an open disposition--register aborted.",$C(7),$C(7) G Q
+"RTN","DGREG",117,0)
+SEEN W !!,"Is the patient to be examined in the medical center today" S %=1 D YN^DICN S SEEN=% G:%<0 Q I %'>0 W !!,"Enter 'Y' if the patient is to be examined today, 'N' if not.",$C(7) G SEEN
+"RTN","DGREG",118,0)
+ABIL D ^DGREGG
+"RTN","DGREG",119,0)
+ENR ; next line appears to be dead code.  left commented just to test.  mli 4/28/94
+"RTN","DGREG",120,0)
+ ;S DE=0 F I=0:0 S I=$O(^DPT(DA,"DE",I)) Q:'I  I $P(^(I,0),"^",3)'?7N Q  D PR:'DE S L=+$P($S($D(^SC(L,0)):^(0),1:""),"^",1)
+"RTN","DGREG",121,0)
+REG S (DIE,DIC)="^DPT("_DFN_",""DIS"",",%DT="PTEX",%DT("A")="Registration login date/time: NOW// "
+"RTN","DGREG",122,0)
+ W !,%DT("A") R ANS:DTIME S:'$T ANS="^" S:ANS="" ANS="N" S X=ANS G Q:ANS="^" S DA(1)=DFN D CHK^DIE(2.101,.01,"E",X,.RESULT) G REG:RESULT="^"!('$D(RESULT)),PR3:'(RESULT#1) S Y=RESULT
+"RTN","DGREG",123,0)
+ I (RESULT'="^") W "  ("_RESULT(0)_")"
+"RTN","DGREG",124,0)
+ S DINUM=9999999-RESULT
+"RTN","DGREG",125,0)
+ S (DFN1,Y1)=DINUM,APD=Y I $D(^DPT(DFN,"DIS",Y1)) W !!,"You must enter a date that does not exist.",$C(7),$C(7) G REG
+"RTN","DGREG",126,0)
+ G:$D(^DPT("ADA",1,DA)) CH1 L @(DIE_DINUM_")"):2 G:'$T MSG S:'($D(^DPT(DA(1),"DIS",0))#2) ^(0)="^2.101D^^" S DIC(0)="L",X=+Y D ^DIC
+"RTN","DGREG",127,0)
+ ;
+"RTN","DGREG",128,0)
+ ;SAVE OFF DATE/TIME OF REGISTRATION FOR HL7 V2.3 MESSAGING, IN VAFCDDT
+"RTN","DGREG",129,0)
+ S VAFCDDT=X
+"RTN","DGREG",130,0)
+ ;
+"RTN","DGREG",131,0)
+ S DA=DFN1,DIE("NO^")="",DA(1)=DFN,DP=2.101,DR="1///"_$S(SEEN=2:2,CURR=1:1,1:0)_";Q;2"_$S(CURR=1:"///3",1:"")_";2.1;3//"_$S($P(^DG(43,1,"GL"),"^",2):"",1:"/")_$S($D(^DG(40.8,+$P(^DG(43,1,"GL"),"^",3),0)):$P(^(0),"^",1),1:"")_";4////"_DUZ
+"RTN","DGREG",132,0)
+ ;
+"RTN","DGREG",133,0)
+ ; ** VOE change 4 of 4: DAOU/JLG 2/7/2005,VA/CJS,WV/TOAD 1/5/2006 **
+"RTN","DGREG",134,0)
+ ;
+"RTN","DGREG",135,0)
+ ; for VOE or IHS agency codes, add the following:
+"RTN","DGREG",136,0)
+ ; force TYPE OF CARE with ALL OTHER
+"RTN","DGREG",137,0)
+ ;
+"RTN","DGREG",138,0)
+ I $G(DUZ("AG"))="E"!($G(DUZ("AG"))="I") D
+"RTN","DGREG",139,0)
+ . S DR="1///"_$S(SEEN=2:2,CURR=1:1,1:0)_";Q;2"_$S(CURR=1:"///3",1:"")_";2.1///5;3//"_$S($P(^DG(43,1,"GL"),"^",2):"",1:"/")_$S($D(^DG(40.8,+$P(^DG(43,1,"GL"),"^",3),0)):$P(^(0),"^",1),1:"")_";4////"_DUZ
+"RTN","DGREG",140,0)
+ ;
+"RTN","DGREG",141,0)
+ ; ** end of VOE change 4 **
+"RTN","DGREG",142,0)
+ ;
+"RTN","DGREG",143,0)
+ D EL K DIC("A") N DGNDLOCK S DGNDLOCK=DIE_DFN1_")" L +@DGNDLOCK:2 G:'$T MSG D ^DIE L -@DGNDLOCK
+"RTN","DGREG",144,0)
+ I $D(DTOUT) D  G Q
+"RTN","DGREG",145,0)
+ .K DTOUT
+"RTN","DGREG",146,0)
+ .N DA,DIK
+"RTN","DGREG",147,0)
+ .S DA(1)=DFN,DA=DFN1,DIK="^DPT("_DFN_",""DIS"","
+"RTN","DGREG",148,0)
+ .D ^DIK
+"RTN","DGREG",149,0)
+ .W !!?5,"User Time-out.  Required registration data could be missing."
+"RTN","DGREG",150,0)
+ .W !,?5,"This registration has been deleted."
+"RTN","DGREG",151,0)
+ ; check whether facility applying to (division) is inactive
+"RTN","DGREG",152,0)
+ I '$$DIVCHK^DGREGFAC(DFN,DFN1) G CONT
+"RTN","DGREG",153,0)
+ASKDIV W !!?5,"The facility chosen either has no pointer to an Institution"
+"RTN","DGREG",154,0)
+ W !?5,"file record or the Institution file record is inactive."
+"RTN","DGREG",155,0)
+ W !?5,"Please choose another division."
+"RTN","DGREG",156,0)
+ S DA=DFN1,DIE("NO^")="",DA(1)=DFN,DP=2.101,DR="3" D ^DIE
+"RTN","DGREG",157,0)
+ I $$DIVCHK^DGREGFAC(DFN,DFN1) G ASKDIV
+"RTN","DGREG",158,0)
+CONT ; continue
+"RTN","DGREG",159,0)
+ S DGXXXD=1 D EL^DGREGE I $P(^DPT(DFN,"DIS",DFN1,0),"^",3)=4 S DA=DFN,DIE="^DPT(",DR=".368;.369" D ^DIE S DIE="^DPT("_DFN_",""DIS"",",DA(1)=DFN,DA=DFN1
+"RTN","DGREG",160,0)
+ S DA=DFN,DR="[DGREG]",DIE="^DPT(" D ^DIE K DIE("NO^")
+"RTN","DGREG",161,0)
+ I $D(^DPT(DFN,"DIS",DFN1,2)),$P(^(2),"^",1)="Y" S DIE="^DPT(",DR="[DG EMPLOYER]",DA=DFN D ^DIE
+"RTN","DGREG",162,0)
+ G ^DGREG0
+"RTN","DGREG",163,0)
+PR2 W !!,"You can only enter new registrations through this option.",$C(7),$C(7) G REG
+"RTN","DGREG",164,0)
+PR3 W !!,"Time is required to register the patient.",!!,$C(7),$C(7) G REG
+"RTN","DGREG",165,0)
+H W !?5,"Enter 'YES' to enter/edit registration data or 'NO' to continue." G A1
+"RTN","DGREG",166,0)
+Q K DG,DQ G Q1^DGREG0
+"RTN","DGREG",167,0)
+Q1 K DGIO,DGASKDEV,DGFC,DGCLRP,CURR,DGELVER,DGNEW Q
+"RTN","DGREG",168,0)
+EL S DR=DR_";13//" I $D(^DPT(DFN,.36)),$D(^DIC(8,+^(.36),0)) S DR=DR_$P(^(0),"^",1) Q
+"RTN","DGREG",169,0)
+ S DR=DR_"HUMANITARIAN EMERGENCY" Q
+"RTN","DGREG",170,0)
+FEE S DGRPFEE=1 D DGREG K DGRPFEE G Q1
+"RTN","DGREG",171,0)
+ ;
+"RTN","DGREG",172,0)
+WARN I $S('$D(^DPT(DFN,.1)):0,$P(^(.1),"^",1)']"":0,1:1) W !,$C(7),"***PATIENT IS CURRENTLY AN INPATIENT***",! H 2
+"RTN","DGREG",173,0)
+ I $S('$D(^DPT(DFN,.107)):0,$P(^(.107),"^",1)']"":0,1:1) W !,$C(7),"***PATIENT IS CURRENTLY A LODGER***",! H 2
+"RTN","DGREG",174,0)
+ Q
+"RTN","DGREG",175,0)
+MSG W !,"Another user is editing, try later ..." G Q
+"RTN","DGREG",176,0)
+ ;
+"RTN","DGREG",177,0)
+BEGINREG(DFN) ;
+"RTN","DGREG",178,0)
+ ;Description: This is called at the beginning of the registration process.
+"RTN","DGREG",179,0)
+ ;Concurrent processes can check the lock to determine if the patient is
+"RTN","DGREG",180,0)
+ ;currently being registered.
+"RTN","DGREG",181,0)
+ ;
+"RTN","DGREG",182,0)
+ Q:'$G(DFN) 0
+"RTN","DGREG",183,0)
+ I $$QRY^DGENQRY(DFN) W !!,"Enrollment/Eligibility Query sent ...",!!
+"RTN","DGREG",184,0)
+ L +^TMP(DFN,"REGISTRATION IN PROGRESS"):1
+"RTN","DGREG",185,0)
+ I $$LOCK^DGENPTA1(DFN) ;try to lock the patient record
+"RTN","DGREG",186,0)
+ Q
+"RTN","DGREG",187,0)
+ ;
+"RTN","DGREG",188,0)
+ENDREG(DFN) ;
+"RTN","DGREG",189,0)
+ ;Description: releases the lock obtained by calling BEGINREG.
+"RTN","DGREG",190,0)
+ ;
+"RTN","DGREG",191,0)
+ Q:'$G(DFN)
+"RTN","DGREG",192,0)
+ L -^TMP(DFN,"REGISTRATION IN PROGRESS")
+"RTN","DGREG",193,0)
+ D UNLOCK^DGENPTA1(DFN)
+"RTN","DGREG",194,0)
+ Q
+"RTN","DGREG",195,0)
+ ;
+"RTN","DGREG",196,0)
+IFREG(DFN) ;
+"RTN","DGREG",197,0)
+ ;Description: tests whether the lock set by BEGINREG is set
+"RTN","DGREG",198,0)
+ ;
+"RTN","DGREG",199,0)
+ ;Input:  DFN
+"RTN","DGREG",200,0)
+ ;Output:
+"RTN","DGREG",201,0)
+ ;      Function Value = 1 if lock is set, 0 otherwise
+"RTN","DGREG",202,0)
+ ;
+"RTN","DGREG",203,0)
+ N RETURN
+"RTN","DGREG",204,0)
+ Q:'$G(DFN) 0
+"RTN","DGREG",205,0)
+ L +^TMP(DFN,"REGISTRATION IN PROGRESS"):1
+"RTN","DGREG",206,0)
+ S RETURN='$T
+"RTN","DGREG",207,0)
+ L -^TMP(DFN,"REGISTRATION IN PROGRESS")
+"RTN","DGREG",208,0)
+ Q RETURN
+"RTN","DGREG",209,0)
+ Q
+"RTN","DGREG",210,0)
+CIRN ;MPI QUERY
+"RTN","DGREG",211,0)
+ ;check to see if CIRN PD/MPI is installed
+"RTN","DGREG",212,0)
+ N X S X="MPIFAPI" X ^%ZOSF("TEST") Q:'$T
+"RTN","DGREG",213,0)
+ K MPIFRTN
+"RTN","DGREG",214,0)
+ D MPIQ^MPIFAPI(DFN)
+"RTN","DGREG",215,0)
+ K MPIFRTN
+"RTN","DGREG",216,0)
+ Q
+"RTN","DGREG",217,0)
+ROMQRY ;
+"RTN","DGREG",218,0)
+ I +$G(DGNEW) D
+"RTN","DGREG",219,0)
+ . ; query LST for Patient Demographic Information if NEW patient and
+"RTN","DGREG",220,0)
+ . ; file into patient's record.
+"RTN","DGREG",221,0)
+ . N A
+"RTN","DGREG",222,0)
+ . I $$ROMQRY^DGROAPI(DFN) D
+"RTN","DGREG",223,0)
+ . . ;display busy message to interactive users
+"RTN","DGREG",224,0)
+ . .S DGMSG(1)="Data retrieval from LST site has been completed successfully"
+"RTN","DGREG",225,0)
+ . .S DGMSG(2)="Thank you for your patience."
+"RTN","DGREG",226,0)
+ . .D EN^DDIOL(.DGMSG) R A:5
+"RTN","DGREG",227,0)
+ . E  D
+"RTN","DGREG",228,0)
+ . . ;display busy message to interactive users
+"RTN","DGREG",229,0)
+ . .S DGMSG(1)="Data retrieval from LST site has not been successful."
+"RTN","DGREG",230,0)
+ . .S DGMSG(2)="Please continue the Registration Process."
+"RTN","DGREG",231,0)
+ . .D EN^DDIOL(.DGMSG) R A:5
+"RTN","DGREG",232,0)
+ . ;
+"RTN","DGREG",233,0)
+ Q
+"RTN","DGRP2")
+0^8^B19865142
+"RTN","DGRP2",1,0)
+DGRP2 ;ALB/MRL,BRM - REGISTRATION SCREEN 2/CONTACT INFORMATION ; 11/7/12 12:41pm
+"RTN","DGRP2",2,0)
+ ;;5.3;Registration;**415,545,638,677,760,634,VW1**;Aug 13, 1993;Build 18
+"RTN","DGRP2",3,0)
+ ; Modified from FOIA VISTA,
+"RTN","DGRP2",4,0)
+ ; Copyright (C) 2007 WorldVistA
+"RTN","DGRP2",5,0)
+ ;
+"RTN","DGRP2",6,0)
+ ; This program is free software; you can redistribute it and/or modify
+"RTN","DGRP2",7,0)
+ ; it under the terms of the GNU General Public License as published by
+"RTN","DGRP2",8,0)
+ ; the Free Software Foundation; either version 2 of the License, or
+"RTN","DGRP2",9,0)
+ ; (at your option) any later version.
+"RTN","DGRP2",10,0)
+ ;
+"RTN","DGRP2",11,0)
+ ; This program is distributed in the hope that it will be useful,
+"RTN","DGRP2",12,0)
+ ; but WITHOUT ANY WARRANTY; without even the implied warranty of
+"RTN","DGRP2",13,0)
+ ; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"RTN","DGRP2",14,0)
+ ; GNU General Public License for more details.
+"RTN","DGRP2",15,0)
+ ;
+"RTN","DGRP2",16,0)
+ ; You should have received a copy of the GNU General Public License
+"RTN","DGRP2",17,0)
+ ; along with this program; if not, write to the Free Software
+"RTN","DGRP2",18,0)
+ ; Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+"RTN","DGRP2",19,0)
+ S DGRPS=2 D H^DGRPU F I=0,.24,57,1010.15 S DGRP(I)=$S($D(^DPT(DFN,I)):^(I),1:"")
+"RTN","DGRP2",20,0)
+ S DGRPX=DGRP(0)
+"RTN","DGRP2",21,0)
+ S (Z,DGRPW)=1 D WW^DGRPV W "  Marital: " S Z=$S($D(^DIC(11,+$P(DGRPX,"^",5),0)):$E($P(^(0),"^",1),1,28),1:DGRPU),Z1=30 D WW1^DGRPV
+"RTN","DGRP2",22,0)
+ ;S (Z,DGRPW)=1 D WW^DGRPV W "     Sex: " S X=$P(DGRP(0),"^",2),Z=$S(X="M":"MALE",X="F":"FEMALE",1:DGRPU),Z1=31 D WW1^DGRPV
+"RTN","DGRP2",23,0)
+ S DGD=$$DISP^DG1010P0(DGRP(0),11,0,1),DGNOCITY=DGUNK,DGD1=$$POINT^DG1010P0(DGRP(0),12,5,1,0,1)
+"RTN","DGRP2",24,0)
+ W ?41,"POB: ",$E($S((DGNOCITY&DGUNK):"UNANSWERED",1:DGD_$S(($L(DGD)):", ",1:"")_DGD1),1,29)
+"RTN","DGRP2",25,0)
+ ;S DGRPX=DGRP(0)
+"RTN","DGRP2",26,0)
+ W !?4,"Religion: ",$S($D(^DIC(13,+$P(DGRPX,"^",8),0)):$P(^(0),"^",1),1:DGRPU),?41,"Father: ",$S($P(DGRP(.24),"^",1)]"":$E($P(DGRP(.24),"^",1),1,29),1:DGRPU)
+"RTN","DGRP2",27,0)
+ S X=$P(DGRP(57),"^",4),X=$S(X']"":DGRPU,X="X":"NOT APPLICABLE",X=1:"PARA,",X=2:"QUAD,",X=3:"PARA,NON",1:"QUAD,NON"),X=$S("QP"[$E(X):X_"TRAUMATIC",1:X) W !?9,"SCI: ",X
+"RTN","DGRP2",28,0)
+ W ?41,"Mother: ",$S($P(DGRP(.24),"^",2)]"":$E($P(DGRP(.24),"^",2),1,29),1:DGRPU)
+"RTN","DGRP2",29,0)
+ W !,?35,"Mom's Maiden: ",$S($P(DGRP(.24),"^",3)]"":$E($P(DGRP(.24),"^",3),1,29),1:DGRPU)
+"RTN","DGRP2",30,0)
+ W ! S Z=2 D WW^DGRPV W " Previous Care Date      Location of Previous Care",!?4,"------------------      -------------------------" S DGRPX=DGRP(1010.15) I $P(DGRPX,"^",5)'="Y" S X="NONE INDICATED" W !?4,X,?28,X
+"RTN","DGRP2",31,0)
+ E  F I=1:1:4 S I1=$P(DGRPX,"^",I) X "I I#2 S Y=I1 X:Y]"""" ^DD(""DD"") W !?4,$S(Y]"""":Y,1:DGRPU)" I '(I#2) W ?28,$S($D(^DIC(4,+I1,0)):$P(^(0),"^",1),1:DGRPU)
+"RTN","DGRP2",32,0)
+ ;
+"RTN","DGRP2",33,0)
+ ; ** start of VOE change: DAOU,VA/CJS,WV/TOAD 1/5/2006 ** ;p634
+"RTN","DGRP2",34,0)
+ ;
+"RTN","DGRP2",35,0)
+ ; New VOE Patient fields
+"RTN","DGRP2",36,0)
+ ;
+"RTN","DGRP2",37,0)
+ ; insert 7 lines:
+"RTN","DGRP2",38,0)
+ ;
+"RTN","DGRP2",39,0)
+ I $G(DUZ("AG"))="E" D
+"RTN","DGRP2",40,0)
+ . W !?4,"Veteran: ",$$GET1^DIQ(2,DFN,19902)
+"RTN","DGRP2",41,0)
+ . W !,"Interpreter Language: "
+"RTN","DGRP2",42,0)
+ . N IL S IL=""
+"RTN","DGRP2",43,0)
+ . N I F I=1:1 S IL=$O(^DPT(DFN,19901,"B",IL)) Q:IL=""  D
+"RTN","DGRP2",44,0)
+ . . I I'=1 W ","
+"RTN","DGRP2",45,0)
+ . . W $$GET1^DIQ(.85,IL,.01) ; modified by VEN/SMH 3121107 *VW1
+"RTN","DGRP2",46,0)
+ ;
+"RTN","DGRP2",47,0)
+ ; next three groups of lines have been conditionalized to only display
+"RTN","DGRP2",48,0)
+ ; for VA agency code; also, refactored for clarity
+"RTN","DGRP2",49,0)
+ ;
+"RTN","DGRP2",50,0)
+ I $G(DUZ("AG"))="V" D
+"RTN","DGRP2",51,0)
+ . W ! S Z=2 D WW^DGRPV
+"RTN","DGRP2",52,0)
+ . W " Previous Care Date      Location of Previous Care"
+"RTN","DGRP2",53,0)
+ . W !?4,"------------------      -------------------------"
+"RTN","DGRP2",54,0)
+ . S DGRPX=DGRP(1010.15)
+"RTN","DGRP2",55,0)
+ . ;
+"RTN","DGRP2",56,0)
+ . I $P(DGRPX,"^",5)'="Y" D
+"RTN","DGRP2",57,0)
+ . . S X="NONE INDICATED"
+"RTN","DGRP2",58,0)
+ . . W !?4,X,?28,X
+"RTN","DGRP2",59,0)
+ . ;
+"RTN","DGRP2",60,0)
+ . E  F I=1:1:4 D
+"RTN","DGRP2",61,0)
+ . . S I1=$P(DGRPX,"^",I)
+"RTN","DGRP2",62,0)
+ . . X "I I#2 S Y=I1 X:Y]"""" ^DD(""DD"") W !?4,$S(Y]"""":Y,1:DGRPU)"
+"RTN","DGRP2",63,0)
+ . . I '(I#2) W ?28,$S($D(^DIC(4,+I1,0)):$P(^(0),"^",1),1:DGRPU)
+"RTN","DGRP2",64,0)
+ ;
+"RTN","DGRP2",65,0)
+ ; ** end of VOE change **; p634
+"RTN","DGRP2",66,0)
+ ;
+"RTN","DGRP2",67,0)
+ W ! S Z=3 D WW^DGRPV W " Ethnicity: " D
+"RTN","DGRP2",68,0)
+ .I '$O(^DPT(DFN,.06,0)) W "UNANSWERED" Q
+"RTN","DGRP2",69,0)
+ .N NODE,NUM,ETHNIC
+"RTN","DGRP2",70,0)
+ .S I=0
+"RTN","DGRP2",71,0)
+ .F NUM=0:1 S I=+$O(^DPT(DFN,.06,I)) Q:'I  D
+"RTN","DGRP2",72,0)
+ ..S NODE=$G(^DPT(DFN,.06,I,0))
+"RTN","DGRP2",73,0)
+ ..S X=$P($G(^DIC(10.2,+NODE,0)),"^",1)
+"RTN","DGRP2",74,0)
+ ..S ETHNIC=$S(X="":"?????",1:X)
+"RTN","DGRP2",75,0)
+ ..S X=$P($G(^DIC(10.3,+$P(NODE,"^",2),0)),"^",2)
+"RTN","DGRP2",76,0)
+ ..S ETHNIC=ETHNIC_" ("_$S(X="":"?",1:X)_")"
+"RTN","DGRP2",77,0)
+ ..I NUM S ETHNIC=", "_ETHNIC
+"RTN","DGRP2",78,0)
+ ..I ($X+$L(ETHNIC))>IOM D  W !?15
+"RTN","DGRP2",79,0)
+ ...F  S X=$P(ETHNIC," ",1)_" " Q:($X+$L(X))>IOM  W X S ETHNIC=$P(ETHNIC," ",2,999)
+"RTN","DGRP2",80,0)
+ ..W ETHNIC
+"RTN","DGRP2",81,0)
+ W !?9,"Race: " D
+"RTN","DGRP2",82,0)
+ .I '$O(^DPT(DFN,.02,0)) W "UNANSWERED" Q
+"RTN","DGRP2",83,0)
+ .N NODE,NUM,RACE
+"RTN","DGRP2",84,0)
+ .S I=0
+"RTN","DGRP2",85,0)
+ .F NUM=0:1 S I=+$O(^DPT(DFN,.02,I)) Q:'I  D
+"RTN","DGRP2",86,0)
+ ..S NODE=$G(^DPT(DFN,.02,I,0))
+"RTN","DGRP2",87,0)
+ ..S X=$P($G(^DIC(10,+NODE,0)),"^",1)
+"RTN","DGRP2",88,0)
+ ..S RACE=$S(X="":"?????",1:X)
+"RTN","DGRP2",89,0)
+ ..S X=$P($G(^DIC(10.3,+$P(NODE,"^",2),0)),"^",2)
+"RTN","DGRP2",90,0)
+ ..S RACE=RACE_" ("_$S(X="":"?",1:X)_")"
+"RTN","DGRP2",91,0)
+ ..I NUM S RACE=", "_RACE
+"RTN","DGRP2",92,0)
+ ..I ($X+$L(RACE))>IOM D  W !?15
+"RTN","DGRP2",93,0)
+ ...F  S X=$P(RACE," ",1)_" " Q:($X+$L(X))>IOM  W X S RACE=$P(RACE," ",2,999)
+"RTN","DGRP2",94,0)
+ ..W RACE
+"RTN","DGRP2",95,0)
+ D GETS^DIQ(2,DFN_",",".351;.353;.354;.355","E","PDTHINFO")
+"RTN","DGRP2",96,0)
+ W !!
+"RTN","DGRP2",97,0)
+ W "<4> Date of Death Information"
+"RTN","DGRP2",98,0)
+ W !,?5,"Date of Death: ",$G(PDTHINFO(2,DFN_",",.351,"E"))
+"RTN","DGRP2",99,0)
+ W ?41,"Source of Notification: ",$G(PDTHINFO(2,DFN_",",.353,"E"))
+"RTN","DGRP2",100,0)
+ W !,?5,"Updated Date/Time: ",$G(PDTHINFO(2,DFN_",",.354,"E"))
+"RTN","DGRP2",101,0)
+ W ?41,"Last Edited By: ",$G(PDTHINFO(2,DFN_",",.355,"E")),!
+"RTN","DGRP2",102,0)
+ K PDTHINFO
+"RTN","DGRP2",103,0)
+ ;
+"RTN","DGRP2",104,0)
+ ;Emergency Response Indicator
+"RTN","DGRP2",105,0)
+ N DGEMRES S DGEMRES=$P($G(^DPT(DFN,.18)),"^")
+"RTN","DGRP2",106,0)
+ S Z=5 D WW^DGRPV W " Emergency Response: "_$$EXTERNAL^DILFD(2,.181,,DGEMRES)
+"RTN","DGRP2",107,0)
+ G ^DGRPP
+"RTN","DGRPD")
+0^5^B87299590
+"RTN","DGRPD",1,0)
+DGRPD ;ALB/MRL/MLR/JAN/LBD/EG/BRM/JRC/BAJ-PATIENT INQUIRY (NEW) ; 11/5/12 1:01pm
+"RTN","DGRPD",2,0)
+ ;;5.3;Registration;**109,124,121,57,161,149,286,358,436,445,489,498,506,513,518,550,545,568,585,677,703,688,634,VW1**;Aug 13, 1993;Build 18;WorldVistA 30-June-08
+"RTN","DGRPD",3,0)
+ ;
+"RTN","DGRPD",4,0)
+ ;Modified from FOIA VISTA,
+"RTN","DGRPD",5,0)
+ ;Copyright 2008 WorldVistA.  Licensed under the terms of the GNU
+"RTN","DGRPD",6,0)
+ ;General Public License See attached copy of the License.
+"RTN","DGRPD",7,0)
+ ;
+"RTN","DGRPD",8,0)
+ ;This program is free software; you can redistribute it and/or modify
+"RTN","DGRPD",9,0)
+ ;it under the terms of the GNU General Public License as published by
+"RTN","DGRPD",10,0)
+ ;the Free Software Foundation; either version 2 of the License, or
+"RTN","DGRPD",11,0)
+ ;(at your option) any later version.
+"RTN","DGRPD",12,0)
+ ;
+"RTN","DGRPD",13,0)
+ ;This program is distributed in the hope that it will be useful,
+"RTN","DGRPD",14,0)
+ ;but WITHOUT ANY WARRANTY; without even the implied warranty of
+"RTN","DGRPD",15,0)
+ ;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"RTN","DGRPD",16,0)
+ ;GNU General Public License for more details.
+"RTN","DGRPD",17,0)
+ ;
+"RTN","DGRPD",18,0)
+ ;You should have received a copy of the GNU General Public License along
+"RTN","DGRPD",19,0)
+ ;with this program; if not, write to the Free Software Foundation, Inc.,
+"RTN","DGRPD",20,0)
+ ;51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+"RTN","DGRPD",21,0)
+ ;
+"RTN","DGRPD",22,0)
+ ;  *286*  Newing variables X,Y in OKLINE subroutine
+"RTN","DGRPD",23,0)
+ ;  *358*  If a patient is on a domiciliary ward, don't display MEANS
+"RTN","DGRPD",24,0)
+ ;         TEST required/Medication Copayment Exemption messages
+"RTN","DGRPD",25,0)
+ ;  *436*  If an inpatient is not on a domiciliary ward, don't display
+"RTN","DGRPD",26,0)
+ ;         Medication Copayment Exemption message
+"RTN","DGRPD",27,0)
+ ;  *545*  Add death information near the remarks field
+"RTN","DGRPD",28,0)
+ ;  *677*  Added Emergency Response
+"RTN","DGRPD",29,0)
+ ;  *688*  Modified to display Country and Foreign Address
+"RTN","DGRPD",30,0)
+ ;  *634*  WV - Print the HRN in the CMOR line.
+"RTN","DGRPD",31,0)
+ ;  *VW1*  VEN/SMH - Add display of Preliminary cause of death
+"RTN","DGRPD",32,0)
+SEL K DFN,DGRPOUT W ! S DIC="^DPT(",DIC(0)="AEQMZ" D ^DIC G Q:Y'>0 S DFN=+Y N Y W ! S DIR(0)="E" D ^DIR G SEL:$D(DTOUT)!($D(DUOUT)) D EN G SEL
+"RTN","DGRPD",33,0)
+EN ;call to display patient inquiry - input DFN
+"RTN","DGRPD",34,0)
+ ;MPI/PD CHANGE
+"RTN","DGRPD",35,0)
+ S DGCMOR="UNSPECIFIED",DGMPI=$G(^DPT(+DFN,"MPI"))
+"RTN","DGRPD",36,0)
+ S DGLOCATN=$$FIND1^DIC(4,"","MX","`"_+$P(DGMPI,U,3)),DGLOCATN=$S(+DGLOCATN>0:$P($$NS^XUAF4(DGLOCATN),U),1:"NOT LISTED")
+"RTN","DGRPD",37,0)
+ I $D(DGMPI),$D(DGLOCATN) S DGCMOR=$P(DGLOCATN,"^")
+"RTN","DGRPD",38,0)
+ ;END MPI/PD CHANGE
+"RTN","DGRPD",39,0)
+ K DGRPOUT,DGHOW S DGABBRV=$S($D(^DG(43,1,0)):+$P(^(0),"^",38),1:0),DGRPU="UNSPECIFIED" D DEM^VADPT,HDR^DGRPD1 F I=0,.11,.13,.121,.122,.31,.32,.36,.361,.141,.3 S DGRP(I)=$S($D(^DPT(DFN,I)):^(I),1:"")
+"RTN","DGRPD",40,0)
+ S DGAD=.11,(DGA1,DGA2)=1 D A^DGRPU S DGTMPAD=0 I $P(DGRP(.121),"^",9)="Y" S DGTMPAD=$S('$P(DGRP(.121),"^",8):1,$P(DGRP(.121),"^",8)'<DT:1,1:0) I DGTMPAD S DGAD=.121,DGA1=1,DGA2=2 D A^DGRPU
+"RTN","DGRPD",41,0)
+ W ?1,"Address: ",$S($D(DGA(1)):DGA(1),1:"NONE ON FILE"),?40,"Temporary: ",$S($D(DGA(2)):DGA(2),1:"NO TEMPORARY ADDRESS")
+"RTN","DGRPD",42,0)
+ S I=2 F I1=0:0 S I=$O(DGA(I)) Q:I=""  W:(I#2)!($X>50) !?9 W:'(I#2) ?48 W DGA(I)
+"RTN","DGRPD",43,0)
+ S DGCC=+$P(DGRP(.11),U,7),DGST=+$P(DGRP(.11),U,5),DGCC=$S($D(^DIC(5,DGST,1,DGCC,0)):$E($P(^(0),U,1),1,20)_$S($P(^(0),U,3)]"":" ("_$P(^(0),U,3)_")",1:""),1:DGRPU)
+"RTN","DGRPD",44,0)
+ N DGCNTRY,DGFORGN S DGCNTRY=$P(DGRP(.11),"^",10),DGFORGN=$$FORIEN^DGADDUTL(DGCNTRY) I 'DGFORGN W !?2,"County: ",DGCC
+"RTN","DGRPD",45,0)
+ S X="NOT APPLICABLE" I DGTMPAD S Y=$P(DGRP(.121),U,7) X:Y]"" ^DD("DD") S X=$S(Y]"":Y,1:DGRPU)_"-",Y=$P(DGRP(.121),U,8) X:Y]"" ^DD("DD") S X=X_$S(Y]"":Y,1:DGRPU)
+"RTN","DGRPD",46,0)
+ N DGSKIP S DGSKIP=$S(DGFORGN:"!,?42,""From/To: """,1:"?42,""From/To: """) ;WorldVistA Change ;04/03/2010
+"RTN","DGRPD",47,0)
+ W @DGSKIP,X,!?3,"Phone: ",$S($P(DGRP(.13),U,1)]"":$P(DGRP(.13),U,1),1:DGRPU),?44,"Phone: ",$S('DGTMPAD:X,$P(DGRP(.121),U,10)]"":$P(DGRP(.121),U,10),1:DGRPU) K DGTMPADW
+"RTN","DGRPD",48,0)
+ W !?2,"Office: ",$S($P(DGRP(.13),U,2)]"":$P(DGRP(.13),U,2),1:DGRPU)
+"RTN","DGRPD",49,0)
+ W !?4,"Cell: ",$S($P(DGRP(.13),U,4)]"":$P(DGRP(.13),U,4),1:DGRPU)
+"RTN","DGRPD",50,0)
+ W !?2,"E-mail: ",$S($P(DGRP(.13),U,3)]"":$P(DGRP(.13),U,3),1:DGRPU)
+"RTN","DGRPD",51,0)
+ W !,"Bad Addr: ",$$EXTERNAL^DILFD(2,.121,"",$$BADADR^DGUTL3(+DFN))
+"RTN","DGRPD",52,0)
+ D CA
+"RTN","DGRPD",53,0)
+ N DGEMER S DGEMER=$$EXTERNAL^DILFD(2,.181,"",$P($G(^DPT(DFN,.18)),"^"))
+"RTN","DGRPD",54,0)
+ W:DGEMER]"" !?32,"Emergency Response: ",DGEMER
+"RTN","DGRPD",55,0)
+ I 'DGABBRV W !!?4,"POS: ",$S($D(^DIC(21,+$P(DGRP(.32),"^",3),0)):$P(^(0),"^",1),1:DGRPU),?42,"Claim #: ",$S($P(DGRP(.31),"^",3)]"":$P(DGRP(.31),"^",3),1:"UNSPECIFIED")
+"RTN","DGRPD",56,0)
+ I 'DGABBRV W !?2,"Relig: ",$S($D(^DIC(13,+$P(DGRP(0),"^",8),0)):$P(^(0),"^",1),1:DGRPU),?46,"Sex: ",$S($P(VADM(5),"^",2)]"":$P(VADM(5),"^",2),1:"UNSPECIFIED")
+"RTN","DGRPD",57,0)
+ I 'DGABBRV W ! D
+"RTN","DGRPD",58,0)
+ .N RACE,ETHNIC,PTR,VAL,X,DIWL,DIWR,DIWF
+"RTN","DGRPD",59,0)
+ .K ^UTILITY($J,"W")
+"RTN","DGRPD",60,0)
+ .S PTR=0 F  S PTR=+$O(^DPT(DFN,.02,PTR)) Q:'PTR  D
+"RTN","DGRPD",61,0)
+ ..S VAL=+$G(^DPT(DFN,.02,PTR,0))
+"RTN","DGRPD",62,0)
+ ..Q:$$INACTIVE^DGUTL4(VAL,1)
+"RTN","DGRPD",63,0)
+ ..S VAL=$$PTR2TEXT^DGUTL4(VAL,1) S:+$O(^DPT(DFN,.02,PTR)) VAL=VAL_", "
+"RTN","DGRPD",64,0)
+ ..S X=VAL,DIWL=0,DIWR=30,DIWF="" D ^DIWP
+"RTN","DGRPD",65,0)
+ .M RACE=^UTILITY($J,"W",0) S:$G(RACE(1,0))="" RACE(1,0)="UNANSWERED"
+"RTN","DGRPD",66,0)
+ .K ^UTILITY($J,"W")
+"RTN","DGRPD",67,0)
+ .S PTR=0 F  S PTR=+$O(^DPT(DFN,.06,PTR)) Q:'PTR  D
+"RTN","DGRPD",68,0)
+ ..S VAL=+$G(^DPT(DFN,.06,PTR,0))
+"RTN","DGRPD",69,0)
+ ..Q:$$INACTIVE^DGUTL4(VAL,2)
+"RTN","DGRPD",70,0)
+ ..S VAL=$$PTR2TEXT^DGUTL4(VAL,2) S:+$O(^DPT(DFN,.06,PTR)) VAL=VAL_", "
+"RTN","DGRPD",71,0)
+ ..S X=VAL,DIWL=0,DIWR=30,DIWF="" D ^DIWP
+"RTN","DGRPD",72,0)
+ .M ETHNIC=^UTILITY($J,"W",0) S:$G(ETHNIC(1,0))="" ETHNIC(1,0)="UNANSWERED"
+"RTN","DGRPD",73,0)
+ .K ^UTILITY($J,"W")
+"RTN","DGRPD",74,0)
+ .W ?3,"Race: ",RACE(1,0),?40,"Ethnicity: ",ETHNIC(1,0)
+"RTN","DGRPD",75,0)
+ .F X=2:1 Q:'$D(RACE(X,0))&'$D(ETHNIC(X,0))  W !,?9,$G(RACE(X,0)),?51,$G(ETHNIC(X,0))
+"RTN","DGRPD",76,0)
+ I '$$OKLINE^DGRPD1(16) G Q
+"RTN","DGRPD",77,0)
+ ;display cv status #4156
+"RTN","DGRPD",78,0)
+ ;Begin WorldVistA Change ;DG*5.3*634
+"RTN","DGRPD",79,0)
+ I DUZ("AG")="V" D
+"RTN","DGRPD",80,0)
+ . N DGCV S DGCV=$$CVEDT^DGCV(+DFN)
+"RTN","DGRPD",81,0)
+ . W !!,?2,"Combat Vet Status: "_$S($P(DGCV,U,3)=1:"ELIGIBLE",$P(DGCV,U,3)="":"NOT ELIGIBLE",1:"EXPIRED") I DGCV>0 W ?45,"End Date: "_$$FMTE^XLFDT($P(DGCV,U,2),"5DZ")
+"RTN","DGRPD",82,0)
+ ;End WorldVistA Change
+"RTN","DGRPD",83,0)
+ ;display primary eligibility
+"RTN","DGRPD",84,0)
+ S X1=DGRP(.36),X=$P(DGRP(.361),"^",1) W !,"Primary Eligibility: ",$S($D(^DIC(8,+X1,0)):$P(^(0),"^",1)_" ("_$S(X="V":"VERIFIED",X="P":"PENDING VERIFICATION",X="R":"PENDING REVERIFICATION",1:"NOT VERIFIED")_")",1:DGRPU)
+"RTN","DGRPD",85,0)
+ W !,"Other Eligibilities: " F I=0:0 S I=$O(^DIC(8,I)) Q:'I  I $D(^DIC(8,I,0)),I'=+X1 S X=$P(^(0),"^",1)_", " I $D(^DPT("AEL",DFN,I)) W:$X+$L(X)>79 !?21 W X
+"RTN","DGRPD",86,0)
+ I '$$OKLINE^DGRPD1(16) G Q
+"RTN","DGRPD",87,0)
+ ;employability status
+"RTN","DGRPD",88,0)
+ W !?6,"Unemployable: ",$S($P(DGRP(.3),U,5)="Y":"YES",1:"NO")
+"RTN","DGRPD",89,0)
+ ;display the catastrophic disability review date if there is one
+"RTN","DGRPD",90,0)
+ D CATDIS^DGRPD1
+"RTN","DGRPD",91,0)
+ I $G(DGPRFLG)=1 G Q:'$$OKLINE^DGRPD1(19) D
+"RTN","DGRPD",92,0)
+ . N DGPDT,DGPTM
+"RTN","DGRPD",93,0)
+ . W !,$$REPEAT^XLFSTR("-",78)
+"RTN","DGRPD",94,0)
+ . S DGPDT="",DGPDT=$O(^DGS(41.41,"ADC",DFN,DGPDT),-1)
+"RTN","DGRPD",95,0)
+ . W !,"[PRE-REGISTER DATE:]  "_$S(DGPDT]"":$$FMTE^XLFDT(DGPDT,"1D"),1:"NONE ON FILE")
+"RTN","DGRPD",96,0)
+ . S DGPTM=$$PCTEAM^DGSDUTL(DFN)
+"RTN","DGRPD",97,0)
+ . I $P(DGPTM,U,2)]"" W !,"[PRIMARY CARE TEAM:] "_$P(DGPTM,U,2)
+"RTN","DGRPD",98,0)
+ . W !,$$REPEAT^XLFSTR("-",78)
+"RTN","DGRPD",99,0)
+ ; Check if patient is an inpatient and on a DOM ward
+"RTN","DGRPD",100,0)
+ ; If inpatient is on a DOM ward, don't display MT or CP messages
+"RTN","DGRPD",101,0)
+ ; If inpatient is NOT on a DOM ward, don't display CP message
+"RTN","DGRPD",102,0)
+ N DGDOM,DGDOM1,VAHOW,VAROOT,VAINDT,VAIP,VAERR
+"RTN","DGRPD",103,0)
+ G Q:'$$OKLINE^DGRPD1(14)
+"RTN","DGRPD",104,0)
+ D DOM^DGMTR
+"RTN","DGRPD",105,0)
+ I '$G(DGDOM) D
+"RTN","DGRPD",106,0)
+ .D DIS^DGMTU(DFN)
+"RTN","DGRPD",107,0)
+ .D IN5^VADPT
+"RTN","DGRPD",108,0)
+ .I $G(VAIP(1))="" D DISP^IBARXEU(DFN,DT,3,1)
+"RTN","DGRPD",109,0)
+ ;I 'DGABBRV,$E(IOST,1,2)="C-" F I=$Y:1:20 W !
+"RTN","DGRPD",110,0)
+ D DIS^EASECU(DFN)   ;Added for LTC III (DG*5.3*518)
+"RTN","DGRPD",111,0)
+ S VAIP("L")=""
+"RTN","DGRPD",112,0)
+ I $$OKLINE^DGRPD1(14) D INP
+"RTN","DGRPD",113,0)
+ I '$G(DGRPOUT),($$OKLINE^DGRPD1(17)) D SA
+"RTN","DGRPD",114,0)
+ ;MPI/PD CHANGE
+"RTN","DGRPD",115,0)
+Q D KVA^VADPT K %DT,D0,D1,DGA,DGA1,DGA2,DGABBRV,DGAD,DGCC,DGCMOR,DGDOM,DGLOCATN,DGMPI,DGRP,DGRPU,DGS,DGST,DGXFR0,DIC,DIR,DTOUT,DUOUT,DIRUT,DIROUT,I,I1,L,LDM,POP,SDCT,VA,X,X1,Y Q
+"RTN","DGRPD",116,0)
+CA ;Confidential Address
+"RTN","DGRPD",117,0)
+ W !!?1,"Confidential Address:  ",?44,"Confidential Address Categories:"
+"RTN","DGRPD",118,0)
+ N DGCABEG,DGCAEND,DGA,DGARRAY,DGERROR
+"RTN","DGRPD",119,0)
+ S DGCABEG=$P(DGRP(.141),U,7),DGCAEND=$P(DGRP(.141),U,8)
+"RTN","DGRPD",120,0)
+ I 'DGCABEG!(DGCABEG>DT)!(DGCAEND&(DGCAEND<DT)) D  Q
+"RTN","DGRPD",121,0)
+ .W !?9,"NO CONFIDENTIAL ADDRESS"
+"RTN","DGRPD",122,0)
+ .W !?1,"From/To: NOT APPLICABLE"
+"RTN","DGRPD",123,0)
+ S DGAD=.141,(DGA1,DGA2)=1
+"RTN","DGRPD",124,0)
+ D AL^DGRPU(30)
+"RTN","DGRPD",125,0)
+ D GETS^DIQ(2,DFN,".141*,","E","DGARRAY","DGERROR")
+"RTN","DGRPD",126,0)
+ ;Format Confidential Address categories
+"RTN","DGRPD",127,0)
+ N DGIEN,DGCAST
+"RTN","DGRPD",128,0)
+ S DGIEN=0
+"RTN","DGRPD",129,0)
+ S DGA2=2
+"RTN","DGRPD",130,0)
+ F  S DGIEN=$O(DGARRAY(2.141,DGIEN)) Q:'DGIEN  D
+"RTN","DGRPD",131,0)
+ .S DGA(DGA2)=DGARRAY(2.141,DGIEN,.01,"E")
+"RTN","DGRPD",132,0)
+ .S DGCAST=DGARRAY(2.141,DGIEN,1,"E")
+"RTN","DGRPD",133,0)
+ .S DGA(DGA2)=DGA(DGA2)_"("_$S(DGCAST="YES":"Active",1:"Inactive")_")"
+"RTN","DGRPD",134,0)
+ .S DGA2=DGA2+2
+"RTN","DGRPD",135,0)
+ S I=0 F I1=0:0 S I=$O(DGA(I)) Q:I=""  W:(I#2)!($X>43) !?9 W:'(I#2) ?44 W DGA(I)
+"RTN","DGRPD",136,0)
+ W !?1,"From/To:  ",$$FMTE^XLFDT(DGCABEG)_"-"_$S(DGCAEND'="":$$FMTE^XLFDT(DGCAEND),1:"UNANSWERED")
+"RTN","DGRPD",137,0)
+ Q
+"RTN","DGRPD",138,0)
+INP S VAIP("D")="L" D INP^DGPMV10
+"RTN","DGRPD",139,0)
+ S DGPMT=0
+"RTN","DGRPD",140,0)
+ D CS^DGPMV10 K DGPMT,DGPMIFN K:'$D(DGSWITCH) DGPMVI,DGPMDCD Q
+"RTN","DGRPD",141,0)
+SA F I=0:0 S I=$O(^DGS(41.1,"B",DFN,I)) G CL:'I S X=^DGS(41.1,I,0) I $P(X,"^",2)>(DT-1),$P(X,"^",13)']"",'$P(X,"^",17) S L=$P(X,"^",2) D:$$OKLINE^DGRPD1(17) SAA Q:$G(DGRPOUT)
+"RTN","DGRPD",142,0)
+ Q
+"RTN","DGRPD",143,0)
+SAA ;Scheduled Admit Data
+"RTN","DGRPD",144,0)
+ W !!?14,"Scheduled Admit"
+"RTN","DGRPD",145,0)
+ W:$D(^DIC(42,+$P(X,U,8),0)) " on ward "_$P(^(0),U)
+"RTN","DGRPD",146,0)
+ W:$D(^DIC(45.7,+$P(X,U,9),0)) " for treating specialty "_$P(^(0),U)
+"RTN","DGRPD",147,0)
+ W " on "_$$FMTE^XLFDT(L,"5DZ")
+"RTN","DGRPD",148,0)
+ Q  ;SAA
+"RTN","DGRPD",149,0)
+ ;
+"RTN","DGRPD",150,0)
+CL G FA:$O(^DPT(DFN,"DE",0))="" S SDCT=0 F I=0:0 S I=$O(^DPT(DFN,"DE",I)) Q:'I  I $D(^(I,0)),$P(^(0),"^",2)'="I",$O(^(0)) S SDCT=SDCT+1 W:SDCT=1 !!,"Currently enrolled in " W:$X>50 !?22 W $S($D(^SC(+^(0),0)):$P(^(0),"^",1)_", ",1:"")
+"RTN","DGRPD",151,0)
+ ;
+"RTN","DGRPD",152,0)
+FA G:'$$OKLINE^DGRPD1(20) RMK
+"RTN","DGRPD",153,0)
+ ;
+"RTN","DGRPD",154,0)
+ N DGARRAY,SDCNT
+"RTN","DGRPD",155,0)
+ S DGARRAY("FLDS")="1;2;3;18",DGARRAY(4)=DFN,DGARRAY(1)=DT,DGARRAY("SORT")="P"
+"RTN","DGRPD",156,0)
+ S SDCNT=$$SDAPI^SDAMA301(.DGARRAY),CT=0 W !!,"Future Appointments: "
+"RTN","DGRPD",157,0)
+ ;if there is lower subscripts hanging from the 101 node,
+"RTN","DGRPD",158,0)
+ ;then it is a valid appointment, otherwise it is
+"RTN","DGRPD",159,0)
+ ;an error eg 01/20/2005
+"RTN","DGRPD",160,0)
+ I $D(^TMP($J,"SDAMA301",101))=1 W "Appointment Database is Unavailable" G RMK
+"RTN","DGRPD",161,0)
+ I $O(^TMP($J,"SDAMA301",DFN,DT))'>0 W "NONE" G RMK
+"RTN","DGRPD",162,0)
+ ;
+"RTN","DGRPD",163,0)
+ W ?22,"Date",?33,"Time",?39,"Clinic",!?22 F I=22:1:75 W "="
+"RTN","DGRPD",164,0)
+ F FA=DT:0 S FA=$O(^TMP($J,"SDAMA301",DFN,FA)) G RMK:'FA D  Q:CT>5
+"RTN","DGRPD",165,0)
+ .N STAT S STAT=$P($P(^TMP($J,"SDAMA301",DFN,FA),U,3),";")
+"RTN","DGRPD",166,0)
+ .S C=+$P(^TMP($J,"SDAMA301",DFN,FA),U,2) I STAT'["C" D
+"RTN","DGRPD",167,0)
+ ..D COV
+"RTN","DGRPD",168,0)
+ ..N DGAPPT S DGAPPT=$$FMTE^XLFDT($E(FA,1,12),"5Z")
+"RTN","DGRPD",169,0)
+ ..W !?22,$P(DGAPPT,"@"),?33,$P(DGAPPT,"@",2)
+"RTN","DGRPD",170,0)
+ ..W ?39,$P($P(^TMP($J,"SDAMA301",DFN,FA),U,2),";",2)," ",COV
+"RTN","DGRPD",171,0)
+ ..Q
+"RTN","DGRPD",172,0)
+ I $O(^TMP($J,"SDAMA301",DFN,FA))>0 W !,"See Scheduling options for additional appointments."
+"RTN","DGRPD",173,0)
+RMK I '$G(DGRPOUT),($$OKLINE^DGRPD1(21)) W !!,"Remarks: ",$P(^DPT(DFN,0),"^",10)
+"RTN","DGRPD",174,0)
+ D GETS^DIQ(2,DFN_",",".351;.353;.354;.355","E","PDTHINFO")
+"RTN","DGRPD",175,0)
+ ;Begin WorldVistA change ;11-4-2012 SMH; *VW1*
+"RTN","DGRPD",176,0)
+ N VWOK,VWDEATH ; Results of GETS1, Preliminary cause of death
+"RTN","DGRPD",177,0)
+ S VWOK=$$GET1^DIQ(2,DFN_",",250043.1,"","VWDEATH")
+"RTN","DGRPD",178,0)
+ ;End WorldVistA change
+"RTN","DGRPD",179,0)
+ W !!
+"RTN","DGRPD",180,0)
+ W "Date of Death Information"
+"RTN","DGRPD",181,0)
+ W !,?5,"Date of Death: ",$G(PDTHINFO(2,DFN_",",.351,"E"))
+"RTN","DGRPD",182,0)
+ W !,?5,"Source of Notification: ",$G(PDTHINFO(2,DFN_",",.353,"E"))
+"RTN","DGRPD",183,0)
+ W !,?5,"Updated Date/Time: ",$G(PDTHINFO(2,DFN_",",.354,"E"))
+"RTN","DGRPD",184,0)
+ W !,?5,"Last Edited By: ",$G(PDTHINFO(2,DFN_",",.355,"E")),!
+"RTN","DGRPD",185,0)
+ ;Begin WorldVistA Change ;11-4-2012 SMH; *VW1*
+"RTN","DGRPD",186,0)
+ W ?5,"Preliminary Cause of Death: ",!
+"RTN","DGRPD",187,0)
+ I $O(VWDEATH(0)) D  ; if we have data in the WP field
+"RTN","DGRPD",188,0)
+ . N X,DIWL,DIWR,DIWF ; stuff value, LM, RM, Format control
+"RTN","DGRPD",189,0)
+ . S DIWL=1,DIWR=$G(IOM,80) ; LM=1 ; RM=IOM or 80
+"RTN","DGRPD",190,0)
+ . S DIWF="I7" ; Print text at the 7th column
+"RTN","DGRPD",191,0)
+ . K ^UTILITY($J,"W") ; Kill scratch global for this
+"RTN","DGRPD",192,0)
+ . N I S I=0 F  S I=$O(VWDEATH(I)) Q:'I  S X=VWDEATH(I) D ^DIWP
+"RTN","DGRPD",193,0)
+ . D ^DIWW
+"RTN","DGRPD",194,0)
+ . K ^UTILITY($J,"W") ; Kill scratch global again
+"RTN","DGRPD",195,0)
+ ;End WorldVistA Change
+"RTN","DGRPD",196,0)
+ I $$OKLINE^DGRPD1(14) D EC^DGRPD1
+"RTN","DGRPD",197,0)
+ K DGARRAY,SDCNT,^TMP($J,"SDAMA301"),ADM,L,TRN,DIS,SSN,FA,C,COV,NOW,CT,DGD,DGD1,I ;Y killed after dghinqky
+"RTN","DGRPD",198,0)
+ Q
+"RTN","DGRPD",199,0)
+COV S COV=$S(+$P(^TMP($J,"SDAMA301",DFN,FA),U,18)=7:" (Collateral) ",1:"")
+"RTN","DGRPD",200,0)
+ S COV=COV_$S(STAT["NT":" * NO ACTION TAKEN *",STAT["N":" * NO-SHOW *",1:""),CT=CT+1 Q
+"RTN","DGRPD",201,0)
+ Q
+"RTN","DGRPD",202,0)
+ ;
+"RTN","DGRPD",203,0)
+OREN S XQORQUIT=1 Q:'$D(ORVP)  S DFN=+ORVP D EN R !!,"Press RETURN to CONTINUE: ",X:DTIME
+"RTN","DGRPD",204,0)
+ Q
+"RTN","DGRPD",205,0)
+ ;Begin WorldVista Change ;DG*5.3*634
+"RTN","DGRPD",206,0)
+HDR I '$D(IOF) S IOP="HOME" D ^%ZIS K IOP
+"RTN","DGRPD",207,0)
+ ;MPI/PD CHANGE
+"RTN","DGRPD",208,0)
+ W @IOF,!,$P(VADM(1),"^",1),?32,$P(VADM(2),"^",2),?50,$$HRNV(DFN),?65,$P(VADM(3),"^",2) S X="",$P(X,"=",78)="" W !,X,!?15,"COORDINATING MASTER OF RECORD: ",DGCMOR,! Q
+"RTN","DGRPD",209,0)
+ ;END MPI/PD CHANGE
+"RTN","DGRPD",210,0)
+HRNV(DFN) ;
+"RTN","DGRPD",211,0)
+ N IRET
+"RTN","DGRPD",212,0)
+ S IRET=$$HRN^DGLBPID(DFN)
+"RTN","DGRPD",213,0)
+ I IRET="#" Q ""
+"RTN","DGRPD",214,0)
+ S IRET="HRN "_IRET
+"RTN","DGRPD",215,0)
+ Q IRET
+"RTN","DGRPD",216,0)
+ ;End WorldVistA Change
+"RTN","ORCXPND1")
+0^4^B74010927
+"RTN","ORCXPND1",1,0)
+ORCXPND1 ; SLC/MKB - Expanded Display cont ;6:25 PM  20 Jun 2011 ; 11/5/12 1:02pm
+"RTN","ORCXPND1",2,0)
+ ;;3.0;ORDER ENTRY/RESULTS REPORTING;**26,67,75,89,92,94,148,159,188,172,215,243**;Dec 17, 1997;Build 18
+"RTN","ORCXPND1",3,0)
+ ;
+"RTN","ORCXPND1",4,0)
+ ; External References
+"RTN","ORCXPND1",5,0)
+ ;   DBIA  2387  ^LAB(60
+"RTN","ORCXPND1",6,0)
+ ;   DBIA  3420  ^DPT(  file #2
+"RTN","ORCXPND1",7,0)
+ ;   DBIA 10035  ^DPT(  file #2
+"RTN","ORCXPND1",8,0)
+ ;   DBIA 10037  EN^DGRPD
+"RTN","ORCXPND1",9,0)
+ ;   DBIA   700  DIS^DGRPDB
+"RTN","ORCXPND1",10,0)
+ ;   DBIA  2926  RT^GMRCGUIA
+"RTN","ORCXPND1",11,0)
+ ;   DBIA  2925  DT^GMRCSLM2                     ^TMP("GMRCR"
+"RTN","ORCXPND1",12,0)
+ ;   DBIA  2503  RR^LR7OR1                       ^TMP("LRRR"
+"RTN","ORCXPND1",13,0)
+ ;   DBIA  2951  EN1^LR7OSBR                     ^TMP("LRC"
+"RTN","ORCXPND1",14,0)
+ ;   DBIA  2952  EN^LR7OSMZ0
+"RTN","ORCXPND1",15,0)
+ ;   DBIA  2400  OEL^PSOORRL                     ^TMP("PS"
+"RTN","ORCXPND1",16,0)
+ ;   DBIA  2877  EN3^RAO7PC3
+"RTN","ORCXPND1",17,0)
+ ;   DBIA  2877  EN30^RAO7PC3
+"RTN","ORCXPND1",18,0)
+ ;   DBIA  1252  $$OUTPTPR^SDUTL3
+"RTN","ORCXPND1",19,0)
+ ;   DBIA  1252  $$OUTPTTM^SDUTL3
+"RTN","ORCXPND1",20,0)
+ ;   DBIA  2832  RPC^TIUSRV
+"RTN","ORCXPND1",21,0)
+ ;   DBIA 10061  DEM^VADPT
+"RTN","ORCXPND1",22,0)
+ ;   DBIA 10061  KVAR^VADPT
+"RTN","ORCXPND1",23,0)
+ ;   DBIA 10061  OAD^VADPT
+"RTN","ORCXPND1",24,0)
+ ;   DBIA 10103  $$FMTE^XLFDT
+"RTN","ORCXPND1",25,0)
+ ;   DBIA  4408  DISP^DGIBDSP
+"RTN","ORCXPND1",26,0)
+ ;
+"RTN","ORCXPND1",27,0)
+COVER ; -- Cover Sheet
+"RTN","ORCXPND1",28,0)
+ N PKG S PKG=$P($G(^TMP("OR",$J,ORTAB,"IDX",NUM)),U,4)
+"RTN","ORCXPND1",29,0)
+ D ALLERGY^ORCXPND2:PKG="GMRA",NOTES:PKG="TIU"
+"RTN","ORCXPND1",30,0)
+ Q
+"RTN","ORCXPND1",31,0)
+NOTES ; -- Progress Notes
+"RTN","ORCXPND1",32,0)
+ N I,ORY,DATE,AUTHOR,PTLOC,SUBJ K ^TMP("TIUAUDIT",$J)
+"RTN","ORCXPND1",33,0)
+ D RPC^TIUSRV(.ORY,ID)
+"RTN","ORCXPND1",34,0)
+ S I=0 F  S I=$O(@ORY@(I)) Q:I'>0  S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=$G(@ORY@(I,0))
+"RTN","ORCXPND1",35,0)
+ K @ORY
+"RTN","ORCXPND1",36,0)
+ Q
+"RTN","ORCXPND1",37,0)
+PROBLEMS ; -- Problem List
+"RTN","ORCXPND1",38,0)
+ D PL^ORCXPND4
+"RTN","ORCXPND1",39,0)
+ Q
+"RTN","ORCXPND1",40,0)
+MEDS ; -- Pharmacy
+"RTN","ORCXPND1",41,0)
+ ;N NODE,ORIFN
+"RTN","ORCXPND1",42,0)
+ K ^TMP("PS",$J)
+"RTN","ORCXPND1",43,0)
+ D OEL^PSOORRL(+ORVP,ID) ;S NODE=$G(^TMP("PS",$J,0)),ORIFN=+$P(NODE,U,11)
+"RTN","ORCXPND1",44,0)
+ S ID=+$P($G(^TMP("PS",$J,0)),U,11) D ORDERS  ;DBIA 2400
+"RTN","ORCXPND1",45,0)
+ ;D @($S($P($G(^OR(100,ORIFN,0)),U,11)=$O(^ORD(100.98,"B","IV RX",0)):"IV",1:"DRUG")_"^ORCXPND2")
+"RTN","ORCXPND1",46,0)
+ K ^TMP("PS",$J)
+"RTN","ORCXPND1",47,0)
+ Q
+"RTN","ORCXPND1",48,0)
+LABS ; -- Laboratory [RESULTS ONLY for ID=OE order #]
+"RTN","ORCXPND1",49,0)
+ N ORIFN,X,SUB,TEST,NAME,SS,IDE,IVDT,TST,CCNT,ORCY,IG,TCNT
+"RTN","ORCXPND1",50,0)
+ K ^TMP("LRRR",$J)  ;DBIA 2503
+"RTN","ORCXPND1",51,0)
+ I (ID?2.5U1" "2N1" "1.N1"-"7N1"."1.4N)!(ID?2.5U1" "2N1" "1.N1"-"7N) D AP^ORCXPND3 Q  ;ID=Accession #-Date/time specimen taken
+"RTN","ORCXPND1",52,0)
+ S ORIFN=+ID,IDE=$G(^OR(100,+ID,4)) Q:'$L(IDE)  ; OE# -> Lab#
+"RTN","ORCXPND1",53,0)
+ I +IDE  D RR^LR7OR1(+ORVP,IDE) I '$D(^TMP("LRRR",$J,+ORVP)) S $P(IDE,";",1,3)=";;" ;Order possibly purged, reset to lookup on file 63
+"RTN","ORCXPND1",54,0)
+ I '+IDE,$P(IDE,";",5)  D RR^LR7OR1(+ORVP,,9999999-$P(IDE,";",5),9999999-$P(IDE,";",5),$P(IDE,";",4))
+"RTN","ORCXPND1",55,0)
+ K ORCY D TEXT^ORQ12(.ORCY,ORIFN,80)
+"RTN","ORCXPND1",56,0)
+ S IG=0 F  S IG=$O(ORCY(IG)) Q:IG<1  S X=ORCY(IG) D ITEM^ORCXPND(X)
+"RTN","ORCXPND1",57,0)
+ D BLANK^ORCXPND I '$D(^TMP("LRRR",$J,+ORVP)) S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="No data available." Q
+"RTN","ORCXPND1",58,0)
+ M TEST=^TMP("LRRR",$J,+ORVP) S CCNT=0,SS=""
+"RTN","ORCXPND1",59,0)
+ F  S SS=$O(TEST(SS)) Q:SS=""  S IVDT=0 F  S IVDT=$O(TEST(SS,IVDT)) Q:'IVDT  D
+"RTN","ORCXPND1",60,0)
+ . I SS="BB" D
+"RTN","ORCXPND1",61,0)
+ .. I $$GET^XPAR("DIV^SYS^PKG","OR VBECS ON",1,"Q"),$L($T(EN^ORWLR1)),$L($T(CPRS^VBECA3B)) D  Q  ;Transition to VBEC's interface
+"RTN","ORCXPND1",62,0)
+ ... K ^TMP("ORLRC",$J)
+"RTN","ORCXPND1",63,0)
+ ... D EN^ORWLR1(DFN)
+"RTN","ORCXPND1",64,0)
+ ... I '$O(^TMP("ORLRC",$J,0)) S ^TMP("ORLRC",$J,1,0)="",^TMP("ORLRC",$J,2,0)="No Blood Bank report available..."
+"RTN","ORCXPND1",65,0)
+ ... N I S I=0 F  S I=$O(^TMP("ORLRC",$J,I)) Q:I<1  S X=^(I,0),LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=X
+"RTN","ORCXPND1",66,0)
+ ... K ^TMP("ORLRC",$J)
+"RTN","ORCXPND1",67,0)
+ .. K ^TMP("LRC",$J) D EN1^LR7OSBR(+ORVP) Q:'$D(^TMP("LRC",$J))  D  Q  ;DBIA 2951
+"RTN","ORCXPND1",68,0)
+ ... N I S I=0 F  S I=$O(^TMP("LRC",$J,I)) Q:I<1  S X=^(I,0),LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=X
+"RTN","ORCXPND1",69,0)
+ ... K ^TMP("LRC",$J)
+"RTN","ORCXPND1",70,0)
+ . I SS="MI" K ^TMP("LRC",$J) D EN^LR7OSMZ0(+ORVP) Q:'$D(^TMP("LRC",$J))  D  Q
+"RTN","ORCXPND1",71,0)
+ .. N I S I=0 F  S I=$O(^TMP("LRC",$J,I)) Q:I<1  S X=^(I,0),LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=X
+"RTN","ORCXPND1",72,0)
+ .. K ^TMP("LRC",$J)
+"RTN","ORCXPND1",73,0)
+ . I SS="CH" D  Q
+"RTN","ORCXPND1",74,0)
+ .. S (TCNT,TST)=0 F  S TST=$O(TEST(SS,IVDT,TST)) Q:TST=""  S CCNT=0,TCNT=TCNT+1 D
+"RTN","ORCXPND1",75,0)
+ ... I TCNT=1 D
+"RTN","ORCXPND1",76,0)
+ .... S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="   Collection time:          "_$$FMTE^XLFDT(9999999-IVDT,1)
+"RTN","ORCXPND1",77,0)
+ .... S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=$$S(1,CCNT," ")_$$S(3,CCNT,"Test Name")_$$S(29,CCNT,"Result")_$$S(39,CCNT,"Units")_$$S(55,CCNT,"Range") D:$D(IOUON) SETVIDEO^ORCXPND(LCNT,1,70,IOUON,IOUOFF)
+"RTN","ORCXPND1",78,0)
+ ... I TST S X=TEST(SS,IVDT,TST),CCNT=0 I +X D
+"RTN","ORCXPND1",79,0)
+ .... S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=$$S(1,CCNT,$P(^LAB(60,+X,0),U))_$$S(26,CCNT,$J($P(X,U,2),7))_$$S(34,CCNT,$S($L($P(X,U,3)):$P(X,U,3),1:""))_$$S(39,CCNT,$P(X,U,4))_$$S(45,CCNT,$J($P(X,U,5),15))
+"RTN","ORCXPND1",80,0)
+ .... I $L($P(X,U,3)),$D(IOINHI) D SETVIDEO^ORCXPND(LCNT,26,8,IOINHI,IOINORM)
+"RTN","ORCXPND1",81,0)
+ .... I $P(X,U,3)["*",$D(IOBON),$D(IOINHI) D SETVIDEO^ORCXPND(LCNT,26,8,IOBON_IOINHI,IOBOFF_IOINORM)
+"RTN","ORCXPND1",82,0)
+ ... I TST="N" S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=" Comments: " D
+"RTN","ORCXPND1",83,0)
+ .... N CMT S CMT=0 F  S CMT=$O(TEST(SS,IVDT,"N",CMT)) Q:'CMT  S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=" "_TEST(SS,IVDT,"N",CMT)
+"RTN","ORCXPND1",84,0)
+ K ^TMP("LRRR",$J)
+"RTN","ORCXPND1",85,0)
+ Q
+"RTN","ORCXPND1",86,0)
+ ;
+"RTN","ORCXPND1",87,0)
+DELAY ; -- Delayed Orders
+"RTN","ORCXPND1",88,0)
+NEW ; -- New Orders
+"RTN","ORCXPND1",89,0)
+ORDERS ; -- Orders
+"RTN","ORCXPND1",90,0)
+ I '$G(ORESULTS) D ORDERS^ORCXPND2 Q
+"RTN","ORCXPND1",91,0)
+ ; -- Results Display (Add more packages as available)
+"RTN","ORCXPND1",92,0)
+ N PKG,TAB,ORIFN
+"RTN","ORCXPND1",93,0)
+ S PKG=+$P($G(^OR(100,+ID,0)),"^",14),PKG=$$NMSP^ORCD(PKG)
+"RTN","ORCXPND1",94,0)
+ S TAB=$S(PKG="LR":"LABS",PKG="GMRC":"CONSULTS",PKG="RA":"XRAYS",1:"")
+"RTN","ORCXPND1",95,0)
+ I '$L(TAB)!(ID'>0) D  Q  ; no display available
+"RTN","ORCXPND1",96,0)
+ . N ORY,I D TEXT^ORQ12(.ORY,+ID,80)
+"RTN","ORCXPND1",97,0)
+ . S I=0 F  S I=$O(ORY(I)) Q:I'>0  D ITEM^ORCXPND(ORY(I))
+"RTN","ORCXPND1",98,0)
+ . D BLANK^ORCXPND
+"RTN","ORCXPND1",99,0)
+ . S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="There are no results to report."
+"RTN","ORCXPND1",100,0)
+ I $O(^OR(100,+ID,2,0)) S ORIFN=+ID,ID=0 F  S ID=$O(^OR(100,ORIFN,2,ID)) Q:ID<1  I $D(^OR(100,ID,0)) D @TAB
+"RTN","ORCXPND1",101,0)
+ I '$O(^OR(100,+ID,2,0)) D @TAB
+"RTN","ORCXPND1",102,0)
+ Q
+"RTN","ORCXPND1",103,0)
+REPORTS ; -- Patient Profiles
+"RTN","ORCXPND1",104,0)
+ D EN^ORCXPNDR ; Reports
+"RTN","ORCXPND1",105,0)
+ Q
+"RTN","ORCXPND1",106,0)
+CONSULTS ; -- Consults
+"RTN","ORCXPND1",107,0)
+ N I,X,SUB,ORTX ;,VALMAR
+"RTN","ORCXPND1",108,0)
+ I $G(ORTAB)="CONSULTS" S X=$P($G(^TMP("OR",$J,ORTAB,"IDX",NUM)),U,4)
+"RTN","ORCXPND1",109,0)
+ E  D TEXT^ORQ12(.ORTX,+ID) S X=ORTX(1),ID=+$G(^OR(100,+ID,4)) ; OE->GMRC order#
+"RTN","ORCXPND1",110,0)
+ D ITEM^ORCXPND(X),BLANK^ORCXPND
+"RTN","ORCXPND1",111,0)
+ I ID'>0 S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="No data available." Q
+"RTN","ORCXPND1",112,0)
+ I '$G(ORESULTS) D  ;DT action
+"RTN","ORCXPND1",113,0)
+ . S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="Consult No.:           "_ID
+"RTN","ORCXPND1",114,0)
+ . N GMRCOER S GMRCOER=2 D DT^GMRCSLM2(ID) S SUB="DT"  ;DBIA 2925
+"RTN","ORCXPND1",115,0)
+ I $G(ORESULTS) D RT^GMRCGUIA(ID,"^TMP(""GMRCR"",$J,""RT"")") S SUB="RT"
+"RTN","ORCXPND1",116,0)
+ S I=0 F  S I=$O(^TMP("GMRCR",$J,SUB,I)) Q:I'>0  S X=$G(^(I,0)),LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=X  ;DBIA 2925
+"RTN","ORCXPND1",117,0)
+ K ^TMP("GMRCR",$J)
+"RTN","ORCXPND1",118,0)
+ Q
+"RTN","ORCXPND1",119,0)
+XRAYS ; -- Radiology
+"RTN","ORCXPND1",120,0)
+ I '$G(ORESULTS) S ID=+ORVP_U_$TR(ID,"-","^") D EN3^RAO7PC3(ID)
+"RTN","ORCXPND1",121,0)
+ I $G(ORESULTS) S ID=+$G(^OR(100,+ID,4)) D EN30^RAO7PC3(ID)
+"RTN","ORCXPND1",122,0)
+ N CASE,PROC,PSET S PSET=$D(^TMP($J,"RAE3",+ORVP,"PRINT_SET"))
+"RTN","ORCXPND1",123,0)
+ S CASE=0 F  S CASE=$O(^TMP($J,"RAE3",+ORVP,CASE)) Q:CASE'>0  D
+"RTN","ORCXPND1",124,0)
+ . I PSET S PROC=$O(^TMP($J,"RAE3",+ORVP,CASE,"")) D ITEM^ORCXPND(PROC) Q
+"RTN","ORCXPND1",125,0)
+ . S PROC="" F  S PROC=$O(^TMP($J,"RAE3",+ORVP,CASE,PROC)) Q:PROC=""  D ITEM^ORCXPND(PROC),BLANK^ORCXPND,XRPT,BLANK^ORCXPND
+"RTN","ORCXPND1",126,0)
+ I PSET S CASE=$O(^TMP($J,"RAE3",+ORVP,0)),PROC=$O(^(CASE,"")) D BLANK^ORCXPND,XRPT,BLANK^ORCXPND ;printset=list all procs, then one report
+"RTN","ORCXPND1",127,0)
+ K ^TMP($J,"RAE3",+ORVP),^UTILITY($J,"W")
+"RTN","ORCXPND1",128,0)
+ S VALM("RM")=81
+"RTN","ORCXPND1",129,0)
+ Q
+"RTN","ORCXPND1",130,0)
+ ;
+"RTN","ORCXPND1",131,0)
+XRPT ; -- Body of Report for CASE, PROC
+"RTN","ORCXPND1",132,0)
+ N ORD,X,I
+"RTN","ORCXPND1",133,0)
+ S ORD=$S($L($G(^TMP($J,"RAE3",+ORVP,"ORD"))):^("ORD"),$L($G(^("ORD",CASE))):^(CASE),1:"") I $L(ORD),ORD'=PROC S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)="Proc Ord: "_ORD
+"RTN","ORCXPND1",134,0)
+ S I=1 F  S I=$O(^TMP($J,"RAE3",+ORVP,CASE,PROC,I)) Q:I'>0  S X=^(I),LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=X ;Skip pt ID on line 1
+"RTN","ORCXPND1",135,0)
+ Q
+"RTN","ORCXPND1",136,0)
+ ;
+"RTN","ORCXPND1",137,0)
+SUMMRIES ; -- Discharge Summaries
+"RTN","ORCXPND1",138,0)
+ N I,ORY,DATE,AUTHOR,PTLOC,SUBJ K ^TMP("TIUAUDIT",$J)
+"RTN","ORCXPND1",139,0)
+ D RPC^TIUSRV(.ORY,ID)
+"RTN","ORCXPND1",140,0)
+ S I=0 F  S I=$O(@ORY@(I)) Q:I'>0  S LCNT=LCNT+1,^TMP("ORXPND",$J,LCNT,0)=$G(@ORY@(I,0))
+"RTN","ORCXPND1",141,0)
+ K @ORY
+"RTN","ORCXPND1",142,0)
+ Q
+"RTN","ORCXPND1",143,0)
+PTINQ ; Print Patient Inquiry in List Manager
+"RTN","ORCXPND1",144,0)
+ N DFN,ORI,X
+"RTN","ORCXPND1",145,0)
+ S DFN=+ORVP
+"RTN","ORCXPND1",146,0)
+ D DGINQ(DFN)
+"RTN","ORCXPND1",147,0)
+ S ORI=4,LCNT=0
+"RTN","ORCXPND1",148,0)
+ F  S ORI=$O(^TMP("ORDATA",$J,1,ORI)) Q:'ORI  S X=^(ORI) D
+"RTN","ORCXPND1",149,0)
+ . S LCNT=LCNT+1
+"RTN","ORCXPND1",150,0)
+ . S ^TMP("ORXPND",$J,LCNT,0)=X
+"RTN","ORCXPND1",151,0)
+ K ^TMP("ORDATA",$J,1)
+"RTN","ORCXPND1",152,0)
+ Q
+"RTN","ORCXPND1",153,0)
+ ;
+"RTN","ORCXPND1",154,0)
+DGINQ(DFN) ; Patient Inquiry
+"RTN","ORCXPND1",155,0)
+ D START^ORWRP(80,"DGINQB^ORCXPND1(DFN)")
+"RTN","ORCXPND1",156,0)
+ Q
+"RTN","ORCXPND1",157,0)
+DGINQB(DFN) ; Build Patient Inquiry
+"RTN","ORCXPND1",158,0)
+ N CONTACT,ORDOC,ORTEAM,ORVP,XQORNOD,ORSSTRT,ORSSTOPT,VAOA
+"RTN","ORCXPND1",159,0)
+ S ORVP=DFN_";DPT(",XQORNOD=1
+"RTN","ORCXPND1",160,0)
+ D EN^DGRPD ; MAS Patient Inquiry
+"RTN","ORCXPND1",161,0)
+ ;
+"RTN","ORCXPND1",162,0)
+ S ORDOC=$$OUTPTPR^SDUTL3(DFN)
+"RTN","ORCXPND1",163,0)
+ S ORTEAM=$$OUTPTTM^SDUTL3(DFN)
+"RTN","ORCXPND1",164,0)
+ I ORDOC!ORTEAM  D
+"RTN","ORCXPND1",165,0)
+ . W !!,"Primary Care Information:"
+"RTN","ORCXPND1",166,0)
+ . I ORDOC W !,"Primary Practitioner:  ",$P(ORDOC,"^",2)
+"RTN","ORCXPND1",167,0)
+ . I ORTEAM W !,"Primary Care Team:     ",$P(ORTEAM,"^",2)
+"RTN","ORCXPND1",168,0)
+ W !!,"Health Insurance Information:"
+"RTN","ORCXPND1",169,0)
+ D DISP^DGIBDSP  ;DBIA #4408
+"RTN","ORCXPND1",170,0)
+ W !!,"Service Connection/Rated Disabilities:"
+"RTN","ORCXPND1",171,0)
+ D DIS^DGRPDB
+"RTN","ORCXPND1",172,0)
+ F CONTACT="N","S" D
+"RTN","ORCXPND1",173,0)
+ .S VAOA("A")=$S(CONTACT="N":"",1:3)
+"RTN","ORCXPND1",174,0)
+ .D OAD^VADPT ;   Get NOK Information
+"RTN","ORCXPND1",175,0)
+ .I VAOA(9)]"" D
+"RTN","ORCXPND1",176,0)
+ .. W !!,$S(CONTACT="N":"Next of Kin Information:",1:"Secondary Next of Kin Information:")
+"RTN","ORCXPND1",177,0)
+ .. W !,"Name:  ",VAOA(9)                          ;     NOK Name
+"RTN","ORCXPND1",178,0)
+ .. I VAOA(10)]"" W " (",VAOA(10),")"              ;     Relationship
+"RTN","ORCXPND1",179,0)
+ .. I VAOA(1)]"" W !?7,VAOA(1)                     ;     Address Line 1
+"RTN","ORCXPND1",180,0)
+ .. I VAOA(2)]"" W !?7,VAOA(2)                     ;     Line 2
+"RTN","ORCXPND1",181,0)
+ .. I VAOA(3)]"" W !?7,VAOA(3)                     ;     Line 3
+"RTN","ORCXPND1",182,0)
+ .. I VAOA(4)]"" D
+"RTN","ORCXPND1",183,0)
+ .. . W !?7,VAOA(4)                                ;     City
+"RTN","ORCXPND1",184,0)
+ .. . I VAOA(5)]"" W ", "_$P(VAOA(5),"^",2)        ;     State
+"RTN","ORCXPND1",185,0)
+ .. . W "  ",$P(VAOA(11),"^",2)                    ;     Zip+4
+"RTN","ORCXPND1",186,0)
+ .. I VAOA(8)]"" W !!?7,"Phone number:  ",VAOA(8)  ;     Phone
+"RTN","ORCXPND1",187,0)
+ .. I CONTACT="N",$P($G(^DPT(DFN,.21)),U,11)]"" W !?7,"Work phone number:  ",$P(^DPT(DFN,.21),U,11)
+"RTN","ORCXPND1",188,0)
+ .. I CONTACT="S",$P($G(^DPT(DFN,.211)),U,11)]"" W !?7,"Work phone number:  ",$P(^DPT(DFN,.211),U,11)
+"RTN","ORCXPND1",189,0)
+ D  ;Meaningful Use change
+"RTN","ORCXPND1",190,0)
+ . W !?7,"Language Preference: ",$$GET1^DIQ(2,DFN_",",256000)
+"RTN","ORCXPND1",191,0)
+ . I $D(DIERR) D CLEAN^DILF
+"RTN","ORCXPND1",192,0)
+ . Q
+"RTN","ORCXPND1",193,0)
+ D KVAR^VADPT
+"RTN","ORCXPND1",194,0)
+ Q
+"RTN","ORCXPND1",195,0)
+TRIM(X) ;   Trim Spaces
+"RTN","ORCXPND1",196,0)
+ S X=$G(X) F  Q:$E(X,1)'=" "  S X=$E(X,2,$L(X))
+"RTN","ORCXPND1",197,0)
+ F  Q:$E(X,$L(X))'=" "  S X=$E(X,1,($L(X)-1))
+"RTN","ORCXPND1",198,0)
+ Q X
+"RTN","ORCXPND1",199,0)
+S(X,Y,Z) ; Pad Over
+"RTN","ORCXPND1",200,0)
+ ;   X=Column #
+"RTN","ORCXPND1",201,0)
+ ;   Y=Current Length
+"RTN","ORCXPND1",202,0)
+ ;   Z=Text
+"RTN","ORCXPND1",203,0)
+ ;   SP=Text Sent
+"RTN","ORCXPND1",204,0)
+ ;   CCNT=Line Position After Input Text
+"RTN","ORCXPND1",205,0)
+ I '$D(Z) Q ""
+"RTN","ORCXPND1",206,0)
+ N SP S SP=Z I X,Y,X>Y S SP=$E("                                                                             ",1,X-Y)_Z
+"RTN","ORCXPND1",207,0)
+ S CCNT=$$INC(CCNT,SP)
+"RTN","ORCXPND1",208,0)
+ Q SP
+"RTN","ORCXPND1",209,0)
+INC(X,Y) ; Character Position Count
+"RTN","ORCXPND1",210,0)
+ ;   X=Current Count
+"RTN","ORCXPND1",211,0)
+ ;   Y=Text
+"RTN","ORCXPND1",212,0)
+ N INC S INC=X+$L(Y)
+"RTN","ORCXPND1",213,0)
+ Q INC
+"RTN","VWREGPI")
+0^^B187053
+"RTN","VWREGPI",1,0)
+VWREGPI ; VEN/SMH - VW MU REG 2.0 Post-install ; 11/5/12 12:51pm
+"RTN","VWREGPI",2,0)
+ ;;2.0;VW MU REG;;Nov 05, 2012;Build 18
+"RTN","VWREGPI",3,0)
+ ; Enter VW Local Registration Template into Site Parameters
+"RTN","VWREGPI",4,0)
+ ; PEPs: POST
+"RTN","VWREGPI",5,0)
+ ;
+"RTN","VWREGPI",6,0)
+POST ; Post install hook
+"RTN","VWREGPI",7,0)
+ N DIE,DA,DR
+"RTN","VWREGPI",8,0)
+ S DIE="^DG(43,",DA=1,DR="70///VW LOCAL REGISTRATION TEMPLATE"
+"RTN","VWREGPI",9,0)
+ D ^DIE
+"RTN","VWREGPI",10,0)
+ QUIT
+"RTN","VWUTIL")
+0^3^B42164756
+"RTN","VWUTIL",1,0)
+VWUTIL ;WVEHR/Maury Pepper/Skip Ormsby- World VistA Utilities;11:37 AM  13 Apr 2011;;;; 11/5/12 1:21pm
+"RTN","VWUTIL",2,0)
+ ;;1.0;WORLD VISTA;250001,250002;;Build 18
+"RTN","VWUTIL",3,0)
+ ;
+"RTN","VWUTIL",4,0)
+ ;Modified from FOIA VISTA,
+"RTN","VWUTIL",5,0)
+ ;Copyright 2008 WorldVistA.  Licensed under the terms of the GNU
+"RTN","VWUTIL",6,0)
+ ;General Public License See attached copy of the License.
+"RTN","VWUTIL",7,0)
+ ;
+"RTN","VWUTIL",8,0)
+ ;This program is free software; you can redistribute it and/or modify
+"RTN","VWUTIL",9,0)
+ ;it under the terms of the GNU General Public License as published by
+"RTN","VWUTIL",10,0)
+ ;the Free Software Foundation; either version 2 of the License, or
+"RTN","VWUTIL",11,0)
+ ;(at your option) any later version.
+"RTN","VWUTIL",12,0)
+ ;
+"RTN","VWUTIL",13,0)
+ ;This program is distributed in the hope that it will be useful,
+"RTN","VWUTIL",14,0)
+ ;but WITHOUT ANY WARRANTY; without even the implied warranty of
+"RTN","VWUTIL",15,0)
+ ;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+"RTN","VWUTIL",16,0)
+ ;GNU General Public License for more details.
+"RTN","VWUTIL",17,0)
+ ;
+"RTN","VWUTIL",18,0)
+ ;You should have received a copy of the GNU General Public License along
+"RTN","VWUTIL",19,0)
+ ;with this program; if not, write to the Free Software Foundation, Inc.,
+"RTN","VWUTIL",20,0)
+ ;51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+"RTN","VWUTIL",21,0)
+ ;
+"RTN","VWUTIL",22,0)
+ Q
+"RTN","VWUTIL",23,0)
+ ;*WVEHR - 250001*
+"RTN","VWUTIL",24,0)
+Q(V,D) ; Function to return $QUERY for variable V and direction D.
+"RTN","VWUTIL",25,0)
+ ; Replacement for Reverse $Q Function
+"RTN","VWUTIL",26,0)
+ ; 1/8/08 MLP
+"RTN","VWUTIL",27,0)
+ ;This function can be called for $Query -- either forward or reverse.
+"RTN","VWUTIL",28,0)
+ ;In place of $Q(V,D), use $$Q^ZDQ($NA(V),D)
+"RTN","VWUTIL",29,0)
+ ;Note: the 2nd argument is optional.
+"RTN","VWUTIL",30,0)
+ ;
+"RTN","VWUTIL",31,0)
+ S D=+$G(D,1)
+"RTN","VWUTIL",32,0)
+ Q:D=1 $Q(@V)         ;Forward $Q
+"RTN","VWUTIL",33,0)
+ IF D'=-1 Q           ;Will cause error due to no argument.
+"RTN","VWUTIL",34,0)
+ N S
+"RTN","VWUTIL",35,0)
+TOP IF $QL(V)=0 Q ""     ;done if unsubscripted
+"RTN","VWUTIL",36,0)
+BKU S S=$O(@V,-1)        ;backup to previous node on current level
+"RTN","VWUTIL",37,0)
+ S V=$NA(@V,$QL(V)-1) ;remove last subscript
+"RTN","VWUTIL",38,0)
+ IF S="" G DAT        ;go chk for data if backed up all the way
+"RTN","VWUTIL",39,0)
+ S V=$NA(@V@(S))      ;add the subscript found when backing up.
+"RTN","VWUTIL",40,0)
+ IF $D(@V)>9 S V=$NA(@V@("")) G BKU  ;if downpointer, descend and repeat
+"RTN","VWUTIL",41,0)
+DAT IF $D(@V)#2=1 Q V    ;if a data node, return with current name
+"RTN","VWUTIL",42,0)
+ G TOP
+"RTN","VWUTIL",43,0)
+ ;
+"RTN","VWUTIL",44,0)
+ ;*WVEHR 250002*
+"RTN","VWUTIL",45,0)
+DD2 ;Weston/SO Make certain Required Fields in Patient File NOT required
+"RTN","VWUTIL",46,0)
+ ;06/30/2008
+"RTN","VWUTIL",47,0)
+ ;Fields:
+"RTN","VWUTIL",48,0)
+ ;SOCIAL SECURITY NUMBER(#.09)
+"RTN","VWUTIL",49,0)
+ ;SERVICE CONNECTED?(#.301)
+"RTN","VWUTIL",50,0)
+ ;TYPE(#391)
+"RTN","VWUTIL",51,0)
+ ;VETERAN (Y/N)?(#1901)
+"RTN","VWUTIL",52,0)
+ ;
+"RTN","VWUTIL",53,0)
+ D DT^DICRW ;Make sure FM variables are set up
+"RTN","VWUTIL",54,0)
+ F I="SOCIAL SECURITY NUMBER","SERVICE CONNECTED?","TYPE","VETERAN (Y/N)?" D
+"RTN","VWUTIL",55,0)
+ .N FIELD S FIELD=+$O(^DD(2,"B",I,0)) Q:'FIELD  ;Get field number
+"RTN","VWUTIL",56,0)
+ .N X S X=$P(^DD(2,FIELD,0),U,2) ;Get field properties
+"RTN","VWUTIL",57,0)
+ .S X=$TR(X,"R","") ;Remove the 'R'equired flag
+"RTN","VWUTIL",58,0)
+ .S $P(^DD(2,FIELD,0),U,2)=X ;Re-Set field properties
+"RTN","VWUTIL",59,0)
+ .K ^DD(2,"RQ",FIELD) ;Kill off the ReQuired Xref
+"RTN","VWUTIL",60,0)
+ .S ^DD(2,FIELD,"DT")=DT ;Set the date Last Edited
+"RTN","VWUTIL",61,0)
+ .;
+"RTN","VWUTIL",62,0)
+ .;Re-Compile any Input Templates
+"RTN","VWUTIL",63,0)
+ .D
+"RTN","VWUTIL",64,0)
+ ..N IEN S IEN=0
+"RTN","VWUTIL",65,0)
+ ..F  S IEN=$O(^DIE("AF",2,FIELD,IEN)) Q:'IEN  D
+"RTN","VWUTIL",66,0)
+ ...N X,Y,DMAX
+"RTN","VWUTIL",67,0)
+ ...I '$D(^DIE(IEN,"ROU")) Q  ;Not compiled
+"RTN","VWUTIL",68,0)
+ ...S X=^DIE(IEN,"ROU")
+"RTN","VWUTIL",69,0)
+ ...I X="" Q  ;No routine specified
+"RTN","VWUTIL",70,0)
+ ...S X=$P(X,U,2),Y=IEN,DMAX=$$ROUSIZE^DILF
+"RTN","VWUTIL",71,0)
+ ...D EN^DIEZ
+"RTN","VWUTIL",72,0)
+ ...Q
+"RTN","VWUTIL",73,0)
+ ..Q
+"RTN","VWUTIL",74,0)
+ .;
+"RTN","VWUTIL",75,0)
+ .;Re-Compile any Print Templates
+"RTN","VWUTIL",76,0)
+ .D
+"RTN","VWUTIL",77,0)
+ ..N IEN S IEN=0
+"RTN","VWUTIL",78,0)
+ ..F  S IEN=$O(^DIPT("AF",2,FIELD,IEN)) Q:'IEN  D
+"RTN","VWUTIL",79,0)
+ ...N X,Y,DMAX
+"RTN","VWUTIL",80,0)
+ ...I '$D(^DIPT(IEN,"ROU")) Q  ;Not compiled
+"RTN","VWUTIL",81,0)
+ ...S X=^DIPT(IEN,"ROU")
+"RTN","VWUTIL",82,0)
+ ...I X="" Q  ;No routine specified
+"RTN","VWUTIL",83,0)
+ ...S X=$P(X,U,2),Y=IEN,DMAX=$$ROUSIZE^DILF
+"RTN","VWUTIL",84,0)
+ ...D EN^DIPZ
+"RTN","VWUTIL",85,0)
+ ..Q
+"RTN","VWUTIL",86,0)
+ .Q
+"RTN","VWUTIL",87,0)
+ Q
+"RTN","VWUTIL",88,0)
+ ;
+"RTN","VWUTIL",89,0)
+PMI ;Remove PMI values from file #50.68
+"RTN","VWUTIL",90,0)
+ N %I
+"RTN","VWUTIL",91,0)
+ S %I=0 F  S %I=$O(^PSNDF(50.68,%I)) Q:%I'>0  S $P(^PSNDF(50.68,%I,1),"^",5,7)="^^"
+"RTN","VWUTIL",92,0)
+ Q
+"RTN","VWUTIL",93,0)
+ ;
+"RTN","VWUTIL",94,0)
+POSTM ;Multi-build clean up
+"RTN","VWUTIL",95,0)
+ D DD2
+"RTN","VWUTIL",96,0)
+ D PMI
+"RTN","VWUTIL",97,0)
+ Q
+"RTN","VWUTIL",98,0)
+AMA1 ;Display the AMA Copyright for 1 second
+"RTN","VWUTIL",99,0)
+ N VW S VW=0,VW=+$O(^ICPT(VW))
+"RTN","VWUTIL",100,0)
+ I 'VW Q  ;No CPT Codes
+"RTN","VWUTIL",101,0)
+ N X W !,"CPT copyright AMA ",$E($$FMTE^XLFDT($$FMADD^XLFDT(DT,-365),7),1,4)," American Medical Association.   All rights reserved."
+"RTN","VWUTIL",102,0)
+ R X#1:1
+"RTN","VWUTIL",103,0)
+ Q
+"RTN","VWUTIL",104,0)
+AMA10 ;Display the AMA Copyright for 10 seconds
+"RTN","VWUTIL",105,0)
+ N VW S VW=0,VW=+$O(^ICPT(VW))
+"RTN","VWUTIL",106,0)
+ I 'VW Q  ;No CPT Codes
+"RTN","VWUTIL",107,0)
+ N X W !,"CPT copyright AMA ",$E($$FMTE^XLFDT($$FMADD^XLFDT(DT,-365),7),1,4)," American Medical Association.   All rights reserved."
+"RTN","VWUTIL",108,0)
+ W !," Press any key to continue."
+"RTN","VWUTIL",109,0)
+ R X#1:10
+"RTN","VWUTIL",110,0)
+ Q
+"RTN","VWUTIL",111,0)
+ ;
+"RTN","VWUTIL",112,0)
+DGRP1 ;Called from VW^DGRP1
+"RTN","VWUTIL",113,0)
+ N DGLABEL S DGLABEL="^ Given^Middle^Prefix^Suffix^Degree" ; labels
+"RTN","VWUTIL",114,0)
+ N DGCOMP S DGCOMP=+$G(^DPT(DFN,"NAME"))_"," ; Name Components fd (1.01)
+"RTN","VWUTIL",115,0)
+ I DGCOMP D GETS^DIQ(20,DGCOMP,"1:6",,"DGCOMP") ; Name Components file
+"RTN","VWUTIL",116,0)
+ ; loads Family (Last) Name (1), Given (First) Name (2),
+"RTN","VWUTIL",117,0)
+ ; Middle Name (3), Prefix (4), Suffix (5), and Degree (6)
+"RTN","VWUTIL",118,0)
+ ; field groups 1 & 2 part 3: load aliases
+"RTN","VWUTIL",119,0)
+ N DGCOUNT S DGCOUNT=0 ; how many aliases do we find
+"RTN","VWUTIL",120,0)
+ N DGALIAS S DGALIAS=0 ; IEN of Alias subfile (1/2.01) of Patient fl (2)
+"RTN","VWUTIL",121,0)
+ ;                       and array of aliases found
+"RTN","VWUTIL",122,0)
+ S DGALIAS=0 F  D  Q:'DGALIAS
+"RTN","VWUTIL",123,0)
+ . ;
+"RTN","VWUTIL",124,0)
+ . S DGALIAS=$O(^DPT(DFN,.01,DGALIAS))
+"RTN","VWUTIL",125,0)
+ . Q:'DGALIAS  ; out of alias subrecords
+"RTN","VWUTIL",126,0)
+ . N DGNODE S DGNODE=$G(^DPT(DFN,.01,DGALIAS,0)) ; 0-node of subrecord
+"RTN","VWUTIL",127,0)
+ . Q:'$L(DGNODE)  ; bad node
+"RTN","VWUTIL",128,0)
+ . ;
+"RTN","VWUTIL",129,0)
+ . S DGCOUNT=DGCOUNT+1 ; another valid alias
+"RTN","VWUTIL",130,0)
+ . I DGCOUNT=6 S DGALIAS=0 Q  ; can't show > 5, need to know if 6 or >
+"RTN","VWUTIL",131,0)
+ . ;
+"RTN","VWUTIL",132,0)
+ . S DGALIAS(DGCOUNT)=$P(DGNODE,U) ; Alias fld (.01)
+"RTN","VWUTIL",133,0)
+ . ;
+"RTN","VWUTIL",134,0)
+ . N DGSSN S DGSSN=$P(DGNODE,U,2) ; Alias SSN fld (1)
+"RTN","VWUTIL",135,0)
+ . I $L(DGSSN) D
+"RTN","VWUTIL",136,0)
+ . . S DGSSN=" "_$E(DGSSN,1,3)_"-"_$E(DGSSN,4,5)_"-"_$E(DGSSN,6,10)
+"RTN","VWUTIL",137,0)
+ . . ; incl leading space to separate from alias name
+"RTN","VWUTIL",138,0)
+ . . ; incl 10 chars to allow for P of pseudo-SSNs
+"RTN","VWUTIL",139,0)
+ . . S $E(DGALIAS(DGCOUNT),20)=DGSSN ; truncate alias name & append SSN
+"RTN","VWUTIL",140,0)
+ . ;
+"RTN","VWUTIL",141,0)
+ . S DGALIAS(DGCOUNT)=$E(DGALIAS(DGCOUNT),1,32) ; truncate alias
+"RTN","VWUTIL",142,0)
+ ;
+"RTN","VWUTIL",143,0)
+ I DGCOUNT=0 S DGALIAS(1)="< No alias entries on file >"
+"RTN","VWUTIL",144,0)
+ I DGCOUNT=6 S DGALIAS(5)="< More alias entries on file >"
+"RTN","VWUTIL",145,0)
+ K DGCOUNT
+"RTN","VWUTIL",146,0)
+ ;
+"RTN","VWUTIL",147,0)
+ ; field groups 1 & 2 part 4: show 1st name component, and IDs HRN & Sex
+"RTN","VWUTIL",148,0)
+ W !?5,"Family: "
+"RTN","VWUTIL",149,0)
+ W $E($G(DGCOMP(20,DGCOMP,1)),1,27)
+"RTN","VWUTIL",150,0)
+ ;
+"RTN","VWUTIL",151,0)
+ I "EI"[$G(DUZ("AG")),$G(DUZ(2)) D
+"RTN","VWUTIL",152,0)
+ . N DGNODE S DGNODE=$G(^AUPNPAT(DFN,41,DUZ(2),0)) ; get 0-node for the
+"RTN","VWUTIL",153,0)
+ . ; current Facility from the Health Record No. multiple field
+"RTN","VWUTIL",154,0)
+ . ; (4101/9000001.41) for DFN in the IHS Patient file (9000001)
+"RTN","VWUTIL",155,0)
+ . N DGHRN S DGHRN=$P(DGNODE,U,2) ; Health Record No. (.02)
+"RTN","VWUTIL",156,0)
+ . W ?42," HRN: ",DGHRN
+"RTN","VWUTIL",157,0)
+ ;
+"RTN","VWUTIL",158,0)
+ D
+"RTN","VWUTIL",159,0)
+ . N DGSEX S DGSEX=$P(DGRP(0),U,2) ; Sex fld (.02) of Patient file (2)
+"RTN","VWUTIL",160,0)
+ . W ?61,"Sex: ",$S(DGSEX="M":"MALE",DGSEX="F":"FEMALE",1:"UNANSWERED")
+"RTN","VWUTIL",161,0)
+ ;
+"RTN","VWUTIL",162,0)
+ ; field groups 1 & 2 part 5: show remaining name components and aliases
+"RTN","VWUTIL",163,0)
+ N DGCOUNT F DGCOUNT=2:1:6 D
+"RTN","VWUTIL",164,0)
+ . W !?5,$P(DGLABEL,U,DGCOUNT),": "
+"RTN","VWUTIL",165,0)
+ . N DGNAME S DGNAME=$G(DGCOMP(20,DGCOMP,DGCOUNT)) ; next name component
+"RTN","VWUTIL",166,0)
+ . W $E(DGNAME,1,$S(DGCOUNT=2:23,1:27)) ; 1st line leaves room for "[2]"
+"RTN","VWUTIL",167,0)
+ . I DGCOUNT=2 D  ; header for aliases
+"RTN","VWUTIL",168,0)
+ . . W ?37 N DGRPW,Z S DGRPW=0,Z=2 D WW^DGRPV ; write [2], suppress LF
+"RTN","VWUTIL",169,0)
+ . . W " Alias: "
+"RTN","VWUTIL",170,0)
+ . W ?47,$G(DGALIAS(DGCOUNT-1)) ; show next alias
+"RTN","VWUTIL",171,0)
+ . Q
+"RTN","VWUTIL",172,0)
+ Q
+"RTN","VWUTIL",173,0)
+ ;
+"RTN","VWUTIL",174,0)
+REGMU ; Changes to Patient Registration for MU
+"RTN","VWUTIL",175,0)
+ N X S X=+$O(^DIE("B","VW LOCAL REGISTRATION TEMPLATE",0)) Q:'X
+"RTN","VWUTIL",176,0)
+ N DA,DIE,DR,DIC,DIQ
+"RTN","VWUTIL",177,0)
+ S DA=DFN,DIE="^DPT(",DR="[VW LOCAL REGISTRATION TEMPLATE]"
+"RTN","VWUTIL",178,0)
+ D ^DIE
+"RTN","VWUTIL",179,0)
+ Q
+"UP",2,2.0256001,-1)
+2^256001
+"UP",2,2.0256001,0)
+2.0256001
+"UP",2,2.250043,-1)
+2^250043
+"UP",2,2.250043,0)
+2.250043
+"UP",200,200.0256001,-1)
+200^256001
+"UP",200,200.0256001,0)
+200.0256001
+"VER")
+8.0^22.0
+"^DD",2,2,.351,0)
+DATE OF DEATH^DXa^^.35;1^S %DT="EPT" D ^%DT S X=Y K:Y<1 X I $D(X) D H^DGUTL K:X>DGTIME X K DGTIME,DGDATE I $D(X),X<$P(^DPT(DA,0),"^",3) K X
+"^DD",2,2,.351,1,0)
+^.1
+"^DD",2,2,.351,1,1,0)
+^^TRIGGER^2^.091
+"^DD",2,2,.351,1,1,1)
+K DIV S DIV=X,D0=DA,DIV(0)=D0 S Y(1)=$S($D(^DPT(D0,0)):^(0),1:"") S X=$P(Y(1),U,10),X=X S DIU=X K Y X ^DD(2,.351,1,1,1.1) X ^DD(2,.351,1,1,1.4)
+"^DD",2,2,.351,1,1,1,9.2)
+S X=DIU_"[PATIENT DIED ON ",Y(1)=X S X=DIV,Y(2)=X S X=4,Y(3)=X S X=5,X=$E(Y(2),Y(3),X) S Y=X,X=Y(1),X=X_Y_"/",Y(4)=X S X=DIV,Y(5)=X S X=6,Y(6)=X S X=7
+"^DD",2,2,.351,1,1,1.1)
+S X=DIV X ^DD(2,.351,1,1,49.2) S X=$E(Y(5),Y(6),X) S Y=X,X=Y(4),X=X_Y_"/",Y(7)=X S X=DIV,Y(8)=X S X=2,Y(9)=X S X=3,X=$E(Y(8),Y(9),X) S Y=X,X=Y(7),X=X_Y_"]"
+"^DD",2,2,.351,1,1,1.4)
+S DIH=$S($D(^DPT(DIV(0),0)):^(0),1:""),DIV=X S $P(^(0),U,10)=DIV,DIH=2,DIG=.091 D ^DICR:$N(^DD(DIH,DIG,1,0))>0
+"^DD",2,2,.351,1,1,2)
+K DIV S DIV=X,D0=DA,DIV(0)=D0 S Y(1)=$S($D(^DPT(D0,0)):^(0),1:"") S X=$P(Y(1),U,10),X=X S DIU=X K Y X ^DD(2,.351,1,1,2.1) X ^DD(2,.351,1,1,2.4)
+"^DD",2,2,.351,1,1,2.1)
+S X=DIV X ^DD(2,.351,1,1,59.2) S Y(8)=X S X=2,X=$P(Y(7),Y(8),X) S Y=X,X=Y(3),X=X_Y
+"^DD",2,2,.351,1,1,2.4)
+S DIH=$S($D(^DPT(DIV(0),0)):^(0),1:""),DIV=X S $P(^(0),U,10)=DIV,DIH=2,DIG=.091 D ^DICR:$N(^DD(DIH,DIG,1,0))>0
+"^DD",2,2,.351,1,1,49.2)
+S X=DIU_"[PATIENT DIED ON ",Y(1)=X S X=DIV,Y(2)=X S X=4,Y(3)=X S X=5,X=$E(Y(2),Y(3),X) S Y=X,X=Y(1),X=X_Y_"/",Y(4)=X S X=DIV,Y(5)=X S X=6,Y(6)=X S X=7
+"^DD",2,2,.351,1,1,59.2)
+S X=DIU,Y(1)=X S X="[PATIENT DIED",Y(2)=X S X=1,X=$P(Y(1),Y(2),X),Y(3)=X,Y(4)=X S X=DIU,Y(5)=X S X="PATIENT DIED",Y(6)=X S X=2,X=$P(Y(5),Y(6),X),Y(7)=X S X="]"
+"^DD",2,2,.351,1,1,"%D",0)
+^^3^3^2930723^^
+"^DD",2,2,.351,1,1,"%D",1,0)
+This appends into the REMARKS field a notation regarding the DATE OF 
+"^DD",2,2,.351,1,1,"%D",2,0)
+DEATH.  If DATE OF DEATH is deleted, the notation will be stripped out
+"^DD",2,2,.351,1,1,"%D",3,0)
+of the REMARKS field.
+"^DD",2,2,.351,1,1,"CREATE VALUE")
+REMARKS_"[PATIENT DIED ON "_$E(DATE OF DEATH,4,5)_"/"_$E(DATE OF DEATH,6,7)_"/"_$E(DATE OF DEATH,2,3)_"]"
+"^DD",2,2,.351,1,1,"DELETE VALUE")
+$P(REMARKS,"[PATIENT DIED",1)_$P($P(REMARKS,"PATIENT DIED",2),"]",2)
+"^DD",2,2,.351,1,1,"DT")
+2930601
+"^DD",2,2,.351,1,1,"FIELD")
+REMARKS
+"^DD",2,2,.351,1,2,0)
+^^TRIGGER^2^.352
+"^DD",2,2,.351,1,2,1)
+K DIV S DIV=X,D0=DA,DIV(0)=D0 S Y(1)=$S($D(^DPT(D0,.35)):^(.35),1:"") S X=$P(Y(1),U,2),X=X S DIU=X K Y X ^DD(2,.351,1,2,1.1) X ^DD(2,.351,1,2,1.4)
+"^DD",2,2,.351,1,2,1.1)
+S X=DIV S X=$S(($D(DUZ)#2):DUZ,1:"")
+"^DD",2,2,.351,1,2,1.4)
+S DIH=$S($D(^DPT(DIV(0),.35)):^(.35),1:""),DIV=X S %=$P(DIH,U,3,999),DIU=$P(DIH,U,2),^(.35)=$P(DIH,U,1,1)_U_DIV_$S(%]"":U_%,1:""),DIH=2,DIG=.352 D ^DICR:$N(^DD(DIH,DIG,1,0))>0
+"^DD",2,2,.351,1,2,2)
+Q
+"^DD",2,2,.351,1,2,"CREATE VALUE")
+S X=$S(($D(DUZ)#2):DUZ,1:"")
+"^DD",2,2,.351,1,2,"DELETE VALUE")
+NO EFFECT
+"^DD",2,2,.351,1,2,"FIELD")
+DEATH ENTERED BY
+"^DD",2,2,.351,1,3,0)
+2^ADGDBUL^MUMPS
+"^DD",2,2,.351,1,3,1)
+D DSBULL^DGDEATH
+"^DD",2,2,.351,1,3,2)
+D DKBULL^DGDEATH
+"^DD",2,2,.351,1,3,"DT")
+3031008
+"^DD",2,2,.351,1,4,0)
+2^AEXP1
+"^DD",2,2,.351,1,4,1)
+S ^DPT("AEXP1",$E(X,1,30),DA)=""
+"^DD",2,2,.351,1,4,2)
+K ^DPT("AEXP1",$E(X,1,30),DA)
+"^DD",2,2,.351,1,5,0)
+2^AOERR^MUMPS
+"^DD",2,2,.351,1,5,1)
+D DEATH^DGOERNOT
+"^DD",2,2,.351,1,5,2)
+Q
+"^DD",2,2,.351,1,5,"%D",0)
+^^3^3^2910716^^^^
+"^DD",2,2,.351,1,5,"%D",1,0)
+     This cross-reference is used in conjunction with ORDER ENTRY/RESULTS
+"^DD",2,2,.351,1,5,"%D",2,0)
+REPORTING v2.09 or higher to send MAS OE/RR NOTIFICATIONS of
+"^DD",2,2,.351,1,5,"%D",3,0)
+DEATH to users who are on an OE/RR LIST for a patient.
+"^DD",2,2,.351,1,5,"DT")
+2910715
+"^DD",2,2,.351,1,6,0)
+2^APSJD^MUMPS
+"^DD",2,2,.351,1,6,1)
+S XX=X,X="PSJADT" X ^%ZOSF("TEST") S X=XX K XX I  D END^PSJADT
+"^DD",2,2,.351,1,6,2)
+Q
+"^DD",2,2,.351,1,6,3)
+Cancels Inpatient Medication orders.
+"^DD",2,2,.351,1,6,"%D",0)
+^^3^3^2930608^^^
+"^DD",2,2,.351,1,6,"%D",1,0)
+This is used by the Inpatient Medications package to cancel a patient's
+"^DD",2,2,.351,1,6,"%D",2,0)
+IV and Unit Dose orders whenever a date of death is entered for the
+"^DD",2,2,.351,1,6,"%D",3,0)
+patient.
+"^DD",2,2,.351,1,6,"DT")
+2930608
+"^DD",2,2,.351,1,7,0)
+2^ARCDTH^MUMPS
+"^DD",2,2,.351,1,7,1)
+S RCX=X,X="RCAMDTH" X ^%ZOSF("TEST") S X=RCX K RCX I  D SET^RCAMDTH
+"^DD",2,2,.351,1,7,2)
+S RCX=X,X="RCAMDTH" X ^%ZOSF("TEST") S X=RCX K RCX I  D ERR^RCAMDTH
+"^DD",2,2,.351,1,7,3)
+ACCOUNTS RECEIVABLE DEATH NOTIFICATION
+"^DD",2,2,.351,1,7,"%D",0)
+^^3^3^2930722^^^^
+"^DD",2,2,.351,1,7,"%D",1,0)
+This cross-reference is used to notify the Accounts Receivable package (v4 or
+"^DD",2,2,.351,1,7,"%D",2,0)
+higher) of a patient's death so that the patient's account may be reviewed for
+"^DD",2,2,.351,1,7,"%D",3,0)
+appropriate action. 
+"^DD",2,2,.351,1,7,"DT")
+2930609
+"^DD",2,2,.351,1,8,0)
+2^ADEP^MUMPS
+"^DD",2,2,.351,1,8,1)
+D SET^DGDEPINA
+"^DD",2,2,.351,1,8,2)
+D KILL^DGDEPINA
+"^DD",2,2,.351,1,8,"%D",0)
+^^1^1^2941114^
+"^DD",2,2,.351,1,8,"%D",1,0)
+This is used to updated the effective dates in file 408.12.
+"^DD",2,2,.351,1,8,"DT")
+2941114
+"^DD",2,2,.351,1,9,0)
+2^AENR351^MUMPS
+"^DD",2,2,.351,1,9,1)
+D AUTOUPD^DGENA2(DA)
+"^DD",2,2,.351,1,9,2)
+D AUTOUPD^DGENA2(DA)
+"^DD",2,2,.351,1,9,3)
+DO NOT DELETE
+"^DD",2,2,.351,1,9,"%D",0)
+^^1^1^2970630^^^^
+"^DD",2,2,.351,1,9,"%D",1,0)
+Used to update the patient's enrollment.
+"^DD",2,2,.351,1,9,"DT")
+2970630
+"^DD",2,2,.351,1,10,0)
+2^DG714^MUMPS
+"^DD",2,2,.351,1,10,1)
+D START^DGMTDELS(DA)
+"^DD",2,2,.351,1,10,2)
+Q
+"^DD",2,2,.351,1,10,3)
+Deletes last REQUIRED means test
+"^DD",2,2,.351,1,10,"DT")
+3060814
+"^DD",2,2,.351,1,52,0)
+2^APSOD^MUMPS
+"^DD",2,2,.351,1,52,1)
+I $$VERSION^XPDUTL("PSO")>6 D APSOD^PSOCAN3(DA)
+"^DD",2,2,.351,1,52,2)
+I $$VERSION^XPDUTL("PSO")>6 D APSOD^PSOAUTOC(DA)
+"^DD",2,2,.351,1,52,3)
+Discontinues Outpatient Medications.
+"^DD",2,2,.351,1,52,"%D",0)
+^^3^3^2961122^^^^
+"^DD",2,2,.351,1,52,"%D",1,0)
+This xref is used to discontinue all active outpatient medications whenever
+"^DD",2,2,.351,1,52,"%D",2,0)
+a date of death is entered for the patient.  This xref is used with v7 of
+"^DD",2,2,.351,1,52,"%D",3,0)
+Outpatient Pharmacy (DBIA #1624).
+"^DD",2,2,.351,1,52,"%D",4,0)
+Kill logic updated with DG*5.3*455.  Mail message sent to pharmacy when date
+"^DD",2,2,.351,1,52,"%D",5,0)
+of death is deleted to holders of PSORPH key.
+"^DD",2,2,.351,1,52,"DT")
+3020926
+"^DD",2,2,.351,1,250,0)
+2^AVWDOD^MUMPS
+"^DD",2,2,.351,1,250,1)
+Q
+"^DD",2,2,.351,1,250,2)
+D WP^DIE(2,DA_",",250043.1,"","@")
+"^DD",2,2,.351,1,250,3)
+Deletes Preliminary Cause of Death
+"^DD",2,2,.351,1,250,"%D",0)
+^^1^1^3121107^
+"^DD",2,2,.351,1,250,"%D",1,0)
+Deletes preliminary cause of death if the date of death is deleted.
+"^DD",2,2,.351,1,250,"DT")
+3121107
+"^DD",2,2,.351,1,301,0)
+2^IVM351^MUMPS
+"^DD",2,2,.351,1,301,1)
+S IVMX=X,X="IVMPXFR" X ^%ZOSF("TEST") D:$T DPT^IVMPXFR S X=IVMX K IVMX
+"^DD",2,2,.351,1,301,2)
+S IVMX=X,X="IVMPXFR" X ^%ZOSF("TEST") D:$T DPT^IVMPXFR S X=IVMX K IVMX
+"^DD",2,2,.351,1,301,"%D",0)
+^^5^5^2930605^
+"^DD",2,2,.351,1,301,"%D",1,0)
+This cross-reference will check the IVM PATIENT file to see if a change
+"^DD",2,2,.351,1,301,"%D",2,0)
+to this field will require transmission to the IVM Center.  If it does,
+"^DD",2,2,.351,1,301,"%D",3,0)
+the IVM PATIENT file entry's TRANSMISSION STATUS will be set to 0 and
+"^DD",2,2,.351,1,301,"%D",4,0)
+the nightly background job will transmit the updated information.
+"^DD",2,2,.351,1,301,"DT")
+2930605
+"^DD",2,2,.351,1,991,0)
+2^AVAFC351^MUMPS
+"^DD",2,2,.351,1,991,1)
+I ($T(AVAFC^VAFCDD01)'="") S VAFCF=".351;" D AVAFC^VAFCDD01(DA)
+"^DD",2,2,.351,1,991,2)
+I ($T(AVAFC^VAFCDD01)'="") S VAFCF=".351;" D AVAFC^VAFCDD01(DA)
+"^DD",2,2,.351,1,991,"%D",0)
+^^15^15^2990204^^
+"^DD",2,2,.351,1,991,"%D",1,0)
+This cross reference is used to remember that changes were made to the
+"^DD",2,2,.351,1,991,"%D",2,0)
+PATIENT file (#2) outside of the Registration process.  Execution of this
+"^DD",2,2,.351,1,991,"%D",3,0)
+cross reference will create an entry in the ADT/HL7 PIVOT file (#391.71)
+"^DD",2,2,.351,1,991,"%D",4,0)
+and mark it as requiring transmission of an HL7 ADT-A08 message.
+"^DD",2,2,.351,1,991,"%D",5,0)
+ 
+"^DD",2,2,.351,1,991,"%D",6,0)
+The local variable VAFCFLG will be set to 1 if the cross reference is
+"^DD",2,2,.351,1,991,"%D",7,0)
+not executed because the change is being made from within the Registration
+"^DD",2,2,.351,1,991,"%D",8,0)
+process.
+"^DD",2,2,.351,1,991,"%D",9,0)
+ 
+"^DD",2,2,.351,1,991,"%D",10,0)
+Execution of this cross reference can be prevented by setting the local
+"^DD",2,2,.351,1,991,"%D",11,0)
+variable VAFCA08 equal to 1.
+"^DD",2,2,.351,1,991,"%D",12,0)
+  
+"^DD",2,2,.351,1,991,"%D",13,0)
+The local variable VAFCF is used to identify the field edited.
+"^DD",2,2,.351,1,991,"%D",14,0)
+This data is stored in the FIELD(S) EDITED (#2.1) field in the 
+"^DD",2,2,.351,1,991,"%D",15,0)
+ADT/HL7 PIVOT file (#391.71).
+"^DD",2,2,.351,1,991,"DT")
+2990204
+"^DD",2,2,.351,1,992,0)
+2^ADGRU351^MUMPS
+"^DD",2,2,.351,1,992,1)
+D:($T(ADGRU^DGRUDD01)'="") ADGRU^DGRUDD01(DA)
+"^DD",2,2,.351,1,992,2)
+D:($T(ADGRU^DGRUDD01)'="") ADGRU^DGRUDD01(DA)
+"^DD",2,2,.351,1,992,"%D",0)
+^^9^9^2990920^
+"^DD",2,2,.351,1,992,"%D",1,0)
+This cross reference is used to remember that changes were made to a 
+"^DD",2,2,.351,1,992,"%D",2,0)
+monitored data field in the PATIENT File (#2) required for a vendor
+"^DD",2,2,.351,1,992,"%D",3,0)
+RAI/MDS COTS system.  Execution of this cross reference will create
+"^DD",2,2,.351,1,992,"%D",4,0)
+an entry in the ADT/HL7 PIVOT file (#391.71) and mark it as requiring
+"^DD",2,2,.351,1,992,"%D",5,0)
+transmission of an HL7 demographic A08 update message to the COTS
+"^DD",2,2,.351,1,992,"%D",6,0)
+interface.
+"^DD",2,2,.351,1,992,"%D",7,0)
+ 
+"^DD",2,2,.351,1,992,"%D",8,0)
+The local variable DGRUGA08 will be set to 1 if the cross reference is
+"^DD",2,2,.351,1,992,"%D",9,0)
+not to be executed as part of a re-indexing.
+"^DD",2,2,.351,1,992,"DT")
+2990920
+"^DD",2,2,.351,3)
+Enter the date this patient died.  Date must not be before date of birth.
+"^DD",2,2,.351,5,1,0)
+405^.01^3
+"^DD",2,2,.351,5,2,0)
+405^.18^2
+"^DD",2,2,.351,21,0)
+^^1^1^2861022^
+"^DD",2,2,.351,21,1,0)
+Enter the date of this patient's expiration.
+"^DD",2,2,.351,"AUDIT")
+y
+"^DD",2,2,.351,"DT")
+3121107
+"^DD",2,2,250043.1,0)
+PRELIMINARY CAUSE OF DEATH^2.250043^^250043;0
+"^DD",2,2,256000,0)
+LANGUAGE PREFERENCE^P.85'^DI(.85,^256000;1^Q
+"^DD",2,2,256000,21,0)
+^^1^1^3110524^
+"^DD",2,2,256000,21,1,0)
+This field is to define the language preference of the patient.
+"^DD",2,2,256000,"DT")
+3121105
+"^DD",2,2,256001,0)
+LANGUAGE SKILLS^2.0256001P^^256001;0
+"^DD",2,2,256001,21,0)
+^^3^3^3110524^
+"^DD",2,2,256001,21,1,0)
+The languages listed here are associated with a series of qualifiers for
+"^DD",2,2,256001,21,2,0)
+UNDERSTANDING, SPEAKING, READING, and/or WRITTEN skill levels of each langua
+"^DD",2,2,256001,21,3,0)
+language specified for this patient.
+"^DD",2,2.0256001,0)
+LANGUAGE SKILLS SUB-FIELD^^4^5
+"^DD",2,2.0256001,0,"DT")
+3121105
+"^DD",2,2.0256001,0,"IX","B",2.0256001,.01)
+
+"^DD",2,2.0256001,0,"NM","LANGUAGE SKILLS")
+
+"^DD",2,2.0256001,0,"UP")
+2
+"^DD",2,2.0256001,.01,0)
+LANGUAGE SKILLS^MP.85'^DI(.85,^0;1^Q
+"^DD",2,2.0256001,.01,1,0)
+^.1
+"^DD",2,2.0256001,.01,1,1,0)
+2.0256001^B
+"^DD",2,2.0256001,.01,1,1,1)
+S ^DPT(DA(1),256001,"B",$E(X,1,30),DA)=""
+"^DD",2,2.0256001,.01,1,1,2)
+K ^DPT(DA(1),256001,"B",$E(X,1,30),DA)
+"^DD",2,2.0256001,.01,21,0)
+^^3^3^3110524^
+"^DD",2,2.0256001,.01,21,1,0)
+This multiple is to help catalog the language skills of the patient.
+"^DD",2,2.0256001,.01,21,2,0)
+It may be the case that a patient may be called upon to communicate
+"^DD",2,2.0256001,.01,21,3,0)
+with other patients that the staff is unable to communicate with otherwise.
+"^DD",2,2.0256001,.01,"DT")
+3121105
+"^DD",2,2.0256001,1,0)
+UNDERSTANDING SKILL LEVEL^S^P:poor to none;I:intermediate;N:native skills;M:mastery of the Language;^0;2^Q
+"^DD",2,2.0256001,1,"DT")
+3110524
+"^DD",2,2.0256001,2,0)
+SPEAKING SKILL LEVEL^S^P:poor to none;I:intermediate;N:native skills;M:mastery of the Language;^0;3^Q
+"^DD",2,2.0256001,2,3)
+
+"^DD",2,2.0256001,2,"DT")
+3110524
+"^DD",2,2.0256001,3,0)
+READING SKILL LEVEL^S^P:poor to none;I:intermediate;N:native skills;M:mastery of the Language;^0;4^Q
+"^DD",2,2.0256001,3,3)
+
+"^DD",2,2.0256001,3,"DT")
+3110524
+"^DD",2,2.0256001,4,0)
+WRITTEN SKILL LEVEL^S^P:poor to none;I:intermediate;N:native skills;M:mastery of the Language;^0;5^Q
+"^DD",2,2.0256001,4,3)
+
+"^DD",2,2.0256001,4,"DT")
+3110524
+"^DD",2,2.250043,0)
+PRELIMINARY CAUSE OF DEATH SUB-FIELD^^.01^1
+"^DD",2,2.250043,0,"DT")
+3110617
+"^DD",2,2.250043,0,"NM","PRELIMINARY CAUSE OF DEATH")
+
+"^DD",2,2.250043,0,"UP")
+2
+"^DD",2,2.250043,.01,0)
+PRELIMINARY CAUSE OF DEATH^Wx^^0;1^Q
+"^DD",2,2.250043,.01,"DT")
+3110617
+"^DD",200,200,256000,0)
+PREFERRED LANGUAGE^P.85'^DI(.85,^256000;1^Q
+"^DD",200,200,256000,21,0)
+^.001^5^5^3110524^^
+"^DD",200,200,256000,21,1,0)
+This is a means of providing an alternative to the system default language.
+"^DD",200,200,256000,21,2,0)
+If it is not defined, the value used will be the system default (found on
+"^DD",200,200,256000,21,3,0)
+the KERNEL SYSTEM PARAMETER File).  This field, when expressed for this user
+"^DD",200,200,256000,21,4,0)
+user will default to the KERNEL SYSTEM PARAMETER value, if it is missing or
+"^DD",200,200,256000,21,5,0)
+NULL.
+"^DD",200,200,256000,"DT")
+3110524
+"^DD",200,200,256001,0)
+LANGUAGE SKILLS^200.0256001P^^256001;0
+"^DD",200,200,256001,21,0)
+^^2^2^3110524^
+"^DD",200,200,256001,21,1,0)
+This is the pointer to the LANGUAGE File for the list of languages
+"^DD",200,200,256001,21,2,0)
+a person may be able to understand, read, speak, and/or write.
+"^DD",200,200,256001,23,0)
+^^1^1^3110524^
+"^DD",200,200,256001,23,1,0)
+This field will be followed by 4 separate fields of sets of codes.
+"^DD",200,200.0256001,0)
+LANGUAGE SKILLS SUB-FIELD^^4^5
+"^DD",200,200.0256001,0,"DT")
+3110524
+"^DD",200,200.0256001,0,"IX","B",200.0256001,.01)
+
+"^DD",200,200.0256001,0,"NM","LANGUAGE SKILLS")
+
+"^DD",200,200.0256001,0,"UP")
+200
+"^DD",200,200.0256001,.01,0)
+LANGUAGE SKILLS^MP.85'^DI(.85,^0;1^Q
+"^DD",200,200.0256001,.01,1,0)
+^.1
+"^DD",200,200.0256001,.01,1,1,0)
+200.0256001^B
+"^DD",200,200.0256001,.01,1,1,1)
+S ^VA(200,DA(1),256001,"B",$E(X,1,30),DA)=""
+"^DD",200,200.0256001,.01,1,1,2)
+K ^VA(200,DA(1),256001,"B",$E(X,1,30),DA)
+"^DD",200,200.0256001,.01,21,0)
+^^4^4^3110524^
+"^DD",200,200.0256001,.01,21,1,0)
+This is the location where the linguistic skills of the staff can be 
+"^DD",200,200.0256001,.01,21,2,0)
+stored for comparision.  The strength of the language skills of the
+"^DD",200,200.0256001,.01,21,3,0)
+individual are split up into understanding, speak, and/or written
+"^DD",200,200.0256001,.01,21,4,0)
+proficiencies for a variety of languages.
+"^DD",200,200.0256001,.01,"DT")
+3110524
+"^DD",200,200.0256001,1,0)
+UNDERSTAND^S^P:poor to none;I:intermediate;N:native;M:mastery of the language;^0;2^Q
+"^DD",200,200.0256001,1,"DT")
+3110524
+"^DD",200,200.0256001,2,0)
+SPEAKING SKILL LEVEL^S^P:poor to none;I:intermediate;N:native;M:mastery of the language;^0;3^Q
+"^DD",200,200.0256001,2,3)
+
+"^DD",200,200.0256001,2,"DT")
+3110524
+"^DD",200,200.0256001,3,0)
+READING SKILL LEVEL^S^P:poor to none;I:intermediate;N:native;M:mastery of the language;^0;4^Q
+"^DD",200,200.0256001,3,3)
+
+"^DD",200,200.0256001,3,"DT")
+3110524
+"^DD",200,200.0256001,4,0)
+WRITTEN SKILL LEVEL^S^P:poor to none;I:intermediate;N:native;M:mastery of the language;^0;5^Q
+"^DD",200,200.0256001,4,3)
+
+"^DD",200,200.0256001,4,"DT")
+3110524
+**END**
+**END**
