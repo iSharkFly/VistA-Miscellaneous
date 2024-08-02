@@ -14,3 +14,6 @@ https://trac.opensourcevista.net/svn/lang-file4mu1and2
 
 ## qrda
 https://trac.opensourcevista.net/svn/qrda
+
+## pharmacy_utils
+https://trac.opensourcevista.net/svn/pharmacy-utils
